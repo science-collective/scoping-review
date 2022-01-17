@@ -6,7 +6,7 @@ TODO: Give a brief description of what your project is about
 
 This project...
 
-# Brief description of folder and file contents
+## Brief description of folder and file contents
 
 TODO: As project evolves, add brief description of what is inside the data, doc and R folders.
 
@@ -16,7 +16,7 @@ The following folders contain:
 - `doc/`:
 - `R/`:
 
-# Installing project R package dependencies
+## Installing project R package dependencies
 
 If dependencies have been managed by using `usethis::use_package("packagename")`
 through the `DESCRIPTION` file, installing dependencies is as easy as opening the
@@ -27,7 +27,11 @@ through the `DESCRIPTION` file, installing dependencies is as easy as opening th
 
 You'll need to have remotes installed for this to work.
 
-# Resource
+## Code of Conduct
+
+Please note that the scoping-review project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+
+## Resource
 
 For more information on this folder and file workflow and setup, check
 out the [prodigenr](https://rostools.github.io/prodigenr) online
