@@ -27,9 +27,12 @@ through the `DESCRIPTION` file, installing dependencies is as easy as opening th
 
 You'll need to have remotes installed for this to work.
 
-## Code of Conduct
+## Code of Conduct and contributing to this project
 
 Please note that the scoping-review project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+
+If you are interested in contributing, read our [contributing guidelines](CONTRIBUTING.md) 
+for more details on how and what you can do.
 
 ## Resource
 
