@@ -6,6 +6,15 @@ TODO: Give a brief description of what your project is about
 
 This project...
 
+General aim of project: Scrapping websites, resources, institutions, and
+publications for projects and initiatives similar to this one. To map out the
+space and as a scoping review. This has the added advantage that it would:
+
+- Create a list of online platforms and databases that are already out there which can help researchers
+- Create a repository/list of various tools/workflows/hints of how to improve your science in relation to open science
+- Compile already existing resources into one place
+- Determine how much new content we need to create vs how much we should reorganize old content
+
 # Brief description of folder and file contents
 
 TODO: As project evolves, add brief description of what is inside the data, doc and R folders.
