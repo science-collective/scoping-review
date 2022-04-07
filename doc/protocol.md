@@ -1,11 +1,15 @@
 # Open science and open collaboration: A scoping review
 
+TODO: Brainstorm title ideas.
+
 ## Study information
 
 This scoping review is being conducted within the Science Collective. 
 The overall aim of the Science Collective is to build a technical and social 
 environment that encourages and makes it easy for science to be done in an open,
 rigorous, and collaborative way. 
+
+TODO: Define science, open, collaborative
 
 This scoping review will focus on open collaboration and open
 science in relation to collaboration. 
