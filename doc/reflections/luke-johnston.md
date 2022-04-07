@@ -5,3 +5,12 @@
 
 - Realized Zoom wasn't the best for doing these types of activities, so will try out Discord next time!
 - Coordinating before hand was tough...
+
+
+## 2022-04-07
+
+- Biggest challenge is coordinating and organizing how we collaborate. Without a
+good structure and guide to know what to work on, it sometimes feels like floundering
+around, unsure of what to work on.
+- Having a guide for "tasks to complete" is really helpful to stop "paralysis" of
+not knowing what to do next.
