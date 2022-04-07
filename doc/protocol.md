@@ -12,13 +12,13 @@ This scoping review will focus on current practices of open collaboration and op
 
 ### Research aims
 
-Our specific aims are to:
+The aims of this scoping review are to:
 
-- Provide an overview of current practices of research collaboration that follows basic open principles
+- Provide an overview of current practices of research collaboration that follow basic open principles
 (e.g. transparency, accessibility)
-- Map out different online tools available to improve open collaboration in research
-- Understand how researchers currently collaborate
-- Make recommendations for how to bridge the gap between improve current practices towards open collaboration
+- Summarize existing online tools and resources available to improve open collaboration in research
+
+The overarching goal of this scoping review is to better understand how researchers currently collaborate and to make recommendations for how to bridge the gap between current practices and optimal open collaboration. 
 
 ### If helpful, please select the type of aim (non-exhaustive list):
 
@@ -26,10 +26,10 @@ Understanding
 
 ### Anticipated Duration
 
-- Overall: 12/2021 - 6/2023
-- Research design and data collection: 12/2021 - 6/2022
-- Screening resources: 06/2022 - 9/2022
-- Analyses and manuscript writing: 9/2022 - 6/2023
+- Overall: 12/2021 - 06/2023
+- Research design and data collection: 12/2021 - 06/2022
+- Screening resources: 06/2022 - 09/2022
+- Analyses and manuscript writing: 09/2022 - 06/2023
 
 ## Design plan
 
@@ -37,51 +37,63 @@ Understanding
 
 Scoping review
 
+The protocol for this review will be registered with the (Open Science Framework)[https://osf.io/]. 
+
 ### Sampling and case selection
 
-First, an initial search strategy was developed in consultation with a research librarian. 
-Then, systematic searches were carried out in SCOPUS, Web of Science, Science Direct, and relevant databases (e.g., MEDLINE, EMBASE).
+First, an initial search strategy was developed in consultation with a research librarian. Data was then collected in two main ways, via systematic searches of databases and hand searches.
 
-The search terms were: (Open OR collaborative OR collaborating OR...) AND (collaboration OR science OR research OR coproduction OR co-production OR videoconferenc* OR github OR...) AND (technology OR tools OR framework OR guideline* OR framework OR principles OR best practices OR key components OR...) , 
+TODO: Decide on which databases to prioritize (as six is likely too many for a scoping review)
 
-The search was limited to resources available in English. No date limiters were applied.
+Systematic searches were carried out in SCOPUS, Web of Science, Science Direct, Google Scholar, MEDLINE, and EMBASE. The search terms were: (open) AND (collaborat* OR science OR research OR coproduction OR co-production OR videoconferenc* OR github OR...) AND (technology OR tools OR framework* OR guideline* OR principles OR best practices OR systems OR resources). The search was limited to data available in English. No date limiters were applied. Once relevant records have been identified, software (Connected Papers)[https://www.connectedpapers.com/] will be used to scan the citations of these records for additional relevant records.
 
-Then, when the relevant papers have been included, the software (Connected Papers)[https://www.connectedpapers.com/] will be used to scan citations for additional relevant papers.
+Hand searches involved contacting known researchers in the field and asking for additional relevant records that may not have been identifeid with systematic searches, including web-based records (e.g., blogs, websites, GitHub pages, social media posts).
+
+Microsoft Excel will be used to manage records including screening decisions.
 
 ## Data Collection
 
 ### Data source(s) and data type(s)
 
 - Journal articles published in peer-reviewed journals
-- Published guidelines and handbooks
+- Books
+- Guidelines and handbooks
 - Websites and online resources
+
+TODO: Decide if we want to include books, and if so, how many would be considered a representative sample
 
 ### Data collection tools, instruments or plans
 
-The inclusion criteria were:
+Inclusion criteria: 
+- Any formal document with advice, guidance, tools, and/or recommendations for improving open collaboration (including documents where open collaboration practices are not the primary focus)
 
-- 
-
-The exclusion criteria were:
+Exclusion criteria:
+- Documents that do not report on specific open collaboration practices
 
 ### Stopping criteria
 
-When all planned databases have been searched and reference lists of all identified papers have been screened. 
+In terms of database searches, we will select the first 200 references from each database search (where the results are sorted by most relevant). Hand searching will be concluded when we reach conceptual saturation (i.e., when it is determined that we are not identifying any new concepts/resources).
 
 ## Analysis Plan
 
 ### Data analysis approach
 
-Narrative synthesis?
+One author will extract data using a standardized and tested template via Excel. Data regarding the data source (e.g., author, title, publciation year), open collaboration practices, and any other relevant information, will be extracted. A second author will check extracted data. 
+
+TODO: Decide on how we will extract data
+TODO: Decide on who will screen/extract data
+
+Extracted data will be summarized with the descriptive analytical method described by Arksey and O'Malley (2005). 
 
 ### Data analysis process
 
-Cochrane Handbook
+Data analysis will be managed in NVivo Version 12.0. The descriptive analytical method is aimed at identifying and summarizing different open collaboration practices. 
 
 ### Credibility strategies
 
-- Screening to be conducted by two independent researchers
+- Screening and data extraction to be double-coded 
 - Narrative synthesis to be conducted by several co-authors
+- The review will be documented in accordance with the PRISMA-ScR Guidelines 
 
 ### Please provide a short rationale for why you selected particular strategies and how they are appropriate given your study's aim(s), or specify your credibility strategies if not on the above list
 
