@@ -23,3 +23,8 @@ effectively collaborating together in a way that follows basic open principles
 - Find out how researchers currently collaborate
     - (this will be hard to find out, we might have to use mostly our own personal
     experiences)
+
+## Methods
+
+- Protocol registration number and URL
+- 
