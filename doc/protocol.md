@@ -172,13 +172,11 @@ screening decisions.
 
 At least two of us will extract data using a standardized and tested
 template via Google Sheets. Data regarding the data source (e.g.,
-author, title, publciation year), open collaboration practices, and any
+author, title, publication year), open collaboration practices, and any
 other relevant information, will be extracted. Extracted data will be
 summarized with the descriptive analytical method described by Arksey
 and O'Malley (2005). The descriptive analytical method is aimed at
 identifying and summarizing different open collaboration practices.
-
-TODO: Add the template here.
 
 Results will be presented in a descriptive way and general topics that
 we extract from the sources will be grouped into common themes. We will
@@ -205,4 +203,3 @@ thought it more important to scan several databases rather than
 double-checking abstracts in few databases. We chose the narrative
 synthesis approach so that we could understand open collaboration
 practices more deeply.
-
