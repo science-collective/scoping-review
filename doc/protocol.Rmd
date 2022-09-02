@@ -10,12 +10,14 @@ author:
   - name: Hannah Chatwin
     affiliation: 1
   - name: Mario Garcia
-    affiliation: 1
+    affiliation: 3
 affiliation:
   - id: 1
     institution: Steno Diabetes Center Aarhus, Denmark
   - id: 2
     institution: Aarhus University, Denmark
+   - id: 3
+    institution: Copenhagen University, Denmark
 output: prereg::prereg_pdf
 ---
 
