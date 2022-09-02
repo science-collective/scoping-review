@@ -11,7 +11,8 @@ Imports:
     easyPubMed,
     dplyr,
     purrr,
-    readr
+    readr,
+    stringr
 Encoding: UTF-8
 URL: https://github.com/science-collective/scoping-review
 BugReports: https://github.com/science-collective/scoping-review/issues
