@@ -8,7 +8,7 @@ author:
   - name: Daniel Ibsen
     affiliation: 1
   - name: Hannah Chatwin
-    affiliation: 1
+    affiliation: 2
   - name: Mario Garcia
     affiliation: 3
 affiliation:
@@ -39,10 +39,10 @@ search_terms_inline <- str_replace_all(search_terms$general, "\\*", "\\\\\\*")
 
 ## Description
 
-Since scientific research now almost always requires working with other
+Scientific research now almost always requires working with other
 people. With the increasing emphasis on and demand for science to be
 more open, how we collaborate together is a key component to making
-science more easily open from the start of any project. But how do we
+science more open from the start of any project. But how do we
 collaborate in an open and transparent way? What are the best practices
 and tools we can use? What is an ideal collaborative workflow and how
 close or far are we from this ideal in reality? This project aims to
@@ -85,7 +85,7 @@ The specific aims of this scoping review are to:
 
 ## Study type
 
-Scoping review on the literature around open collaboration.
+Scoping review on literature relating to open collaboration.
 
 ## Blinding
 
@@ -156,7 +156,7 @@ databases, as well as some hand searches.
     -   Documents that do not report on specific open collaboration
         practices.
 
-    -   5 years in the past, until approximately 2017-01-01, to capture
+    -   Documents published >5 years in the past (defined as before 2017-01-01) to capture
         current/most recent practices.
 
 ### Software and tools used
@@ -179,8 +179,7 @@ the following packages:
 
 ## Sample size
 
-We aim to identify at least 1000 articles in the initial first
-literature extraction.
+We aim to identify at least 1000 articles in the initial database search.
 
 ## Sample size rationale
 
@@ -194,9 +193,9 @@ date (maximum 2022-11-31). Searches will be concluded when we reach
 conceptual saturation (i.e., when it is determined that we are not
 identifying any new concepts/resources). Depending on the quantity of
 records retrieved, even after further filtering, we may randomly select
-a large enough sample that each person can go through and manually
+a sample that each person can go through and manually
 review them. In the interests of feasibility, a maximum for 4 books will
-be selected and evaluated. Books will be selected based on a consensus
+be selected and evaluated. Books will be selected based on consensus
 in the research group.
 
 # Variables
@@ -204,7 +203,7 @@ in the research group.
 ## Measured variables
 
 The primary "variables" of interest will be the article title, abstract,
-topic list, and full length article. In addition to these variables, we
+topic list, and full length article including content relating to open collaboration. In addition to these variables, we
 will also obtain article metadata, such as publication date, URL/DOI,
 and author list.
 
