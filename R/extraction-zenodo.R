@@ -1,18 +1,22 @@
+# Zenodo extraction script
+
+# Load packages -----------------------------------------------------------
+
 library(zen4R)
 library(lubridate)
 library(glue)
 library(stringr)
+library(here)
+library(tibble)
+library(purrr)
+source(here("R/search-terms.R"))
+
+# Create Zenodo-specific search term --------------------------------------
 
 # For some reason Zenodo doesn't accept this publication_date query in the API
-five_years_past <- glue("publication_date:[{today()-years(5)} TO {today()}]")
+five_years_past <- glue("publication_date:[{today()-years(5)}TO{today()}]")
 
-topic_search_terms <- "
-    (open) AND
-    (science OR research) AND
-    (collaborat* OR team OR cooperat*) AND
-    (technolog* OR tool OR framework OR guideline OR principles OR practices OR systems OR resources)
-"
-
+# Zenodo specific limiters
 limiters <- "
     (access_right:open) AND
     (
@@ -24,17 +28,53 @@ limiters <- "
     )
 "
 
-search_term <- glue("{limiters} AND {topic_search_terms}") %>%
+# Structured search term to fit Zenodo requirements
+search_term <- glue("{search_terms$zenodo} AND {limiters}") %>%
     str_remove_all("\\n+") %>%
     str_squish() %>%
     str_remove_all("OR ")
 
+# Connect to Zenodo and run search ----------------------------------------
+
 # Requires token (PAT) from Zenodo to work
 zenodo <- ZenodoManager$new(
     url = "https://zenodo.org/api",
-    logger = "INFO",
+    logger = "DEBUG",
     token = askpass::askpass()
 )
 
-test <- zenodo$getRecords(q = search_term, size = 1000)
-test
+# zenodo$getCommunities()
+zenodo_records <- zenodo$getRecords(q = search_term, size = 1000)
+
+# Number of extracted items
+# length(zenodo_records)
+# zenodo_records[[1]]$exportAsJSON()
+
+# Process extracted Zenodo records ----------------------------------------
+
+extract_relevant_data <- function(record_list) {
+    creators <- record_list$metadata$creators %>%
+        map_chr( ~ .x$name) %>%
+        str_flatten(" and ") %>%
+        str_trim()
+
+    keywords <- record_list$metadata$keywords %>%
+        str_flatten("; ") %>%
+        str_trim()
+
+    list(
+        creators = creators,
+        title = record_list$metadata$title,
+        description = record_list$metadata$description,
+        date = record_list$metadata$publication_date,
+        type = record_list$metadata$upload_type,
+        keywords = keywords,
+        doi = record_list$links$doi
+    )
+}
+
+zenodo_records_processed <- zenodo_records %>%
+    map(extract_relevant_data)
+
+# Save for use later processing
+yaml::write_yaml(zenodo_records_processed, file = here("data-raw/zenodo.yaml"))
