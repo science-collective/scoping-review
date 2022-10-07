@@ -3,14 +3,14 @@ title: "Towards open collaboration in biomedical and health research: A scoping 
 shorttitle: "Scoping review of open collaboration"
 date: "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%d\\\\. %B %Y')`"
 author: 
-  - name: Luke W. Johnston
-    affiliation: "1,2"
-  - name: Daniel Ibsen
-    affiliation: 1
   - name: Hannah Chatwin
     affiliation: 2
   - name: Mario Garcia
     affiliation: 3
+  - name: Daniel Ibsen
+    affiliation: 1
+  - name: Luke W. Johnston
+    affiliation: "1,2"
 affiliation:
   - id: 1
     institution: Steno Diabetes Center Aarhus, Denmark
