@@ -68,8 +68,8 @@ review this documents in this order:
 If you've looked over what's been done so far and especially the
 [ROADMAP](ROADMAP.md), and still feel a bit unsure what to do work on,
 then follow these steps as a starting point. See the
-[Workflow](#workflow) section below for instructions on how we make
-changes to files.
+[Workflow](#workflow-to-add-text-or-code) section below for instructions
+on how we make changes to files.
 
 1.  Review (proofread, edit, revise) in order:
     -   [`README.md`](README.md)
@@ -88,7 +88,7 @@ We appreciate ALL types of contributions! Contributions include:
     adding code comments
 -   Adding larger amounts of new text or code
 
-## Workflow for adding text or code {#workflow}
+## Workflow to add text or code {#workflow-to-add-text-or-code}
 
 There are two suggested ways of adding text or code: Through the GitHub
 interface or through RStudio. If you are adding code, we definitely
