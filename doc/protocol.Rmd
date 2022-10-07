@@ -16,7 +16,7 @@ affiliation:
     institution: Steno Diabetes Center Aarhus, Denmark
   - id: 2
     institution: Aarhus University, Denmark
-   - id: 3
+  - id: 3
     institution: Copenhagen University, Denmark
 output: prereg::prereg_pdf
 ---
@@ -156,8 +156,8 @@ databases, as well as some hand searches.
     -   Documents that do not report on specific open collaboration
         practices.
 
-    -   Documents published >5 years in the past (defined as before 2017-01-01) to capture
-        current/most recent practices.
+    -   Documents published \>5 years in the past (defined as before
+        2017-01-01) to capture current/most recent practices.
 
 ### Software and tools used
 
@@ -179,7 +179,8 @@ the following packages:
 
 ## Sample size
 
-We aim to identify at least 1000 articles in the initial database search.
+We aim to identify at least 1000 articles in the initial database
+search.
 
 ## Sample size rationale
 
@@ -193,19 +194,19 @@ date (maximum 2022-11-31). Searches will be concluded when we reach
 conceptual saturation (i.e., when it is determined that we are not
 identifying any new concepts/resources). Depending on the quantity of
 records retrieved, even after further filtering, we may randomly select
-a sample that each person can go through and manually
-review them. In the interests of feasibility, a maximum for 4 books will
-be selected and evaluated. Books will be selected based on consensus
-in the research group.
+a sample that each person can go through and manually review them. In
+the interests of feasibility, a maximum for 4 books will be selected and
+evaluated. Books will be selected based on consensus in the research
+group.
 
 # Variables
 
 ## Measured variables
 
 The primary "variables" of interest will be the article title, abstract,
-topic list, and full length article including content relating to open collaboration. In addition to these variables, we
-will also obtain article metadata, such as publication date, URL/DOI,
-and author list.
+topic list, and full length article including content relating to open
+collaboration. In addition to these variables, we will also obtain
+article metadata, such as publication date, URL/DOI, and author list.
 
 # Analysis Plan
 
