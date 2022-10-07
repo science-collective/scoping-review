@@ -45,84 +45,91 @@ review this documents in this order:
 
 1.  [ROADMAP](ROADMAP.md): This document is the first place to look to
     see what's been done and what the next steps are. It can help get a
+    sense of where to focus your efforts and time.
 
-2.  [Commit
-    history](https://github.com/science-collective/scoping-review/commits/main)
+2.  [Commit history of the `main`
+    branch](https://github.com/science-collective/scoping-review/commits/main):
+    This will show a list of files changed and messages on what people
+    have done to the project. This is the current state of the project.
 
 3.  [Open Pull
-    Requests](https://github.com/science-collective/scoping-review/pulls)
+    Requests](https://github.com/science-collective/scoping-review/pulls):
+    To see what people are current working on, so you can see what to
+    *not* work on since someone is already doing it.
 
 4.  [Closed Pull
-    Requests](https://github.com/science-collective/scoping-review/pulls?q=is%3Apr+is%3Aclosed)
+    Requests](https://github.com/science-collective/scoping-review/pulls?q=is%3Apr+is%3Aclosed):
+    While you can technically see this in the Commit History, checking
+    the Closed Pull Requests gives a brief overview of what was recently
+    done or worked on.
 
 ### What to work on next
 
--   review in order:
-    -   readme, contributing, roadmap
--   See typos in these docs? fix them
--   inside roadmap contains some help to know where to work on
-    -   protocol.md
--   See the next sections below on dtails of what to contribute and how
-    to do it.
+If you've looked over what's been done so far and especially the
+[ROADMAP](ROADMAP.md), and still feel a bit unsure what to do work on,
+then follow these steps as a starting point. See the
+[Workflow](#workflow) section below for instructions on how we make
+changes to files.
+
+1.  Review (proofread, edit, revise) in order:
+    -   [`README.md`](README.md)
+    -   [`CONTRIBUTING.md`](CONTRIBUTING.md)
+    -   [`ROADMAP.md`](ROADMAP.md)
+2.  Read over the [`doc/protocol.Rmd`](doc/protocol.Rmd) file.
 
 ## Types of contributions
 
--   types of contributions
-    -   adding to discussions on issues or in Discord
-    -   reviewing and, if appropriate, approving open PRs
-    -   proofreading and fixing typos/grammar in text
-    -   reviewing code, running it yourself, and fixing
-        bugs/reformatting, adding code comments
-    -   adding larger amounts of new text or code
--   how to contribute
-    -   for small things like fixing typos, grammar, and adding code
-        comments/formatting use the GitHub interface.
-        -   create a branch (if you have access, otherwise create a fork
-            first which GitHub should do automatically)
-        -   make the changes in the branch, commit the changes (with an
-            appropriate comment)
-        -   create a Pull Request of your branch
-    -   for running code or for adding more new text or code
-        -   Wh
+We appreciate ALL types of contributions! Contributions include:
 
-## Not sure where to start or continue?
+-   Adding to discussions on issues or in the Discord server
+-   Reviewing and, if appropriate, approving open PRs
+-   Proofreading and fixing typos/grammar in text
+-   Reviewing code, running it yourself, and fixing bugs/reformatting,
+    adding code comments
+-   Adding larger amounts of new text or code
 
-Considering this is a side project for many of us that we
+## Workflow for adding text or code {#workflow}
 
-## Adding links, references, or resources to review
+There are two suggested ways of adding text or code: Through the GitHub
+interface or through RStudio. If you are adding code, we definitely
+recommend using the RStudio way.
 
-<!-- TODO: Add explanation once its been determined. -->
+For things like fixing typos, spelling mistakes, or grammatical errors
+in the documentation, you can edit directly in the GitHub web interface.
 
-## Types of contributions
+For bigger changes, it's a good idea to first file an issue and make
+sure someone from the team agrees that it's needed.
 
-### Fixing typos
+If you are adding more substantial text or code, this is the process you
+would use:
 
-You can fix typos, spelling mistakes, or grammatical errors in the
-documentation directly using the GitHub web interface or by using the
-Git workflow (TODO: Add link to this workflow).
+-   If you are not a member of the Science Collective GitHub
+    organization, you will need to fork the project to your own account.
+    If you are a member, you don't need to fork. Then clone the Git
+    repository onto your computer. If you haven't done this before, we
+    recommend using R and RStudio (with the
+    [`{usethis}`](https://usethis.r-lib.org) package):
 
-### Bigger changes
-
-If you want to make a bigger change, it's a good idea to first file an
-issue and make sure someone from the team agrees that it's needed.
-
-## Workflow for adding text or code
-
-### Pull request process
-
--   Fork the package and clone onto your computer. If you haven't done
-    this before, we recommend using
-    `usethis::create_from_github("science-collective/scoping-review", fork = TRUE)`.
+    -   For non-members:
+        `usethis::create_from_github("science-collective/scoping-review", fork = TRUE)`
+    -   For members:
+        `usethis::create_from_github("science-collective/scoping-review")`
 
 -   Create a Git branch for your pull request (PR). We recommend using
-    `usethis::pr_init("brief-description-of-change")`. For more details
-    on using the usethis PR helpers, read this
+    `usethis::pr_init("brief-description-of-change")` (replace the
+    `"brief-description-of-change"` with your own text). For more
+    details on using the usethis PR helpers, read this
     [webpage](https://usethis.r-lib.org/articles/pr-functions.html).
 
--   Make your changes, commit to git, and then create a PR by running
-    `usethis::pr_push()`, and following the prompts in your browser. The
-    title of your PR should briefly describe the change. The body of
-    your PR should contain `Fixes #issue-number`.
+-   Make your changes, commit to git, and then create a Pull Request by
+    running `usethis::pr_push()`, and following the prompts in your
+    browser. The title of your PR should briefly describe the change.
+    The body of your PR should contain `Fixes #issuenumber` if you were
+    working on a specific Issue.
+
+### Adding links, references, or resources to review
+
+TODO: Add explanation once its been determined.
 
 ## Code of Conduct
 
