@@ -1,8 +1,7 @@
 # Contents of data folder
 
 Should contain the *raw* (unedited) data used specifically for the
-scientific project and product (e.g. the manuscript).
-
-While ideally the original raw data used for the project should be
-stored here, this isn't always possible. At the minimum, include
-instructions on how to access the raw data or where it came from.
+project. The "data" for this project include the articles extracted from
+the scripts in the `R/` folder, as well as other hand-selected article
+DOIs or URLs, on effective and evidence-based practices for doing
+research as a group and/or organization of researchers.

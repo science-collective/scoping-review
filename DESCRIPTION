@@ -8,8 +8,12 @@ Imports:
     docxtractr,
     glue,
     zen4R,
-    stringr,
     lubridate
+    easyPubMed,
+    dplyr,
+    purrr,
+    readr,
+    stringr
 Encoding: UTF-8
 URL: https://github.com/science-collective/scoping-review
 BugReports: https://github.com/science-collective/scoping-review/issues
