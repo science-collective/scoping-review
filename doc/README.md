@@ -1,8 +1,14 @@
 # Contents of doc folder
 
-This folder should contain the main scientific product of the project
-as well as all other files related to it (e.g. co-author comments,
-versions, images, etc). It may and likely should also contain
-supplementary and exploratory R Markdown files. Once submission or
-presentation time has come for the product, files associated with that
-process (e.g. response to reviewers) should be placed in here.
+This folder contains the main outputs as well as instruction files
+and reflections of the collaboration process. The main output files for this
+project are:
+
+1. `review.md`: The scoping review on current open collaboration practices,
+tools, and workflows.
+    - Associated with this is the `protocol.md` file that contains the registered
+    protocol for the review.
+2. An opinionated and theoretical paper on what an ideal open collaboration
+workflow and setup should look like.
+3. A comparison of where we are right now and where we should be, and how
+we can start moving towards the ideal.
