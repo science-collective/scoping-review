@@ -1,5 +1,4 @@
 # Pubmed search using easypubmed
-# last search was: 19/08/2022
 
 # Load libraries ----------------------------------------------------------------
 
@@ -48,9 +47,10 @@ pubmed_df <- pubmed_df %>%
 
 # Count number of papers -------------------------------------------------------
 
-nrow(open_collaboration_pubmed_df) #7339 papers identified
+# 7339 papers identified
+# Note: same search on pubmed gave 10.439 papers
+# nrow(open_collaboration_pubmed_df)
 
-#Note: same search on pubmed gave 10.439 papers
 
 # Save dataset -----------------------------------------------------------------
 
