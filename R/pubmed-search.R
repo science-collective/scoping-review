@@ -1,6 +1,6 @@
 # Pubmed search using easypubmed
 
-# Load libraries ----------------------------------------------------------------
+# Load libraries ---------------------------------------------------------------
 
 library(easyPubMed)
 library(tidyverse)
@@ -9,7 +9,11 @@ library(purrr)
 library(readr)
 source(here("R/search-terms.R"))
 
-# Search pubmed using the easyPubMed package ------------------------------------
+# Search last updated ----------------------------------------------------------
+
+Sys.Date() #2022-11-03
+
+# Search pubmed using the easyPubMed package -----------------------------------
 
 ## making a list with the search terms
 
@@ -41,16 +45,19 @@ open_collaboration_pubmed_df <-
 
 # Cleaning dataset -------------------------------------------------------------
 
-pubmed_df <- pubmed_df %>%
+pubmed_df <- open_collaboration_pubmed_df %>%
     select(lastname, year, title, abstract, jabbrv, email, pmid) %>%
     mutate(database = "pubmed")
 
 # Count number of papers -------------------------------------------------------
 
-# 7339 papers identified
-# Note: same search on pubmed gave 10.439 papers
-# nrow(open_collaboration_pubmed_df)
+# 756 papers identified when copying the search on pubmed
 
+n_papers_web <- 756
+n_papers_r <-  as.numeric(nrow(pubmed_df))
+
+search_the_same <- n_papers_web == n_papers_r
+search_the_same
 
 # Save dataset -----------------------------------------------------------------
 
