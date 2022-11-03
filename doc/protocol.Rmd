@@ -39,6 +39,8 @@ search_terms_inline <- str_replace_all(search_terms$general, "\\*", "\\\\\\*")
 
 `r rmarkdown::metadata$title`
 
+**Registration link:** <https://doi.org/10.17605/OSF.IO/K9DR5>
+
 ## Description
 
 Scientific research now almost always requires working with other

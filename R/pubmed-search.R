@@ -1,5 +1,7 @@
 # Pubmed search using easypubmed
 
+#Link: https://cran.r-project.org/web/packages/easyPubMed/vignettes/getting_started_with_easyPubMed.html
+
 # Load libraries ---------------------------------------------------------------
 
 library(easyPubMed)
