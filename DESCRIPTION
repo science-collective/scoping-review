@@ -7,11 +7,19 @@ Imports:
     fs,
     docxtractr,
     glue,
-    zen4R,
+    zen4R (>= 0.7),
+    lubridate,
+    easyPubMed,
+    dplyr,
+    purrr,
+    readr,
     stringr,
-    lubridate
+    tibble,
+    yaml
 Encoding: UTF-8
 URL: https://github.com/science-collective/scoping-review
 BugReports: https://github.com/science-collective/scoping-review/issues
 Depends: 
     tidyverse
+Remotes: 
+    eblondel/zen4R
