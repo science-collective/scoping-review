@@ -1,11 +1,11 @@
-<!--TODO: Include badge link to OSF-->
-
 # Study information
 
 ## Title
 
 Towards open collaboration in biomedical and health research: A scoping
 review
+
+**Registration link:** <https://doi.org/10.17605/OSF.IO/K9DR5>
 
 ## Description
 
@@ -28,11 +28,11 @@ research collaboration to be able to tackle these challenges.
 We define open collaboration using the definition as found in Forte and
 Lampe (2013):
 
-> “*an online environment that (a) supports the collective production of
+> "*an online environment that (a) supports the collective production of
 > an artifact (b) through a technologically mediated collaboration
 > platform (c) that presents a low barrier to entry and exit and (d)
 > supports the emergence of persistent but malleable social
-> structures.*” This scoping review will focus on current practices of
+> structures.*" This scoping review will focus on current practices of
 > open collaboration and open science in relation to collaboration in
 > the field of biomedical and health research.
 
@@ -65,9 +65,9 @@ existing literature.
 ## Study design
 
 This is a scoping review, so we are following the framework described by
-Arksey and O’Malley
+Arksey and O'Malley
 ([DOI:10.1080/1364557032000119616](https://doi.org/10.1080/1364557032000119616))
-and by Levac, Colquhoun, and O’Brien
+and by Levac, Colquhoun, and O'Brien
 ([DOI:10.1186/1748-5908-5-69](https://doi.org/10.1186/1748-5908-5-69))
 as well as the guidelines outlined in the PRISMA-ScR
 ([DOI:10.7326/M18-0850](https://doi.org/10.7326/M18-0850) statement.
@@ -128,7 +128,7 @@ databases, as well as some hand searches.
     -   Documents that do not report on specific open collaboration
         practices.
 
-    -   Documents published &gt;5 years in the past (defined as before
+    -   Documents published \>5 years in the past (defined as before
         2017-01-01) to capture current/most recent practices.
 
 ### Software and tools used
@@ -175,7 +175,7 @@ group.
 
 ## Measured variables
 
-The primary “variables” of interest will be the article title, abstract,
+The primary "variables" of interest will be the article title, abstract,
 topic list, and full length article including content relating to open
 collaboration. In addition to these variables, we will also obtain
 article metadata, such as publication date, URL/DOI, and author list.
@@ -195,7 +195,7 @@ At least two of us will extract data using a standardized and tested
 template. Data regarding the data source (e.g., author, title,
 publication year), open collaboration practices, and any other relevant
 information, will be extracted. Extracted data will be summarized with
-the descriptive analytical method described by Arksey and O’Malley
+the descriptive analytical method described by Arksey and O'Malley
 (2005). The descriptive analytical method is aimed at identifying and
 summarizing different open collaboration practices.
 
@@ -209,38 +209,19 @@ research.
 
 ## Anticipated duration
 
-<table>
-<caption>Estimated timeline for project.</caption>
-<thead>
-<tr class="header">
-<th>Phase</th>
-<th>Start</th>
-<th>End</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Overall</td>
-<td>2022-01-01</td>
-<td>2023-12-31</td>
-</tr>
-<tr class="even">
-<td>Research design and data collection</td>
-<td>2022-01-01</td>
-<td>2022-11-31</td>
-</tr>
-<tr class="odd">
-<td>Screening resources</td>
-<td>2022-12-01</td>
-<td>2023-06-01</td>
-</tr>
-<tr class="even">
-<td>Analyses and manuscript writing</td>
-<td>2023-06-01</td>
-<td>2023-12-31</td>
-</tr>
-</tbody>
-</table>
++-------------------------------------+------------+------------+
+| Phase                               | Start      | End        |
++=====================================+============+============+
+| Overall                             | 2022-01-01 | 2023-12-31 |
++-------------------------------------+------------+------------+
+| Research design and data collection | 2022-01-01 | 2022-11-31 |
++-------------------------------------+------------+------------+
+| Screening resources                 | 2022-12-01 | 2023-06-01 |
++-------------------------------------+------------+------------+
+| Analyses and manuscript writing     | 2023-06-01 | 2023-12-31 |
++-------------------------------------+------------+------------+
+
+: Estimated timeline for project.
 
 Estimated timeline for project.
 

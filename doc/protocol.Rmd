@@ -23,8 +23,6 @@ output:
     md_document: default
 ---
 
-<!--TODO: Include badge link to OSF-->
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(stringr)
@@ -38,6 +36,8 @@ search_terms_inline <- str_replace_all(search_terms$general, "\\*", "\\\\\\*")
 ## Title
 
 `r rmarkdown::metadata$title`
+
+**Registration link:** <https://doi.org/10.17605/OSF.IO/K9DR5>
 
 ## Description
 
