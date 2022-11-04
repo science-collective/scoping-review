@@ -14,7 +14,8 @@ source(here("R/search-terms.R"))
 # Create Zenodo-specific search term --------------------------------------
 
 # For some reason Zenodo doesn't accept this publication_date query in the API
-five_years_past <- glue("publication_date:[{today()-years(5)}TO{today()}]")
+five_years_ago <- glue("{today()-years(5)}")
+five_years_to_today <- glue("publication_date:[{five_years_ago} TO {today()}]")
 
 # Zenodo specific limiters
 limiters <- "
@@ -47,8 +48,10 @@ zenodo <- ZenodoManager$new(
 zenodo_records <- zenodo$getRecords(q = search_term, size = 1000)
 
 # Number of extracted items
-# length(zenodo_records)
-# zenodo_records[[1]]$exportAsJSON()
+length(zenodo_records)
+
+# To export an individual entry as JSON, with all information retreived.
+# zenodo_records[[1]]$exportAsJSON(filename = here::here("data-raw/zenodo-entry-1"))
 
 # Process extracted Zenodo records ----------------------------------------
 
@@ -73,8 +76,13 @@ extract_relevant_data <- function(record_list) {
     )
 }
 
+# Extract necessary data and keep only last five years
 zenodo_records_processed <- zenodo_records %>%
-    map(extract_relevant_data)
+    map(extract_relevant_data) %>%
+    keep(~ ymd(as_date(.x$date)) >= five_years_ago)
+
+# There's less entries from the original
+length(zenodo_records_processed)
 
 # Save for use later processing
 yaml::write_yaml(zenodo_records_processed, file = here("data-raw/zenodo.yaml"))
