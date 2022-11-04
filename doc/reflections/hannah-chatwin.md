@@ -8,7 +8,7 @@ rScopus:
 - scopus_search doesn’t attach abstracts, and I couldn’t get abstract_retrieval to work (seemed to produce all metadata other than the abstract)
 - Many irrelevant journal articles due to abstracts mentioning “Data/material being available on the Open Science Framework” – Should we filter this out now or later (manually)?
 - Do we want to exclude “corrections” and “corrigendum” results?
-**Next time: Find out how to attach abstracts
+- **Next time: Find out how to attach abstracts
 **
 <br>
 <br>
