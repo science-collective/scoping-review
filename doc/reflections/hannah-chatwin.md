@@ -3,8 +3,7 @@
 aRxiv:
 - “Open research” produced many irrelevant results
 - Forgot to apply date filter – Can re-run once when we have confirmed that the search strategy is suitable
-<br>
-<br>
+
 rScopus:
 - scopus_search doesn’t attach abstracts, and I couldn’t get abstract_retrieval to work (seemed to produce all metadata other than the abstract)
 - Many irrelevant journal articles due to abstracts mentioning “Data/material being available on the Open Science Framework” – Should we filter this out now or later (manually)?
