@@ -23,8 +23,6 @@ output:
     md_document: default
 ---
 
-<!--TODO: Include badge link to OSF-->
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(stringr)

@@ -1,11 +1,11 @@
 # Study information
 
-**Registration link:** https://doi.org/10.17605/OSF.IO/K9DR5
-
 ## Title
 
 Towards open collaboration in biomedical and health research: A scoping
 review
+
+**Registration link:** <https://doi.org/10.17605/OSF.IO/K9DR5>
 
 ## Description
 
@@ -209,12 +209,17 @@ research.
 
 ## Anticipated duration
 
++-------------------------------------+------------+------------+
 | Phase                               | Start      | End        |
-|-------------------------------------|------------|------------|
++=====================================+============+============+
 | Overall                             | 2022-01-01 | 2023-12-31 |
++-------------------------------------+------------+------------+
 | Research design and data collection | 2022-01-01 | 2022-11-31 |
++-------------------------------------+------------+------------+
 | Screening resources                 | 2022-12-01 | 2023-06-01 |
++-------------------------------------+------------+------------+
 | Analyses and manuscript writing     | 2023-06-01 | 2023-12-31 |
++-------------------------------------+------------+------------+
 
 : Estimated timeline for project.
 
