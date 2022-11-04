@@ -15,7 +15,9 @@ Imports:
     readr,
     stringr,
     tibble,
-    yaml
+    yaml,
+    wosr,
+    conflicted
 Encoding: UTF-8
 URL: https://github.com/science-collective/scoping-review
 BugReports: https://github.com/science-collective/scoping-review/issues
