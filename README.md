@@ -1,5 +1,8 @@
 # Open collaboration within scientific research: Where we are, where we should be, and how to get there
 
+[![OSF
+DOI](https://img.shields.io/badge/OSF-10.17605%252FOSF.IO%252FK9DR5-blue)](https://doi.org/10.17605/OSF.IO/K9DR5)
+
 The overall aim of the Science Collective is to build a technical and
 social environment that encourages and makes it easy for science to be
 done in an open, rigorous, and collaborative way. Since scientific
@@ -62,3 +65,4 @@ Please note that the scoping-review project is released with a
 [Contributor Code of
 Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its terms.
+
