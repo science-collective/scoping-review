@@ -1,27 +1,33 @@
-#arxiv search using aRxiv
-
-#Link: https://docs.ropensci.org/aRxiv/articles/aRxiv.html
+# arxiv search using aRxiv
 
 # Load libraries ---------------------------------------------------------------
 
+library(tidyverse)
+library(lubridate)
 library(aRxiv)
+library(here)
+source(here("R/search-terms.R"))
 
 # Running search -----------------------------------------------------------------------
 
-# This is a narrow search, based on titles only
-
-ax_search_title <- arxiv_search(query = 'ti:"open collaboration" OR ti:"open science" OR ti:"team science" OR ti:"open research"', limit=1000)
-# 96 results as of 04/11/2022
-
-# We could do a broader search instead, based on abstracts
-
-ax_search_abstract <- arxiv_search(query = 'abs:"open collaboration" OR abs:"open science" OR abs:"team science" OR abs:"open research"', limit=1000)
-# 200 results as of 04/11/2022
+number_found <- arxiv_count(query = search_terms$arxiv)
+arxiv_results <- arxiv_search(
+  query = search_terms$arxiv,
+  # Round to nearest tenth.
+  limit = as.integer(round(number_found*1.5, -2))
+) %>%
+  as_tibble()
 
 # Cleaning results -----------------------------------------------------------------------
 
-ax_search_title <- ax_search_title %>% 
-  select(id, title, abstract, authors, link_pdf, link_doi)
+# Keep only some columns, drop anything before 5 years.
+arxiv_results <- arxiv_results %>%
+  select(id, date = updated, title, authors, link_abstract, link_pdf) %>%
+  filter(ymd(as_date(date)) >= five_years_ago)
 
-ax_search_abstract <- ax_search_abstract %>% 
-  select(id, title, abstract, authors, link_pdf, link_doi)
+nrow(arxiv_results)
+
+write_csv(
+  arxiv_results,
+  file = here("data-raw/arxiv-search.csv")
+)
