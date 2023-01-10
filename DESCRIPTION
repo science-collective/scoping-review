@@ -1,5 +1,6 @@
 Package: scoping-review
 Type: Project
+Version: 0.1
 Imports:
     knitr,
     rmarkdown,

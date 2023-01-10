@@ -115,6 +115,14 @@ would use:
     -   For members:
         `usethis::create_from_github("science-collective/scoping-review")`
 
+-   Install the project package dependencies, while inside the RStudio R
+    Project (`scoping-review.Rproj`), with:
+
+    ``` r
+    # install.packages("pak")
+    pak::pak()
+    ```
+
 -   Create a Git branch for your pull request (PR). We recommend using
     `usethis::pr_init("brief-description-of-change")` (replace the
     `"brief-description-of-change"` with your own text). For more
