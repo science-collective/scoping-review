@@ -1,0 +1,36 @@
+---
+title: ""
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(here)
+conflicted::conflict_prefer("filter", "dplyr")
+zenodo_entries <- yaml::read_yaml(here("data-raw/zenodo.yaml"))
+title_selection <- zenodo_entries %>% 
+    map_dfr(~.x[c("title", "date", "doi", "keywords")]) 
+View(title_selection)
+
+remove_term_keep_collaborative <- function(variable, term) {
+    !str_detect(variable, regex(term, ignore_case = TRUE)) &
+        str_detect(variable, regex("collabora*", ignore_case = TRUE))
+}
+
+# TODO: Use ggcohort to track what is removed.
+title_selection %>% 
+    # Communication in the titles, e.g. "Scholarly communication" didn't fit 
+    # with our aim.
+    # filter(remove_term_keep_collaborative(title, "communication")) %>% 
+    filter(str_detect(title, regex("communication", ignore_case = TRUE))) %>% 
+    count()
+    filter(str_detect(title, regex("publishing", ignore_case = TRUE))) %>% 
+    View("Publishing")
+    filter(str_detect(title, regex("open access", ignore_case = TRUE))) %>% 
+    View("Open Access")
+    View("")
+
+title_selection %>% 
+    filter(str_detect(title, regex("open science|collaboration", ignore_case = TRUE)))
+    View()
+```
