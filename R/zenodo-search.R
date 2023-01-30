@@ -1,73 +1,74 @@
-# Zenodo extraction script
+# Zenodo extraction functions ---------------------------------------------
 
-# Load packages -----------------------------------------------------------
+#' Prepare search terms for use with Zenodo.
+#'
+#' @param search_terms The search terms defined in `R/search-terms.R`.
+#'
+#' @return A character vector.
+#'
+zenodo_prep_search_terms <- function(search_terms) {
+  # Zenodo specific limiters
+  limiters <- "
+    (access_right:open) AND
+    (
+        resource_type.type:publication
+        resource_type.type:poster
+        resource_type.type:presentation
+        resource_type.type:lesson
+        resource_type.type:other
+    )
+    "
 
-library(zen4R)
-library(lubridate)
-library(glue)
-library(stringr)
-library(here)
-library(tibble)
-library(purrr)
-source(here("R/search-terms.R"))
+  # For some reason Zenodo doesn't accept this publication_date query in the API.
+  # Need to filter after retrieving from Zenodo.
+  # five_years_to_today <- glue("publication_date:[{five_years_ago} TO {today()}]")
 
-# Create Zenodo-specific search term --------------------------------------
+  # Structured search term to fit Zenodo requirements
+  glue::glue("{search_terms} AND {limiters}") %>%
+    stringr::str_remove_all("\\n+") %>%
+    stringr::str_squish() %>%
+    stringr::str_remove_all("OR ")
+}
 
-# For some reason Zenodo doesn't accept this publication_date query in the API
-five_years_to_today <- glue("publication_date:[{five_years_ago} TO {today()}]")
-
-# Zenodo specific limiters
-limiters <- "
-  (access_right:open) AND
-  (
-    resource_type.type:publication
-    resource_type.type:poster
-    resource_type.type:presentation
-    resource_type.type:lesson
-    resource_type.type:other
+#' GET records from Zenodo based on the search terms provided.
+#'
+#' @param search_terms Search terms to use for Zenodo.
+#'
+#' @return A list of records.
+#'
+zenodo_get_records <- function(search_terms) {
+  # Requires token (PAT) from Zenodo to work
+  zenodo <- zen4R::ZenodoManager$new(
+    url = "https://zenodo.org/api",
+    logger = NULL,
+    # logger = "DEBUG",
+    token = Sys.getenv("ZENODO_PAT")
   )
-"
+  zenodo$getRecords(q = search_terms, size = 1000)
+  # To export an individual entry as JSON, with all information retreived.
+  # zenodo_records[[1]]$exportAsJSON(filename = here::here("data-raw/zenodo-entry-1"))
+}
 
-# Structured search term to fit Zenodo requirements
-search_term <- glue("{search_terms$zenodo} AND {limiters}") %>%
-  str_remove_all("\\n+") %>%
-  str_squish() %>%
-  str_remove_all("OR ")
-
-# Connect to Zenodo and run search ----------------------------------------
-
-# Requires token (PAT) from Zenodo to work
-zenodo <- ZenodoManager$new(
-  url = "https://zenodo.org/api",
-  logger = "DEBUG",
-  token = askpass::askpass()
-)
-
-# zenodo$getCommunities()
-zenodo_records <- zenodo$getRecords(q = search_term, size = 1000)
-
-# Number of extracted items
-length(zenodo_records)
-
-# To export an individual entry as JSON, with all information retreived.
-# zenodo_records[[1]]$exportAsJSON(filename = here::here("data-raw/zenodo-entry-1"))
-
-# Process extracted Zenodo records ----------------------------------------
-
-extract_relevant_data <- function(record_list) {
+#' Extract only the relevant data from the Zenodo API GET call.
+#'
+#' @param record_list List output from zen4R `getRecords()`.
+#'
+#' @return A list of records.
+#'
+zenodo_extract_relevant_data <- function(record_list) {
   creators <- record_list$metadata$creators %>%
-    map_chr(~ .x$name) %>%
-    str_flatten(" and ") %>%
-    str_trim()
+    purrr::map_chr(~ .x$name) %>%
+    stringr::str_flatten(" and ") %>%
+    stringr::str_trim()
 
   keywords <- record_list$metadata$keywords %>%
-    str_flatten("; ") %>%
-    str_trim()
+    stringr::str_flatten("; ") %>%
+    stringr::str_trim()
 
   list(
     creators = creators,
     title = record_list$metadata$title,
-    description = record_list$metadata$description,
+    # description = record_list$metadata$description,
     date = record_list$metadata$publication_date,
     type = record_list$metadata$upload_type,
     keywords = keywords,
@@ -75,13 +76,31 @@ extract_relevant_data <- function(record_list) {
   )
 }
 
-# Extract necessary data and keep only last five years
-zenodo_records_processed <- zenodo_records %>%
-  map(extract_relevant_data) %>%
-  keep(~ ymd(as_date(.x$date)) >= five_years_ago)
+#' Retrieve records from Zenodo in the last 5 years.
+#'
+#' @param search_terms Search terms to use for Zenodo.
+#'
+#' @return A list of records.
+#'
+zenodo_retrieve_records <- function(search_terms) {
+  zenodo_records <- search_terms %>%
+    zenodo_prep_search_terms() %>%
+    zenodo_get_records()
 
-# There's less entries from the original
-length(zenodo_records_processed)
+  # Extract necessary data and keep only last five years
+  zenodo_records_processed <- zenodo_records %>%
+    purrr::map(zenodo_extract_relevant_data) %>%
+    purrr::keep(~ lubridate::ymd(lubridate::as_date(.x$date)) >= five_years_ago())
 
-# Save for use later processing
-yaml::write_yaml(zenodo_records_processed, file = here("data-raw/zenodo.yaml"))
+  # There's less entries from the original
+  cli::cli_inform(c("Records from Zenodo",
+    "i" = "{length(zenodo_records)} records were retrieved.",
+    "i" = "{length(zenodo_records_processed)} records are within 5 years."
+  ))
+
+  zenodo_records_processed
+}
+
+# Post-processing and selection -------------------------------------------
+
+

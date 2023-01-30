@@ -1,4 +1,13 @@
-search_terms <- list(
+#' Engine-specific search terms.
+#'
+#' @param engine The "engine" to use for the search terms, like PubMed or Zenodo.
+#'
+#' @return A character vector.
+#'
+#' @examples
+#' search_terms("pubmed")
+search_terms <- function(engine) {
+  switch(engine,
     general = "(open) AND (science OR research) AND (collaborat* OR team OR cooperat*) AND (technolog* OR tool OR framework OR guideline OR principles OR practices OR systems OR resources)",
     pubmed = "(open[Title]) AND (science OR research) AND (collaborat* OR team OR cooperat*) AND (technolog* OR tool OR framework OR guideline OR principles OR practices OR systems OR resources) AND (y_5[Filter])",
     zenodo = "(title:open) AND (science OR research) AND (collaborat* OR team OR cooperat*) AND (technolog* OR tool OR framework OR guideline OR principles OR practices OR systems OR resources)",
@@ -6,6 +15,5 @@ search_terms <- list(
     medrxiv = "open collaboration",
     # For some reason, arxiv doesn't like the * wildcard...
     arxiv = 'ti:"open" AND (research OR science) AND (collaborate OR collaborating OR collaboration OR team OR cooperate OR cooperating OR cooperation) AND (technology OR technologies OR tool OR framework OR guideline OR principles OR practices OR systems OR resources)'
-)
-
-five_years_ago <- glue::glue("{lubridate::today()-lubridate::years(5)}")
+  )
+}
