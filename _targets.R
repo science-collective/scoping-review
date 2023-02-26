@@ -27,6 +27,7 @@ tar_option_set(
 # tar_source()
 source("R/search-terms.R")
 source("R/zenodo-search.R")
+source("R/pubmed-search.R")
 source("R/utils.R")
 
 list(
