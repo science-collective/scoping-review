@@ -22,7 +22,7 @@ Sys.Date() #2022-11-03
 ## search and download pubmed records
 pubmed_search <-
     batch_pubmed_download(
-        pubmed_query_string = search_terms$pubmed,
+        pubmed_query_string = search_terms("pubmed"),
         dest_file_prefix = "open_collab_",
         encoding = "UTF-8"
     )
