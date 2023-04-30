@@ -66,7 +66,7 @@ zenodo_extract_relevant_data <- function(record_list) {
     stringr::str_trim()
 
   list(
-    creators = creators,
+    # creators = creators,
     title = record_list$metadata$title,
     # description = record_list$metadata$description,
     date = record_list$metadata$publication_date,
