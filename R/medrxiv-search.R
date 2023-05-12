@@ -6,6 +6,7 @@
 
 library(medrxivr)
 library(here)
+library(tidyverse)
 source(here("R/search-terms.R"))
 
 # Running search ---------------------------------------------------------------
