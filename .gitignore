@@ -4,3 +4,5 @@
 .Rbuildignore
 .DS_Store
 .Renviron
+*_files
+*.html
