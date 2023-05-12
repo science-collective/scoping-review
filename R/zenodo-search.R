@@ -56,23 +56,24 @@ zenodo_get_records <- function(search_terms) {
 #' @return A list of records.
 #'
 zenodo_extract_relevant_data <- function(record_list) {
-  creators <- record_list$metadata$creators %>%
-    purrr::map_chr(~ .x$name) %>%
-    stringr::str_flatten(" and ") %>%
-    stringr::str_trim()
+  # For now don't need.
+  # creators <- record_list$metadata$creators %>%
+  #   purrr::map_chr(~ .x$name) %>%
+  #   stringr::str_flatten(" and ") %>%
+  #   stringr::str_trim()
 
   keywords <- record_list$metadata$keywords %>%
     stringr::str_flatten("; ") %>%
     stringr::str_trim()
 
   list(
-    creators = creators,
-    title = record_list$metadata$title,
-    # description = record_list$metadata$description,
+    # creators = creators,
+    doi = record_list$links$doi,
     date = record_list$metadata$publication_date,
+    title = drop_newlines(record_list$metadata$title),
+    # description = record_list$metadata$description,
     type = record_list$metadata$upload_type,
-    keywords = keywords,
-    doi = record_list$links$doi
+    keywords = keywords
   )
 }
 
@@ -81,6 +82,10 @@ zenodo_extract_relevant_data <- function(record_list) {
 #' @param search_terms Search terms to use for Zenodo.
 #'
 #' @return A list of records.
+#'
+#' @examples
+#' search_terms("zenodo") |>
+#' zenodo_retrieve_records()
 #'
 zenodo_retrieve_records <- function(search_terms) {
   zenodo_records <- search_terms %>%

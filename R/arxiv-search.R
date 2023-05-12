@@ -1,33 +1,42 @@
-# arxiv search using aRxiv
+#' Get all records from arXiv.
+#'
+#' @param search_terms Search terms, see `search_terms()`.
+#'
+#' @return Dataframe of records.
+#'
+arxiv_get_records <- function(search_terms) {
+  number_found <- aRxiv::arxiv_count(query = search_terms)
+  records <- aRxiv::arxiv_search(
+    query = search_terms,
+    # Round to nearest tenth.
+    limit = as.integer(round(number_found * 1.5, -2))
+  )
 
-# Load libraries ---------------------------------------------------------------
+  tibble::as_tibble(records)
+}
 
-library(tidyverse)
-library(lubridate)
-library(aRxiv)
-library(here)
-source(here("R/search-terms.R"))
+#' Retrieve and process records from arXiv, within last 5 years.
+#'
+#' @param search_terms Search terms, see `search_terms()`.
+#'
+#' @return Data frame of records.
+#'
+#' @examples
+#' search_terms("arxiv") |>
+#'   arxiv_retrieve_records()
+#'
+arxiv_retrieve_records <- function(search_terms) {
+  arxiv_records_processed <- search_terms %>%
+    arxiv_get_records() %>%
+    dplyr::select(id, date = updated, title, link_abstract) %>%
+    dplyr::filter(lubridate::ymd(lubridate::as_date(date)) >= five_years_ago())
 
-# Running search -----------------------------------------------------------------------
+  number_articles <- aRxiv::arxiv_count(query = search_terms)
 
-number_found <- arxiv_count(query = search_terms$arxiv)
-arxiv_results <- arxiv_search(
-  query = search_terms$arxiv,
-  # Round to nearest tenth.
-  limit = as.integer(round(number_found*1.5, -2))
-) %>%
-  as_tibble()
+  cli::cli_inform(c("Records from arXiv",
+    "i" = "{number_articles} records were retrieved.",
+    "i" = "{nrow(arxiv_records_processed)} records are within 5 years."
+  ))
 
-# Cleaning results -----------------------------------------------------------------------
-
-# Keep only some columns, drop anything before 5 years.
-arxiv_results <- arxiv_results %>%
-  select(id, date = updated, title, authors, link_abstract, link_pdf) %>%
-  filter(ymd(as_date(date)) >= five_years_ago)
-
-nrow(arxiv_results)
-
-write_csv(
-  arxiv_results,
-  file = here("data-raw/arxiv-search.csv")
-)
+  arxiv_records_processed
+}

@@ -1,66 +1,85 @@
-# Pubmed search using easypubmed
 
-#Link: https://cran.r-project.org/web/packages/easyPubMed/vignettes/getting_started_with_easyPubMed.html
+#' Get records from PubMed based on a search term.
+#'
+#' @param search_terms The full search terms to use, see `search_terms()`.
+#'
+#' @return List of PubMed records.
+#'
+pubmed_get_records <- function(search_terms) {
+  article_ids <- easyPubMed::get_pubmed_ids(search_terms)
+  articles <- easyPubMed::fetch_pubmed_data(article_ids,
+    retmax = as.integer(article_ids$Count)
+  )
 
-# Load libraries ---------------------------------------------------------------
-
-library(easyPubMed)
-library(tidyverse)
-library(here)
-library(purrr)
-library(readr)
-source(here("R/search-terms.R"))
-
-# Search last updated ----------------------------------------------------------
-
-Sys.Date() #2022-11-03
-
-# Search pubmed using the easyPubMed package -----------------------------------
-
-## making a list with the search terms
-
-## search and download pubmed records
-pubmed_search <-
-    batch_pubmed_download(
-        pubmed_query_string = search_terms$pubmed,
-        dest_file_prefix = "open_collab_",
-        encoding = "UTF-8"
-    )
-
-# Extracting info and combining into single dataframe --------------------------
-
-## make a function that convert each XML file to a dataset
-make_df_from_pubmed <- function(dataset) {
-    new_pubmed_df <- easyPubMed::table_articles_byAuth(
-        pubmed_data = dataset,
-        included_authors = "first",
-        encoding = "UTF-8"
-    )
-    new_pubmed_df <- tibble::as_tibble(new_pubmed_df)
-    return(new_pubmed_df)
+  articles %>%
+    xml2::read_xml() %>%
+    xml2::xml_find_all(".//Article") %>%
+    xml2::as_list()
 }
 
-## use map to single dataframe of all the batches
-# !!note: this takes a while!!#
-open_collaboration_pubmed_df <-
-    map_dfr(pubmed_search, make_df_from_pubmed, .id = NULL)
+#' Extract specific data from an individual PubMed Record.
+#'
+#' Use in combination with `purrr::map()`. See `pubmed_retrieve_records()`.
+#'
+#' @param record_list Individual record list.
+#'
+#' @return List with DOI, date, and article title.
+#'
+pubmed_extract_relevant_data <- function(record_list) {
+  metadata <- record_list %>%
+    purrr::keep_at(c("ArticleTitle", "ArticleDate", "ELocationID", "Journal"))
+  article_date <- paste(
+    metadata$ArticleDate$Year,
+    metadata$ArticleDate$Month,
+    metadata$ArticleDate$Day,
+    sep = "-"
+  )
 
-# Cleaning dataset -------------------------------------------------------------
+  pub_date <- metadata$Journal$JournalIssue$PubDate
+  pub_date <- paste(
+    pub_date$Year,
+    pub_date$Month,
+    if (!is.null(pub_date$Day)) pub_date$Day[[1]] else "01",
+    sep = "-"
+  )
 
-pubmed_df <- open_collaboration_pubmed_df %>%
-    select(lastname, year, title, abstract, jabbrv, email, pmid) %>%
-    mutate(database = "pubmed")
+  # Keep either publication date or article date, sometimes there is one but not
+  # the other
+  date <- suppressWarnings(c(pub_date, article_date) %>%
+    lubridate::as_date() %>%
+    na.omit() %>%
+    head(1))
 
-# Count number of papers -------------------------------------------------------
+  # Set any dates that don't exist to NA.
+  date <- if (length(article_date)) article_date else NA
 
-# 756 papers identified when copying the search on pubmed
+  list(
+    doi = unlist(metadata$ELocationID),
+    date = date,
+    title = drop_newlines(unlist(metadata$ArticleTitle))
+  )
+}
 
-n_papers_web <- 756
-n_papers_r <-  as.numeric(nrow(pubmed_df))
+#' Retrieve and process PubMed records from the last five years.
+#'
+#' @param search_terms Search terms to use. See `search_terms()`.
+#'
+#' @return List of processed records.
+#'
+pubmed_retrieve_records <- function(search_terms) {
+  pubmed_records_processed <- search_terms %>%
+    pubmed_get_records() %>%
+    purrr::map(pubmed_extract_relevant_data) %>%
+    purrr::keep(~ {
+      is.na(.x$date) | lubridate::ymd(.x$date) >= five_years_ago()
+    })
 
-search_the_same <- n_papers_web == n_papers_r
-search_the_same
+  number_articles <- easyPubMed::get_pubmed_ids(search_terms)$Count
 
-# Save dataset -----------------------------------------------------------------
+  cli::cli_inform(c("Records from PubMed",
+    "i" = "{number_articles} records were retrieved.",
+    "i" = "{length(pubmed_records_processed)} records are within 5 years."
+  ))
 
-readr::write_csv(pubmed_df, here("data", "pubmed-search.csv.gz"))
+  pubmed_records_processed
+}

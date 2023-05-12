@@ -139,8 +139,31 @@ would use:
 
 TODO: Add explanation once its been determined.
 
+## Installing necessary packages
+
+There are several R package dependencies to this project. Install them
+by running this code in the Console:
+
+``` r
+# install.packages("pak")
+pak::pak()
+```
+
+## Re-building the sources
+
+To rebuild all the sources extracted from the different databases like
+Zenodo or PubMed, run this:
+
+``` r
+targets::tar_make()
+```
+
+This will run a pipeline to re-build and re-run all the code associated
+with the scoping review.
+
 ## Code of Conduct
 
 Please note that the scoping-review project is released with a
 [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to
 this project you agree to abide by its terms.
+
