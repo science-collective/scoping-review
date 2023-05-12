@@ -56,7 +56,7 @@ pubmed_extract_relevant_data <- function(record_list) {
   list(
     doi = unlist(metadata$ELocationID),
     date = date,
-    title = unlist(metadata$ArticleTitle)
+    title = drop_newlines(unlist(metadata$ArticleTitle))
   )
 }
 
