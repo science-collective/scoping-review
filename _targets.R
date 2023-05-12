@@ -27,9 +27,11 @@ tar_option_set(
 # tar_source()
 source("R/search-terms.R")
 source("R/zenodo-search.R")
+source("R/pubmed-search.R")
 source("R/utils.R")
 
 list(
+  # Zenodo ------------------------------------------------------------------
   tar_target(
     name = zenodo_search_terms,
     command = search_terms("zenodo")
@@ -41,6 +43,20 @@ list(
   tar_target(
     name = data_raw_zenodo,
     command = save_list_as_yaml(zenodo_records, here::here("data-raw/zenodo.yaml")),
+    format = "file"
+  ),
+  # PubMed ------------------------------------------------------------------
+  tar_target(
+    name = pubmed_search_terms,
+    command = search_terms("pubmed")
+  ),
+  tar_target(
+    name = pubmed_records,
+    command = pubmed_retrieve_records(pubmed_search_terms)
+  ),
+  tar_target(
+    name = data_raw_pubmed,
+    command = save_list_as_yaml(pubmed_records, here::here("data-raw/pubmed.yaml")),
     format = "file"
   )
 )

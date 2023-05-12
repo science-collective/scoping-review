@@ -53,6 +53,21 @@ The following folders contain:
 -   `R/`: R scripts for extracting the references for the scoping review
     as well as for project management.
 
+## Installing and updating sources
+
+You'll need to install all the packages for this project with:
+
+``` r
+# install.packages("pak")
+pak::pak()
+```
+
+And to rebuild the sources, run:
+
+``` r
+targets::tar_make()
+```
+
 ## Contributing to this project
 
 If you are interested in contributing, read our [contributing
@@ -65,4 +80,3 @@ Please note that the scoping-review project is released with a
 [Contributor Code of
 Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its terms.
-
