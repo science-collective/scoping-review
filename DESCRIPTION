@@ -37,4 +37,5 @@ Remotes:
     tgerke/ggconsort
 Encoding: UTF-8
 Suggests: 
+    prereg,
     rspm
