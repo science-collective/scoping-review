@@ -35,7 +35,7 @@ arxiv_retrieve_records <- function(search_terms) {
 
   cli::cli_inform(c("Records from arXiv",
     "i" = "{number_articles} records were retrieved.",
-    "i" = "{length(arxiv_records_processed)} records are within 5 years."
+    "i" = "{nrow(arxiv_records_processed)} records are within 5 years."
   ))
 
   arxiv_records_processed
