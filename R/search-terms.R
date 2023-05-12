@@ -15,6 +15,6 @@ search_terms <- function(engine) {
     # For some reason, arxiv doesn't like the * wildcard... #Daniel: okay not to include. We will just state why here.
     arxiv = '(ti:open) AND (all:science OR all:research) OR (all:collaborate OR all:collaborating OR all:collaboration OR all:team OR all:cooperate OR all:cooperating OR all:cooperation) AND (all:technology OR all:technologies OR all:tool OR all:framework OR all:guideline OR all:principles OR all:practices OR all:systems OR all:resources)'
     #Trying code for arxiv also for medrxiv. Assuming they have the same engine
-    medrxiv ='ti:"open" AND (research OR science) AND (collaborate OR collaborating OR collaboration OR team OR cooperate OR cooperating OR cooperation) AND (technology OR technologies OR tool OR framework OR guideline OR principles OR practices OR systems OR resources)'
+    medrxiv = list(c("open"), c("science", "research"), c("collaborate","collaborating", "collaboration", "team", "cooperate", "cooperating"), c("technology", "technologies", "tool","framework", "guideline", "principles", "practices", "systems","resources"))
   )
 }
