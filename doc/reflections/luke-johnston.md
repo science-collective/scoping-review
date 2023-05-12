@@ -20,3 +20,9 @@
     work on next. So making / updating the contributing guidelines with
     tips on how to get caught up.
 
+## 2023-05-12
+
+-   Been a while since I got back to this, so its good to start up
+    again. The README's helped and setting up the targets infrastructure
+    and pipeline I think will help us later on as the project continues.
+
