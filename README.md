@@ -55,11 +55,12 @@ The following folders contain:
 
 ## Installing and updating sources
 
-You'll need to install all the packages for this project with:
+You'll need to install all the packages for this project with (while
+inside the R Project):
 
 ``` r
-# install.packages("pak")
-pak::pak()
+# install.packages("renv")
+renv::restore()
 ```
 
 And to rebuild the sources, run:
