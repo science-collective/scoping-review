@@ -46,4 +46,17 @@ list(
     format = "file"
   ),
   # PubMed ------------------------------------------------------------------
+  tar_target(
+    name = pubmed_search_terms,
+    command = search_terms("pubmed")
+  ),
+  tar_target(
+    name = pubmed_records,
+    command = pubmed_retrieve_records(pubmed_search_terms)
+  ),
+  tar_target(
+    name = data_raw_pubmed,
+    command = save_list_as_yaml(pubmed_records, here::here("data-raw/pubmed.yaml")),
+    format = "file"
+  )
 )

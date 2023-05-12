@@ -1,15 +1,10 @@
-# Pubmed search using easypubmed
 
-library(easyPubMed)
-library(tidyverse)
-library(here)
-library(purrr)
-library(readr)
-library(xml2)
-source(here("R/search-terms.R"))
-
-## making a list with the search terms
-
+#' Get records from PubMed based on a search term.
+#'
+#' @param search_terms The full search terms to use, see `search_terms()`.
+#'
+#' @return List of PubMed records.
+#'
 pubmed_get_records <- function(search_terms) {
   article_ids <- easyPubMed::get_pubmed_ids(search_terms)
   articles <- easyPubMed::fetch_pubmed_data(article_ids,
@@ -19,20 +14,44 @@ pubmed_get_records <- function(search_terms) {
   articles %>%
     xml2::read_xml() %>%
     xml2::xml_find_all(".//Article") %>%
-    as_list()
+    xml2::as_list()
 }
 
+#' Extract specific data from an individual PubMed Record.
+#'
+#' Use in combination with `purrr::map()`. See `pubmed_retrieve_records()`.
+#'
+#' @param record_list Individual record list.
+#'
+#' @return List with DOI, date, and article title.
+#'
 pubmed_extract_relevant_data <- function(record_list) {
   metadata <- record_list %>%
-    purrr::keep_at(c("ArticleTitle", "ArticleDate", "ELocationID"))
-  date <- paste(
+    purrr::keep_at(c("ArticleTitle", "ArticleDate", "ELocationID", "Journal"))
+  article_date <- paste(
     metadata$ArticleDate$Year,
     metadata$ArticleDate$Month,
     metadata$ArticleDate$Day,
     sep = "-"
   )
 
-  date <- ifelse(!rlang::is_empty(date), date, NA_character_)
+  pub_date <- metadata$Journal$JournalIssue$PubDate
+  pub_date <- paste(
+    pub_date$Year,
+    pub_date$Month,
+    if (!is.null(pub_date$Day)) pub_date$Day[[1]] else "01",
+    sep = "-"
+  )
+
+  # Keep either publication date or article date, sometimes there is one but not
+  # the other
+  date <- suppressWarnings(c(pub_date, article_date) %>%
+    lubridate::as_date() %>%
+    na.omit() %>%
+    head(1))
+
+  # Set any dates that don't exist to NA.
+  date <- if (length(article_date)) article_date else NA
 
   list(
     doi = unlist(metadata$ELocationID),
@@ -41,14 +60,18 @@ pubmed_extract_relevant_data <- function(record_list) {
   )
 }
 
+#' Retrieve and process PubMed records from the last five years.
+#'
+#' @param search_terms Search terms to use. See `search_terms()`.
+#'
+#' @return List of processed records.
+#'
 pubmed_retrieve_records <- function(search_terms) {
-  browser()
   pubmed_records_processed <- search_terms %>%
     pubmed_get_records() %>%
     purrr::map(pubmed_extract_relevant_data) %>%
     purrr::keep(~ {
-      !is.na(.x$date) |
-        lubridate::ymd(lubridate::as_date(.x$date)) >= five_years_ago()
+      is.na(.x$date) | lubridate::ymd(.x$date) >= five_years_ago()
     })
 
   number_articles <- easyPubMed::get_pubmed_ids(search_terms)$Count
@@ -60,18 +83,3 @@ pubmed_retrieve_records <- function(search_terms) {
 
   pubmed_records_processed
 }
-
-# Extracting info and combining into single dataframe --------------------------
-
-# Count number of papers -------------------------------------------------------
-
-# 756 papers identified when copying the search on pubmed
-
-# n_papers_web <- 756
-# n_papers_r <- as.numeric(nrow(pubmed_df))
-#
-# search_the_same <- n_papers_web == n_papers_r
-# search_the_same
-
-search_terms("pubmed") %>%
-  pubmed_retrieve_records()
