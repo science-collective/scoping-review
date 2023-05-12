@@ -36,3 +36,5 @@ Remotes:
     eblondel/zen4R,
     tgerke/ggconsort
 Encoding: UTF-8
+Suggests: 
+    rspm
