@@ -56,10 +56,11 @@ zenodo_get_records <- function(search_terms) {
 #' @return A list of records.
 #'
 zenodo_extract_relevant_data <- function(record_list) {
-  creators <- record_list$metadata$creators %>%
-    purrr::map_chr(~ .x$name) %>%
-    stringr::str_flatten(" and ") %>%
-    stringr::str_trim()
+  # For now don't need.
+  # creators <- record_list$metadata$creators %>%
+  #   purrr::map_chr(~ .x$name) %>%
+  #   stringr::str_flatten(" and ") %>%
+  #   stringr::str_trim()
 
   keywords <- record_list$metadata$keywords %>%
     stringr::str_flatten("; ") %>%
