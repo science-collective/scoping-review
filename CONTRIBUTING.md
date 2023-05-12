@@ -116,12 +116,15 @@ would use:
         `usethis::create_from_github("science-collective/scoping-review")`
 
 -   Install the project package dependencies, while inside the RStudio R
-    Project (`scoping-review.Rproj`), with:
+    Project (`scoping-review.Rproj`) and in the Console, with:
 
     ``` r
-    # install.packages("pak")
-    pak::pak()
+    # install.packages("renv")
+    renv::restore()
     ```
+
+    Note: If you ever get frustrated with using renv, you can turn it
+    off with `renv::deactivate()`.
 
 -   Create a Git branch for your pull request (PR). We recommend using
     `usethis::pr_init("brief-description-of-change")` (replace the
@@ -129,24 +132,35 @@ would use:
     details on using the usethis PR helpers, read this
     [webpage](https://usethis.r-lib.org/articles/pr-functions.html).
 
+-   If you need to use another package, add the package dependency by
+    using:
+
+    ``` r
+    use_package("PACKAGENAME")
+    ```
+
 -   Make your changes, commit to git, and then create a Pull Request by
     running `usethis::pr_push()`, and following the prompts in your
     browser. The title of your PR should briefly describe the change.
     The body of your PR should contain `Fixes #issuenumber` if you were
     working on a specific Issue.
 
-### Adding links, references, or resources to review
-
-TODO: Add explanation once its been determined.
-
-## Installing necessary packages
+## Installing or updating necessary packages
 
 There are several R package dependencies to this project. Install them
-by running this code in the Console:
+by running this code in the Console while in the R Project:
 
 ``` r
-# install.packages("pak")
-pak::pak()
+# install.packages("renv")
+renv::restore()
+```
+
+If you are on Linux, you might need to install some additional Linux
+packages:
+
+``` bash
+sudo apt install libcurl4-openssl-dev libxml2 \
+  libxml2-dev libtiff-dev libjpeg-dev libpng-dev
 ```
 
 ## Re-building the sources
@@ -166,4 +180,3 @@ with the scoping review.
 Please note that the scoping-review project is released with a
 [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to
 this project you agree to abide by its terms.
-
