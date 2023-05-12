@@ -1,0 +1,81 @@
+---
+title: "Towards open collaboration in biomedical and health research: A scoping review"
+date: last-modified
+author: 
+  - name: Hannah Chatwin
+    affiliations: 
+      - ref: au
+  - name: Mario Garcia
+    affiliations: 
+      - ref: ku
+  - name: Daniel Ibsen
+    affiliations: 
+      - ref: sdca
+      - ref: au
+  - name: Luke W. Johnston
+    affiliations: 
+      - ref: sdca
+      - ref: au
+affiliations:
+  - id: sdca
+    name: Steno Diabetes Center Aarhus
+    country: Denmark
+  - id: au
+    name: Aarhus University
+    country: Denmark
+  - id: ku
+    name: Copenhagen University
+    country: Denmark
+format: html
+---
+
+## Introduction
+
+## Aims
+
+Our original overall aim, as defined in the protocol, of this scoping
+review is to identify current practices of open collaboration in
+biomedical and health research.
+
+The specific aims of this scoping review are to:
+
+-   Provide an overview of current practices of or opinions about
+    research collaboration that follow basic open principles (e.g.,
+    transparency, accessibility)
+
+-   Summarize existing online tools and resources available to improve
+    open collaboration in research
+
+We've expanded on our original aims to include a **secondary aim** of
+building an open source R-based pipeline for conducting scoping reviews.
+The entire source code, as well as text and collaboration workflows, are
+found on our GitHub repository
+[`science-collective/scoping-review`](https://github.com/science-collective/scoping-review).
+
+## Methods
+
+The full protocol for this scoping review was uploaded to the Open
+Science Framework (DOI:
+[`10.17605/OSF.IO/K9DR5`](https://doi.org/10.17605/OSF.IO/K9DR5)).
+
+<!-- TODO: convert this to reference -->
+
+### Formal sources
+
+### Informal sources
+
+<!-- TODO: need to add how we searched online sources, like lab websites -->
+
+## Results
+
+### Deviations from the protocol
+
+-   **Original timeline**: We were quite ambitious with the timeline for
+    completing this scoping review. We did not adhere to the timeline.
+-   **API vs web search results**: Almost all source databases had
+    exposed APIs, with R packages available to access them. We chose to
+    use these rather than using the web to extract the source data is
+    due to our secondary aim. However, we noticed that there were some
+    small differences in search results between the API query compared
+    to the web-based query. We can't explain these differences, though
+    they were quite minor.
