@@ -548,6 +548,19 @@
       ],
       "Hash": "bb097fccb22d156624fd07cd2894ddb6"
     },
+    "cpp11": {
+      "Package": "cpp11",
+      "Version": "0.4.3",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "RemoteType": "standard",
+      "RemotePkgRef": "cpp11",
+      "RemoteRef": "cpp11",
+      "RemoteRepos": "https://packagemanager.rstudio.com/all/__linux__/jammy/latest",
+      "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-22.04",
+      "RemoteSha": "0.4.3",
+      "Hash": "ed588261931ee3be2c700d22e94a29ab"
+    },
     "crayon": {
       "Package": "crayon",
       "Version": "1.5.2",
@@ -1433,12 +1446,6 @@
       "Version": "1.4.2",
       "Source": "Repository",
       "Repository": "RSPM",
-      "RemoteType": "standard",
-      "RemotePkgRef": "igraph",
-      "RemoteRef": "igraph",
-      "RemoteRepos": "https://packagemanager.rstudio.com/all/__linux__/jammy/latest",
-      "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-22.04",
-      "RemoteSha": "1.4.2",
       "Requirements": [
         "Matrix",
         "R",
@@ -1921,6 +1928,19 @@
       ],
       "Hash": "bd54ba8a0a5faded999a7aab6e46b374"
     },
+    "prettyunits": {
+      "Package": "prettyunits",
+      "Version": "1.1.1",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "RemoteType": "standard",
+      "RemotePkgRef": "prettyunits",
+      "RemoteRef": "prettyunits",
+      "RemoteRepos": "https://packagemanager.rstudio.com/all/__linux__/jammy/latest",
+      "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-22.04",
+      "RemoteSha": "1.1.1",
+      "Hash": "95ef9167b75dde9d2ccc3c7528393e7e"
+    },
     "processx": {
       "Package": "processx",
       "Version": "3.8.1",
@@ -1939,6 +1959,25 @@
         "utils"
       ],
       "Hash": "d75b4059d781336efba24021915902b4"
+    },
+    "progress": {
+      "Package": "progress",
+      "Version": "1.2.2",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "RemoteType": "standard",
+      "RemotePkgRef": "progress",
+      "RemoteRef": "progress",
+      "RemoteRepos": "https://packagemanager.rstudio.com/all/__linux__/jammy/latest",
+      "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-22.04",
+      "RemoteSha": "1.2.2",
+      "Requirements": [
+        "R6",
+        "crayon",
+        "hms",
+        "prettyunits"
+      ],
+      "Hash": "14dc9f7a3c91ebb14ec5bb9208a07061"
     },
     "ps": {
       "Package": "ps",
@@ -2660,20 +2699,20 @@
     },
     "tzdb": {
       "Package": "tzdb",
-      "Version": "0.3.0",
+      "Version": "0.4.0",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "RemoteType": "standard",
       "RemotePkgRef": "tzdb",
       "RemoteRef": "tzdb",
-      "RemoteRepos": "https://packagemanager.rstudio.com/all/__linux__/jammy/latest",
-      "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-22.04",
-      "RemoteSha": "0.3.0",
+      "RemoteRepos": "https://cran.rstudio.com",
+      "RemotePkgPlatform": "source",
+      "RemoteSha": "0.4.0",
       "Requirements": [
         "R",
         "cpp11"
       ],
-      "Hash": "b2e1cbce7c903eaf23ec05c58e59fb5e"
+      "Hash": "f561504ec2897f4d46f0c7657e488ae1"
     },
     "usethis": {
       "Package": "usethis",
