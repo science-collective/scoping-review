@@ -25,11 +25,12 @@ tar_option_set(
 
 # Run the R scripts in the R/ folder with your custom functions:
 # tar_source()
+library(magrittr)
 source("R/search-terms.R")
+source("R/utils.R")
 source("R/zenodo-search.R")
 source("R/arxiv-search.R")
 source("R/pubmed-search.R")
-source("R/utils.R")
 
 list(
   # Zenodo ------------------------------------------------------------------
