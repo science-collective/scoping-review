@@ -70,7 +70,9 @@ zenodo_extract_relevant_data <- function(record_list) {
     # creators = creators,
     doi = record_list$links$doi,
     date = record_list$metadata$publication_date,
-    title = drop_newlines(record_list$metadata$title),
+    title = record_list$metadata$title %>%
+      drop_newlines() %>%
+      stringr::str_flatten(),
     # description = record_list$metadata$description,
     type = record_list$metadata$upload_type,
     keywords = keywords
