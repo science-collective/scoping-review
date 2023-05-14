@@ -52,6 +52,5 @@ five_years_ago <- function() {
 #'
 drop_newlines <- function(text) {
   text |>
-    stringr::str_remove_all("\n") |>
-    stringr::str_flatten(collapse = " ")
+    stringr::str_replace_all("\n", " ")
 }

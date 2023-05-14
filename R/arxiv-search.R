@@ -29,6 +29,7 @@ arxiv_retrieve_records <- function(search_terms) {
   arxiv_records_processed <- search_terms %>%
     arxiv_get_records() %>%
     dplyr::select(id, date = updated, title, link_abstract) %>%
+    dplyr::mutate(dplyr::across(dplyr::where(is.character), drop_newlines)) %>%
     dplyr::filter(lubridate::ymd(lubridate::as_date(date)) >= five_years_ago())
 
   number_articles <- aRxiv::arxiv_count(query = search_terms)
