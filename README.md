@@ -1,21 +1,24 @@
-# Open collaboration within scientific research: Where we are, where we should be, and how to get there
+# Openness within scientific research: Where we are, where we should be, and how to get there
 
-[![OSF
-DOI](https://img.shields.io/badge/OSF-10.17605%252FOSF.IO%252FK9DR5-blue)](https://doi.org/10.17605/OSF.IO/K9DR5)
+-   Open collaboration protocol:
+    [DOI](https://doi.org/10.17605/OSF.IO/K9DR5)
 
 The overall aim of the Science Collective is to build a technical and
 social environment that encourages and makes it easy for science to be
-done in an open, rigorous, and collaborative way. Since scientific
-research now almost always requires working with other people. With the
-increasing emphasis on and demand for science to be more open, how we
-collaborate together is a key component to making science more easily
-open from the start of any project. But how do we collaborate in an open
-and transparent way? What are the best practices and tools we can use?
-What is an ideal collaborative workflow and how close or far are we from
-this ideal in reality? This project aims to address some of these
-questions.
+done in an open, rigorous, and collaborative way.
 
-Our three general outputs for this project are:
+Our general topics for this meta-project are:
+
+-   Open collaboration
+-   Open data
+-   Open source/software and software design
+-   Reproducible research and data analysis
+-   Open materials/methods
+-   Open access
+-   Open peer review
+-   Open outreach
+
+For each topic, we would like to
 
 1.  A scoping review looking for knowledge on current best practices and
     how researchers collaborate presently.
@@ -49,7 +52,8 @@ The following folders contain:
 -   `data-raw/`: Contains the raw data obtained from the first pass of
     the scoping review.
 -   `doc/`: Contains the documents for the review, protocol, and the
-    other output documents.
+    other output documents for each topic, as well as reflections and
+    instructions on doing scoping reviews.
 -   `R/`: R scripts for extracting the references for the scoping review
     as well as for project management.
 
