@@ -68,8 +68,8 @@ review this documents in this order:
 If you've looked over what's been done so far and especially the
 [ROADMAP](ROADMAP.md), and still feel a bit unsure what to do work on,
 then follow these steps as a starting point. See the
-[Workflow](#workflow-to-add-text-or-code) section below for instructions
-on how we make changes to files.
+[Workflow](#adding-text-or-code) section below for instructions on how
+we make changes to files.
 
 1.  Review (proofread, edit, revise) in order:
     -   [`README.md`](README.md)
@@ -88,7 +88,29 @@ We appreciate ALL types of contributions! Contributions include:
     adding code comments
 -   Adding larger amounts of new text or code
 
-## Workflow to add text or code {#workflow-to-add-text-or-code}
+## General workflow
+
+For each of these topic we have a (potential but not decided) general
+outline for our process and workflow for working on each topic.
+
+1.  Scoping review (protocol, search, write, preprint, then journal
+    article).
+2.  Organize an event, after the paper is at the preprint stage, where
+    researchers come and discuss the topic of the review, talk about how
+    they work with the topic, learn about our findings, talk about
+    barriers and solutions to problems related to the topic. Such a
+    discussion could add further perspectives to our review before we
+    publish it.
+3.  Brainstorm needed tools. This could be a session, after the review
+    has been published where we think about the gaps identified based
+    on 1. and 2. and which tool(s) could fill these gaps. This would
+    feed into our other branch of building tools.
+4.  Blog post on website (and published paper?) based on findings from
+    the review and the event, we could write a blog on our website and
+    even similar blog posts, but with slightly different angles, to
+    other places.
+
+### Adding text or code {#adding-text-or-code}
 
 There are two suggested ways of adding text or code: Through the GitHub
 interface or through RStudio. If you are adding code, we definitely
