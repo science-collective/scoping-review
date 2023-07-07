@@ -31,6 +31,7 @@ source("R/utils.R")
 source("R/zenodo-search.R")
 source("R/arxiv-search.R")
 source("R/pubmed-search.R")
+source("R/medrxiv-search.R")
 
 list(
   # Zenodo ------------------------------------------------------------------
@@ -73,6 +74,20 @@ list(
   tar_target(
     name = data_raw_arxiv,
     command = save_as_csv(arxiv_records, here::here("data-raw/arxiv.csv")),
+    format = "file"
+  ),
+  # medRxiv -----------------------------------------------------------------
+  tar_target(
+    name = medrxiv_search_terms,
+    command = search_terms("medrxiv")
+  ),
+  tar_target(
+    name = medrxiv_records,
+    command = medrxiv_retrieve_records(medrxiv_search_terms)
+  ),
+  tar_target(
+    name = data_raw_medrxiv,
+    command = save_as_csv(medrxiv_records, here::here("data-raw/medrxiv.csv")),
     format = "file"
   )
 )
