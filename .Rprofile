@@ -15,10 +15,11 @@ options(
   knitr.kable.NA = ""
 )
 
+source("renv/activate.R")
+
 if (interactive()) {
   suppressMessages(require(usethis))
   suppressMessages(require(gert))
-  suppressMessages(rspm::enable())
+  try(rspm::enable(), silent = TRUE)
 }
 
-source("renv/activate.R")
