@@ -1,39 +1,52 @@
-# medRxiv search using medrxivr
+#' Get queried records based on search terms.
+#'
+#' @param search_terms Search terms, see `search_terms()`.
+#'
+#' @return A data frame.
+#'
+#' @examples
+#' \dontrun{
+#' # This takes a long time.
+#' search_terms("medrxiv") |>
+#'   medrxiv_get_records()
+#' }
+medrxiv_get_records <- function(search_terms) {
+  # This particular function takes some time... But we get the latest data.
+  # The `mx_snapshot()` function is supposed to have a quicker access, but it
+  # is very outdated.
+  today <- as.character(lubridate::today())
+  medrxiv_data <- medrxivr::mx_api_content(
+    from_date = five_years_ago(),
+    to_date = today,
+    server = "medrxiv"
+  )
 
-#Link: https://github.com/ropensci/medrxivr
+  medrxivr::mx_search(
+    data = medrxiv_data,
+    query = search_terms,
+    from_date = five_years_ago(),
+    to_date = today,
+    auto_caps = TRUE
+  )
+}
 
-# Load libraries ---------------------------------------------------------------
+#' Retrieve and process records from medRxiv.
+#'
+#' @inheritParams pubmed_retrieve_records
+#'
+#' @return A data frame.
+#'
+medrxiv_retrieve_records <- function(search_terms) {
+  records_processed <- search_terms %>%
+    medrxiv_get_records() %>%
+    dplyr::select(doi, date, title) %>%
+    # Keep only rows that have "open" in the title.
+    dplyr::filter(stringr::str_detect(title, "[oO]pen"))
 
-library(medrxivr)
-library(here)
-library(tidyverse)
-source(here("R/search-terms.R"))
+  number_articles <- nrow(records_processed)
+  cli::cli_inform(c("Records from medRxiv",
+    "i" = "{number_articles} records were retrieved and are within 5 years.",
+  ))
 
-# Running search ---------------------------------------------------------------
-
-medrxiv_data <- mx_api_content(server = "medrxiv") #with this function we get the latest data! It takes a while, though
-
-medrxiv_search <- mx_search(data = medrxiv_data,
-                            query = search_terms("medrxiv"),
-                            #query = list(c("open"), c("science", "research"), c("collaborate","collaborating", "collaboration", "team", "cooperate", "cooperating"), c("technology", "technologies", "tool","framework", "guideline", "principles", "practices", "systems","resources")),
-                            from_date = "2017-01-01",
-                            to_date = "2022-11-03", #should this be updated?
-                            auto_caps = TRUE,
-                            report = TRUE)
-
-#Let's try to get to obtain only those that have open in the title to meet the criteria of the searches for other tools:
-
-medrxiv_search_open_ti <- medrxiv_search[which(stringr::str_detect(string = medrxiv_search$title, pattern = "open") == TRUE |
-                                                 stringr::str_detect(string = medrxiv_search$title, pattern = "Open") == TRUE),] #only 6/37
-
-#Let's now save the data in the same format as arxiv data:
-
-medrxiv_results <- medrxiv_search_open_ti %>% 
-  select(id=ID, date, title, authors, link_abstract=link_page, link_pdf)
-
-#Finally, let's save the data:
-
-write_csv(
-  medrxiv_results,
-  file = here("data-raw/medrxiv-search.csv")
-)
+  records_processed
+}
