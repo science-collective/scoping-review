@@ -41,7 +41,7 @@ save_as_csv <- function(records_list, path) {
 #' @return A character vector of a date range.
 #'
 five_years_ago <- function() {
-  glue::glue("{lubridate::today()-lubridate::years(5)}")
+  as.character(glue::glue("{lubridate::today()-lubridate::years(5)}"))
 }
 
 #' Drop newlines characters and flatten to a single string.
