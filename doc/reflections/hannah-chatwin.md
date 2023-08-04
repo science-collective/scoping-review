@@ -37,3 +37,12 @@ rScopus:
 -   Trialed search of MEDLINE (via Ovid)
 -   Need to get a better sense of the data analysis approach (e.g., come
     up with step-by-step guide to share with SC)
+
+## Friday 2023-08-04
+
+-   Today, I worked mostly on building a list of terms we will automatically exclude
+-   This list is provided via https://github.com/science-collective/scoping-review/issues/56#issuecomment-1576677260
+-   I wrote some preliminary code on this and created a Pull Request to upload this to R/
+-   Note: These terms will be particularly helpful with the PubMed search (i.e., 947 to 583 results) but less so with the Zenodo search (i.e., only removed a handful of records)
+-   It appears that most of the Zenodo search results include "open science" and "open source" in the title
+-   I didn't get a chance to work on writing but I will start with this next time
