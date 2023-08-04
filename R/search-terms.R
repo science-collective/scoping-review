@@ -6,7 +6,15 @@
 #'
 #' @examples
 #' search_terms("pubmed")
-search_terms <- function(engine) {
+search_terms <- function(engine = c("general", "pubmed", "zenodo", "wos", "arxiv", "medrxiv", "biorxiv")) {
+  engine <- rlang::arg_match(engine)
+
+  # biorxiv and medrxiv use same search terms
+  if (engine == "biorxiv") {
+    engine <- "medrxiv"
+    cli::cli_alert_info("Both biorxiv and medrxiv are the same, using medrxiv search terms.")
+  }
+
   # Avoid using wildcards in terms, since they slow things down when sending a query
   switch(engine,
     general = "(open) AND (science OR research) AND (collaborat* OR team OR cooperat*) AND (technolog* OR tool OR framework OR guideline OR principles OR practices OR systems OR resources)",
