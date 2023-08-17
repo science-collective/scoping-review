@@ -96,7 +96,7 @@ medrxiv_generic_retrieve_records <- function(search_terms, server = c("biorxiv",
   get_records <- switch(
     server,
     medrxiv = medrxiv_get_records,
-    biorxiv = biorxiv_get_records,
+    biorxiv = biorxiv_get_records
   )
   records_processed <- search_terms %>%
     get_records() %>%
@@ -106,7 +106,7 @@ medrxiv_generic_retrieve_records <- function(search_terms, server = c("biorxiv",
 
   number_articles <- nrow(records_processed)
   cli::cli_inform(c("Records from {.val {server}}",
-    "i" = "{number_articles} records were retrieved and are within 5 years.",
+    "i" = "{number_articles} records were retrieved and are within 5 years."
   ))
 
   records_processed
