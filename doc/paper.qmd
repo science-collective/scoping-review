@@ -8,7 +8,7 @@ author:
   - name: Mario Garcia
     affiliations: 
       - ref: ku
-  - name: Daniel Ibsen
+  - name: Daniel B. Ibsen
     affiliations: 
       - ref: sdca
       - ref: au
@@ -79,3 +79,10 @@ Science Framework (DOI:
     small differences in search results between the API query compared
     to the web-based query. We can't explain these differences, though
     they were quite minor.
+
+## Contributions
+
+<!-- TODO: add contributions according to: https://credit.niso.org/ -->
+
+HC: MG: DBI: LWJ:
+
