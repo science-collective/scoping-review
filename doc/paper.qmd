@@ -84,5 +84,8 @@ Science Framework (DOI:
 
 <!-- TODO: add contributions according to: https://credit.niso.org/ -->
 
-HC: MG: DBI: LWJ:
-
+-   HC:
+-   MG:
+-   DBI: Conceptualization, Data curation, formal analysis,
+    investigation, methodology, writing
+-   LWJ:
