@@ -45,15 +45,15 @@ medrxiv_retrieve_records <- function(search_terms) {
 
   number_articles <- nrow(records_processed)
   cli::cli_inform(c("Records from medRxiv",
-    "i" = "{number_articles} records were retrieved and are within 5 years.",
+    "i" = "{number_articles} records were retrieved with the word 'open' in the title from the last 5 years.",
   ))
 
  #Small addition to get the necessary columns in the same format as arxiv:
-  
+
  records_processed_clean <- records_processed %>%
     dplyr::select(id, date, title, doi)
-  
+
  colnames(records_processed_clean) <- c("id", "date", "title", "doi")
-  
+
   records_processed_clean
 }
