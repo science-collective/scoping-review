@@ -109,5 +109,12 @@ medrxiv_generic_retrieve_records <- function(search_terms, server = c("biorxiv",
     "i" = "{number_articles} records were retrieved and are within 5 years."
   ))
 
-  records_processed
+ #Small addition to get the necessary columns in the same format as arxiv:
+
+ records_processed_clean <- records_processed %>%
+    dplyr::select(id, date, title, doi)
+
+ colnames(records_processed_clean) <- c("id", "date", "title", "doi")
+
+  records_processed_clean
 }
