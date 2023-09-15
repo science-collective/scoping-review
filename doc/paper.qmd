@@ -8,7 +8,7 @@ author:
   - name: Mario Garcia
     affiliations: 
       - ref: ku
-  - name: Daniel Ibsen
+  - name: Daniel B. Ibsen
     affiliations: 
       - ref: sdca
       - ref: au
@@ -85,3 +85,12 @@ Science Framework (DOI:
     that in the interest of reproducibility, that we exclude this
     source.
 
+## Contributions
+
+<!-- TODO: add contributions according to: https://credit.niso.org/ -->
+
+-   HC:
+-   MG:
+-   DBI: Conceptualization, Data curation, formal analysis,
+    investigation, methodology, writing
+-   LWJ:

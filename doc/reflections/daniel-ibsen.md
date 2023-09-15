@@ -30,3 +30,15 @@
 -   We could benefit from having some more deadlines to aim for to keep
     the work progressing
 
+## 2023-09-01
+
+-   Started getting oriented in all the updated code and on GitHub -
+    this is one of the advantages by having documented so much.
+-   Once you start getting the sense of how everything is setup and
+    connected it has become much easier to go in, find tasks to
+    complete, and do them.
+-   Today I mostly oriented myself in all the issues on GitHub to get an
+    overview of where we are and plan my time ahead. This is my general
+    struggle with this project - time. Finding time to dive in has
+    really been hard amid all the other projects.
+
