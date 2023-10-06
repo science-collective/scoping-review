@@ -102,7 +102,8 @@ medrxiv_generic_retrieve_records <- function(search_terms, server = c("biorxiv",
     get_records() %>%
     dplyr::select(doi, date, title) %>%
     # Keep only rows that have "open" in the title.
-    dplyr::filter(stringr::str_detect(title, "[oO]pen"))
+    dplyr::filter(stringr::str_detect(title, "[oO]pen")) |>
+    dplyr::mutate(id = doi, .before = dplyr::everything())
 
   number_articles <- nrow(records_processed)
   cli::cli_inform(c("Records from {.val {server}}",

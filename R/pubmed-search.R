@@ -53,13 +53,14 @@ pubmed_extract_relevant_data <- function(record_list) {
   # Set any dates that don't exist to NA.
   date <- if (length(article_date)) article_date else NA
 
-  list(
+  tibble::tibble(
     doi = unlist(metadata$ELocationID),
     date = date,
     title = unlist(metadata$ArticleTitle) %>%
       drop_newlines() %>%
       stringr::str_flatten()
-  )
+  ) |>
+    dplyr::mutate(id = doi, .before = dplyr::everything())
 }
 
 #' Retrieve and process PubMed records from the last five years.
@@ -72,9 +73,8 @@ pubmed_retrieve_records <- function(search_terms) {
   pubmed_records_processed <- search_terms %>%
     pubmed_get_records() %>%
     purrr::map(pubmed_extract_relevant_data) %>%
-    purrr::keep(~ {
-      is.na(.x$date) | lubridate::ymd(.x$date) >= five_years_ago()
-    })
+    purrr::list_rbind() |>
+    dplyr::filter(is.na(date) | lubridate::ymd(date) >= five_years_ago())
 
   number_articles <- easyPubMed::get_pubmed_ids(search_terms)$Count
 

@@ -66,9 +66,9 @@ zenodo_extract_relevant_data <- function(record_list) {
     stringr::str_flatten("; ") %>%
     stringr::str_trim()
 
-  list(
+  tibble::tibble(
     # creators = creators,
-    doi = record_list$links$doi,
+    doi = stringr::str_remove(record_list$links$doi, "^https://doi.org/"),
     date = record_list$metadata$publication_date,
     title = record_list$metadata$title %>%
       drop_newlines() %>%
@@ -76,7 +76,8 @@ zenodo_extract_relevant_data <- function(record_list) {
     # description = record_list$metadata$description,
     type = record_list$metadata$upload_type,
     keywords = keywords
-  )
+  ) |>
+    dplyr::mutate(id = doi, .before = dplyr::everything())
 }
 
 #' Retrieve records from Zenodo in the last 5 years.
@@ -97,7 +98,8 @@ zenodo_retrieve_records <- function(search_terms) {
   # Extract necessary data and keep only last five years
   zenodo_records_processed <- zenodo_records %>%
     purrr::map(zenodo_extract_relevant_data) %>%
-    purrr::keep(~ lubridate::ymd(lubridate::as_date(.x$date)) >= five_years_ago())
+    purrr::list_rbind() |>
+    dplyr::filter(lubridate::ymd(date) >= five_years_ago())
 
   # There's less entries from the original
   cli::cli_inform(c("Records from Zenodo",

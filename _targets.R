@@ -47,7 +47,7 @@ list(
   ),
   tar_target(
     name = data_raw_zenodo,
-    command = save_list_as_csv(zenodo_records, here::here("data-raw/zenodo.csv")),
+    command = save_as_csv(zenodo_records, here::here("data-raw/zenodo.csv")),
     format = "file"
   ),
   # PubMed ------------------------------------------------------------------
@@ -61,7 +61,7 @@ list(
   ),
   tar_target(
     name = data_raw_pubmed,
-    command = save_list_as_csv(pubmed_records, here::here("data-raw/pubmed.csv")),
+    command = save_as_csv(pubmed_records, here::here("data-raw/pubmed.csv")),
     format = "file"
   ),
   # arXiv ------------------------------------------------------------------
