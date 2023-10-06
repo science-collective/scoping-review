@@ -68,7 +68,7 @@ zenodo_extract_relevant_data <- function(record_list) {
 
   tibble::tibble(
     # creators = creators,
-    doi = record_list$links$doi,
+    doi = stringr::str_remove(record_list$links$doi, "^https://doi.org/"),
     date = record_list$metadata$publication_date,
     title = record_list$metadata$title %>%
       drop_newlines() %>%
