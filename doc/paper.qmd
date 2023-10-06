@@ -1,5 +1,5 @@
 ---
-title: "Towards open collaboration in biomedical and health research: A scoping review"
+title: "Towards open collaboration in biomedical and health research: An open collaborative scoping review"
 date: last-modified
 author: 
   - name: Hannah Chatwin
