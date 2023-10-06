@@ -53,13 +53,14 @@ pubmed_extract_relevant_data <- function(record_list) {
   # Set any dates that don't exist to NA.
   date <- if (length(article_date)) article_date else NA
 
-  list(
+  tibble::tibble(
     doi = unlist(metadata$ELocationID),
     date = date,
     title = unlist(metadata$ArticleTitle) %>%
       drop_newlines() %>%
       stringr::str_flatten()
-  )
+  ) |>
+    dplyr::mutate(id = doi, .before = dplyr::everything())
 }
 
 #' Retrieve and process PubMed records from the last five years.

@@ -66,7 +66,7 @@ zenodo_extract_relevant_data <- function(record_list) {
     stringr::str_flatten("; ") %>%
     stringr::str_trim()
 
-  list(
+  tibble::tibble(
     # creators = creators,
     doi = record_list$links$doi,
     date = record_list$metadata$publication_date,
@@ -76,7 +76,8 @@ zenodo_extract_relevant_data <- function(record_list) {
     # description = record_list$metadata$description,
     type = record_list$metadata$upload_type,
     keywords = keywords
-  )
+  ) |>
+    dplyr::mutate(id = doi, .before = dplyr::everything())
 }
 
 #' Retrieve records from Zenodo in the last 5 years.
