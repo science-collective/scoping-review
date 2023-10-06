@@ -1,13 +1,31 @@
-# Function to exclude titles containing excluded terms
-title_screening <- function(title, exclusions) {
-    any(grepl(paste(exclusions, collapse = "|"), title, ignore.case = TRUE))
+#' Exclude titles based on further criteria.
+#'
+#' @param data Reference/sources data frame.
+#'
+#' @return A tibble.
+#'
+#' @examples
+#' readr::read_csv(here::here("data-raw/zenodo.csv")) |> exclude_from_title() |> View()
+exclude_from_title <- function(data) {
+# TODO: Use ggcohort to track what is removed?
+  data |>
+    # Items related to healthcare or surgery
+    exclude(title, "open( |-)label|surgery|surgical|angle glaucoma|fracture|abdomen|wound") |>
+    # Items related to government, politics, or social
+    exclude(title, "open( |-)(government|governance|dialogue|letter|spaces|call|people|universit(y|ies))") |>
+    # Items related to electronics or tech
+    exclude(title, "open( |-)(circuit|shell|backend|set|iot)") |>
+    # Items related to dissemination
+    exclude(title, "open( |-)access|publishing|communication") |>
+    # Items related to misc
+    exclude(title, "open( |-)(end(ed)?|issues|water|air|education(al)?)")
 }
 
-# Load data
-pubmed_data <- read.csv("C:/Users/au711684/Documents/Science Collective/data-raw/pubmed.csv")
-
-# List of automatic exclusions
-automatic_exclusions <- c("open-label", "open label", "open surgery", "open government", "open governance", "open-angle glaucoma", "open dialogue", "open-circuit", "open circuit", "open-ended", "open fracture", "open issues", "open-shell", "open letter", "open abdomen", "open spaces", "open wound", "open call", "open people", "open water", "open university", "open universities")
-
-# Apply screening function to dataset
-pubmed_data_clean <- pubmed_data[!sapply(pubmed_data$title, title_screening, exclusions = automatic_exclusions), ]
+exclude <- function(data, variable, criteria) {
+  data |>
+    dplyr::filter(stringr::str_detect(
+      string = {{variable}},
+      pattern = stringr::regex(criteria, ignore_case = TRUE),
+      negate = TRUE
+    ))
+}
