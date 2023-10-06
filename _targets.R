@@ -89,5 +89,14 @@ list(
     name = data_raw_medrxiv,
     command = save_as_csv(medrxiv_records, here::here("data-raw/medrxiv.csv")),
     format = "file"
+  ),
+  # Join sources and apply exclusions ---------------------------------------
+  tar_target(
+    name = records,
+    command = join_from_paths(c(data_raw_medrxiv, data_raw_arxiv, data_raw_pubmed, data_raw_zenodo)
+  ),
+  tar_targets(
+    name = records_after_title_exclusion,
+    command = exclude_from_title(records)
   )
 )
