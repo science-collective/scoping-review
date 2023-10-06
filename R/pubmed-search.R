@@ -73,9 +73,8 @@ pubmed_retrieve_records <- function(search_terms) {
   pubmed_records_processed <- search_terms %>%
     pubmed_get_records() %>%
     purrr::map(pubmed_extract_relevant_data) %>%
-    purrr::keep(~ {
-      is.na(.x$date) | lubridate::ymd(.x$date) >= five_years_ago()
-    })
+    purrr::list_rbind() |>
+    dplyr::filter(is.na(date) | lubridate::ymd(date) >= five_years_ago())
 
   number_articles <- easyPubMed::get_pubmed_ids(search_terms)$Count
 
