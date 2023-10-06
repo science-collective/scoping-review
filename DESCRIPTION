@@ -36,7 +36,6 @@ Imports:
     usethis,
     vctrs,
     visNetwork,
-    wosr,
     yaml,
     zen4R (>= 0.7)
 Remotes: 

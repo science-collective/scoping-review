@@ -1,4 +1,4 @@
-# Open collaboration within scientific research: Where we are, where we should be, and how to get there
+# Open collaboration practices within scientific research: Where we are, where we should be, and how to get there
 
 -   Protocol DOI:
     [`10.17605/OSF.IO/K9DR5`](https://doi.org/10.17605/OSF.IO/K9DR5)
@@ -8,12 +8,12 @@ social environment that encourages and makes it easy for science to be
 done in an open, rigorous, and collaborative way. Since scientific
 research now almost always requires working with other people. With the
 increasing emphasis on and demand for science to be more open, how we
-collaborate together is a key component to making science more easily
-open from the start of any project. But how do we collaborate in an open
-and transparent way? What are the best practices and tools we can use?
-What is an ideal collaborative workflow and how close or far are we from
-this ideal in reality? This project aims to address some of these
-questions.
+collaborate is a key component to making science more easily open from
+the start of any project. But how do we collaborate in an open and
+transparent way? What are the best practices and tools we can use
+reported in the scientific literature? What is an ideal collaborative
+workflow and how close or far are we from this ideal in reality? This
+project aims to address some of these questions.
 
 Our three general outputs for this project are:
 
@@ -35,7 +35,7 @@ Our three general outputs for this project are:
 3.  A comparison of where we are right now and where we should be, and
     how we can start moving towards the ideal.
 
-Another output(s) we are considering include:
+Another output(s) we are considering to include:
 
 -   A survey sent out determining what researchers and research groups
     currently do for collaboration.
@@ -81,4 +81,3 @@ Please note that the scoping-review project is released with a
 [Contributor Code of
 Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its terms.
-

@@ -8,7 +8,7 @@ author:
   - name: Mario Garcia
     affiliations: 
       - ref: ku
-  - name: Daniel Ibsen
+  - name: Daniel B. Ibsen
     affiliations: 
       - ref: sdca
       - ref: au
@@ -79,3 +79,18 @@ Science Framework (DOI:
     small differences in search results between the API query compared
     to the web-based query. We can't explain these differences, though
     they were quite minor.
+-   **Exclude Web of Science source**: We were unable to connect the Web
+    of Science source to R through the `{wosr}` package. Using the API
+    key did not as documented in the package did not work. We decided
+    that in the interest of reproducibility, that we exclude this
+    source.
+
+## Contributions
+
+<!-- TODO: add contributions according to: https://credit.niso.org/ -->
+
+-   HC:
+-   MG:
+-   DBI: Conceptualization, Data curation, formal analysis,
+    investigation, methodology, writing
+-   LWJ:

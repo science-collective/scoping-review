@@ -49,7 +49,7 @@
     },
     "Matrix": {
       "Package": "Matrix",
-      "Version": "1.5-4.1",
+      "Version": "1.6-0",
       "Source": "Repository",
       "Repository": "RSPM",
       "RemoteType": "standard",
@@ -57,9 +57,10 @@
       "RemoteRef": "Matrix",
       "RemoteRepos": "https://packagemanager.rstudio.com/all/__linux__/jammy/latest",
       "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-22.04",
-      "RemoteSha": "1.5-4.1",
+      "RemoteSha": "1.6-0",
       "Requirements": [
         "R",
+        "grDevices",
         "graphics",
         "grid",
         "lattice",
@@ -67,7 +68,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "38082d362d317745fb932e13956dccbb"
+      "Hash": "31262fd18481fab05c5e7258dac163ca"
     },
     "R.cache": {
       "Package": "R.cache",
@@ -791,7 +792,7 @@
     },
     "digest": {
       "Package": "digest",
-      "Version": "0.6.32",
+      "Version": "0.6.33",
       "Source": "Repository",
       "Repository": "RSPM",
       "RemoteType": "standard",
@@ -799,12 +800,12 @@
       "RemoteRef": "digest",
       "RemoteRepos": "https://packagemanager.rstudio.com/all/__linux__/jammy/latest",
       "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-22.04",
-      "RemoteSha": "0.6.32",
+      "RemoteSha": "0.6.33",
       "Requirements": [
         "R",
         "utils"
       ],
-      "Hash": "011ce1464a4716c488f4fc649c3d4d50"
+      "Hash": "b18a9cf3c003977b0cc49d5e76ebe48d"
     },
     "docxtractr": {
       "Package": "docxtractr",
@@ -1584,7 +1585,7 @@
     },
     "igraph": {
       "Package": "igraph",
-      "Version": "1.5.0",
+      "Version": "1.5.0.1",
       "Source": "Repository",
       "Repository": "RSPM",
       "RemoteType": "standard",
@@ -1592,7 +1593,7 @@
       "RemoteRef": "igraph",
       "RemoteRepos": "https://packagemanager.rstudio.com/all/__linux__/jammy/latest",
       "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-22.04",
-      "RemoteSha": "1.5.0",
+      "RemoteSha": "1.5.0.1",
       "Requirements": [
         "Matrix",
         "R",
@@ -1607,7 +1608,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "84818361421d5fc3ff0bf4e669524217"
+      "Hash": "08352b502db2eae1e46364de6e6421f4"
     },
     "ini": {
       "Package": "ini",
@@ -2071,23 +2072,6 @@
         "utils"
       ],
       "Hash": "7ef6f300721d2beb43e73f476ec3476e"
-    },
-    "pbapply": {
-      "Package": "pbapply",
-      "Version": "1.7-2",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "RemoteType": "standard",
-      "RemotePkgRef": "pbapply",
-      "RemoteRef": "pbapply",
-      "RemoteRepos": "https://packagemanager.rstudio.com/all/__linux__/jammy/latest",
-      "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-22.04",
-      "RemoteSha": "1.7-2",
-      "Requirements": [
-        "R",
-        "parallel"
-      ],
-      "Hash": "68a2d681e10cf72f0afa1d84d45380e5"
     },
     "pillar": {
       "Package": "pillar",
@@ -3249,28 +3233,6 @@
         "stats"
       ],
       "Hash": "c0e49a9760983e81e55cdd9be92e7182"
-    },
-    "wosr": {
-      "Package": "wosr",
-      "Version": "0.3.0",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "RemoteType": "standard",
-      "RemotePkgRef": "wosr",
-      "RemoteRef": "wosr",
-      "RemoteRepos": "https://packagemanager.rstudio.com/all/__linux__/jammy/latest",
-      "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-22.04",
-      "RemoteSha": "0.3.0",
-      "Requirements": [
-        "R",
-        "httr",
-        "jsonlite",
-        "pbapply",
-        "tools",
-        "utils",
-        "xml2"
-      ],
-      "Hash": "f542b4837099773855e9aa1722d33331"
     },
     "xfun": {
       "Package": "xfun",
