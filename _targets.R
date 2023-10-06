@@ -32,6 +32,8 @@ source("R/zenodo-search.R")
 source("R/arxiv-search.R")
 source("R/pubmed-search.R")
 source("R/medrxiv-search.R")
+source("R/merge-records.R")
+source("R/exclusions.R")
 
 list(
   # Zenodo ------------------------------------------------------------------
