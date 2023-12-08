@@ -116,7 +116,7 @@ list(
       data_raw_zenodo
     ))
   ),
-  tar_targets(
+  tar_target(
     name = records_after_title_exclusion,
     command = exclude_from_title(records)
   )
