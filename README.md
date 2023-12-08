@@ -63,9 +63,11 @@ inside the R Project):
 renv::restore()
 ```
 
-And to rebuild the sources, run:
+And to rebuild the sources (which can take some time), run:
 
 ``` r
+# To start from scratch, uncomment code below
+# targets::tar_destroy()
 targets::tar_make()
 ```
 
