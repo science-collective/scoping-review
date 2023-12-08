@@ -32,7 +32,7 @@ exclude_from_title <- function(data) {
     # Items related to sports, games
     exclude(title, "open( |-|, )(tennis|games|competition|play)") |>
     # Items related to misc
-    exclude(title, "open( |-|, )(end(ed)?|issues|synthesis|domain|platform|monitoring|questions|charm|porous|volume|case|top|disclosure|network|up|to )")
+    exclude(title, "open( |-|, )(end(ed)?|issues|synthesis|invitation|domain|platform|monitoring|questions|charm|porous|volume|case|top|disclosure|network|up|to )")
 }
 
 exclude <- function(data, variable, criteria) {
