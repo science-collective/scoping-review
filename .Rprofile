@@ -20,6 +20,5 @@ source("renv/activate.R")
 if (interactive()) {
   suppressMessages(require(usethis))
   suppressMessages(require(gert))
-  try(rspm::enable(), silent = TRUE)
 }
 
