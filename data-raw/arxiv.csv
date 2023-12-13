@@ -1,11 +1,6 @@
 id,date,title,link_abstract
 1608.03608v2,2019-04-16 16:51:31,Aristotle vs. Ringelmann: On Superlinear Production in Open Source   Software,http://arxiv.org/abs/1608.03608v2
 1801.03625v2,2018-12-26 20:15:08,On Evaluating and Comparing Open Domain Dialog Systems,http://arxiv.org/abs/1801.03625v2
-1805.12398v1,2018-05-31 09:49:50,"The Types, Roles, and Practices of Documentation in Data Analytics Open   Source Software Libraries: A Collaborative Ethnography of Documentation Work",http://arxiv.org/abs/1805.12398v1
-1806.00678v1,2018-06-02 17:46:33,AutoRally An open platform for aggressive autonomous driving,http://arxiv.org/abs/1806.00678v1
-1808.08070v1,2018-08-24 10:06:44,The Open Energy Modelling Framework (oemof) - A new approach to   facilitate open science in energy system modelling,http://arxiv.org/abs/1808.08070v1
-1809.11051v1,2018-09-28 14:16:46,A ROS-based Software Framework for the NimbRo-OP Humanoid Open Platform,http://arxiv.org/abs/1809.11051v1
-1810.07812v1,2018-10-17 21:37:59,Openness and Impact of Leading Scientific Countries,http://arxiv.org/abs/1810.07812v1
 1812.10175v1,2018-12-25 23:38:36,The iEnvironment Platform: Developing an Open Science Software Platform   for Integrated Environmental Monitoring and Modeling of Surface Water,http://arxiv.org/abs/1812.10175v1
 1812.10757v1,2018-12-27 16:17:30,Advancing the State of the Art in Open Domain Dialog Systems through the   Alexa Prize,http://arxiv.org/abs/1812.10757v1
 1902.08245v1,2019-02-21 20:18:15,3D electromagnetic modelling and inversion: A case for open-source,http://arxiv.org/abs/1902.08245v1
@@ -81,11 +76,11 @@ id,date,title,link_abstract
 2203.14733v2,2022-10-04 08:11:03,Open-VICO: An Open-Source Gazebo Toolkit for Vision-based Skeleton   Tracking in Human-Robot Collaboration,http://arxiv.org/abs/2203.14733v2
 2204.01216v1,2022-04-04 02:56:12,MLPro: A System for Hosting Crowdsourced Machine Learning Challenges for   Open-Ended Research Problems,http://arxiv.org/abs/2204.01216v1
 2204.12564v2,2022-05-18 00:50:10,Defining the role of open source software in research reproducibility,http://arxiv.org/abs/2204.12564v2
-2205.00005v2,2023-01-05 20:53:13,Optically detected magnetic resonance with an open source platform,http://arxiv.org/abs/2205.00005v2
+2205.00005v4,2023-07-11 07:55:51,Optically detected magnetic resonance with an open source platform,http://arxiv.org/abs/2205.00005v4
 2206.08259v1,2022-06-01 11:48:01,CLEF. A Linked Open Data native system for Crowdsourcing,http://arxiv.org/abs/2206.08259v1
 2206.04460v3,2022-07-13 07:51:02,Open ERP System Data For Occupational Fraud Detection,http://arxiv.org/abs/2206.04460v3
 2206.07476v1,2022-06-15 12:26:12,"OpenCitations, an open e-infrastructure to foster maximum reuse of   citation data",http://arxiv.org/abs/2206.07476v1
-2206.12338v2,2022-12-29 16:23:29,Diegetic Representation Of Feedback In Open Games,http://arxiv.org/abs/2206.12338v2
+2206.12338v3,2023-07-31 10:37:00,Diegetic Representation of Feedback in Open Games,http://arxiv.org/abs/2206.12338v3
 2207.01512v1,2022-06-27 11:03:56,"Advancing Education Through Extended Reality and Internet of Everything   Enabled Metaverses: Applications, Challenges, and Open Issues",http://arxiv.org/abs/2207.01512v1
 2207.02775v2,2022-07-07 06:16:59,Open Science and Authorship of Supplementary Material. Evidence from a   Research Community,http://arxiv.org/abs/2207.02775v2
 2207.03121v1,2022-07-07 07:04:12,Will open science change authorship for good? Towards a quantitative   analysis,http://arxiv.org/abs/2207.03121v1
@@ -98,14 +93,14 @@ id,date,title,link_abstract
 2209.04663v1,2022-09-10 13:14:20,PyPSA-Earth. A New Global Open Energy System Optimization Model   Demonstrated in Africa,http://arxiv.org/abs/2209.04663v1
 2209.11050v2,2023-01-10 16:54:10,A catalog of new Blazar candidates with Open Universe by High School   students,http://arxiv.org/abs/2209.11050v2
 2211.02701v1,2022-11-04 18:35:00,MONAI: An open-source framework for deep learning in healthcare,http://arxiv.org/abs/2211.02701v1
-2211.05100v3,2023-03-13 15:55:30,BLOOM: A 176B-Parameter Open-Access Multilingual Language Model,http://arxiv.org/abs/2211.05100v3
+2211.05100v4,2023-06-27 09:57:58,BLOOM: A 176B-Parameter Open-Access Multilingual Language Model,http://arxiv.org/abs/2211.05100v4
 2211.07021v2,2023-03-30 19:14:54,Using Hand Pose Estimation To Automate Open Surgery Training Feedback,http://arxiv.org/abs/2211.07021v2
 2211.07738v1,2022-11-14 20:33:27,A survey of the European Open Science Cloud services for expanding the   capacity and capabilities of multidisciplinary scientific applications,http://arxiv.org/abs/2211.07738v1
 2212.04853v1,2022-12-09 13:46:20,Open Science in Lattice Gauge Theory community,http://arxiv.org/abs/2212.04853v1
-2212.09648v2,2022-12-20 02:04:13,NusaCrowd: Open Source Initiative for Indonesian NLP Resources,http://arxiv.org/abs/2212.09648v2
+2212.09648v4,2023-07-21 14:44:45,NusaCrowd: Open Source Initiative for Indonesian NLP Resources,http://arxiv.org/abs/2212.09648v4
 2301.07325v3,2023-01-26 16:40:25,The OpenCDA Open-source Ecosystem for Cooperative Driving Automation   Research,http://arxiv.org/abs/2301.07325v3
 2301.08488v1,2023-01-20 09:34:59,Towards Openness Beyond Open Access: User Journeys through 3 Open AI   Collaboratives,http://arxiv.org/abs/2301.08488v1
-2301.09976v2,2023-04-20 14:03:19,"Bridging Systems: Open Problems for Countering Destructive Divisiveness   across Ranking, Recommenders, and Governance",http://arxiv.org/abs/2301.09976v2
+2301.09976v3,2023-07-24 15:28:15,"Bridging Systems: Open Problems for Countering Destructive Divisiveness   across Ranking, Recommenders, and Governance",http://arxiv.org/abs/2301.09976v3
 2302.02533v3,2023-02-15 22:04:42,Linking Datasets on Organizations Using Half A Billion Open Collaborated   Records,http://arxiv.org/abs/2302.02533v3
 2302.05669v1,2023-02-11 12:03:43,Treat societally impactful scientific insights as open-source software   artifacts,http://arxiv.org/abs/2302.05669v1
 2302.06352v2,2023-02-14 09:06:03,Deep Anatomical Federated Network (Dafne): an open client/server   framework for the continuous collaborative improvement of deep-learning-based   medical image segmentation,http://arxiv.org/abs/2302.06352v2
@@ -116,4 +111,37 @@ id,date,title,link_abstract
 2304.02208v1,2023-04-05 03:45:39,PIKS: A Technique to Identify Actionable Trends for Policy-Makers   Through Open Healthcare Data,http://arxiv.org/abs/2304.02208v1
 2304.11175v1,2023-04-21 17:50:21,Utilizing Online and Open-Source Machine Learning Toolkits to Leverage   the Future of Sustainable Engineering,http://arxiv.org/abs/2304.11175v1
 2304.14244v2,2023-05-10 13:20:53,Developing Distributed High-performance Computing Capabilities of an   Open Science Platform for Robust Epidemic Analysis,http://arxiv.org/abs/2304.14244v2
-2305.06226v1,2023-05-10 15:03:33,RiverBench: an Open RDF Streaming Benchmark Suite,http://arxiv.org/abs/2305.06226v1
+2305.06226v2,2023-11-27 11:04:56,RiverBench: an Open RDF Streaming Benchmark Suite,http://arxiv.org/abs/2305.06226v2
+2305.09349v1,2023-05-16 11:07:05,Establishing Shared Query Understanding in an Open Multi-Agent System,http://arxiv.org/abs/2305.09349v1
+2306.04164v1,2023-06-07 05:34:21,A Survey on Multi-AP Coordination Approaches over Emerging WLANs: Future   Directions and Open Challenges,http://arxiv.org/abs/2306.04164v1
+2306.06031v1,2023-06-09 16:52:00,FinGPT: Open-Source Financial Large Language Models,http://arxiv.org/abs/2306.06031v1
+2306.06664v1,2023-06-11 12:31:42,"A Survey of NOMA: State of the Art, Key Techniques, Open Challenges,   Security Issues and Future Trends",http://arxiv.org/abs/2306.06664v1
+2306.09298v1,2023-06-15 17:27:16,Lakat: An open and permissionless architecture for continuous   integration academic publishing,http://arxiv.org/abs/2306.09298v1
+2306.13080v1,2023-06-22 17:54:30,Mapping the German Diamond Open Access Journal Landscape,http://arxiv.org/abs/2306.13080v1
+2307.00965v1,2023-07-03 12:35:03,OpenClinicalAI: An Open and Dynamic Model for Alzheimer's Disease   Diagnosis,http://arxiv.org/abs/2307.00965v1
+2307.02654v2,2023-07-10 07:40:26,A Robust Open-source Tendon-driven Robot Arm for Learning Control of   Dynamic Motions,http://arxiv.org/abs/2307.02654v2
+2307.16875v1,2023-07-22 01:30:25,Pyrus Base: An Open Source Python Framework for the RoboCup 2D Soccer   Simulation,http://arxiv.org/abs/2307.16875v1
+2307.14527v2,2023-08-10 01:46:11,Open Problems in Computer Vision for Wilderness SAR and The Search for   Patricia Wu-Murad,http://arxiv.org/abs/2307.14527v2
+2308.04766v1,2023-08-09 07:54:28,Open Source Software in the Public Sector: 25 years and still in its   infancy,http://arxiv.org/abs/2308.04766v1
+2308.05014v2,2023-10-06 09:04:19,A Comprehensive Empirical Study of Bugs in Open-Source Federated   Learning Frameworks,http://arxiv.org/abs/2308.05014v2
+2308.07242v1,2023-08-14 16:23:27,Age of Processing-Based Data Offloading for Autonomous Vehicles in   Multi-RATs Open RAN,http://arxiv.org/abs/2308.07242v1
+2308.09876v2,2023-11-09 20:03:16,Characterizing Usability Issue Discussions in Open Source Software   Projects,http://arxiv.org/abs/2308.09876v2
+2308.12688v2,2023-11-07 13:40:11,Whombat: An open-source annotation tool for machine learning development   in bioacoustics,http://arxiv.org/abs/2308.12688v2
+2308.14953v2,2023-08-30 19:45:32,An Open Community-Driven Model For Sustainable Research Software:   Sustainable Research Software Institute,http://arxiv.org/abs/2308.14953v2
+2308.16435v1,2023-08-31 03:49:41,Njobvu-AI: An open-source tool for collaborative image labeling and   implementation of computer vision models,http://arxiv.org/abs/2308.16435v1
+2309.04498v1,2023-09-07 21:38:28,PhysioZoo: The Open Digital Physiological Biomarkers Resource,http://arxiv.org/abs/2309.04498v1
+2309.09404v3,2023-10-24 03:21:32,Promoting Research Collaboration with Open Data Driven Team   Recommendation in Response to Call for Proposals,http://arxiv.org/abs/2309.09404v3
+2309.11039v1,2023-09-20 03:39:30,Federated Learning in Intelligent Transportation Systems: Recent   Applications and Open Problems,http://arxiv.org/abs/2309.11039v1
+2309.16294v1,2023-09-28 09:43:26,The Pierre Auger Observatory Open Data,http://arxiv.org/abs/2309.16294v1
+2310.00766v1,2023-10-01 19:14:38,A Preview of Open-Loop and Feedback Nash Trajectories in Racing   Scenarios,http://arxiv.org/abs/2310.00766v1
+2310.05180v1,2023-10-08 14:32:25,"Blockchain-Envisioned Disaster Relief Networks: Architecture,   Opportunities, and Open Issues",http://arxiv.org/abs/2310.05180v1
+2310.06962v1,2023-10-10 19:24:01,Open-source Pulseq sequences on Philips MRI scanners,http://arxiv.org/abs/2310.06962v1
+2310.10295v1,2023-10-16 11:32:03,The Software Heritage Open Science Ecosystem,http://arxiv.org/abs/2310.10295v1
+2310.14714v3,2023-12-04 13:23:46,BatteryML:An Open-source platform for Machine Learning on Battery   Degradation,http://arxiv.org/abs/2310.14714v3
+2310.18163v1,2023-10-27 14:15:44,A collection of open problems in celebration of Imre Leader's 60th   birthday,http://arxiv.org/abs/2310.18163v1
+2310.19775v1,2023-10-30 17:44:55,Explainable Artificial Intelligence (XAI) 2.0: A Manifesto of Open   Challenges and Interdisciplinary Research Directions,http://arxiv.org/abs/2310.19775v1
+2311.09881v1,2023-11-16 13:18:24,The Software Genome Project: Venture to the Genomic Pathways of Open   Source Software and Its Applications,http://arxiv.org/abs/2311.09881v1
+2311.13389v1,2023-11-22 13:38:31,Conflict Management in the Near-RT-RIC of Open RAN: A Game Theoretic   Approach,http://arxiv.org/abs/2311.13389v1
+2311.15212v1,2023-11-26 07:01:36,OpenPerf: A Benchmarking Framework for the Sustainable Development of   the Open-Source Ecosystem,http://arxiv.org/abs/2311.15212v1
+2312.00951v1,2023-12-01 22:03:48,AV4EV: Open-Source Modular Autonomous Electric Vehicle Platform to Make   Mobility Research Accessible,http://arxiv.org/abs/2312.00951v1
+2312.01058v1,2023-12-02 08:04:31,A Survey of Progress on Cooperative Multi-agent Reinforcement Learning   in Open Environment,http://arxiv.org/abs/2312.01058v1
