@@ -59,8 +59,7 @@ pubmed_extract_relevant_data <- function(record_list) {
     title = unlist(metadata$ArticleTitle) %>%
       drop_newlines() %>%
       stringr::str_flatten()
-  ) |>
-    dplyr::mutate(id = doi, .before = dplyr::everything())
+  )
 }
 
 #' Retrieve and process PubMed records from the last five years.
@@ -80,7 +79,7 @@ pubmed_retrieve_records <- function(search_terms) {
 
   cli::cli_inform(c("Records from PubMed",
     "i" = "{number_articles} records were retrieved.",
-    "i" = "{length(pubmed_records_processed)} records are within 5 years."
+    "i" = "{nrow(pubmed_records_processed)} records are within 5 years."
   ))
 
   pubmed_records_processed
