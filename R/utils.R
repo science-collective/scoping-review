@@ -5,8 +5,8 @@
 #'
 #' @return Character for file path, side effect of saving a CSV file.
 #'
-save_as_csv <- function(records_list, path) {
-  readr::write_csv(records_list, path)
+save_as_csv <- function(records_tbl, path) {
+  readr::write_csv(records_tbl, path)
   return(path)
 }
 
