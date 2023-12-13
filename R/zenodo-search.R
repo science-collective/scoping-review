@@ -104,7 +104,7 @@ zenodo_retrieve_records <- function(search_terms) {
   # There's less entries from the original
   cli::cli_inform(c("Records from Zenodo",
     "i" = "{length(zenodo_records)} records were retrieved.",
-    "i" = "{length(zenodo_records_processed)} records are within 5 years."
+    "i" = "{nrow(zenodo_records_processed)} records are within 5 years."
   ))
 
   zenodo_records_processed
