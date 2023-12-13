@@ -93,23 +93,23 @@ list(
     format = "file"
   ),
   # bioRxiv -----------------------------------------------------------------
-  tar_target(
-    name = biorxiv_search_terms,
-    command = search_terms("biorxiv")
-  ),
-  tar_target(
-    name = biorxiv_records,
-    command = biorxiv_retrieve_records(biorxiv_search_terms)
-  ),
-  tar_target(
-    name = data_raw_biorxiv,
-    command = save_as_csv(biorxiv_records, here::here("data-raw/biorxiv.csv")),
-    format = "file"
-  ),
+  # tar_target(
+  #   name = biorxiv_search_terms,
+  #   command = search_terms("biorxiv")
+  # ),
+  # tar_target(
+  #   name = biorxiv_records,
+  #   command = biorxiv_retrieve_records(biorxiv_search_terms)
+  # ),
+  # tar_target(
+  #   name = data_raw_biorxiv,
+  #   command = save_as_csv(biorxiv_records, here::here("data-raw/biorxiv.csv")),
+  #   format = "file"
+  # ),
   # Join sources and apply exclusions ---------------------------------------
   tar_target(
     name = records,
-    command = join_from_paths(c(
+    command = purrr::reduce(c(
       data_raw_medrxiv,
       data_raw_arxiv,
       data_raw_pubmed,
