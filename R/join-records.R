@@ -6,5 +6,5 @@
 #'
 join_from_path <- function(paths) {
   purrr::map(paths, ~ readr::read_csv(.x)) |>
-    purrr::reduce(dplyr::full_join)
+    purrr::list_rbind()
 }
