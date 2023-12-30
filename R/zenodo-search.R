@@ -99,7 +99,8 @@ zenodo_retrieve_records <- function(search_terms) {
   zenodo_records_processed <- zenodo_records %>%
     purrr::map(zenodo_extract_relevant_data) %>%
     purrr::list_rbind() |>
-    dplyr::filter(lubridate::ymd(date) >= five_years_ago())
+    dplyr::filter(lubridate::ymd(date) >= five_years_ago()) |>
+    dplyr::mutate(source = "zenodo")
 
   # There's less entries from the original
   cli::cli_inform(c("Records from Zenodo",
@@ -111,5 +112,4 @@ zenodo_retrieve_records <- function(search_terms) {
 }
 
 # Post-processing and selection -------------------------------------------
-
 
