@@ -6,7 +6,7 @@
 #'
 #' @examples
 #' search_terms("pubmed")
-search_terms <- function(engine = c("general", "pubmed", "zenodo", "wos", "arxiv", "medrxiv", "biorxiv")) {
+search_terms <- function(engine = c("general", "pubmed", "zenodo", "arxiv", "medrxiv", "biorxiv")) {
   engine <- rlang::arg_match(engine)
 
   # biorxiv and medrxiv use same search terms
