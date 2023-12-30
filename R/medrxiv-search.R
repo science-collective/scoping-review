@@ -42,12 +42,6 @@ biorxiv_retrieve_records <- function(search_terms) {
 #'
 #' @return A data frame.
 #'
-#' @examples
-#' \dontrun{
-#' # This takes a long time.
-#' search_terms("medrxiv") |>
-#'   medrxiv_get_records()
-#' }
 medrxiv_get_records <- function(search_terms) {
   medrxiv_generic_get_records(
     search_terms = search_terms,
@@ -60,7 +54,13 @@ medrxiv_get_records <- function(search_terms) {
 #' @inheritParams pubmed_retrieve_records
 #'
 #' @return A data frame.
-#'
+# '
+#' @examples
+#' \dontrun{
+#' # This takes a long time.
+#' search_terms("medrxiv") |>
+#'   medrxiv_retrieve_records()
+#' }
 medrxiv_retrieve_records <- function(search_terms) {
   medrxiv_generic_retrieve_records(
     search_terms = search_terms,
