@@ -5,8 +5,8 @@
 #'
 #' @return Character for file path, side effect of saving a CSV file.
 #'
-save_as_csv <- function(records_list, path) {
-  readr::write_csv(records_list, path)
+save_as_csv <- function(records_tbl, path) {
+  readr::write_csv(records_tbl, path)
   return(path)
 }
 
@@ -16,15 +16,4 @@ save_as_csv <- function(records_list, path) {
 #'
 five_years_ago <- function() {
   as.character(glue::glue("{lubridate::today()-lubridate::years(5)}"))
-}
-
-#' Drop newlines characters and flatten to a single string.
-#'
-#' @param text Text to modify.
-#'
-#' @return Combined text.
-#'
-drop_newlines <- function(text) {
-  text |>
-    stringr::str_replace_all("\n", " ")
 }
