@@ -1,0 +1,41 @@
+#' Search terms to use.
+#'
+#' @return A list with character vectors.
+#'
+search_terms <- function() {
+  # Can't use wildcards (*, ?)
+  list(
+    title_search = "open",
+    general_search = "(science OR research) AND (collaborating OR collaboration OR collaborate OR team OR cooperate OR cooperation OR cooperating) AND (technology OR technologies OR tool OR framework OR guideline OR principles OR practices OR systems OR resources)"
+  )
+}
+
+#' Search the Open Alex database
+#'
+#' See their website: https://openalex.org/
+#'
+#' @param search_term The search terms to use.
+#'
+#' @return A tibble.
+#'
+#' @examples
+#' openalex_retrieve_titles(search_terms())
+openalex_retrieve_titles <- function(search_term) {
+  openalexR::oa_fetch(
+    entity = "works",
+    options = list(
+      select = c("id", "doi", "display_name", "publication_date")
+    ),
+    search = search_term$general_search,
+    title.search = search_term$title_search,
+    open_access.is_oa = TRUE,
+    from_publication_date = five_years_ago(),
+    has_fulltext = TRUE,
+    language = "en",
+    type = c("article", "book-chapter", "book", "dissertation"),
+    per_page = 200,
+    mailto = "lwjohnst@gmail.com",
+    abstract = FALSE
+  ) |>
+    dplyr::rename(title = display_name)
+}
