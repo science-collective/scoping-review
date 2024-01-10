@@ -17,14 +17,3 @@ save_as_csv <- function(records_tbl, path) {
 five_years_ago <- function() {
   as.character(glue::glue("{lubridate::today()-lubridate::years(5)}"))
 }
-
-#' Drop newlines characters and flatten to a single string.
-#'
-#' @param text Text to modify.
-#'
-#' @return Combined text.
-#'
-drop_newlines <- function(text) {
-  text |>
-    stringr::str_replace_all("\n", " ")
-}
