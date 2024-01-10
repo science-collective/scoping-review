@@ -1,38 +1,43 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-.Random.seed|object|b93a683bcc2f90ad|||||||||||||||
+.Random.seed|object|5015b6abbf8824a9|||||||||||||||
 arxiv_get_records|function|3b3805233131806f|||||||||||||||
-arxiv_records|stem|436e0a528b644362|c69d1ddefcca2f48|a7030802417d4bea|1704599354||t19702.5992587031s|39b516263ceef3ce|9063|rds|local|vector|||16.676|partial argument match of along to along.with|
-arxiv_retrieve_records|function|517ea335e065f08e|||||||||||||||
-arxiv_search_terms|stem|6a9e467ad4c2c467|78545aece60b1327|f627a113f4e8c821|1209898122||t19702.5624165923s|2721c650416a264a|204|rds|local|vector|||0.004||
+arxiv_records|stem|6b018f6ccdb7ab66|c69d1ddefcca2f48|7e73dd7fb75c3d95|1704599354||t19713.6617901733s|79972d099c03844b|4808|rds|local|vector|||16.122|partial argument match of along to along.with|
+arxiv_retrieve_records|function|5d96ee01c5250a33|||||||||||||||
+arxiv_search_terms|stem|6a9e467ad4c2c467|78545aece60b1327|6021dd92655c990c|1209898122||t19713.6221234116s|2721c650416a264a|204|rds|local|vector|||0.004||
 biorxiv_get_records|function|2aa19dcd5ff12f1c|||||||||||||||
-biorxiv_retrieve_records|function|ab5cd44ace604826|||||||||||||||
+biorxiv_retrieve_records|function|3bf45319fda42018|||||||||||||||
 biorxiv_search_terms|stem|ad8969f9855c993b|33fc0b6bab48cbd3|f627a113f4e8c821|-743159885||t19702.5624166848s|2721c650416a264a|204|rds|local|vector|||0.001||
 data_raw_arxiv|stem|3afdd2c7bd6355ac|9bd5545ede785185|d3e9049864598e95|-954782193|/home/luke/Documents/organizations/science-collective/scoping-review/data-raw/arxiv.csv|t19703.4128599861s|bd3cb73f99754949|22560|file|local|vector|||0.008||
 data_raw_medrxiv|stem|e3f841906669dff0|4ab7933c67bd7ade|2001f713fa9d2a66|1911885191|/home/luke/Documents/organizations/science-collective/scoping-review/data-raw/medrxiv.csv|t19703.4128598935s|e5b9aa69c4e19f12|1546|file|local|vector|||0.074||
 data_raw_pubmed|stem|c54d0f85717cb6af|c31b50cdb8f8a98d|a16997b85460436a|446259341|/home/luke/Documents/organizations/science-collective/scoping-review/data-raw/pubmed.csv|t19703.4128606343s|a4e1041031a65e63|173124|file|local|vector|||0.03||
 data_raw_zenodo|stem|473fd8003faf2329|7e4bf83a5bd31556|fc53f4610f726756|880841122|/home/luke/Documents/organizations/science-collective/scoping-review/data-raw/zenodo.csv|t19703.4128602176s|3414ade73b0e1c04|100049|file|local|vector|||0.015||
+data_records|stem|801b7b6c887047fb|de6bd4e5062c145b|176bc5d07668436f|364517769||t19732.9335438907s|bce99b594ffe2eda|128|rds|local|vector|||0.112||
 drop_newlines|function|a4037712a656228a|||||||||||||||
 exclude|function|c0bc71e4d12affec|||||||||||||||
-exclude_from_title|function|cd444e9ee0d41e3a|||||||||||||||
+exclude_from_title|function|29608cea31a179bb|||||||||||||||
 five_years_ago|function|7646e33a0320796a|||||||||||||||
-join_from_path|function|be1a3d981d75080f|||||||||||||||
+join_from_path|function|109781b3c79408bd|||||||||||||||
 medrxiv_generic_get_records|function|18a2a09f72cff68d|||||||||||||||
-medrxiv_generic_retrieve_records|function|fff2cf4df319465f|||||||||||||||
+medrxiv_generic_retrieve_records|function|3193e20c8c382c3e|||||||||||||||
 medrxiv_get_records|function|93706a6304b795b6|||||||||||||||
-medrxiv_records|stem|58571813f0a537ac|836625fab75e4534|c1f7a147ed3c7f3d|-650685653||t19702.5990656915s|09ee093fc9964709|970|rds|local|vector|||3166.471||
-medrxiv_retrieve_records|function|856fe8f46a00399a|||||||||||||||
-medrxiv_search_terms|stem|ad8969f9855c993b|7b24ca78cf94dc4d|f627a113f4e8c821|-1135597035||t19702.5624164534s|2721c650416a264a|204|rds|local|vector|||0.982||
+medrxiv_records|stem|184c78477bd49225|836625fab75e4534|ef593346f13111df|-650685653||t19713.6616035044s|1c9471e76b15b954|989|rds|local|vector|||2532.84||
+medrxiv_retrieve_records|function|a5062bd82eb72818|||||||||||||||
+medrxiv_search_terms|stem|ad8969f9855c993b|7b24ca78cf94dc4d|6021dd92655c990c|-1135597035||t19713.6221232727s|2721c650416a264a|204|rds|local|vector|||0.992||
+openalex_retrieve_titles|function|806eb7f674bf5ffe|||||||||||||||
 pubmed_extract_relevant_data|function|5426d2ef7fd518f8|||||||||||||||
 pubmed_get_records|function|82f0a4bfaecea069|||||||||||||||
 pubmed_records|stem|6e43538063599f60|9651f75ec978f764|530210975efe089e|-1342473946||t19703.4128589676s|f9f0e86b0b91b863|64357|rds|local|vector|||21.264||
-pubmed_retrieve_records|function|933bf0dbea45c5e2|||||||||||||||
-pubmed_search_terms|stem|c34851c33b1c3796|ca8bacce6a7503ed|f627a113f4e8c821|-1788300734||t19702.5624166848s|ab284657d4bd29c6|211|rds|local|vector|||0.001||
+pubmed_retrieve_records|function|206dc15365927d8f|||||||||||||||
+pubmed_search_terms|stem|c34851c33b1c3796|ca8bacce6a7503ed|6021dd92655c990c|-1788300734||t19713.6221235505s|ab284657d4bd29c6|211|rds|local|vector|||0.001||
 records|stem||d38c87a7d3922fc8|ee741eb2c311539f|-717535789||t19703.412860709s||0|rds|local|vector|||0.001||could not find function join_from_paths
+records_after_title_exclusion|stem|fd3826a5dd12017d|96857ee444d77165|e5e8587c3481c53d|-1077701124||t19732.9335425943s|9be5b89f02ebe382|263537|rds|local|vector|||0.242||
+records_title_only|stem|8b390093ad0e9919|c9bc606899846093|dec79a6b094975e1|1674462218||t19732.9097911112s|454f7784fd9ee96b|552968|rds|local|vector|||31.465||
 save_as_csv|function|2d128a8851ec648b|||||||||||||||
-search_terms|function|a2dd51a3f8b4c68b|||||||||||||||
+search_term|stem|20996ff210afdbdd|b06f0a267ef4a6ae|43e80fc824b8ec48|1548776481||t19732.9015339282s|4c877582db246f52|237|rds|local|vector|||0.972||
+search_terms|function|74fa5ac5fdcb0fef|||||||||||||||
 zenodo_extract_relevant_data|function|b4fabf791f12fb08|||||||||||||||
 zenodo_get_records|function|1bee022517d767b6|||||||||||||||
 zenodo_prep_search_terms|function|4fbbbe7c9c8ee559|||||||||||||||
-zenodo_records|stem|b73535082f4da7d1|1e7c61672d4211b0|8c99b80fc7401df8|-1869306514||t19702.5995456509s|c6d8f3687e6e9935|30741|rds|local|vector|||24.785|partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners. partial match of owner to owners|
-zenodo_retrieve_records|function|4cd01ee8210bd6fa|||||||||||||||
-zenodo_search_terms|stem|b7ca8f01c1da8d20|aecff34e80a0e9d0|f627a113f4e8c821|1300475145||t19702.5624166386s|c784844629387e6b|197|rds|local|vector|||0||
+zenodo_records|stem|b73535082f4da7d1|1e7c61672d4211b0|c0bb99942a946f48|-1869306514||t19702.5995456509s||30741|rds|local|vector|||1.711||1m22m36mℹ39m In argument lubridateymddate  five_years_ago.1mCaused by error in as.character22m33m39m cannot coerce type closure to vector of type character
+zenodo_retrieve_records|function|c3247e8e30e13cc9|||||||||||||||
+zenodo_search_terms|stem|b7ca8f01c1da8d20|aecff34e80a0e9d0|6021dd92655c990c|1300475145||t19713.6221234579s|c784844629387e6b|197|rds|local|vector|||0.001||
