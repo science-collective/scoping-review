@@ -11,6 +11,8 @@ exclude_from_title <- function(data) {
   data |>
     # Items related to surgery
     exclude(title, "surgery|surgical|angle glaucoma|fracture|abdomen|abdominal|wound|vein|resection|urethroplasty|ectomy|inguinal|aortic") |>
+    # Items related to study designs
+    exclude(title, "open( |-|, )(web-based)") |>
     # Items related to healthcare or health study design
     exclude(title, "open( |-|, )(covid|defecation|comparative|cohort|pilot|double|label|trial|radical|radiology|acute|study|weighing|registry|care|selective|bay|chromatin|bite|repair|single-arm|wedge)|rehab|neuroscience|rt-qpcr|randomi[zs]ed|neuronal|neurons") |>
     # Items related to biology
@@ -20,9 +22,9 @@ exclude_from_title <- function(data) {
     # Items related to electronics or tech
     exclude(title, "open( |-|, )(electronics|circuit|shell|backend|set|iot|user|hollow|rdf)|hardware|blockchain|resonator|nanoparticle|robotic") |>
     # Items related to physics or engineering
-    exclude(title, "heavy-flavor|resonator|nanoparticle|robotic|x-ray|open( |-)(clusters|universe|systems|quantum|polar|magnetic|architectur(e|al))|nanofluidic") |>
+    exclude(title, "heavy-flavor|resonator|nanoparticle|robotic|x-ray|open( |-)(torque|industrial|clusters|universe|systems|quantum|polar|magnetic|architectur(e|al))|nanofluidic|LIGO") |>
     # Items related to specific software
-    exclude(title, "matlab|pathofusion|mrqy|imagej|opsef|open-tes") |>
+    exclude(title, "matlab|pathofusion|mrqy|imagej|opsef|open-tes|open-unmix|rhizovision|opencitations|magpie|licsbas") |>
     # Items related to dissemination
     exclude(title, "open( |-|, )(access|review(er)?)|publishing|communication") |>
     # Items related to education
@@ -31,14 +33,20 @@ exclude_from_title <- function(data) {
     exclude(title, "open( |-|, )(cheminformatics)") |>
     # Items related to industry/business
     exclude(title, "open( |-|, )(leader(ship)?|marketplace|innovation|pit|economy|loop)") |>
+    exclude(title, "trade openness") |>
     # Items related to ecology/environment
     exclude(title, "open( |-|, )(water|air|coastal|metal|forecast(ing)?|field|pollinated|hydroponic|fermentation|biomass|mapping|landscape)|hunter") |>
     # Items related to sports, games
     exclude(title, "open( |-|, )(tennis|games|competition|play)") |>
     # Items related to misc
-    exclude(title, "open( |-|, )(end(ed)?|issues|synthesis|invitation|domain|platform|monitoring|questions|charm|porous|volume|case|top|disclosure|network|up|to |forensic|challenges|days?|symposium|plan|house|model)") |>
+    exclude(title, "open( |-|, )(end(ed)?|issues|synthesis|invitation|domain|platform|monitoring|questions|charm|porous|volume|case|top|disclosure|network|up|to |forensic|challenges?|days?|symposium|plan|house|model|multiscale)") |>
     # Random items that probably shouldn't be in the database
-    exclude(title, "(ISSN|ISBN) \\d+|Chief Editor")
+    exclude(title, "(ISSN|ISBN) \\d+|Chief Editor") |>
+    # Software/data projects
+    exclude(title, "(R [Pp]ackages?|open( |-)database)") |>
+    # Genomics
+    exclude(title, "open( |-) (human)? ?(genom(ic|e)s?|genetics?)") |>
+    exclude(title, "covid-19")
 }
 
 exclude <- function(data, variable, criteria) {
