@@ -84,6 +84,7 @@ Science Framework (DOI:
     key did not as documented in the package did not work. We decided
     that in the interest of reproducibility, that we exclude this
     source.
+-   **Move all searching to using Open Alex**
 
 ## Contributions
 
