@@ -15,5 +15,7 @@ save_as_csv <- function(records_tbl, path) {
 #' @return A character vector of a date range.
 #'
 five_years_ago <- function() {
-  as.character(glue::glue("{lubridate::today()-lubridate::years(5)}"))
+  # To make this accessible to the function below.
+  `%m-%` <- lubridate::`%m-%`
+  as.character(glue::glue("{lubridate::today() %m-% lubridate::years(5)}"))
 }
