@@ -13,7 +13,7 @@ exclude_from_title <- function(data) {
     dplyr::arrange(dplyr::desc(publication_date)) |>
     dplyr::distinct(title, .keep_all = TRUE) |>
     # Items related to surgery
-    exclude(title, "surgery|surgical|angle glaucoma|fracture|abdomen|abdominal|wound|vein|resection|urethroplasty|ectomy|inguinal|aortic|rhinoplasty|lumbar|health|clinical|disease|patient|medical") |>
+    exclude(title, "surgery|surgical|angle glaucoma|fracture|abdomen|abdominal|wound|vein|resection|urethroplasty|ectomy|inguinal|aortic|rhinoplasty|lumbar") |>
     # Items related to study designs
     exclude(title, "open( |-|, )(web-based|placebo|cross-sectional)") |>
     # Items related to healthcare or health study design
