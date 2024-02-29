@@ -38,7 +38,7 @@ exclude_from_title <- function(data) {
     # Items related to dissemination
     exclude(title, "open( |-|, )(access|review(er)?)|publishing|communication") |>
     # Items related to education
-    exclude(title, "open( |-|, )(textbooks?|doors?|education(al)?|seminar|learning|schools|course|book|pedagogy|teaching|learning|online?)") |>
+    exclude(title, "open( |-|, )(textbooks?|doors?|education(al)?|seminar|learning|schools|course|book|pedagogy|teaching|learning|online)") |>
     exclude(title, "mooc|massive open online") |>
     # Items related to chemistry
     exclude(title, "open( |-|, )(cheminformatics)") |>
@@ -64,7 +64,7 @@ exclude_from_title <- function(data) {
     exclude(title, "open( |-) (human)? ?(genom(ic|e)s?|genetics?)") |>
     # exclude(title, "covid(-19)?|SARS-CoV-2") |>
     # Things specific to datasets that are open
-    exclude(title, "open( |-)(datasets?|data sets?|data portal|data framework|data platform|data resource|data exploration)|system?|") |>
+    exclude(title, "open( |-)(datasets?|data sets?|data portal|data framework|data platform|data resource|data exploration|system)") |>
     exclude(title, "data formats?|big data platform") |>
     # Things specific to software that are open
     exclude(title, "open( |-)source( |-)(library|simulation|machine learning|(software )?platform|Python (library|package)|tool |Python)") |>
