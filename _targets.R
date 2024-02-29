@@ -37,8 +37,12 @@ list(
     command = search_terms()
   ),
   tar_target(
+    name = five_years_from_today,
+    command = five_years_ago()
+  ),
+  tar_target(
     name = records_title_only,
-    command = openalex_retrieve_titles(search_term)
+    command = openalex_retrieve_titles(search_term, five_years_from_today)
   ),
   # Exclude and save --------------------------------------------------------
   tar_target(

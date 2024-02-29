@@ -19,8 +19,8 @@ search_terms <- function() {
 #' @return A tibble.
 #'
 #' @examples
-#' openalex_retrieve_titles(search_terms())
-openalex_retrieve_titles <- function(search_term) {
+#' openalex_retrieve_titles(search_terms(), five_years_ago())
+openalex_retrieve_titles <- function(search_term, from_date) {
   openalexR::oa_fetch(
     entity = "works",
     options = list(
@@ -29,7 +29,7 @@ openalex_retrieve_titles <- function(search_term) {
     search = search_term$general_search,
     title.search = search_term$title_search,
     open_access.is_oa = TRUE,
-    from_publication_date = five_years_ago(),
+    from_publication_date = from_date,
     has_fulltext = TRUE,
     language = "en",
     type = c("article", "book-chapter", "book", "dissertation"),
