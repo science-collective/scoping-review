@@ -1,0 +1,55 @@
+---
+title: "Review stages"
+format: html
+---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(here)
+library(fs)
+```
+
+## Title review stage
+
+```{r}
+#| message: false
+title_reviews <- here("data/review/titles/") |> 
+  dir_ls(glob = "*.csv") |> 
+  map(read_csv) 
+
+reviewers <- names(title_reviews) |> 
+  path_file() |> 
+  path_ext_remove() |> 
+  str_to_sentence()
+
+title_reviews <- title_reviews |> 
+  set_names(reviewers)
+```
+
+```{r tbl-titles-kept}
+#| tbl-cap: "Number of articles each reviewer kept after the first screening of the titles."
+title_reviews |> 
+  map(\(df) count(df, name = "Articles kept")) |> 
+  list_rbind(names_to = "Reviewers") |> 
+  knitr::kable()
+```
+
+```{r tbl-titles-agreements}
+#| tbl-cap: "Agreements in article titles kept between all reviewers during the title screening stage."
+common_titles <- title_reviews |>
+  reduce(\(df1, df2) inner_join(df1, df2, by = join_by(id, title, publication_date, doi)))
+common_titles |> 
+  select("Article title" = title) |> 
+  knitr::kable()
+```
+
+```{r tbl-title-disagreements}
+#| tbl-cap: "Article titles **not** kept between all reviewers during the title screening stage."
+title_reviews |> 
+  map(\(df) anti_join(df, common_titles, by = join_by(id, title, publication_date, doi))) |>
+  list_rbind() |> 
+  select("Article titles" = title) |> 
+  distinct() |> 
+  knitr::kable()
+```
