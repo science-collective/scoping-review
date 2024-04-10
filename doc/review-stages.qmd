@@ -38,6 +38,7 @@ In the title screening stage, the number of titles we kept are listed in
 @tbl-titles-kept.
 
 ```{r tbl-titles-kept}
+#| message: false
 #| tbl-cap: "Number of articles each reviewer kept after the first screening of the titles."
 title_reviews |>
   map(\(df) count(df, name = "Articles kept")) |>
@@ -54,6 +55,12 @@ common_titles <- title_reviews |>
   reduce(\(df1, df2) {
     inner_join(df1, df2, by = join_by(id, title, publication_date, doi))
   })
+
+#| tbl-cap: "Number of articles we all agreed on."
+common_titles |>
+  count(name = "Titles all agreed on") |>
+  knitr::kable()
+
 ```
 
 ```{r tbl-titles-agreements}
@@ -63,8 +70,8 @@ common_titles |>
   knitr::kable()
 ```
 
-One person will review and flag any o might be relevant but are not in
-agreement to keep.
+One person will review the titles and flag any paper that might be
+relevant but are not in agreement to keep.
 
 ```{r tbl-title-disagreements}
 #| tbl-cap: "Article titles **not** kept between all reviewers during the title screening stage."
@@ -76,16 +83,35 @@ title_reviews |>
   knitr::kable()
 ```
 
+We saved a new csv file with all the disagreements and saved a new list
+called "resolved.csv" where the final papers to include are listed.
+
+```{r csv-paper-disagreements}
+
+title_disagrements <- title_reviews |>
+  map(\(df) anti_join(df, common_titles, by = join_by(id, title, publication_date, doi))) |>
+  list_rbind() |>
+  distinct()
+
+#save new csv file to go through links and check disagreements
+write.table(title_disagrements, file = here("data/review/titles/disagreements.csv"))
+
+```
+
 ## Abstract review stage
+
+-   all will review the abstracts of the included papers
+-   this will create our final list of included papers
 
 ## Reading stage
 
--   first us reading a few to get an idea of themes and information to
+-   first skimming the papers and group by themes
+-   then read a few from each theme to decide on what information to
     extract
--   and then discuss together the themes to group by and information to
+-   then discuss together the themes to group by and information to
     extract
--   Then we follow what we agreed on
+-   then we follow what we agreed on
 
 ## Writing stage
 
--   How to visualize?
+-   how to visualize?
