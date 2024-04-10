@@ -1,0 +1,91 @@
+---
+title: "Review stages"
+format: html
+---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(here)
+library(fs)
+```
+
+<!-- TODO: Include last date the articles were extracted from. -->
+
+## Title review stage
+
+During the first stage of the reviewing, we only looked at titles. Below
+is the code to extract the titles we each individually reviewed, so we
+can show some details about how many were included, excluded, and which
+titles we agreed on or disagreed on.
+
+```{r}
+#| message: false
+title_reviews <- here("data/review/titles/") |>
+  dir_ls(glob = "*.csv") |>
+  map(read_csv)
+
+reviewers <- names(title_reviews) |>
+  path_file() |>
+  path_ext_remove() |>
+  str_to_sentence()
+
+title_reviews <- title_reviews |>
+  set_names(reviewers)
+```
+
+In the title screening stage, the number of titles we kept are listed in
+@tbl-titles-kept.
+
+```{r tbl-titles-kept}
+#| tbl-cap: "Number of articles each reviewer kept after the first screening of the titles."
+title_reviews |>
+  map(\(df) count(df, name = "Articles kept")) |>
+  list_rbind(names_to = "Reviewers") |>
+  # TODO: Include percent of total articles.
+  knitr::kable()
+```
+
+We want to know how many of these titles we all agreed on between the
+three reviewers, which is shown in @tbl-titles-agreements
+
+```{r}
+common_titles <- title_reviews |>
+  reduce(\(df1, df2) {
+    inner_join(df1, df2, by = join_by(id, title, publication_date, doi))
+  })
+```
+
+```{r tbl-titles-agreements}
+#| tbl-cap: !expr glue::glue("The {nrow(common_titles)} article titles we all agreed on and kept during the title screening stage.")
+common_titles |>
+  select("Article title" = title) |>
+  knitr::kable()
+```
+
+One person will review and flag any o might be relevant but are not in
+agreement to keep.
+
+```{r tbl-title-disagreements}
+#| tbl-cap: "Article titles **not** kept between all reviewers during the title screening stage."
+title_reviews |>
+  map(\(df) anti_join(df, common_titles, by = join_by(id, title, publication_date, doi))) |>
+  list_rbind() |>
+  select("Article titles" = title) |>
+  distinct() |>
+  knitr::kable()
+```
+
+## Abstract review stage
+
+## Reading stage
+
+-   first us reading a few to get an idea of themes and information to
+    extract
+-   and then discuss together the themes to group by and information to
+    extract
+-   Then we follow what we agreed on
+
+## Writing stage
+
+-   How to visualize?
