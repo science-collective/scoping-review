@@ -42,3 +42,10 @@
     struggle with this project - time. Finding time to dive in has
     really been hard amid all the other projects.
 
+## 2024-04-10
+
+-   Feels like we got over the hump of getting started and by solving
+    the search using openalex instead of many individual packages for
+    each database.
+-   We have curated lists of all the papers and now much easier to go
+    through. Now the project feels like it is moving.
