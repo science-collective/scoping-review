@@ -5,7 +5,7 @@
 
 # Load packages required to define the pipeline:
 library(targets)
-# library(tarchetypes) # Load other packages as needed. # nolint
+library(tarchetypes)
 
 # Set target options:
 tar_option_set(
@@ -29,9 +29,10 @@ library(magrittr)
 source("R/utils.R")
 source("R/openalex-search.R")
 source("R/exclusions.R")
+source("R/title-review.R")
 
 list(
-  # Open Alex ---------------------------------------------------------------
+  # Open Alex Title Search --------------------------------------------------
   tar_target(
     name = search_term,
     command = search_terms()
@@ -50,7 +51,52 @@ list(
     command = exclude_from_title(records_title_only)
   ),
   tar_target(
-    name = data_records,
-    command = save_as_csv(records_after_title_exclusion, here::here("data/records.csv"))
+    name = records_titles_path,
+    command = save_as_csv(records_after_title_exclusion, here::here("data/titles.csv"))
+  ),
+
+  # Save individual review files for title review ---------------------------
+  tar_target(
+    name = reviewers,
+    command = c("daniel", "mario", "luke")
+  ),
+  tar_target(
+    name = reviewers_title_files,
+    command = reviewers |>
+      path_reviewer_titles() |>
+      purrr::walk(\(path) copy_if_not_exists(records_titles_path, path)),
+    format = "file"
+  ),
+  tar_target(
+    name = titles_kept,
+    command = reviewers_title_files |>
+      read_title_reviews()
+  ),
+  tar_target(
+    name = titles_agreed_on,
+    command = titles_kept |>
+      get_agreed_on_titles()
+  ),
+  tar_target(
+    name = titles_disagreed_on,
+    command = titles_kept |>
+      get_disagreed_on_titles(titles_agreed_on)
+  ),
+  tar_target(
+    name = titles_disagreed_on_path,
+    command = save_as_csv(titles_disagreed_on, here::here("data/review/titles-disagreed-on.csv")),
+    format = "file"
+  ),
+  tar_target(
+    name = titles_resolved_path,
+    command = titles_disagreed_on |>
+      copy_if_not_exists(
+        here::here("data/review/titles/resolved.csv")
+      )
+  ),
+  # Report -----------------------------------------------------------------
+  tar_quarto(
+    name = review_steps,
+    path = here::here("doc/review-stages.qmd")
   )
 )
