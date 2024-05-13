@@ -55,7 +55,7 @@ list(
     command = save_as_csv(records_after_title_exclusion, here::here("data/titles.csv"))
   ),
 
-  # Save individual review files for title review ---------------------------
+  # Title review stage ------------------------------------------------------
   tar_target(
     name = reviewers,
     command = c("daniel", "mario", "luke")
@@ -84,7 +84,7 @@ list(
   ),
   tar_target(
     name = titles_disagreed_on_path,
-    command = save_as_csv(titles_disagreed_on, here::here("data/review/titles-disagreed-on.csv")),
+    command = save_as_csv(titles_disagreed_on, here::here("data/review/titles/disagreements.csv")),
     format = "file"
   ),
   tar_target(
@@ -94,7 +94,15 @@ list(
         here::here("data/review/titles/resolved.csv")
       )
   ),
-  # Report -----------------------------------------------------------------
+  tar_target(
+    name = titles_selected,
+    command = purrr::list_rbind(list(
+      titles_agreed_on,
+      titles_resolved_path |>
+        readr::read_csv()
+    )) |>
+      dplyr::distinct()
+  ),
   tar_quarto(
     name = review_steps,
     path = here::here("doc/review-stages.qmd")

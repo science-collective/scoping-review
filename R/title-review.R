@@ -5,7 +5,8 @@ path_reviewer_titles <- function(reviewers) {
 
 read_title_reviews <- function(path) {
   title_reviews <- path |>
-    purrr::map(read_csv)
+    rlang::set_names(path) |>
+    purrr::map(readr::read_csv)
 
   reviewers <- names(title_reviews) |>
     fs::path_file() |>
