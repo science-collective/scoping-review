@@ -8,6 +8,7 @@ format: html
 library(tidyverse)
 library(here)
 library(fs)
+targets::tar_config_set(store = here("_targets"))
 ```
 
 <!-- TODO: Include last date the articles were extracted from. -->
@@ -21,17 +22,6 @@ titles we agreed on or disagreed on.
 
 ```{r}
 #| message: false
-title_reviews <- here("data/review/titles/") |>
-  dir_ls(glob = "*.csv") |>
-  map(read_csv)
-
-reviewers <- names(title_reviews) |>
-  path_file() |>
-  path_ext_remove() |>
-  str_to_sentence()
-
-title_reviews <- title_reviews |>
-  set_names(reviewers)
 ```
 
 In the title screening stage, the number of titles we kept are listed in
@@ -40,7 +30,7 @@ In the title screening stage, the number of titles we kept are listed in
 ```{r tbl-titles-kept}
 #| message: false
 #| tbl-cap: "Number of articles each reviewer kept after the first screening of the titles."
-title_reviews |>
+targets::tar_read(titles_kept) |>
   map(\(df) count(df, name = "Articles kept")) |>
   list_rbind(names_to = "Reviewers") |>
   # TODO: Include percent of total articles.
@@ -48,20 +38,14 @@ title_reviews |>
 ```
 
 We want to know how many of these titles we all agreed on between the
-three reviewers, which is shown in @tbl-titles-agreements
+three reviewers:
 
 ```{r}
-common_titles <- title_reviews |>
-  reduce(\(df1, df2) {
-    inner_join(df1, df2, by = join_by(id, title, publication_date, doi))
-  })
-
-#| tbl-cap: "Number of articles we all agreed on."
-common_titles |>
-  count(name = "Titles all agreed on") |>
-  knitr::kable()
-
+common_titles <- targets::tar_read(titles_agreed_on)
 ```
+
+We seemed to agree on `r nrow(common_titles)` titles, with the full
+title list shown in @tbl-titles-agreements.
 
 ```{r tbl-titles-agreements}
 #| tbl-cap: !expr glue::glue("The {nrow(common_titles)} article titles we all agreed on and kept during the title screening stage.")
@@ -75,27 +59,23 @@ relevant but are not in agreement to keep.
 
 ```{r tbl-title-disagreements}
 #| tbl-cap: "Article titles **not** kept between all reviewers during the title screening stage."
-title_reviews |>
-  map(\(df) anti_join(df, common_titles, by = join_by(id, title, publication_date, doi))) |>
-  list_rbind() |>
+targets::tar_read(titles_disagreed_on) |>
   select("Article titles" = title) |>
-  distinct() |>
   knitr::kable()
 ```
 
-We saved a new csv file with all the disagreements and saved a new list
-called "resolved.csv" where the final papers to include are listed.
+We saved a new csv file with all the disagreements and then made a copy
+of that list in the file `resolved.csv`. This file contains some titles
+that we disagreed on but that were briefly reviewed by one reviewer,
+discussed, and included in the end.
 
-```{r csv-paper-disagreements}
+The titles we agreed on were:
 
-title_disagrements <- title_reviews |>
-  map(\(df) anti_join(df, common_titles, by = join_by(id, title, publication_date, doi))) |>
-  list_rbind() |>
-  distinct()
-
-#save new csv file to go through links and check disagreements
-write.table(title_disagrements, file = here("data/review/titles/disagreements.csv"))
-
+```{r}
+#| tbl-cap: "Article titles we agreed to keep from the disagreement list."
+targets::tar_read(titles_resolved_path) |>
+  select("Article title" = title) |>
+  knitr::kable()
 ```
 
 ## Abstract review stage
