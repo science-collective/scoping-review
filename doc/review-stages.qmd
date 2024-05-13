@@ -72,13 +72,36 @@ discussed, and included in the end.
 The titles we agreed on were:
 
 ```{r}
+#| message: false
 #| tbl-cap: "Article titles we agreed to keep from the disagreement list."
 targets::tar_read(titles_resolved_path) |>
+  read_csv() |>
+  select("Article title" = title) |>
+  knitr::kable()
+```
+
+The final list of titles we selected, between the agreed on ones as well
+as the resolved ones, are:
+
+```{r}
+#| message: false
+#| tbl-cap: "Article titles we reviewed and selected to continue for abstract review."
+targets::tar_read(titles_selected) |>
   select("Article title" = title) |>
   knitr::kable()
 ```
 
 ## Abstract review stage
+
+```{r}
+targets::tar_read(titles_selected) |> 
+  dplyr::pull(id) |> 
+  openalex_retrieve_abstracts() |>
+  jsonlite::toJSON() |> 
+  jsonlite::parse_json() |>
+  yaml::as.yaml() |>
+  yaml::write_yaml(here("data/review/abstracts.yaml"))
+```
 
 -   all will review the abstracts of the included papers
 -   this will create our final list of included papers

@@ -39,3 +39,14 @@ openalex_retrieve_titles <- function(search_term, from_date) {
   ) |>
     dplyr::rename(title = display_name)
 }
+
+openalex_retrieve_abstracts <- function(ids) {
+  openalexR::oa_fetch(
+    identifier = ids,
+    per_page = 200,
+    mailto = "lwjohnst@gmail.com",
+    abstract = TRUE
+  ) |>
+    dplyr::select(id, doi, display_name, publication_date, ab) |>
+    dplyr::rename(title = display_name, abstract = ab)
+}
