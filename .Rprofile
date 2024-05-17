@@ -21,4 +21,3 @@ if (interactive()) {
   suppressMessages(require(usethis))
   suppressMessages(require(gert))
 }
-
