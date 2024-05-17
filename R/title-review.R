@@ -33,9 +33,3 @@ get_disagreed_on_titles <- function(title_list, agreed_on_titles) {
     dplyr::distinct()
 }
 
-copy_if_not_exists <- function(path, copied_path) {
-  if (!fs::file_exists(copied_path)) {
-    fs::file_copy(path, copied_path)
-  }
-  copied_path
-}
