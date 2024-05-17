@@ -1,0 +1,612 @@
+|
+  - id: https://openalex.org/W4295290221
+    doi: https://doi.org/10.1016/j.neuroimage.2022.119623
+    title: 'Open and reproducible neuroimaging: From study inception to publication'
+    publication_date: '2022-11-01'
+    abstract: Empirical observations of how labs conduct research indicate that the
+      adoption rate of open practices for transparent, reproducible, and collaborative
+      science remains in its infancy. This is at odds with the overwhelming evidence
+      for the necessity of these practices and their benefits for individual researchers,
+      scientific progress, and society in general. To date, information required for
+      implementing open science practices throughout the different steps of a research
+      project is scattered among many different sources. Even experienced researchers
+      in the topic find it hard to navigate the ecosystem of tools and to make sustainable
+      choices. Here, we provide an integrated overview of community-developed resources
+      that can support collaborative, open, reproducible, replicable, robust and generalizable
+      neuroimaging throughout the entire research cycle from inception to publication
+      and across different neuroimaging modalities. We review tools and practices supporting
+      study inception and planning, data acquisition, research data management, data
+      processing and analysis, and research dissemination. An online version of this
+      resource can be found at https://oreoni.github.io. We believe it will prove helpful
+      for researchers and institutions to make a successful and sustainable move towards
+      open and reproducible science and to eventually take an active role in its future
+      development.
+  - id: https://openalex.org/W4318705102
+    doi: https://doi.org/10.31234/osf.io/s6h58
+    title: Modernizing authorship criteria and transparency practices to facilitate
+      honest, open, and equitable team science
+    publication_date: '2023-01-30'
+    abstract: Authorship serves as the primary means of acknowledging contributions
+      to scientific advancements. However, the rapid growth of authorship inflation
+      has rendered the traditional “substantial contributions” criterion and the lack
+      of transparency in author contributions increasingly problematic. These issues
+      are intricately linked to concerns about research replicability, trustworthiness,
+      and potential fraud. To address these challenges, a revamped approach to authorship
+      is proposed. This revised approach replaces the rigid requirement of “substantial
+      contributions” with a more flexible, project-specific criterion of “sufficient
+      contributions,” as determined and justified by the authors for each project. This
+      change more accurately reflects and accommodates the current state of widespread
+      scientific collaboration (team science). Moreover, the updated approach broadens
+      the scope and granularity of roles deserving of authorship by integrating the
+      Contributor Roles Taxonomy (CRediT) and Method Reporting with Initials for Transparency
+      (MeRIT) systems. It mandates in-text documentation of who did what (e.g., who
+      collected what data) and moves beyond the typical binary (all-or-none) classification
+      by assigning a gradated contribution level to each author for each role. These
+      contributions can be denoted using an ordinal scale—either coarse (e.g., lead,
+      equal, and supporting) or fine-grained (e.g., minimal, slight, moderate, substantial,
+      extensive, and full). To support the implementation of the revamped approach,
+      an authorship policy template is provided. Adopting proportional, role-specific
+      credit allocation and explicit documentation of contributions fosters a scientific
+      environment that is more open, transparent, equitable, and trustworthy.
+  - id: https://openalex.org/W2972809368
+    doi: https://doi.org/10.1371/journal.pcbi.1007296
+    title: Ten simple rules for helping newcomers become contributors to open projects
+    publication_date: '2019-09-12'
+    abstract: "To survive and thrive, a must attract new members, retain them, and help
+      them be productive [1]. As openness becomes the norm in research, software development,
+      and education, knowing how to do this has become an essential skill for principal
+      investigators and managers alike. A growing body of knowledge in sociology, anthropology,
+      education, and software engineering can guide decisions about how to facilitate
+      this.\r\n\r\nWhat exactly do we mean by community? In the case of open source
+      and open science, the most usual meaning is a community of practice. As defined
+      by Lave and Wenger [2, 3], groups as diverse as knitting circles, oncology researchers,
+      and web designers share three key characteristics:\r\n\r\n\r\nParticipants have
+      a common product or purpose that they work on or toward.\r\n\r\n\r\nThey are mutually
+      engaged, i.e., they assist and mentor each another.\r\n\r\n\r\nThey develop shared
+      resources and domain knowledge.\r\n\r\n\r\n\r\nBrown [4] specializes this to define
+      a community of as\r\n\r\n…a formed in pursuit of a common goal. The goal can be
+      definite or indefinite in time, and may not be clearly defined, but it is something
+      that (generally speaking) the is aligned on.\r\n\r\nPeople working to preserve
+      coral reefs in the face of global climate change are an example of such a community.
+      No central organization coordinates their work, but the scientists who study coral
+      reefs, the environmentalists who work to protect them, and the citizens who support
+      them financially and politically are aware of each other’s efforts, collaborate
+      in ad hoc ways, and are conscious of contributing toward a shared purpose.\r\n\r\nOpen-source
+      software projects are also communities of effort. E.g., the Mozilla Firefox [5]
+      includes a mix of paid professionals, highly involved volunteers, and occasional
+      contributors who not only create software, documentation, and tutorials but also
+      organize events, answer questions in online forums, mentor newcomers, and advocate
+      for open standards.\r\n\r\nEvery of effort has unique features, but they have
+      enough in common to profit from one another’s experience. The 10 rules laid out
+      below are based on studies of such communities and on the authors’ experience
+      as members, leaders, and observers. Our focus is on small and medium-sized projects,
+      i.e., ones that have a handful of to a few hundred participants and are a few
+      months to a few years old but may not (yet) have any formal legal standing, such
+      as incorporation as a nonprofit."
+  - id: https://openalex.org/W4251805646
+    doi: https://doi.org/10.31234/osf.io/8w7zd
+    title: Collaborative open science as a way to reproducibility and new insights in
+      primate cognition research
+    publication_date: '2019-10-31'
+    abstract: The field of primate cognition studies how primates, including humans,
+      perceive, process, store, retrieve, and use information to guide decision making
+      and other behavior. Much of this research is motivated by a desire to understand
+      how these abilities evolved. Large and diverse samples from a wide range of species
+      are vital to achieving this goal. In reality, however, primate cognition research
+      suffers from small sample sizes and is often limited to a handful of species,
+      which constrains the evolutionary inferences we can draw. We conducted a systematic
+      review of primate cognition research published between 2014 and 2019 to quantify
+      the extent of this problem. Across 574 studies, the median sample size was 7 individuals.
+      Less than 15% of primate species were studied at all, and only 19% of studies
+      included more than one species. Further, the species that were studied varied
+      widely in how much research attention they received, partly because a small number
+      of test sites contributed most of the studies. These results suggest that the
+      generalizability of primate cognition studies may be severely limited. Publication
+      bias, questionable research practices, and a lack of replication attempts may
+      exacerbate these problems. We describe the ManyPrimates project as one approach
+      to overcoming some of these issues by establishing an infrastructure for large-scale
+      collaboration in primate cognition research. Building on similar initiatives in
+      other areas of psychology, this approach has already yielded one of the largest
+      and most diverse primate samples to date and enables us to ask many research questions
+      that can only be addressed through collaboration.
+  - id: https://openalex.org/W3162246552
+    doi: https://doi.org/10.31234/osf.io/gdzue
+    title: 'The Pandemic as a Portal: Reimagining Psychological Science as Truly Open
+      and Inclusive'
+    publication_date: '2021-01-11'
+    abstract: 'Psychological science is at an inflection point: The COVID-19 pandemic
+      has already begun to exacerbate inequalities that stem from our historically closed
+      and exclusive culture. Meanwhile, reform efforts to change the future of our science
+      are too narrow in focus to fully succeed. In this paper, we call on psychological
+      scientists—focusing specifically on those who use quantitative methods in the
+      United States as one context for such conversations—to begin reimagining our discipline
+      as fundamentally open and inclusive. First, we discuss who our discipline was
+      designed to serve and how this history produced the inequitable reward and support
+      systems we see today. Second, we highlight how current institutional responses
+      to address worsening inequalities are inadequate, as well as how our disciplinary
+      perspective may both help and hinder our ability to craft effective solutions.
+      Third, we take a hard look in the mirror at the disconnect between what we ostensibly
+      value as a field and what we actually practice. Fourth and finally, we lead readers
+      through a roadmap for reimagining psychological science in whatever roles and
+      spaces they occupy, from an informal discussion group in a department to a formal
+      strategic planning retreat at a scientific society.'
+  - id: https://openalex.org/W2942080774
+    doi: https://doi.org/10.1145/3290605.3300901
+    title: Privacy, Anonymity, and Perceived Risk in Open Collaboration
+    publication_date: '2019-05-02'
+    abstract: Anonymity can enable both healthy online interactions like support-seeking
+      and toxic behaviors like hate speech. How do online service providers balance
+      these threats and opportunities? This two-part qualitative study examines the
+      challenges perceived by open collaboration service providers in allowing anonymous
+      contributions to their projects. We interviewed eleven people familiar with organizational
+      decisions related to privacy and security at five open collaboration projects
+      and followed up with an analysis of public discussions about anonymous contribution
+      to Wikipedia. We contrast our findings with prior work on threats perceived by
+      project volunteers and explore misalignment between policies aiming to serve contributors
+      and the privacy practices of contributors themselves.
+  - id: https://openalex.org/W3188722327
+    doi: https://doi.org/10.1007/s12021-021-09533-8
+    title: 'Promoting FAIR Data Through Community-driven Agile Design: the Open Data
+      Commons for Spinal Cord Injury (odc-sci.org)'
+    publication_date: '2021-08-04'
+    abstract: The past decade has seen accelerating movement from data protectionism
+      in publishing toward open data sharing to improve reproducibility and translation
+      of biomedical research. Developing data sharing infrastructures to meet these
+      new demands remains a challenge. One model for data sharing involves simply attaching
+      data, irrespective of its type, to publisher websites or general use repositories.
+      However, some argue this creates a 'data dump' that does not promote the goals
+      of making data Findable, Accessible, Interoperable and Reusable (FAIR). Specialized
+      data sharing communities offer an alternative model where data are curated by
+      domain experts to make it both open and FAIR. We report on our experiences developing
+      one such data-sharing ecosystem focusing on 'long-tail' preclinical data, the
+      Open Data Commons for Spinal Cord Injury (odc-sci.org). ODC-SCI was developed
+      with community-based agile design requirements directly pulled from a series of
+      workshops with multiple stakeholders (researchers, consumers, non-profit funders,
+      governmental agencies, journals, and industry members). ODC-SCI focuses on heterogeneous
+      tabular data collected by preclinical researchers including bio-behaviour, histopathology
+      findings and molecular endpoints. This has led to an example of a specialized
+      neurocommons that is well-embraced by the community it aims to serve. In the present
+      paper, we provide a review of the community-based design template and describe
+      the adoption by the community including a high-level review of current data assets,
+      publicly released datasets, and web analytics. Although odc-sci.org is in its
+      late beta stage of development, it represents a successful example of a specialized
+      data commons that may serve as a model for other fields.
+  - id: https://openalex.org/W4315498453
+    doi: https://doi.org/10.31235/osf.io/qzmf6
+    title: The potential of inclusive and collaborative Open Research processes at the
+      science-policy interface
+    publication_date: '2023-01-11'
+    abstract: Proponents of Open Research often assert that it can support evidence-based
+      policy-making by making scientific outputs more readily available to policy-makers
+      and other policy actors, yet there is little empirical work to support or deny
+      this claim. This paper fills this void by reporting the results of a qualitative
+      study with researchers who regularly work at the science-policy interface. We
+      found that there is little evidence that Open Research products, namely Open Access
+      and open data, which aim at increasing access and transparency, are useful in
+      integrating science into policy-making. Instead, we found that the cognitive accessibility
+      of research outputs is more important than their physical accessibility, and that
+      inclusive and collaborative Open Research processes, like upstream engagement,
+      co-creation and Citizen Science, are most effective at doing so.
+  - id: https://openalex.org/W4372403418
+    doi: https://doi.org/10.31219/osf.io/s2f6k
+    title: UKRN Open Research Training Resources and Priorities Working Paper
+    publication_date: '2023-05-05'
+    abstract: UKRN Open Research Programme has released its first working paper about
+      training priorities and resources aimed at accelerating the uptake of high quality
+      open research practices.
+  - id: https://openalex.org/W4376141549
+    doi: https://doi.org/10.31234/osf.io/msv8y
+    title: Exploring Open Science Practices in Behavioural Public Policy Research
+    publication_date: '2023-05-10'
+    abstract: 'In their book `Nudge: Improving Decisions About Health, Wealth and Happiness'',
+      Thaler and Sunstein argue that choice architectures are promising public policy
+      interventions. This research programme motivated the creation of so-called `nudge
+      units'' which aim to apply insights from behavioural science to improve public
+      policy. We take a close look at a meta-analysis of the evidence gathered by two
+      of the largest and most influential nudge units using statistical techniques to
+      detect reporting biases. We find evidence suggestive of selective reporting on
+      the full dataset, although this pattern is not robust in subgroup analyses. We
+      therefore additionally evaluate the public pre-analysis plans from the Office
+      of Evaluation Sciences. We find that the analysis plans and reporting usually
+      lack sufficient detail to evaluate (unintentional) reporting biases. Nevertheless,
+      we identify several instances of excellent practice. We additionally highlight
+      several improvements that would enhance the effectiveness of the pre-analysis
+      plans and reports as a means to combat reporting biases. We believe our findings
+      and suggestions can further improve the evidence base on which policy decisions
+      are made.'
+  - id: https://openalex.org/W4378611187
+    doi: https://doi.org/10.31219/osf.io/kcvra
+    title: Eleven Strategies for Making Reproducible Research and Open Science Training
+      the Norm at Research Institutions
+    publication_date: '2023-05-28'
+    abstract: 'Across disciplines, researchers increasingly recognize that open science
+      and reproducible research practices may accelerate scientific progress by allowing
+      others to reuse research outputs and by promoting rigorous research that is more
+      likely to yield trustworthy results. While initiatives, training programs, and
+      funder policies encourage researchers to adopt reproducible research and open
+      science practices, these practices are uncommon in many fields. Researchers need
+      training to integrate these practices into their daily work. We organized a virtual
+      brainstorming event, in collaboration with the German Reproducibility Network,
+      to discuss strategies for making reproducible research and open science training
+      the norm at research institutions. Here, we outline eleven strategies, concentrated
+      in three areas: (1) offering training, (2) adapting research assessment criteria
+      and program requirements, and (3) building communities. We provide a brief overview
+      of each strategy, offer tips for implementation, and provide links to resources.
+      Our goal is to encourage members of the research community to think creatively
+      about the many ways they can contribute and collaborate to build communities,
+      and make reproducible research and open science training the norm. Researchers
+      may act in their roles as scientists, supervisors, mentors, instructors, and members
+      of curriculum, hiring or evaluation committees. Institutional leadership and research
+      administration and support staff can accelerate progress by implementing change
+      across their institutions.'
+  - id: https://openalex.org/W2924635422
+    doi: https://doi.org/10.1162/desi_a_00532
+    title: 'Open Source, Collaboration, and Access: A Critical Analysis of “Openness”
+      in the Design Field'
+    publication_date: '2019-03-01'
+    abstract: The article explores the concept of “openness” in the design field. In
+      particular, it suggests a broad interpretation of the relationship between “openness”
+      and design by analyzing the use of the expression “open design” between 2000 and
+      2017. This expression is related to words such as, co-design, crowdsourcing, open
+      innovation, making and open manufacturing, which can be synthesized by the concepts
+      of open source, collaboration, and access. The article finally expresses, through
+      a critical point of view, the reasons why open processes in design have limitations.
+  - id: https://openalex.org/W4229452124
+    doi: https://doi.org/10.31234/osf.io/73bwu
+    title: 'Open and reproducible practices in developmental psychology research: The
+      workflow of the WomCogDev lab as an example'
+    publication_date: '2022-05-09'
+    abstract: The current paper presents an overview of the workflow of the Working
+      Memory, Cognition and Development lab (WomCogDev) lab at the University of Geneva,
+      Switzerland, as an example of how Open Science principles can be applied in a
+      developmental psychology lab. We describe the importance and challenges of applying
+      Open Science practices in developmental research and detail each step of our workflow
+      from research design to dissemination. We provide examples and give emphasis to
+      steps that typically receive little attention but that may hold promise for application
+      in other labs (namely, project design, data collection, and data analysis). Finally,
+      we discuss the advantages and disadvantages of our workflow, and summarize the
+      main takeaways for other labs. By ‘opening up’ our lab’s workflow, we want to
+      encourage other labs to incorporate the aspects that they like into their own
+      workflows and to share their own processes for the continued benefit of others.
+  - id: https://openalex.org/W3183365357
+    doi: https://doi.org/10.31219/osf.io/7c93a
+    title: Collaboration and Open Science Initiatives in Primate Research
+    publication_date: '2021-03-25'
+    abstract: Traditionally, primate cognition research has been conducted by independent
+      teams on small populations of a few species. Such limited variation and small
+      sample sizes pose problems that prevent us from reconstructing the evolutionary
+      history of primate cognition. In this chapter, we discuss how large-scale collaboration,
+      a research model successfully implemented in other fields, makes it possible to
+      obtain the large and diverse datasets needed to conduct robust comparative analysis
+      of primate cognitive abilities. We discuss the advantages and challenges of large-scale
+      collaborations and argue for the need for more open science practices in the field.
+      We describe these collaborative projects in psychology and primatology and introduce
+      ManyPrimates as the first, successful collaboration that has established an infrastructure
+      for large-scale, inclusive research in primate cognition. Considering examples
+      of large-scale collaborations both in primatology and psychology, we conclude
+      that this type of research model is feasible and has the potential to address
+      otherwise unattainable questions in primate cognition.
+  - id: https://openalex.org/W4319041362
+    doi: https://doi.org/10.31234/osf.io/bz72u
+    title: Inclusive, open, and reproducible developmental science
+    publication_date: '2023-02-01'
+    abstract: Over the past decade, there has been a growing appreciation of issues
+      around metascience—how research is conducted—in psychological science. In addition
+      to enhancing rigor and reproducibility through open and transparent research practices,
+      greater inclusivity through diverse samples can enhance research relevance and
+      applicability for historically marginalized and understudied populations. The
+      present study reports on a comprehensive analysis of 2,615 posters presented at
+      the 2021 biennial meeting of the Society for Research in Child Development. Results
+      revealed that research that was presented is heavily skewed towards quantitative
+      studies featuring American researchers and Western hemisphere samples. Sharing
+      of data/materials, preregistrations, and replications are extremely uncommon.
+      Data provide a much-needed baseline by which developmental science can benchmark
+      progress towards greater inclusivity and openness.
+  - id: https://openalex.org/W4322631571
+    doi: https://doi.org/10.31219/osf.io/hpgk6
+    title: (Why) Are Open Research Practices the Future for the Study of Language Learning?
+    publication_date: '2023-02-27'
+    abstract: Open Research practices are relevant to all stages of research, from conceptualisation
+      through to dissemination. Here, we discuss key facets of Open Research, highlighting
+      its rationales, infrastructures, behaviours, and challenges. Part I conceptualizes
+      Open Research and its rationales. Part II identifies challenges, such as the speed
+      and cost of Open Research; the usability of open data and materials; the difficulties
+      of conducting replication research; and the economics and sustainability of open
+      access and Open Research generally. In discussing these challenges, we seek to
+      provide examples of good practice, describe and evaluate emerging innovations,
+      and envision change. Part III considers ongoing co-evolutions of culture, infrastructure,
+      and behaviours, and acknowledges the limitations of our review and of Open Research
+      practices. We argue that Open Research is indeed a large part of our future, and
+      most—if not all—challenges are surmountable, but doing so requires significant
+      changes for many aspects of the research process.
+  - id: https://openalex.org/W4377205940
+    doi: https://doi.org/10.7554/elife.83484
+    title: Biomedical supervisors’ role modeling of open science practices
+    publication_date: '2023-05-22'
+    abstract: Supervision is one important way to socialize Ph.D. candidates into open
+      and responsible research. We hypothesized that one should be more likely to identify
+      open science practices (here publishing open access and sharing data) in empirical
+      publications that were part of a Ph.D. thesis when the Ph.D. candidates' supervisors
+      engaged in these practices compared to those whose supervisors did not or less
+      often did. Departing from thesis repositories at four Dutch University Medical
+      centers, we included 211 pairs of supervisors and Ph.D. candidates, resulting
+      in a sample of 2062 publications. We determined open access status using UnpaywallR
+      and Open Data using Oddpub, where we also manually screened publications with
+      potential open data statements. Eighty-three percent of our sample was published
+      openly, and 9% had open data statements. Having a supervisor who published open
+      access more often than the national average was associated with an odds of 1.99
+      to publish open access. However, this effect became nonsignificant when correcting
+      for institutions. Having a supervisor who shared data was associated with 2.22
+      (CI:1.19-4.12) times the odds to share data compared to having a supervisor that
+      did not. This odds ratio increased to 4.6 (CI:1.86-11.35) after removing false
+      positives. The prevalence of open data in our sample was comparable to international
+      studies; open access rates were higher. Whilst Ph.D. candidates spearhead initiatives
+      to promote open science, this study adds value by investigating the role of supervisors
+      in promoting open science.
+  - id: https://openalex.org/W4381738705
+    doi: https://doi.org/10.31219/osf.io/fwsr3
+    title: 'The State of Open Science Practices in Psychometric Studies of Suicide:
+      A Systematic Review'
+    publication_date: '2023-06-22'
+    abstract: 'Background: The adoption of open science practices (OSPs) is crucial
+      for promoting transparency and robustness in research. We conducted a systematic
+      review to assess the frequency and trends of OSPs in psychometric studies focusing
+      on measures of suicidal thoughts and behavior. Methods: We analyzed publications
+      from two international databases, examining the use of OSPs such as open access
+      publication, preregistration, provision of open materials, and data sharing. The
+      data were further analyzed based on publication year, first author''s region of
+      affiliation, and publication type (open access vs. restricted access). Results:
+      Our findings indicate a lack of adherence to OSPs in psychometric studies of suicide.
+      The majority of manuscripts were published under restricted access, and preregistrations
+      were not utilized. The provision of open materials and data was rare, with limited
+      access to instruments and analysis scripts. Open access versions (preprints/postprints)
+      were scarce. Trends analysis showed inconsistent changes over the years, with
+      regional variations in open access publication. Conclusions: The low adoption
+      of OSPs in psychometric studies of suicide calls for urgent action. Researchers
+      must prioritize the use of preregistration, publication of preprints/postprints,
+      and providing access to materials and data. Embracing a culture of open science
+      will enhance transparency, reproducibility, and the impact of research in suicide
+      prevention efforts.'
+  - id: https://openalex.org/W4383376256
+    doi: https://doi.org/10.31234/osf.io/pbkrx
+    title: Accelerating addiction research via Open Science and Team Science
+    publication_date: '2023-07-05'
+    abstract: The replication crisis of the past decade has taught us that our literature
+      is severely biased. Many empirical findings underlying our theories cannot be
+      replicated. Although the extent of this problem in addiction science is largely
+      unknown, given several factors we discuss in this chapter (e.g., publication bias),
+      there is little reason to believe that replicability in addiction research is
+      any better. Based on meta-science performed over the past decade, we propose that
+      addiction researchers use Open Science and Team Science practices to improve the
+      replicability of their work and thus reduce the bias in the literature and increase
+      the credibility of our field. We walk the reader through six concrete steps necessary
+      for successful implementation of Open Science and Team Science within the field
+      of addiction research. These steps include, 1) preregister; 2) share data, code,
+      and materials; 3) replicate; 4) train Open Science; 5) change the culture and
+      incentivize Open Science; and 6) collaborate in large teams. We discuss evidence
+      supporting the effectiveness of these practices and highlight some limitations
+      and counterpoints to our proposal.
+  - id: https://openalex.org/W4384695555
+    doi: https://doi.org/10.21428/f1f23564.aa85bf79
+    title: 'Special Issue: Open, Digital, Collaborative Project Preservation in the
+      Humanities'
+    publication_date: '2023-07-18'
+    abstract: .na.character
+  - id: https://openalex.org/W4386723394
+    doi: https://doi.org/10.31219/osf.io/346hr
+    title: UKRN ORCC Primer on Working in Open Research
+    publication_date: '2023-09-12'
+    abstract: This is an introductory guide for those working and considering working
+      in the area of open research. It was drafted by members of the Open Research Competencies
+      Coalition. There are many resources available on the topic of open research either
+      aimed at those working in open research roles or more generally on open research
+      practices. A list is included in the document.
+  - id: https://openalex.org/W4285093029
+    doi: https://doi.org/10.31219/osf.io/hmgnq
+    title: Reducing barriers to open science by standardizing practices and realigning
+      incentives
+    publication_date: '2022-07-12'
+    abstract: Open science can accelerate the pace of research and contribute to a more
+      equitable society. However, the current culture of scientific research is not
+      optimally structured to promote extensive sharing of a range of outputs. In this
+      policy position paper, we outline current open science practices and key bottlenecks
+      in their broader adoption. We propose that national science agencies create a
+      digital infrastructure framework that would standardize open science principles
+      and make them actionable. We also suggest ways of redefining research success
+      to align better with open science, and to incentivize a system where sharing various
+      research outputs is beneficial to researchers.
+  - id: https://openalex.org/W4303191041
+    doi: https://doi.org/10.36335/vnjhm.2022(12).33-38
+    title: Open and collaborative tools for disaster management and risk reduction
+    publication_date: '2022-09-01'
+    abstract: In recent years geo-information technologies have significant increase
+      in various domain implementations.Such methodologies and applications are gathering
+      more interest in aspects such as data collection, processing, analyses, and dissemination.Covering
+      the full processing cycle, these technologies are impacting many fields, even
+      those where traditionally there were no or few geospatial specialists.A relevant
+      example can be the domain of Disaster Management and Risk Reduction (DMRR), where
+      geo-information is providing powerful tools for effective management in the prevention,
+      preparedness, response and recovery processes, which are of high interest to authorities
+      and stakeholders.However, in certain cases, an important aspect is still under-considered
+      -the "power of the crowd", which can bring vital knowledge and strength.Recently,
+      also hazard specialists started to elicit the participation of citizens and to
+      promote collaborative approaches in their mitigation strategies, whether it is
+      for data collection (local or remotely), or to reduce the time a certain task
+      is done, or simply to further disseminate knowledge and practices.As it is becoming
+      a multi-field and multiapplication domain, with our contribution we want to present
+      the state of the art of the open and collaborative tools that are applied in DMRR,
+      regardless of the hazard type, of the used platform (mobile, desktop) and the
+      approach (remote, onsite).In addition, tools currently applied in other domains,
+      but that can be fruitfully used also in DMMR will be included in our speech.
+  - id: https://openalex.org/W4311948557
+    doi: https://doi.org/10.31730/osf.io/vs3j5
+    title: Knowledge and practices of open science among scholars and researchers in
+      Tanzania
+    publication_date: '2022-12-19'
+    abstract: The Open Science (OS) movement has been spreading rapidly among researchers
+      with positive outcomes on accessibility of scientific knowledge. However, there
+      is no clear evidence on the level of awareness and types of OS practices among
+      scholars and researchers in Tanzania, potentially missing an opportunity to reap
+      the rewards of the movement to scholarly pursuits. This study investigated the
+      level of awareness of OS and practices among Tanzanian scholars and researchers.
+      Findings of a digital survey conducted for three months and recruited 144 respondents,
+      show a high level of awareness of the term OS for 84% of respondents, most of
+      them having encountered it from peers or online sources including social media.
+      About 69% of respondents were male while about 44% of respondents were early career
+      professionals. Open access (OA) publishing was the most common OS activity practised
+      by respondents, highlighting both the need to create awareness on other practices
+      and an entry point for knowledge expansion. However, respondents highlighted the
+      barriers to spreading of the OS movement in the country including lack of awareness,
+      knowledge and skills, the lack of institutional support and concerns over data
+      security and ownership. Findings of this study establish OA as the most common
+      and important OS practice among Tanzanian scholars. They show the importance of
+      online resources and peers to peer learning and in spreading OS awareness. The
+      study also reveals several areas of advocacy and including setting supportive
+      institutional policies and building infrastructure to support OS practices. We
+      recomment establisment of robust guidelines, institutional support and clear opportunities
+      to incentivize individuals to adopt OS practices ao as to achieve the momentum
+      required to scale the movement beyond OA.
+  - id: https://openalex.org/W2946093684
+    doi: https://doi.org/10.1145/3326365.3326387
+    title: Agile Mechanisms for Open Data Process Innovation in Public Sector Organizations
+    publication_date: '2019-04-03'
+    abstract: Process innovation in public organizations is widely documented and has
+      increasingly been the subject of empirical scrutiny. However, no study has attempted
+      to investigate process innovation in open data organizations in public sector.
+      Guided by the Dynamic Capability Theory and based on the detailed study of four
+      open data organizations, we synthesize a theoretical model and a process model
+      for open data process innovation in public sector organizations. Specifically,
+      the study sought to understand how open data process agility is achieved in these
+      organizations. The results highlight the specific agile mechanisms that enable
+      and improve open data process innovation in public sector organizations. The results
+      also provide perspectives on how open data organizations in public sector can
+      change data processes to transform the way they respond to changing demands and
+      external environment.
+  - id: https://openalex.org/W4221054929
+    doi: https://doi.org/10.31234/osf.io/d2zvc
+    title: 'Open and reproducible science practices in psychoneuroendocrinology: opportunities
+      to foster scientific progress'
+    publication_date: '2022-03-30'
+    abstract: This perspective article was written by invitation of the editors in chief
+      as a summary and extension of the symposium entitled Psychoneuroendocrine Research
+      in the Era of the Replication Crisis which was held at the virtual meeting of
+      the International Society of Psychoneuroendocrinology 2021. It highlights the
+      opportunities presented by the application of open and reproducible scientific
+      practices in psychoneuroendocrinology (PNE), an interdisciplinary field at the
+      intersection of psychology, endocrinology, immunology, neurology, and psychiatry.
+      It conveys an introduction to the topics preregistration, registered reports,
+      quantifying the impact of equally-well justifiable analysis decisions, and open
+      data and scripts, while emphasizing ‘selfish’ reasons to adopt such practices
+      as individual researcher. Complementary to the call for adoption of open science
+      practices, we highlight the need for methodological best practice guidelines in
+      the field of PNE, which could further contribute to enhancing replicability of
+      results. We propose concrete steps for future actions and provide links to additional
+      resources for those interested in adopting open and reproducible science practices
+      in future studies.
+  - id: https://openalex.org/W4281886503
+    doi: https://doi.org/10.31234/osf.io/c38a2
+    title: Ten strategies to foster open science in psychology and beyond
+    publication_date: '2022-06-03'
+    abstract: The scientific community has long recognized the benefits of open science.
+      Today, governments and research agencies worldwide are increasingly promoting
+      and mandating open practices for scientific research. However, for open science
+      to become the by-default model for scientific research, researchers must perceive
+      open practices as accessible and achievable. A significant obstacle is the lack
+      of resources providing a clear direction on how researchers can integrate open
+      science practices in their day-to-day workflows. This article outlines and discusses
+      ten concrete strategies that can help researchers use and disseminate open science.
+      The first five strategies address basic ways of getting started in open science
+      that researchers can put into practice today. The last five strategies are for
+      researchers who are more advanced in open practices to advocate for open science.
+      Our paper will help researchers navigate the transition to open science practices
+      and support others in shifting toward openness, thus contributing to building
+      a better science.
+  - id: https://openalex.org/W4283836446
+    doi: https://doi.org/10.31219/osf.io/fe74t
+    title: 'Lessons Learned: A Neuroimaging Research Center’s Transition to Open and
+      Reproducible Science'
+    publication_date: '2022-07-06'
+    abstract: 'Human functional neuroimaging has evolved dramatically in recent years,
+      driven by increased technical complexity and emerging evidence that functional
+      neuroimaging findings are not generally reproducible. In response to these trends,
+      neuroimaging scientists have developed principles, practices, and tools to manage
+      this complexity as well as to enhance the rigor and reproducibility of neuroimaging
+      science. We group these best-practices under four categories: experiment pre-registration,
+      FAIR data principles, reproducible neuroimaging analyses, and open science. While
+      there is growing recognition of the need to implement these best-practices there
+      exists little practical guidance of how to accomplish this goal. In this work,
+      we describe lessons learned from efforts to adopt these best-practices within
+      the Brain Imaging Research Center at the University of Arkansas for Medical Sciences
+      over four years (July 2018 – May 2022). We provide a brief summary of the four
+      categories of best-practices. We then describe our center’s scientific workflow
+      (from hypothesis formulation to result reporting) and detail how each element
+      of this workflow maps onto these four categories. We also provide specific examples
+      of practices or tools that support this mapping process. Finally, we offer a roadmap
+      for the step-wise adoption of these practices, providing evidence-based recommendations
+      of why and what to do as well as a summary of cost-benefit tradeoffs for each
+      step of the transition.'
+  - id: https://openalex.org/W4297857831
+    doi: https://doi.org/10.3233/isu-220168
+    title: Coopetition as a driver of success for community initiatives in open research
+    publication_date: '2022-12-16'
+    abstract: “Co-opetition [1]” can help community-driven initiatives to combine strengths,
+      focus resources and thrive in a changing and competitive landscape. Dryad is presented
+      as one such initiative—committed to multi-directional collaboration and co-opetition,
+      which is beginning to nest itself among other complementary services and form
+      a network for open research that increases the collective resilience of aligned
+      organisations.
+  - id: https://openalex.org/W4309236687
+    doi: https://doi.org/10.38126/jspg210201
+    title: Reducing Barriers to Open Science by Standardizing Practices and Realigning
+      Incentives
+    publication_date: '2022-12-12'
+    abstract: Open science, the practice of sharing findings and resources towards the
+      collaborative pursuit of scientific progress and societal good, can accelerate
+      the pace of research and contribute to a more equitable society. However, the
+      current culture of scientific research is not optimally structured to promote
+      extensive sharing of a range of outputs. In this policy position paper, we outline
+      current open science practices and key bottlenecks in their broader adoption.
+      We propose that national science agencies create a digital infrastructure framework
+      that would standardize open science principles and make them actionable. We also
+      suggest ways of redefining research success to align better with open science,
+      and to incentivize a system where sharing various research outputs is beneficial
+      to researchers.
+  - id: https://openalex.org/W4255231711
+    doi: https://doi.org/10.31730/osf.io/srwx3
+    title: No Better Time to Practice Open Science Than Now
+    publication_date: '2020-06-17'
+    abstract: This is a guest speaker presentation given at the virtual Open Science
+      Fellows Program 2020 in Berlin. The presentation captures the speakers perspectives
+      on Open Science where he related it to the story of William Kamkwamba from Malawi,
+      his journey through Open Science and Projects and Initiatives that are making
+      use of Open Science in overcoming the challenges of COVID-19 today.
+  - id: https://openalex.org/W3151396154
+    doi: https://doi.org/10.21428/8bbb7f85.563ab058
+    title: Performing Open Science Culture
+    publication_date: '2021-03-03'
+    abstract: .na.character
+  - id: https://openalex.org/W4205253287
+    doi: https://doi.org/10.26686/wgtn.17005564
+    title: Open Communitition
+    publication_date: '2021-11-13'
+    abstract: '&lt;p&gt;The recent enthusiasm in popular culture for massively multiplayer
+      online environments has proven that eclectic online communities have the potential
+      to develop powerful problem solving capacities through the enactment of a collective
+      intelligence. In collaborative design, this calls for the implementation of a
+      shared environment leveraging the collective intelligence of online communities
+      through open competition. The goal is to spur innovation through a public process
+      where the emerging design ideas are available to all competitors. Foreseeing a
+      radical change in the identity of the architect, becoming but the designer of
+      these emergent communal design environments, this paper aims at making the case
+      for this alternate CAAD model through the execution of a pilot study. This study,
+      based on the Serpentine Pavilion procedural framework, sends a sample group of
+      designers to a shared videogame environment, where they are asked to create their
+      own pavilion using a kit of parts drawn from the reverse engineering of Frank
+      Gehry’s 2008 pavilion. These iterations are scored in real time against a set
+      of quantitative programmatic requirements, but they are also assessed qualitatively
+      through more subjective criteria by the community of competitors, enriched by
+      the immersive virtual experience of each other’s designs. Observation and analysis
+      of participants has been undertaken through the recording of design sessions and
+      online survey. This pilot study is currently being undertaken, yet the initial
+      results hint at displaying much potential for a participative, intuitive and instantaneous
+      form of collaborative CAAD based on communal competition.&lt;/p&gt;'

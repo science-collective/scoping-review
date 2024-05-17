@@ -1,5 +1,5 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-.Random.seed|object|22fa80c32c097ca2|||||||||||||||
+.Random.seed|object|80c429d205233809|||||||||||||||
 arxiv_get_records|function|3b3805233131806f|||||||||||||||
 arxiv_records|stem|6b018f6ccdb7ab66|c69d1ddefcca2f48|7e73dd7fb75c3d95|1704599354||t19713.6617901733s|79972d099c03844b|4808|rds|local|vector|||16.122|partial argument match of along to along.with|
 arxiv_retrieve_records|function|5d96ee01c5250a33|||||||||||||||
@@ -9,7 +9,7 @@ biorxiv_retrieve_records|function|3bf45319fda42018|||||||||||||||
 biorxiv_search_terms|stem|ad8969f9855c993b|33fc0b6bab48cbd3|f627a113f4e8c821|-743159885||t19702.5624166848s|2721c650416a264a|204|rds|local|vector|||0.001||
 copied_titles_to_reviewers_file|stem||f0944e21c5483c36|3eabf16a54feeed1|500258350||t19856.833698228s||0|file|local|vector|||0.039||ℹ In index 1.Caused by error EEXIST Failed to copy homelukeDocumentsorganizationssciencecollectivescopingreviewdatatitles.csv to homelukeDocumentsorganizationssciencecollectivescopingreviewdatareviewtitlesdaniel.csv file already exists
 copied_titles_to_reviewers_file_change|stem|73f743d9b7cf38a9|7b0c5dd66cfa824e|6b5417e6f8e3403f|-1780672331||t19856.8356452952s|eca7fdce75d9dbfb|65|rds|local|vector|||0.001||
-copy_if_not_exists|function|1b2d86a46c1eebf5|||||||||||||||
+copy_if_not_exists|function|589376bc775b93ee|||||||||||||||
 data_raw_arxiv|stem|3afdd2c7bd6355ac|9bd5545ede785185|d3e9049864598e95|-954782193|/home/luke/Documents/organizations/science-collective/scoping-review/data-raw/arxiv.csv|t19703.4128599861s|bd3cb73f99754949|22560|file|local|vector|||0.008||
 data_raw_medrxiv|stem|e3f841906669dff0|4ab7933c67bd7ade|2001f713fa9d2a66|1911885191|/home/luke/Documents/organizations/science-collective/scoping-review/data-raw/medrxiv.csv|t19703.4128598935s|e5b9aa69c4e19f12|1546|file|local|vector|||0.074||
 data_raw_pubmed|stem|c54d0f85717cb6af|c31b50cdb8f8a98d|a16997b85460436a|446259341|/home/luke/Documents/organizations/science-collective/scoping-review/data-raw/pubmed.csv|t19703.4128606343s|a4e1041031a65e63|173124|file|local|vector|||0.03||
@@ -29,8 +29,9 @@ medrxiv_get_records|function|93706a6304b795b6|||||||||||||||
 medrxiv_records|stem|184c78477bd49225|836625fab75e4534|ef593346f13111df|-650685653||t19713.6616035044s|1c9471e76b15b954|989|rds|local|vector|||2532.84||
 medrxiv_retrieve_records|function|a5062bd82eb72818|||||||||||||||
 medrxiv_search_terms|stem|ad8969f9855c993b|7b24ca78cf94dc4d|6021dd92655c990c|-1135597035||t19713.6221232727s|2721c650416a264a|204|rds|local|vector|||0.992||
-openalex_retrieve_abstracts|function|158d2e62455b172a|||||||||||||||
+openalex_retrieve_abstracts|function|6683fe690b990c61|||||||||||||||
 openalex_retrieve_titles|function|b636753b6763c9ae|||||||||||||||
+path_reviewer_abstracts|function|ba97058f9e4016ec|||||||||||||||
 path_reviewer_titles|function|4faf4bd57fa66501|||||||||||||||
 pubmed_extract_relevant_data|function|5426d2ef7fd518f8|||||||||||||||
 pubmed_get_records|function|82f0a4bfaecea069|||||||||||||||
@@ -39,20 +40,24 @@ pubmed_retrieve_records|function|206dc15365927d8f|||||||||||||||
 pubmed_search_terms|stem|c34851c33b1c3796|ca8bacce6a7503ed|6021dd92655c990c|-1788300734||t19713.6221235505s|ab284657d4bd29c6|211|rds|local|vector|||0.001||
 read_title_reviews|function|e0b3786b436ebd3b|||||||||||||||
 records|stem||d38c87a7d3922fc8|ee741eb2c311539f|-717535789||t19703.412860709s||0|rds|local|vector|||0.001||could not find function join_from_paths
+records_abstracts|stem|70b2bbef6f67afc2|de3d5c44c50bf012|0e6218557b498980|1184782426||t19860.4550779274s|8548da21e094a616|15386|rds|local|vector|||1.663||
+records_abstracts_path|stem|ae4244447b4b8ba4|df28146fb9eb9321|3e6180d24e804f7f|-989815862|/home/luke/Documents/organizations/science-collective/scoping-review/data/review/abstracts.yaml|t19860.4551317703s|9339add902e569f9|46612|file|local|vector|||0.002||
 records_after_title_exclusion|stem|a7d26d0ee265921b|eb3b38ddbbfdfcf7|435fe18cff701dd2|302483785||t19856.8057028941s|58054d760b6ec34e|183858|rds|local|vector|||0.572||
 records_title_only|stem|81de6f04a4fef895|7c277ebc831b87d9|e50c31876c0e98f7|1126613970||t19856.8056960422s|66bdf8d98a25003e|516210|rds|local|vector|||25.462||
-records_titles_path|stem|176eb0159e3f41bb|11dd4c0913e35036|e0ba13d18da4cf70|846625765||t19856.8336977246s|1e38ab1d9f551fe5|127|rds|local|vector|||0.134||
-review_steps|stem|299d0d74152fb5c1|28dff4e9dba48734|1c9b078ab6649c47|-624319472|doc/review-stages.html*doc/review-stages.qmd|t19856.8708929794s|f1ef9a4858c7899a|66798|file|local|vector|||4.753||
+records_titles_path|stem|3221179d8bec5a5f|4c4460b702a1fdff|4e996012cfc6bf4b|846625765||t19860.4550582976s|b2629a245b827e2b|131|rds|local|vector|||0.125||
+review_steps|stem|2c61756a134ef8f3|28dff4e9dba48734|1c9b078ab6649c47|-624319472|doc/review-stages.html*doc/review-stages.qmd|t19860.4551315388s|223ac5a1b5a55a33|66154|file|local|vector|||4.644||
 reviewers|stem|199c11369ce8061d|d0a79852238fe259|2c530c1562a7fbd1|-273784328||t19856.8333370255s|580e0375f1117643|70|rds|local|vector|||0.785||
-reviewers_title_files|stem|40ccc72b880bdf7a|7438b0f8fc8b42b8|30bc1e108d729480|-1616764628|/home/luke/Documents/organizations/science-collective/scoping-review/data/review/titles/daniel.csv*/home/luke/Documents/organizations/science-collective/scoping-review/data/review/titles/mario.csv*/home/luke/Documents/organizations/science-collective/scoping-review/data/review/titles/luke.csv|t19856.7835824635s|f136d6667e390385|47742|file|local|vector|||0.003||
-save_as_csv|function|0995bfbbd55e79bf|||||||||||||||
+reviewers_abstract_files|stem|9cde1f18886a964c|e2341edc222351ad|4f026f6a47038262|1593097270|/home/luke/Documents/organizations/science-collective/scoping-review/data/review/abstracts/daniel.yaml*/home/luke/Documents/organizations/science-collective/scoping-review/data/review/abstracts/mario.yaml*/home/luke/Documents/organizations/science-collective/scoping-review/data/review/abstracts/luke.yaml|t19860.455717839s|58c164027f737c05|139836|file|local|vector|||0||
+reviewers_title_files|stem|40ccc72b880bdf7a|7438b0f8fc8b42b8|e81293846307aeb9|-1616764628|/home/luke/Documents/organizations/science-collective/scoping-review/data/review/titles/daniel.csv*/home/luke/Documents/organizations/science-collective/scoping-review/data/review/titles/mario.csv*/home/luke/Documents/organizations/science-collective/scoping-review/data/review/titles/luke.csv|t19856.7835824635s|f136d6667e390385|47742|file|local|vector|||0.004||
+save_as_csv|function|e095434181a3205d|||||||||||||||
+save_as_yaml|function|f6dd2f88723675ee|||||||||||||||
 search_term|stem|8c19885271c9f907|22e6099a0ade0d69|0f1ee0ba8c0630ea|1068579465||t19856.8054005759s|65adac573487e6aa|238|rds|local|vector|||0||
 search_terms|function|30bd46b0e91540c9|||||||||||||||
 titles_agreed_on|stem|e304fa5a0b55d935|f668c2f512e1a655|245fb41993dffada|387109902||t19856.8636810426s|bd1ae3c28a0e4baa|1905|rds|local|vector|||0.005||
 titles_disagreed_on|stem|d0cc80628ce2e579|514972f01cf2b762|92e1d9671233100d|-1604761738||t19856.8636811351s|651ba8c9c9ea176d|10682|rds|local|vector|||0.006||
-titles_disagreed_on_path|stem|ca9cb1c07e34464c|754a6cba2d9eed27|936481dae719be45|933367354|/home/luke/Documents/organizations/science-collective/scoping-review/data/review/titles/disagreements.csv|t19856.8704402889s|6909825228c9d396|29849|file|local|vector|||0.056||
+titles_disagreed_on_path|stem|ca9cb1c07e34464c|754a6cba2d9eed27|a549fc0cb8f6ef08|933367354|/home/luke/Documents/organizations/science-collective/scoping-review/data/review/titles/disagreements.csv|t19860.4550585291s|6909825228c9d396|29849|file|local|vector|||0.008||
 titles_kept|stem|5df338c6f4a5e98c|3c4a7214fdc38204|89386f012f279fed|-1698317517||t19856.86368095s|fecef387f66d787a|13173|rds|local|vector|||0.157||
-titles_resolved_path|stem|abaa9ae67c4a115c|3679ff62bcec0421|72bbaaf6d54e998c|-1998987968||t19856.863681274s|aecaa0cfd4837746|134|rds|local|vector|||0.001||
+titles_resolved_path|stem|abaa9ae67c4a115c|3679ff62bcec0421|a3910dbc0228e99f|-1998987968||t19860.4559139514s|aecaa0cfd4837746|134|rds|local|vector|||0.001||
 titles_selected|stem|a81353a157a2d986|5fe06e7b81d3f911|e8401ca31928f295|-304136843||t19856.8708381639s|166f7ff22aa0da16|2292|rds|local|vector|||0.098||
 zenodo_extract_relevant_data|function|b4fabf791f12fb08|||||||||||||||
 zenodo_get_records|function|1bee022517d767b6|||||||||||||||
