@@ -93,22 +93,13 @@ targets::tar_read(titles_selected) |>
 
 ## Abstract review stage
 
-```{r}
-targets::tar_read(titles_selected) |> 
-  dplyr::pull(id) |> 
-  openalex_retrieve_abstracts() |>
-  jsonlite::toJSON() |> 
-  jsonlite::parse_json() |>
-  yaml::as.yaml() |>
-  yaml::write_yaml(here("data/review/abstracts.yaml"))
-```
-
 -   all will review the abstracts of the included papers
 -   this will create our final list of included papers
 
 ## Reading stage
 
--   first skimming the papers and group by themes
+-   first skimming the papers and group by themes, writing a basic
+    free-hand summary
 -   then read a few from each theme to decide on what information to
     extract
 -   then discuss together the themes to group by and information to

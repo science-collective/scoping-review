@@ -30,6 +30,7 @@ source("R/utils.R")
 source("R/openalex-search.R")
 source("R/exclusions.R")
 source("R/title-review.R")
+source("R/abstract-review.R")
 
 list(
   # Open Alex Title Search --------------------------------------------------
@@ -52,7 +53,7 @@ list(
   ),
   tar_target(
     name = records_titles_path,
-    command = save_as_csv(records_after_title_exclusion, here::here("data/titles.csv"))
+    command = save_as_csv(records_after_title_exclusion, here::here("data/review/titles.csv"))
   ),
 
   # Title review stage ------------------------------------------------------
@@ -102,6 +103,24 @@ list(
         readr::read_csv()
     )) |>
       dplyr::distinct()
+  ),
+
+  # Abstract retrieval ------------------------------------------------------
+  tar_target(
+    name = records_abstracts,
+    command = openalex_retrieve_abstracts(titles_selected$id)
+  ),
+  tar_target(
+    name = records_abstracts_path,
+    command = save_as_yaml(records_abstracts, here::here("data/review/abstracts.yaml")),
+    format = "file"
+  ),
+  tar_target(
+    name = reviewers_abstract_files,
+    command = reviewers |>
+      path_reviewer_abstracts() |>
+      purrr::walk(\(path) copy_if_not_exists(records_abstracts_path, path)),
+    format = "file"
   ),
   tar_quarto(
     name = review_steps,
