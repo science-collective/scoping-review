@@ -1,5 +1,6 @@
 ---
-title: 'Introduction to scoping review on open collaboration and experiences with working reproducibly and using GitHub'
+title: 'Scoping review on open collaboration'
+subtitle: 'Experiences with working reproducibly and using GitHub'
 date: "2024-06-03"
 date-format: long
 author:
@@ -21,35 +22,33 @@ editor:
 
 # The Polymath problem - revisited
 
+::: notes
 Recall the example from the research retreat.
 
 They used open collaboration to solve a very complex problem.
+:::
 
 ## Open collaboration {.center}
 
+Open collaboration is defined as:
+
+> "*an online environment that (a) supports the collective production of
+> an artifact (b) through a technologically mediated collaboration
+> platform (c) that presents a low barrier to entry and exit and (d)
+> supports the emergence of persistent but malleable social
+> structures.*" (Forte and Lampe, 2013)
+
+::: notes
 Today, scientific research almost always requires working with other
 people. And with the growing complexity and specialization in scientific
 practices and methods, together with globalisation of health and
 environmental issues, there is a great need for a paradigm shift in
 research collaboration to be able to tackle these challenges.
 
-Open collaboration may offer this solution. Open collaboration is
-defined as:
-
-> "*an online environment that (a) supports the collective production of
-> an artifact (b) through a technologically mediated collaboration
-> platform (c) that presents a low barrier to entry and exit and (d)
-> supports the emergence of persistent but malleable social
-> structures.*" This scoping review will focus on current practices of
-> open collaboration and open science in relation to collaboration in
-> the field of biomedical and health research (Forte and Lampe (2013)).
+Open collaboration may offer this solution.
+:::
 
 ## Aim of scoping review {.center}
-
-Our overarching aim of this scoping review is to identify current
-practices of open collaboration in biomedical and health research.
-
-The specific aims of this scoping review are to:
 
 -   Provide an overview of current practices of or opinions about
     research collaboration that follow basic open principles (e.g.,
@@ -61,30 +60,32 @@ The specific aims of this scoping review are to:
 -   building an open source R-based pipeline for conducting scoping
     reviews.
 
-The entire source code, as well as text and collaboration workflows, are
-found on our GitHub repository
-[`science-collective/scoping-review`](https://github.com/science-collective/scoping-review).
+Source code
+[`science-collective/scoping-review`](https://github.com/science-collective/scoping-review)
+
+::: notes
+Our overarching aim of this scoping review is to identify current
+practices of open collaboration in biomedical and health research.
+:::
 
 ## Process {.center}
 
 1.  Select topic
-
 2.  Workflow
-
 3.  Protocol
-
-4.  S
+4.  Search
+5.  data extraction
+6.  data analysis
+7.  reporting
 
 ## Process
 
-```         
 -   R and Github
 -   Discord
 -   Co-working sessions/regular meetings
 -   Organizing
     tasks/[issues](https://github.com/science-collective/scoping-review/issues)/[roadmap](https://github.com/science-collective/scoping-review/blob/main/ROADMAP.md)
 -   Reflections
-```
 
 ## Protocol
 
@@ -92,10 +93,15 @@ found on our GitHub repository
 
 Search several databases...
 
-But then came OpenAlex
+But then came [OpenAlex](https://openalex.org/about)
 
 Included all our databases and more.
 
 ## Search
 
-See review-stages.qmd
+See
+[review-stages.qmd](https://github.com/science-collective/scoping-review/blob/main/doc/review-stages.qmd)
+
+## Where are we today
+
+Screening abstracts
