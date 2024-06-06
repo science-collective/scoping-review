@@ -26,3 +26,9 @@
     again. The README's helped and setting up the targets infrastructure
     and pipeline I think will help us later on as the project continues.
 
+## 2024-06-06
+
+-   Progress has been going great, the use of a targets pipeline has
+    really helped, especially after coming back to work on this after a
+    while. There are some areas that I wish could be more automated, but
+    I think that it might not really be possible for now.
