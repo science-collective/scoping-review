@@ -122,6 +122,33 @@ list(
       purrr::walk(\(path) copy_if_not_exists(records_abstracts_path, path)),
     format = "file"
   ),
+  tar_target(
+    name = abstracts_kept,
+    command = reviewers_abstract_files |>
+      read_abstract_reviews()
+  ),
+  # tar_target(
+  #   name = abstracts_agreed_on,
+  #   command = abstracts_kept |>
+  #     get_agreed_on_abstracts()
+  # ),
+  # tar_target(
+  #   name = abstracts_disagreed_on,
+  #   command = abstracts_kept |>
+  #     get_disagreed_on_abstracts(abstracts_agreed_on)
+  # ),
+  # tar_target(
+  #   name = abstracts_disagreed_on_path,
+  #   command = save_as_csv(abstracts_disagreed_on, here::here("data/review/abstracts/disagreements.csv")),
+  #   format = "file"
+  # ),
+  # tar_target(
+  #   name = abstracts_resolved_path,
+  #   command = abstracts_disagreed_on |>
+  #     copy_if_not_exists(
+  #       here::here("data/review/abstracts/resolved.csv")
+  #     )
+  # ),
   tar_quarto(
     name = review_steps,
     path = here::here("doc/review-stages.qmd")
