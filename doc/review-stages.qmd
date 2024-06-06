@@ -20,10 +20,6 @@ is the code to extract the titles we each individually reviewed, so we
 can show some details about how many were included, excluded, and which
 titles we agreed on or disagreed on.
 
-```{r}
-#| message: false
-```
-
 In the title screening stage, the number of titles we kept are listed in
 @tbl-titles-kept.
 
@@ -95,6 +91,24 @@ targets::tar_read(titles_selected) |>
 
 -   all will review the abstracts of the included papers
 -   this will create our final list of included papers
+
+The second phase of the review is looking over the abstracts. In
+@tbl-abstracts-kept below are the number of articles each reviewer kept
+after this second screening.
+
+```{r tbl-abstracts-kept}
+#| message: false
+#| tbl-cap: "Number of articles each reviewer kept after the second screening of the abstracts."
+targets::tar_read(abstracts_kept) |> 
+  map(\(df) count(df, name = "Articles kept")) |>
+  list_rbind(names_to = "Reviewers") |>
+  # TODO: Include percent of total articles.
+  knitr::kable()
+  
+# targets::tar_read(abstracts_kept) |> 
+#   select("Article titles" = title) |>
+#   knitr::kable()
+```
 
 ## Reading stage
 
