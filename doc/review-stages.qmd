@@ -114,11 +114,15 @@ targets::tar_read(abstracts_kept) |>
 
 -   first skimming the papers and group by themes, writing a basic
     free-hand summary
--   then read a few from each theme to decide on what information to
-    extract
+-   then read a few papers from each theme to decide on what information
+    to extract
 -   then discuss together the themes to group by and information to
     extract
--   then we follow what we agreed on
+
+## Data extraction
+
+-   we make a data extraction template
+-   extract data and read the papers
 
 ## Writing stage
 
