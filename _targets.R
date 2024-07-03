@@ -31,6 +31,7 @@ source("R/openalex-search.R")
 source("R/exclusions.R")
 source("R/title-review.R")
 source("R/abstract-review.R")
+source("R/fulltext-review.R")
 
 list(
   # Open Alex Title Search --------------------------------------------------
@@ -93,7 +94,8 @@ list(
     command = titles_disagreed_on |>
       copy_if_not_exists(
         here::here("data/review/titles/resolved.csv")
-      )
+      ),
+    format = "file"
   ),
   tar_target(
     name = titles_selected,
@@ -127,30 +129,63 @@ list(
     command = reviewers_abstract_files |>
       read_abstract_reviews()
   ),
-  # tar_target(
-  #   name = abstracts_agreed_on,
-  #   command = abstracts_kept |>
-  #     get_agreed_on_abstracts()
-  # ),
-  # tar_target(
-  #   name = abstracts_disagreed_on,
-  #   command = abstracts_kept |>
-  #     get_disagreed_on_abstracts(abstracts_agreed_on)
-  # ),
-  # tar_target(
-  #   name = abstracts_disagreed_on_path,
-  #   command = save_as_csv(abstracts_disagreed_on, here::here("data/review/abstracts/disagreements.csv")),
-  #   format = "file"
-  # ),
-  # tar_target(
-  #   name = abstracts_resolved_path,
-  #   command = abstracts_disagreed_on |>
-  #     copy_if_not_exists(
-  #       here::here("data/review/abstracts/resolved.csv")
-  #     )
-  # ),
-  tar_quarto(
-    name = review_steps,
-    path = here::here("doc/review-stages.qmd")
-  )
+  tar_target(
+    name = abstracts_agreed_on,
+    command = abstracts_kept |>
+      get_agreed_on_abstracts()
+  ),
+  tar_target(
+    name = abstracts_disagreed_on,
+    command = abstracts_kept |>
+      get_disagreed_on_abstracts(abstracts_agreed_on)
+  ),
+  tar_target(
+    name = abstracts_disagreed_on_path,
+    command = save_as_yaml(abstracts_disagreed_on, here::here("data/review/abstracts/disagreements.yaml")),
+    format = "file"
+  ),
+  tar_target(
+    name = abstracts_resolved_path,
+    command = abstracts_disagreed_on |>
+      copy_if_not_exists(
+        here::here("data/review/abstracts/resolved.yaml")
+      ),
+    format = "file"
+  ),
+  tar_target(
+    name = abstracts_selected,
+    command = purrr::list_rbind(list(
+      abstracts_agreed_on,
+      abstracts_resolved_path |>
+        read_abstract_yaml()
+    )) |>
+      dplyr::distinct()
+  ),
+
+  # Fulltext retrieval ------------------------------------------------------
+  tar_target(
+    name = reviewed_article_records,
+    command = abstracts_selected$id |>
+      openalex_retrieve_records()
+  ),
+  tar_target(
+    name = fulltext_pdf_paths,
+    command = reviewed_article_records |>
+      openalex_retrieve_pdf(),
+    format = "file"
+  ),
+  tar_target(
+    name = fulltext_review_qmd,
+    command = reviewed_article_records |>
+      dplyr::rename(path = pdf_proj_path) |>
+      create_fulltext_review_template(reviewers),
+    format = "file"
+  ),
+  # Render report -----------------------------------------------------------
+  # TODO: there is an error and I don't know why.
+  # tar_quarto(
+  #   name = review_steps,
+  #   path = here::here("doc/review-stages.qmd")
+  # )
 )
+

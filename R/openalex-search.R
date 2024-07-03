@@ -50,3 +50,26 @@ openalex_retrieve_abstracts <- function(ids) {
     dplyr::select(id, doi, display_name, publication_date, ab) |>
     dplyr::rename(title = display_name, abstract = ab)
 }
+
+openalex_retrieve_records <- function(ids) {
+  records <- openalexR::oa_fetch(
+    identifier = ids,
+    mailto = "lwjohnst@gmail.com"
+  ) |>
+    dplyr::mutate(pdf_proj_path = stringr::str_replace(id, "https://openalex.org/", "oa-id-") |>
+                    fs::path_ext_set("pdf"),
+                  pdf_proj_path = fs::path("data/review/fulltext/", pdf_proj_path))
+}
+
+openalex_retrieve_pdf <- function(data) {
+ urls <- data |>
+    dplyr::select(pdf_proj_path, pdf_url) |>
+    tidyr::drop_na()
+
+  purrr::walk2(
+    urls$pdf_url,
+    urls$pdf_proj_path,
+    \(url, path) download.file(url, destfile = path)
+  )
+  urls$pdf_proj_path
+}
