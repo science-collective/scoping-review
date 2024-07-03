@@ -1,0 +1,64 @@
+|
+  - id: https://openalex.org/W3183365357
+    doi: https://doi.org/10.31219/osf.io/7c93a
+    title: Collaboration and Open Science Initiatives in Primate Research
+    publication_date: '2021-03-25'
+    abstract: Traditionally, primate cognition research has been conducted by independent
+      teams on small populations of a few species. Such limited variation and small
+      sample sizes pose problems that prevent us from reconstructing the evolutionary
+      history of primate cognition. In this chapter, we discuss how large-scale collaboration,
+      a research model successfully implemented in other fields, makes it possible to
+      obtain the large and diverse datasets needed to conduct robust comparative analysis
+      of primate cognitive abilities. We discuss the advantages and challenges of large-scale
+      collaborations and argue for the need for more open science practices in the field.
+      We describe these collaborative projects in psychology and primatology and introduce
+      ManyPrimates as the first, successful collaboration that has established an infrastructure
+      for large-scale, inclusive research in primate cognition. Considering examples
+      of large-scale collaborations both in primatology and psychology, we conclude
+      that this type of research model in primate cognition.
+  - id: https://openalex.org/W4383376256
+    doi: https://doi.org/10.31234/osf.io/pbkrx
+    title: Accelerating addiction research via Open Science and Team Science
+    publication_date: '2023-07-05'
+    abstract: The replication crisis of the past decade has taught us that our literature
+      is severely biased. Many empirical findings underlying our theories cannot be
+      replicated. Although the extent of this problem in addiction science is largely
+      unknown, given several factors we discuss in this chapter (e.g., publication bias),
+      there is little reason to believe that replicability in addiction research is
+      any better. Based on meta-science performed over the past decade, we propose that
+      addiction researchers use Open Science and Team Science practices to improve the
+      replicability of their work and thus reduce the bias in the literature and increase
+      the credibility of our field. We walk the reader through six concrete steps necessary
+      for successful implementation of Open Science and Team Science within the field
+      of addiction research. These steps include, 1) preregister; 2) share data, code,
+      and materials; 3) replicate; 4) train Open Science; 5) change the culture and
+      incentivize Open Science; and 6) collaborate in large teams. We discuss evidence
+      supporting the effectiveness of these practices and highlight some limitations
+      and counterpoints to our proposal.
+  - id: https://openalex.org/W3188722327
+    doi: https://doi.org/10.1007/s12021-021-09533-8
+    title: 'Promoting FAIR Data Through Community-driven Agile Design: the Open Data
+      Commons for Spinal Cord Injury (odc-sci.org)'
+    publication_date: '2021-08-04'
+    abstract: The past decade has seen accelerating movement from data protectionism
+      in publishing toward open data sharing to improve reproducibility and translation
+      of biomedical research. Developing data sharing infrastructures to meet these
+      new demands remains a challenge. One model for data sharing involves simply attaching
+      data, irrespective of its type, to publisher websites or general use repositories.
+      However, some argue this creates a 'data dump' that does not promote the goals
+      of making data Findable, Accessible, Interoperable and Reusable (FAIR). Specialized
+      data sharing communities offer an alternative model where data are curated by
+      domain experts to make it both open and FAIR. We report on our experiences developing
+      one such data-sharing ecosystem focusing on 'long-tail' preclinical data, the
+      Open Data Commons for Spinal Cord Injury (odc-sci.org). ODC-SCI was developed
+      with community-based agile design requirements directly pulled from a series of
+      workshops with multiple stakeholders (researchers, consumers, non-profit funders,
+      governmental agencies, journals, and industry members). ODC-SCI focuses on heterogeneous
+      tabular data collected by preclinical researchers including bio-behaviour, histopathology
+      findings and molecular endpoints. This has led to an example of a specialized
+      neurocommons that is well-embraced by the community it aims to serve. In the present
+      paper, we provide a review of the community-based design template and describe
+      the adoption by the community including a high-level review of current data assets,
+      publicly released datasets, and web analytics. Although odc-sci.org is in its
+      late beta stage of development, it represents a successful example of a specialized
+      data commons that may serve as a model for other fields.
