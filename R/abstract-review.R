@@ -25,3 +25,21 @@ read_abstract_reviews <- function(path) {
   abstract_reviews |>
     rlang::set_names(reviewers)
 }
+
+get_agreed_on_abstracts <- function(abstract_list) {
+  stopifnot(is.list(abstract_list))
+  abstract_list |>
+    purrr::reduce(\(df1, df2) {
+      dplyr::inner_join(df1, df2, by = dplyr::join_by(id, title, publication_date, doi, abstract))
+    })
+}
+
+get_disagreed_on_abstracts <- function(abstract_list, agreed_on_abstracts) {
+  stopifnot(is.list(abstract_list))
+  abstract_list |>
+    purrr::map(\(df) dplyr::anti_join(df, agreed_on_abstracts,
+      by = dplyr::join_by(id, title, publication_date, doi, abstract)
+    )) |>
+    purrr::list_rbind() |>
+    dplyr::distinct()
+}
