@@ -9,6 +9,7 @@ library(tidyverse)
 library(here)
 library(fs)
 targets::tar_config_set(store = here("_targets"))
+source(here::here("R/abstract-review.R"))
 ```
 
 <!-- TODO: Include last date the articles were extracted from. -->
@@ -53,7 +54,7 @@ common_titles |>
 One person will review the titles and flag any paper that might be
 relevant but are not in agreement to keep.
 
-```{r tbl-title-disagreements}
+```{r tbl-titles-disagreements}
 #| tbl-cap: "Article titles **not** kept between all reviewers during the title screening stage."
 targets::tar_read(titles_disagreed_on) |>
   select("Article titles" = title) |>
@@ -98,16 +99,67 @@ after this second screening.
 
 ```{r tbl-abstracts-kept}
 #| message: false
-#| tbl-cap: "Number of articles each reviewer kept after the second screening of the abstracts."
+#| tbl-cap: "Number of articles each reviewer kept after the second screening of the articles."
 targets::tar_read(abstracts_kept) |> 
   map(\(df) count(df, name = "Articles kept")) |>
   list_rbind(names_to = "Reviewers") |>
   # TODO: Include percent of total articles.
   knitr::kable()
-  
-# targets::tar_read(abstracts_kept) |> 
-#   select("Article titles" = title) |>
-#   knitr::kable()
+```
+
+Based on the abstract review, we want to know how many of these titles
+we all agreed on between the three reviewers:
+
+```{r}
+common_abstracts <- targets::tar_read(abstracts_agreed_on)
+```
+
+We seemed to agree on `r nrow(common_abstracts)` abstracts, with the
+full article list shown in @tbl-abstracts-agreements.
+
+```{r tbl-abstracts-agreements}
+#| tbl-cap: !expr glue::glue("The {nrow(common_abstracts)} article abstracts we all agreed on and kept during the abstract screening stage.")
+targets::tar_read(abstracts_agreed_on) |>
+  select("Article titles" = title) |>
+  knitr::kable()
+```
+
+One person will review the titles and flag any paper that might be
+relevant but are not in agreement to keep.
+
+```{r tbl-abstracts-disagreements}
+#| tbl-cap: "Article abstracts **not** kept between all reviewers during the title screening stage."
+targets::tar_read(abstracts_disagreed_on) |>
+  select("Article titles" = title) |>
+  knitr::kable()
+```
+
+Like with the title review, we saved a new csv file with all the
+disagreements and then made a copy of that list in the file
+`resolved.csv`. This file contains some articles that we disagreed on
+but that were briefly reviewed by one reviewer, discussed, and included
+in the end.
+
+The abstracts we agreed on were:
+
+```{r}
+#| message: false
+#| tbl-cap: "Article abstracts we agreed to keep from the disagreement list."
+targets::tar_read(abstracts_resolved_path) |>
+  read_abstract_yaml() |>
+  select("Article title" = title) |>
+  knitr::kable()
+```
+
+The final list of titles we selected, between the agreed on ones as well
+as the resolved ones, are:
+
+```{r}
+#| message: false
+#| tbl-cap: "Article abstracts we reviewed and selected to continue to final article reviewing."
+targets::tar_read(abstracts_selected) |>
+  select("Article title" = title) |>
+  knitr::kable()
 ```
 
 ## Reading stage
