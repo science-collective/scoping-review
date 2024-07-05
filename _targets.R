@@ -180,7 +180,7 @@ list(
       dplyr::rename(path = pdf_proj_path) |>
       create_fulltext_review_template(reviewers),
     format = "file"
-  ),
+  )
   # Render report -----------------------------------------------------------
   # TODO: there is an error and I don't know why.
   # tar_quarto(
