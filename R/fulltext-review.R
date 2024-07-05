@@ -15,7 +15,26 @@ create_fulltext_review_template <- function(data, reviewers) {
     - DOI: {doi}
     - OpenAlex ID: {id}
 
-    <!-- Write your notes down here -->
+    ## General themes
+
+    ::: content-hidden
+    Look for what the paper is generally about and some basic overall themes and
+    topics in the paper.
+    :::
+
+    ## Type of paper
+
+    ::: content-hidden
+    Is it a guide, community-building, an example of a workflow, etc.
+    :::
+
+    ## Other notes
+
+    ::: content-hidden
+    What we found was interesting or what we'd like to share, discuss, or
+    present in the main scoping review paper.
+    :::
+
 
     "
 
