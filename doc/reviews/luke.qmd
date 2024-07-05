@@ -9,7 +9,26 @@ title: 'Full Article Review'
 - DOI: https://doi.org/10.1016/j.neuroimage.2022.119623
 - OpenAlex ID: https://openalex.org/W4295290221
 
-<!-- Write your notes down here -->
+## General themes
+
+::: content-hidden
+Look for what the paper is generally about and some basic overall themes and
+topics in the paper.
+:::
+
+## Type of paper
+
+::: content-hidden
+Is it a guide, community-building, an example of a workflow, etc.
+:::
+
+## Other notes
+
+::: content-hidden
+What we found was interesting or what we'd like to share, discuss, or
+present in the main scoping review paper.
+:::
+
 
 
 # Ten simple rules for helping newcomers become contributors to open projects
@@ -18,7 +37,26 @@ title: 'Full Article Review'
 - DOI: https://doi.org/10.1371/journal.pcbi.1007296
 - OpenAlex ID: https://openalex.org/W2972809368
 
-<!-- Write your notes down here -->
+## General themes
+
+::: content-hidden
+Look for what the paper is generally about and some basic overall themes and
+topics in the paper.
+:::
+
+## Type of paper
+
+::: content-hidden
+Is it a guide, community-building, an example of a workflow, etc.
+:::
+
+## Other notes
+
+::: content-hidden
+What we found was interesting or what we'd like to share, discuss, or
+present in the main scoping review paper.
+:::
+
 
 
 # Collaborative open science as a way to reproducibility and new insights in primate cognition research
@@ -27,7 +65,26 @@ title: 'Full Article Review'
 - DOI: https://doi.org/10.31234/osf.io/8w7zd
 - OpenAlex ID: https://openalex.org/W4251805646
 
-<!-- Write your notes down here -->
+## General themes
+
+::: content-hidden
+Look for what the paper is generally about and some basic overall themes and
+topics in the paper.
+:::
+
+## Type of paper
+
+::: content-hidden
+Is it a guide, community-building, an example of a workflow, etc.
+:::
+
+## Other notes
+
+::: content-hidden
+What we found was interesting or what we'd like to share, discuss, or
+present in the main scoping review paper.
+:::
+
 
 
 # Promoting FAIR Data Through Community-driven Agile Design: the Open Data Commons for Spinal Cord Injury (odc-sci.org)
@@ -36,7 +93,26 @@ title: 'Full Article Review'
 - DOI: https://doi.org/10.1007/s12021-021-09533-8
 - OpenAlex ID: https://openalex.org/W3188722327
 
-<!-- Write your notes down here -->
+## General themes
+
+::: content-hidden
+Look for what the paper is generally about and some basic overall themes and
+topics in the paper.
+:::
+
+## Type of paper
+
+::: content-hidden
+Is it a guide, community-building, an example of a workflow, etc.
+:::
+
+## Other notes
+
+::: content-hidden
+What we found was interesting or what we'd like to share, discuss, or
+present in the main scoping review paper.
+:::
+
 
 
 # UKRN Open Research Training Resources and Priorities Working Paper
@@ -45,7 +121,26 @@ title: 'Full Article Review'
 - DOI: https://doi.org/10.31219/osf.io/s2f6k
 - OpenAlex ID: https://openalex.org/W4372403418
 
-<!-- Write your notes down here -->
+## General themes
+
+::: content-hidden
+Look for what the paper is generally about and some basic overall themes and
+topics in the paper.
+:::
+
+## Type of paper
+
+::: content-hidden
+Is it a guide, community-building, an example of a workflow, etc.
+:::
+
+## Other notes
+
+::: content-hidden
+What we found was interesting or what we'd like to share, discuss, or
+present in the main scoping review paper.
+:::
+
 
 
 # Eleven Strategies for Making Reproducible Research and Open Science Training the Norm at Research Institutions
@@ -54,7 +149,26 @@ title: 'Full Article Review'
 - DOI: https://doi.org/10.31219/osf.io/kcvra
 - OpenAlex ID: https://openalex.org/W4378611187
 
-<!-- Write your notes down here -->
+## General themes
+
+::: content-hidden
+Look for what the paper is generally about and some basic overall themes and
+topics in the paper.
+:::
+
+## Type of paper
+
+::: content-hidden
+Is it a guide, community-building, an example of a workflow, etc.
+:::
+
+## Other notes
+
+::: content-hidden
+What we found was interesting or what we'd like to share, discuss, or
+present in the main scoping review paper.
+:::
+
 
 
 # Collaboration and Open Science Initiatives in Primate Research
@@ -63,7 +177,26 @@ title: 'Full Article Review'
 - DOI: https://doi.org/10.31219/osf.io/7c93a
 - OpenAlex ID: https://openalex.org/W3183365357
 
-<!-- Write your notes down here -->
+## General themes
+
+::: content-hidden
+Look for what the paper is generally about and some basic overall themes and
+topics in the paper.
+:::
+
+## Type of paper
+
+::: content-hidden
+Is it a guide, community-building, an example of a workflow, etc.
+:::
+
+## Other notes
+
+::: content-hidden
+What we found was interesting or what we'd like to share, discuss, or
+present in the main scoping review paper.
+:::
+
 
 
 # Open and reproducible practices in developmental psychology research: The workflow of the WomCogDev lab as an example
@@ -72,7 +205,26 @@ title: 'Full Article Review'
 - DOI: https://doi.org/10.31234/osf.io/73bwu
 - OpenAlex ID: https://openalex.org/W4229452124
 
-<!-- Write your notes down here -->
+## General themes
+
+::: content-hidden
+Look for what the paper is generally about and some basic overall themes and
+topics in the paper.
+:::
+
+## Type of paper
+
+::: content-hidden
+Is it a guide, community-building, an example of a workflow, etc.
+:::
+
+## Other notes
+
+::: content-hidden
+What we found was interesting or what we'd like to share, discuss, or
+present in the main scoping review paper.
+:::
+
 
 
 # Accelerating addiction research via Open Science and Team Science
@@ -81,7 +233,26 @@ title: 'Full Article Review'
 - DOI: https://doi.org/10.31234/osf.io/pbkrx
 - OpenAlex ID: https://openalex.org/W4383376256
 
-<!-- Write your notes down here -->
+## General themes
+
+::: content-hidden
+Look for what the paper is generally about and some basic overall themes and
+topics in the paper.
+:::
+
+## Type of paper
+
+::: content-hidden
+Is it a guide, community-building, an example of a workflow, etc.
+:::
+
+## Other notes
+
+::: content-hidden
+What we found was interesting or what we'd like to share, discuss, or
+present in the main scoping review paper.
+:::
+
 
 
 # Ten strategies to foster open science in psychology and beyond
@@ -90,7 +261,26 @@ title: 'Full Article Review'
 - DOI: https://doi.org/10.31234/osf.io/c38a2
 - OpenAlex ID: https://openalex.org/W4281886503
 
-<!-- Write your notes down here -->
+## General themes
+
+::: content-hidden
+Look for what the paper is generally about and some basic overall themes and
+topics in the paper.
+:::
+
+## Type of paper
+
+::: content-hidden
+Is it a guide, community-building, an example of a workflow, etc.
+:::
+
+## Other notes
+
+::: content-hidden
+What we found was interesting or what we'd like to share, discuss, or
+present in the main scoping review paper.
+:::
+
 
 
 # Open and collaborative tools for disaster management and risk reduction
@@ -99,7 +289,26 @@ title: 'Full Article Review'
 - DOI: https://doi.org/10.36335/vnjhm.2022(12).33-38
 - OpenAlex ID: https://openalex.org/W4303191041
 
-<!-- Write your notes down here -->
+## General themes
+
+::: content-hidden
+Look for what the paper is generally about and some basic overall themes and
+topics in the paper.
+:::
+
+## Type of paper
+
+::: content-hidden
+Is it a guide, community-building, an example of a workflow, etc.
+:::
+
+## Other notes
+
+::: content-hidden
+What we found was interesting or what we'd like to share, discuss, or
+present in the main scoping review paper.
+:::
+
 
 
 # UKRN ORCC Primer on Working in Open Research
@@ -108,7 +317,26 @@ title: 'Full Article Review'
 - DOI: https://doi.org/10.31219/osf.io/346hr
 - OpenAlex ID: https://openalex.org/W4386723394
 
-<!-- Write your notes down here -->
+## General themes
+
+::: content-hidden
+Look for what the paper is generally about and some basic overall themes and
+topics in the paper.
+:::
+
+## Type of paper
+
+::: content-hidden
+Is it a guide, community-building, an example of a workflow, etc.
+:::
+
+## Other notes
+
+::: content-hidden
+What we found was interesting or what we'd like to share, discuss, or
+present in the main scoping review paper.
+:::
+
 
 
 # Lessons Learned: A Neuroimaging Research Center’s Transition to Open and Reproducible Science
@@ -117,5 +345,24 @@ title: 'Full Article Review'
 - DOI: https://doi.org/10.31219/osf.io/fe74t
 - OpenAlex ID: https://openalex.org/W4283836446
 
-<!-- Write your notes down here -->
+## General themes
+
+::: content-hidden
+Look for what the paper is generally about and some basic overall themes and
+topics in the paper.
+:::
+
+## Type of paper
+
+::: content-hidden
+Is it a guide, community-building, an example of a workflow, etc.
+:::
+
+## Other notes
+
+::: content-hidden
+What we found was interesting or what we'd like to share, discuss, or
+present in the main scoping review paper.
+:::
+
 
