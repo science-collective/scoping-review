@@ -19,9 +19,9 @@ Tools to use.
 
 ## Other notes
 
-This paper is not much about open collaboration but more about which
-tools to use for open and reproducible research from start to finish of
-a project.
+-   This paper is not much about open collaboration but more about which
+    tools to use for open and reproducible research from start to finish
+    of a project.
 
 # Ten simple rules for helping newcomers become contributors to open projects
 
@@ -62,18 +62,19 @@ a project.
 
 ## Other notes
 
-Focus on large-scale collaboration in psychology, because of a main
-challenge of small samples sizes.
-
-Project started in connection with a conference. First paper was a
-pilot. Main aim of the project is to provide infrastructure for
-latge-scale collaboration. Used mailing list to share information, then
-slack for discussions. Use Google docs for writing and documentation and
-github for code and data. Data analysis plans pre-registered at OSF.
-Have a website - good for newcomers and sharing info. Topic for research
-selected through voting. After organizing the data, they had a modelling
-challenge. Also discuss challenges. Main one was how to make decisions.
-Leadership team preferable. Also have author guidelines.
+-   Focus on large-scale collaboration in psychology, because of a main
+    challenge of small samples sizes.
+-   Project started in connection with a conference. First paper was a
+    pilot. Main aim of the project is to provide infrastructure for
+    large-scale collaboration. Used mailing list to share information,
+    then slack for discussions. Use Google docs for writing and
+    documentation and github for code and data. Data analysis plans
+    pre-registered at OSF.
+-   Have a website - good for newcomers and sharing info. Topic for
+    research selected through voting. After organizing the data, they
+    had a modelling challenge. Also discuss challenges. Main one was how
+    to make decisions.
+-   Leadership team preferable. Also have author guidelines.
 
 # Promoting FAIR Data Through Community-driven Agile Design: the Open Data Commons for Spinal Cord Injury (odc-sci.org)
 
@@ -91,7 +92,7 @@ Leadership team preferable. Also have author guidelines.
 
 ## Other notes
 
--   this paper is mostly about a database for sharing spinal injusry
+-   this paper is mostly about a database for sharing spinal injury
     data. There are some points for how to improve sharing but not much
     about open collaboration
 -   open data commons for spinal injury
@@ -99,11 +100,11 @@ Leadership team preferable. Also have author guidelines.
     beneficial if a collaborative approach is taken and data sharing is
     embraced as a community rather than by individuals
 -   key events for the collaboration to be possible: - introduction of
-    FAIR principles, - update from funders, funding given to specific
+    FAIR principles, update from funders, funding given to specific
     projects
 -   Open Data Commons for SCI (ODC-SCI, odc-sci.org), a platform to
     share tabular data of research in the field of spinal cord injury
--   Ain of the paper: to illustrate how members of research communities
+-   Aim of the paper: to illustrate how members of research communities
     can work together toward the development of dedicated data sharing
     initiatives under the umbrella of FAIR
 -   clearly highlighted the value of the massive demonstration/work for
@@ -124,23 +125,23 @@ Leadership team preferable. Also have author guidelines.
 
 ## General themes
 
-::: content-hidden
-Look for what the paper is generally about and some basic overall themes
-and topics in the paper.
-:::
+-   recommendations
+-   training
 
 ## Type of paper
 
-::: content-hidden
-Is it a guide, community-building, an example of a workflow, etc.
-:::
+-   survey
 
 ## Other notes
 
-::: content-hidden
-What we found was interesting or what we'd like to share, discuss, or
-present in the main scoping review paper.
-:::
+-   aim of the survey is to inform training priorities for open science
+-   research cycle: planning, conducting, analysing, disseminating
+-   Planning: team science guides, research co-production
+-   Conducting: open research testing platforms, electronic
+-   Most resources focus on the planning and analysing stage
+-   Many resources were only for internal use
+-   Very few ressources for open collaboration, none were open and they
+    were valued poorly compared to other practices
 
 # Eleven Strategies for Making Reproducible Research and Open Science Training the Norm at Research Institutions
 
@@ -150,23 +151,25 @@ present in the main scoping review paper.
 
 ## General themes
 
-::: content-hidden
-Look for what the paper is generally about and some basic overall themes
-and topics in the paper.
-:::
+-   training
+-   recommendations
 
 ## Type of paper
 
-::: content-hidden
-Is it a guide, community-building, an example of a workflow, etc.
-:::
+-   survey
 
 ## Other notes
 
-::: content-hidden
-What we found was interesting or what we'd like to share, discuss, or
-present in the main scoping review paper.
-:::
+-   Strategy 5 - Perform replication or meta-research studies as course
+    projects: As the class collaborates on one project, participants
+    also build skills for collaborative team science and gain experience
+    leading small teams.
+-   Tips for Strategy 5 - Perform replication or meta-research studies
+    as course projects: Carefully define the scope of the project,
+    Ensure that you have adequate support
+-   build communities: Foster accessible discussions (Consider running
+    "beginner" and "advanced" community meetings), Build communities:
+    Organize regular meetings
 
 # Collaboration and Open Science Initiatives in Primate Research
 
@@ -176,23 +179,47 @@ present in the main scoping review paper.
 
 ## General themes
 
-::: content-hidden
-Look for what the paper is generally about and some basic overall themes
-and topics in the paper.
-:::
+-   large-scale collaboration
 
 ## Type of paper
 
-::: content-hidden
-Is it a guide, community-building, an example of a workflow, etc.
-:::
+-   example
 
 ## Other notes
 
-::: content-hidden
-What we found was interesting or what we'd like to share, discuss, or
-present in the main scoping review paper.
-:::
+-   for them, making the large-scale collaboration was about overcoming
+    challenges related to their research
+-   Large-scale collaborations can help to set standards in the field by
+    following good scientific practice of replications, data reporting,
+    and pre-registration
+-   Low entry barriers and the various ways in which a scientist can be
+    involved in a large-scale collaboration (design, data collection,
+    analysis, manuscript writing) offer a multitude of possibilities for
+    researchers in different stages of their careers
+-   These types of projects also present valuable opportunities to make
+    new contacts, initiate new collaborations, and connect with a bigger
+    community on a regular basis
+-   Large-scale collaborations represent a wholesale shift in scientific
+    practice, from how research questions are chosen and approached, to
+    how research is logistically coordinated and how credit for research
+    efforts is allocated
+-   large-scale collaborative projects may reduce the diversity of
+    topics by covering them at a scale that would be unfeasible by
+    independent research groups
+-   Agreeing on project selection, study design, stimuli, analysis plan,
+    and findings' interpretation is not easy in big groups. (...)
+    research questions are selected democratically - proposals for
+    projects are submitted and members vote to select which projects
+    will be carried out.
+-   Large-scale projects also have to develop authorship guidelines,
+    which specify the minimal conditions that one person has to fulfill
+    to qualify for authorship
+-   none of the large-scale consortia in psychology have a steady source
+    of financing
+-   setup the project to be long-lasting and build an infrastructure
+    that they piloted
+-   task forces within the project prepared different materials they
+    then uploaded to github and pre-register
 
 # Open and reproducible practices in developmental psychology research: The workflow of the WomCogDev lab as an example
 
@@ -202,23 +229,21 @@ present in the main scoping review paper.
 
 ## General themes
 
-::: content-hidden
-Look for what the paper is generally about and some basic overall themes
-and topics in the paper.
-:::
+-   guide
+-   workflow
 
 ## Type of paper
 
-::: content-hidden
-Is it a guide, community-building, an example of a workflow, etc.
-:::
+-   guide
 
 ## Other notes
 
-::: content-hidden
-What we found was interesting or what we'd like to share, discuss, or
-present in the main scoping review paper.
-:::
+-   Nice figure with workflow
+-   Resources: lab meetings, slack, trello, OSF repository
+-   They setup a clear structure for how to conduct the research - how a
+    project is supposed to work
+-   Open Science is never static, as each of us continues to incorporate
+    more and more practices into our repertoires over time
 
 # Accelerating addiction research via Open Science and Team Science
 
@@ -228,23 +253,29 @@ present in the main scoping review paper.
 
 ## General themes
 
-::: content-hidden
-Look for what the paper is generally about and some basic overall themes
-and topics in the paper.
-:::
+-   team science
+-   example
 
 ## Type of paper
 
-::: content-hidden
-Is it a guide, community-building, an example of a workflow, etc.
-:::
+-   guide
 
 ## Other notes
 
-::: content-hidden
-What we found was interesting or what we'd like to share, discuss, or
-present in the main scoping review paper.
-:::
+-   mentions registered reports that are peer reviewer twice
+-   recommend sharing on OSF
+-   synthpop package in R creates a synthetic dataset with same
+    statistical properties
+-   large-scale collaboration is recommended to improve generalizability
+    and power.
+-   they provide an example of an individual-participant meta-analysis
+    they conducted
+-   As part of this process, we made several decisions as a group (via
+    an anonymous poll), such as which smallest effect size of interest
+    to preregister and to which journal to submit the paper
+-   Barriers: within our current scientific culture, there are few
+    incentives to work in large teams, all large-scale collaborations
+    need leadership
 
 # Ten strategies to foster open science in psychology and beyond
 
@@ -254,23 +285,29 @@ present in the main scoping review paper.
 
 ## General themes
 
-::: content-hidden
-Look for what the paper is generally about and some basic overall themes
-and topics in the paper.
-:::
+-   tools
+-   large-scale collaboration
 
 ## Type of paper
 
-::: content-hidden
-Is it a guide, community-building, an example of a workflow, etc.
-:::
+-   guide
 
 ## Other notes
 
-::: content-hidden
-What we found was interesting or what we'd like to share, discuss, or
-present in the main scoping review paper.
-:::
+-   Strategy 6: Collaborate with Others Using Open Tools
+-   can get started by writing in markdown/quarto, using github
+-   Strategy 7: Develop Networks of Open Collaboration
+-   Big Team Science has advantages for research, as it allows
+    investigators to access more resources, work with greater sample
+    sizes, take advantage of the expertise of a larger team of
+    researchers in areas such as data analysis, and distribute work more
+    efficiently
+-   Participating in these large-scale projects is not easy and calls on
+    researchers to develop specific standards and guidelines that ensure
+    effective communication among collaborators and enable projects to
+    develop coherently and cohesively
+-   there is still a long way to go before open science becomes the
+    by-design and by-default model for scientific research
 
 # Open and collaborative tools for disaster management and risk reduction
 
@@ -279,6 +316,8 @@ present in the main scoping review paper.
 -   OpenAlex ID: https://openalex.org/W4303191041
 
 ## General themes
+
+-   could not access
 
 ::: content-hidden
 Look for what the paper is generally about and some basic overall themes
@@ -306,6 +345,8 @@ present in the main scoping review paper.
 
 ## General themes
 
+-   not relevant. Is about working in open research not performing it
+
 ::: content-hidden
 Look for what the paper is generally about and some basic overall themes
 and topics in the paper.
@@ -332,20 +373,18 @@ present in the main scoping review paper.
 
 ## General themes
 
-::: content-hidden
-Look for what the paper is generally about and some basic overall themes
-and topics in the paper.
-:::
+-   workflow
 
 ## Type of paper
 
-::: content-hidden
-Is it a guide, community-building, an example of a workflow, etc.
-:::
+-   guide
 
 ## Other notes
 
-::: content-hidden
-What we found was interesting or what we'd like to share, discuss, or
-present in the main scoping review paper.
-:::
+-   also nice figure of workflow including open science practices in the
+    workflow
+-   use OSF for registering protocols
+-   focus on open software like R and Python, git and github
+-   this is a practical guide to make a transition, very little
+    mentioned specifically about collaboration or team work
+
