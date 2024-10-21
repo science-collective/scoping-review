@@ -49,7 +49,7 @@ create_fulltext_review_template <- function(data, reviewers) {
 
   purrr::walk(
     paths,
-    \(path) write_lines(c(header, review_body), path)
+    \(path) readr::write_lines(c(header, review_body), path)
   )
   paths
 }
