@@ -10,7 +10,7 @@ title: 'Full Article Review'
 
 ## General themes
 
-Tools to use.
+-   tools to use
 
 ## Type of paper
 
@@ -387,4 +387,3 @@ present in the main scoping review paper.
 -   focus on open software like R and Python, git and github
 -   this is a practical guide to make a transition, very little
     mentioned specifically about collaboration or team work
-
