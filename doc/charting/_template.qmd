@@ -3,12 +3,12 @@ title: 'Charting form template'
 ---
 
 ::: content-hidden
-fill in one form per paper. Name the form according to first author and
+Fill in one form per paper. Name the form according to first author and
 year like this: "Turoman-2022". Copy-paste the information from the
 full-text review below.
 :::
 
-# title of publication
+# Title of publication
 
 -   File:
 -   DOI:
