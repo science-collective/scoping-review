@@ -1,18 +1,12 @@
 ---
-title: 'Charting form template'
+title: 'Dora-2024'
 ---
 
-::: content-hidden
-fill in one form per paper. Name the form according to first author and
-year like this: "Turoman-2022". Copy-paste the information from the
-full-text review below.
-:::
+# Accelerating addiction research via Open Science and Team Science
 
-# title of publication
-
--   File:
--   DOI:
--   OpenAlex ID:
+-   File: data/review/fulltext/oa-id-W4383376256.pdf
+-   DOI: https://doi.org/10.31234/osf.io/pbkrx
+-   OpenAlex ID: https://openalex.org/W4383376256
 
 ## Tools
 
@@ -39,7 +33,12 @@ These are bit of information and recommendations for governance of the
 project.
 :::
 
--   
+-   Used anonymous polls to make critical decisions in a large
+    collaborative project
+-   Important to setup a structure for leadership of the project and
+    that the leadership is held accountable to decisions made
+-   setup a structure to regularly ask for formal and informal feedback
+    from members
 
 ### Workflow
 
@@ -64,7 +63,7 @@ they were valued poorly compared to other practices"
 What does the paper write is the need for education in the field?
 :::
 
--   
+-   Education in open science needed to increase uptake
 
 ## Barriers
 
@@ -76,4 +75,7 @@ For instance: "lack of education"
 Which barriers do the paper indicate for implementation of open science?
 :::
 
--   
+-   no open science standards in journals
+-   few opportunities for registered reports
+-   there are few incentives to collaborate in large teams
+-   grants are often given to an individual not a team

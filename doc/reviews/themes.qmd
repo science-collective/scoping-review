@@ -202,3 +202,7 @@ title: 'Analysis of themes'
 
 -   Open and reproducible practices in developmental psychology
     research: The workflow of the WomCogDev lab as an example
+
+## individual
+
+-   Ten strategies to foster open science in psychology and beyond

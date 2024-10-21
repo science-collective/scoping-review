@@ -1,5 +1,5 @@
 ---
-title: 'Charting form template'
+title: 'Turoman-2022'
 ---
 
 ::: content-hidden
@@ -8,11 +8,11 @@ year like this: "Turoman-2022". Copy-paste the information from the
 full-text review below.
 :::
 
-# title of publication
+# Open and reproducible practices in developmental psychology research: The workflow of the WomCogDev lab as an example
 
--   File:
--   DOI:
--   OpenAlex ID:
+-   File: data/review/fulltext/oa-id-W4229452124.pdf
+-   DOI: https://doi.org/10.31234/osf.io/73bwu
+-   OpenAlex ID: https://openalex.org/W4229452124
 
 ## Tools
 
