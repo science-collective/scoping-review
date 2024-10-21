@@ -9,7 +9,6 @@ library(tarchetypes)
 
 # Set target options:
 tar_option_set(
-  packages = desc::desc_get_deps()$package,
   format = "rds" # default storage format
   # Set other options as needed.
 )

@@ -1,0 +1,41 @@
+---
+title: 'Alessandroni-2022'
+---
+
+# Ten strategies to foster open science in psychology and beyond
+
+-   File: data/review/fulltext/oa-id-W4281886503.pdf
+-   DOI: https://doi.org/10.31234/osf.io/c38a2
+-   OpenAlex ID: https://openalex.org/W4281886503
+
+## Tools
+
+### Specific tools mentioned - their function - where in the researh process used
+
+-   Markdown/quarto - collaborative writing - all
+-   Github - version control - all
+
+## Organizational structure for open collaboration
+
+### Governance
+
+-   use open tools for collaboration
+-   develop specific standards and guidelines that ensure effective
+    communication among collaborators and enable projects to develop
+    coherently and cohesively
+
+## Educational perspectives
+
+### Educational needs
+
+-   Introduce open science practices into courses
+-   Institutions can create courses in open science practices
+
+## Barriers
+
+### Barriers for open science
+
+-   Incorporating open tools may have a steep learning curve
+-   Open science in the curricula vitae of academics must become a
+    requirement and not just a nice addition
+-   The problem with current incentive structures such as impact factor

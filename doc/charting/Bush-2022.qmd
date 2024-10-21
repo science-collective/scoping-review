@@ -1,0 +1,48 @@
+---
+title: 'Bush-2022'
+---
+
+# Lessons Learned: A Neuroimaging Research Center's Transition to Open and Reproducible Science
+
+-   File: data/review/fulltext/oa-id-W4283836446.pdf
+-   DOI: https://doi.org/10.31219/osf.io/fe74t
+-   OpenAlex ID: https://openalex.org/W4283836446
+
+## Tools
+
+### Specific tools mentioned - their function - where in the researh process used
+
+-   Github - open-source code, version control, collaboration -
+    analysing
+-   Python - open-source programming - analysing
+-   R - open-source programming - analysing
+-   arXiv/bioRxiv/psyRxiv - preprint sharing - disseminating
+-   OpenNeuro - data sharing - disseminating
+-   Open Science Framework - preregistration - planning
+-   clinicaltrials.gov - preregistration - planning
+
+## Organizational structure for open collaboration
+
+### Governance
+
+### Workflow
+
+-   hypothesis - experiment - data collection - data analysis -
+    reporting
+
+## Educational perspectives
+
+### Educational needs
+
+-   people in the organization need to learn additional programming,
+    version control, and data management skills and work with unfamiliar
+    naming conventions and directory structures mandated by the used
+    standards
+
+## Barriers
+
+### Barriers for open science
+
+-   costs of effort to be borne by individuals already engaged in
+    challenging, time-consuming work
+-   during transition, the research productivity will suffer
