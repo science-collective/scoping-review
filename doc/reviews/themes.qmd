@@ -1,0 +1,204 @@
+---
+title: 'Analysis of themes'
+---
+
+# Tools
+
+-   Open and reproducible neuroimaging: From study inception to
+    publication
+
+    -   study inception, planning, and ethics: OSF pre-registration,
+        clinicaltrials.gov, aspredicted
+
+    -   data processing and analysis: git, github, gitlab, etc
+
+    -   many others
+
+-   Collaborative open science as a way to reproducibility and new
+    insights in primate cognition research
+
+    -   Used mailing list to share information, then slack for
+        discussions
+
+    -   Use Google docs for writing and documentation
+
+    -   Github for code and data
+
+    -   Data analysis plans pre-registered at OSF
+
+    -   Have a website - good for newcomers and sharing info
+
+-   Open and reproducible practices in developmental psychology
+    research: The workflow of the WomCogDev lab as an example
+
+    -   Resources: lab meetings, slack, trello, OSF repository
+
+-   Accelerating addiction research via Open Science and Team Science
+
+    -   recommend sharing on OSF
+
+    -   synthpop package in R creates a synthetic dataset with same
+        statistical properties
+
+-   Ten strategies to foster open science in psychology and beyond
+
+    -   can get started by writing in markdown/quarto, using github
+
+-   Lessons Learned: A Neuroimaging Research Center's Transition to Open
+    and Reproducible Science
+
+    -   use OSF for registering protocols
+
+    -   focus on open software like R and Python, git and github
+
+# Organization
+
+-   Open and reproducible neuroimaging: From study inception to
+    publication
+
+    -   publishing Code of Conduct for collaborative projects is one
+        practice that helps ensure a more welcoming and inclusive space
+        for everyone regardless of background or identity
+
+-   Ten simple rules for helping newcomers become contributors to open
+    projects
+
+    -   be welcoming
+
+    -   make governance explicit
+
+    -   develop forms of legitimate peripheral participation
+
+    -   make it easy for newcomers to get started
+
+-   Collaborative open science as a way to reproducibility and new
+    insights in primate cognition research
+
+    -   topic for research selected through voting
+
+    -   also discuss challenges. Main one was how to make decisions
+
+    -   leadership team preferable
+
+    -   also have author guidelines.
+
+-   Promoting FAIR Data Through Community-driven Agile Design: the Open
+    Data Commons for Spinal Cord Injury (odc-sci.org)
+
+    -   key events for the collaboration to be possible: - introduction
+        of FAIR principles, update from funders, funding given to
+        specific projects
+
+    -   moreover, participants pointed out the need for improving
+        self-explanatory tutorials and help materials that would
+        facilitate the learning experience for those who could not
+        attend the workshop
+
+    -   registered users can request to become ODC-SCI Community members
+        with further approval by the Leadership team.
+
+-   Eleven Strategies for Making Reproducible Research and Open Science
+    Training the Norm at Research Institutions
+
+    -   perform replication or meta-research studies as course projects:
+        Carefully define the scope of the project, Ensure that you have
+        adequate support
+
+    -   build communities: Foster accessible discussions (Consider
+        running "beginner" and "advanced" community meetings)
+
+    -   build communities: Organize regular meetings
+
+-   Collaboration and Open Science Initiatives in Primate Research
+
+    -   Agreeing on project selection, study design, stimuli, analysis
+        plan, and findings' interpretation is not easy in big groups.
+        (...) research questions are selected democratically - proposals
+        for projects are submitted and members vote to select which
+        projects will be carried out.
+
+    -   Large-scale projects also have to develop authorship guidelines,
+        which specify the minimal conditions that one person has to
+        fulfill to qualify for authorship
+
+    -   task forces within the project prepared different materials they
+        then uploaded to github and pre-register
+
+    -   Low entry barriers and the various ways in which a scientist can
+        be involved in a large-scale collaboration (design, data
+        collection, analysis, manuscript writing) offer a multitude of
+        possibilities for researchers in different stages of their
+        careers
+
+-   Accelerating addiction research via Open Science and Team Science
+
+    -   As part of this process, we made several decisions as a group
+        (via an anonymous poll), such as which smallest effect size of
+        interest to preregister and to which journal to submit the paper
+
+-   Ten strategies to foster open science in psychology and beyond
+
+    -   Participating in these large-scale projects is not easy and
+        calls on researchers to develop specific standards and
+        guidelines that ensure effective communication among
+        collaborators and enable projects to develop coherently and
+        cohesively
+
+## Workflow
+
+-   Open and reproducible practices in developmental psychology
+    research: The workflow of the WomCogDev lab as an example
+
+    -   They setup a clear structure for how to conduct the research -
+        how a project is supposed to work
+
+-   Lessons Learned: A Neuroimaging Research Center's Transition to Open
+    and Reproducible Science
+
+    -   also nice figure of workflow including open science practices in
+        the workflow
+
+# Training
+
+-   UKRN Open Research Training Resources and Priorities Working Paper
+
+    -   research cycle: planning, conducting, analysing, disseminating
+
+    -   planning: team science guides, research co-production
+
+    -   most resources focus on the planning and analysing stage
+
+    -   very few resources for open collaboration, none were open and
+        they were valued poorly compared to other practices
+
+-   Eleven Strategies for Making Reproducible Research and Open Science
+    Training the Norm at Research Institutions
+
+    -   perform replication or meta-research studies as course projects:
+        As the class collaborates on one project, participants also
+        build skills for collaborative team science and gain experience
+        leading small teams
+
+# Barriers/limitations for implementation
+
+-   Accelerating addiction research via Open Science and Team Science
+
+    -   Barriers: within our current scientific culture, there are few
+        incentives to work in large teams, all large-scale
+        collaborations need leadership
+
+# Levels of collaboration
+
+## multi-center
+
+-   Collaboration and Open Science Initiatives in Primate Research
+
+## center
+
+-   Lessons Learned: A Neuroimaging Research Center's Transition to Open
+    and Reproducible Science
+
+## lab
+
+-   Open and reproducible practices in developmental psychology
+    research: The workflow of the WomCogDev lab as an example
