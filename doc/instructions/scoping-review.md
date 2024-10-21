@@ -15,5 +15,5 @@ Steps in a Scoping Review: (Taken from Cochrane Training:
 Additional Resources: -Joanna Briggs Institute, incl. scoping review
 protocol template: <https://jbi.global/scoping-review-network/resources>
 
-TO DO: -Make charting form -Decide on reviewers -Decide on the charting
-process
+TO DO: - Make charting form - Decide on reviewers - Decide on the
+charting process

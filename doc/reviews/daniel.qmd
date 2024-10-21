@@ -10,7 +10,8 @@ title: 'Full Article Review'
 
 ## General themes
 
-Tools to use.
+-   tools
+-   organization
 
 ## Type of paper
 
@@ -22,6 +23,14 @@ Tools to use.
 -   This paper is not much about open collaboration but more about which
     tools to use for open and reproducible research from start to finish
     of a project.
+-   Study inception, planning, and ethics: OSF pre-registration,
+    clinicaltrials.gov, aspredicted
+-   Data processing and analysis: git, github, gitlab, etc
+-   Scientific research can now become more transparent, inclusive and
+    collaborative throughout the research cycle
+-   Publishing Code of Conduct for collaborative projects is one
+    practice that helps ensure a more welcoming and inclusive space for
+    everyone regardless of background or identity
 
 # Ten simple rules for helping newcomers become contributors to open projects
 
@@ -54,7 +63,9 @@ Tools to use.
 
 ## General themes
 
--   practical setup of collaboration
+-   collaboration structure
+-   tools
+-   organization
 
 ## Type of paper
 
@@ -85,6 +96,7 @@ Tools to use.
 ## General themes
 
 -   data sharing
+-   organization
 
 ## Type of paper
 
@@ -96,7 +108,7 @@ Tools to use.
     data. There are some points for how to improve sharing but not much
     about open collaboration
 -   open data commons for spinal injury
--   Studies based on game theory suggest that data sharing might be
+-   studies based on game theory suggest that data sharing might be
     beneficial if a collaborative approach is taken and data sharing is
     embraced as a community rather than by individuals
 -   key events for the collaboration to be possible: - introduction of
@@ -125,22 +137,23 @@ Tools to use.
 
 ## General themes
 
--   recommendations
+-   organization
 -   training
 
 ## Type of paper
 
 -   survey
+-   recommendations
 
 ## Other notes
 
 -   aim of the survey is to inform training priorities for open science
 -   research cycle: planning, conducting, analysing, disseminating
 -   Planning: team science guides, research co-production
--   Conducting: open research testing platforms, electronic
+-   Conducting: open research testing platforms
 -   Most resources focus on the planning and analysing stage
 -   Many resources were only for internal use
--   Very few ressources for open collaboration, none were open and they
+-   Very few resources for open collaboration, none were open and they
     were valued poorly compared to other practices
 
 # Eleven Strategies for Making Reproducible Research and Open Science Training the Norm at Research Institutions
@@ -153,6 +166,7 @@ Tools to use.
 
 -   training
 -   recommendations
+-   organization
 
 ## Type of paper
 
@@ -180,6 +194,8 @@ Tools to use.
 ## General themes
 
 -   large-scale collaboration
+-   organization
+-   tools
 
 ## Type of paper
 
@@ -229,7 +245,7 @@ Tools to use.
 
 ## General themes
 
--   guide
+-   tools
 -   workflow
 
 ## Type of paper
@@ -253,12 +269,12 @@ Tools to use.
 
 ## General themes
 
--   team science
--   example
+-   organisation
 
 ## Type of paper
 
 -   guide
+-   example
 
 ## Other notes
 
@@ -286,6 +302,7 @@ Tools to use.
 ## General themes
 
 -   tools
+-   organization
 -   large-scale collaboration
 
 ## Type of paper
@@ -374,6 +391,7 @@ present in the main scoping review paper.
 ## General themes
 
 -   workflow
+-   tools
 
 ## Type of paper
 
@@ -387,4 +405,3 @@ present in the main scoping review paper.
 -   focus on open software like R and Python, git and github
 -   this is a practical guide to make a transition, very little
     mentioned specifically about collaboration or team work
-

@@ -1,0 +1,85 @@
+---
+title: 'Charting form template'
+---
+
+::: content-hidden
+fill in one form per paper. Name the form according to first author and
+year like this: "Turoman-2022". Copy-paste the information from the
+full-text review below.
+:::
+
+# title of publication
+
+-   File:
+-   DOI:
+-   OpenAlex ID:
+
+## Characteristics of the paper
+
+-   Type of paper (e.g., tips, example):
+-   Themes (e.g., tools, organization):
+-   Other keywords (e.g., newcomers):
+
+## Tools
+
+### Specific tools mentioned - their function - where in the researh process used
+
+::: content-hidden
+For instance: "OSF - pre-registration - planning". You can mention
+multiple tools. Just make another bullet.
+
+The research process is: planning, conducting, analysing, disseminating.
+If a combination write several, if all write "all"
+:::
+
+-   
+
+## Organizational structure for open collaboration
+
+### Governance
+
+::: content-hidden
+For instance: "Develop forms of legitimate peripheral participation."
+
+These are bit of information and recommendations for governance of the
+project.
+:::
+
+-   
+
+### Workflow
+
+::: content-hidden
+For instance: "designing the project - preregistration - creating the
+experiment - recruitment and data collection - data analysis -
+dissemination".
+
+These are overall process highlights
+:::
+
+-   
+
+## Educational perspectives
+
+### Educational needs
+
+::: content-hidden
+For instance: "few resources for open collaboration, none were open and
+they were valued poorly compared to other practices"
+
+What does the paper write is the need for education in the field?
+:::
+
+-   
+
+## Barriers
+
+### Barriers for open science
+
+::: content-hidden
+For instance: "lack of education"
+
+Which barriers do the paper indicate for implementation of open science?
+:::
+
+-   
