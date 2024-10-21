@@ -1,0 +1,48 @@
+---
+title: 'ManyPrimates-2021'
+---
+
+# Collaborative open science as a way to reproducibility and new insights in primate cognition research
+
+-   File: data/review/fulltext/
+-   DOI: https://doi.org/10.31234/osf.io/8w7zd
+-   OpenAlex ID: W4251805646
+
+## Tools
+
+### Specific tools mentioned - their function - where in the researh process used
+
+-   Github - version control - all
+-   Registered reports - help designing analysis to prove specific hypothesis - study design
+-   p-curve software - helps avoiding overrepresantation of positive results - 
+-   A.P.E.S Wiki - open access platform for standardized research and conservation of the data - they report it as an outcome of large-scale collaboration
+-   PRIMatE Research Exchange - platform to exchange data, ideas and protocols - they report it as an outcome of large-scale collaboration
+
+## Organizational structure for open collaboration
+
+### Setting up a network of collaborators
+
+-   ManyPrimates wanted a lasting infrastructure
+-   They developed a mailing list where researchers can exchange their ideas and analysis.
+-   They developed a twitter (now X) account to disseminate and extend their work to other researchers.
+
+### Setting up the bases for collaboration and a test example to educate people in open sciences
+
+-   They developed ethical guidelines for all collaborators (non-invasive research, always open science, author list)
+-   They ran a pilot study that tried replicating analysis on short-term memory with more sample size.
+-   They preregistered protocols, created code and hosted data in repositories so that other coworkers can run the analysis systematically.
+-   Data was collected.
+-   Other workforce merged the data and visualized the results.
+-   With this pipeline, they decided to run other analysis. This highlights the importance of a good test study.
+ 
+## Educational perspectives
+
+-   Large-scale collaboration are a great opportunity for making more researchers get in touch with open science practices.
+-   Creating websites like A.P.E.S Wiki or a mailing list creates a network of researchers that can follow similar practices.
+-   Replication studies like the mentioned MP1 project on short-term memory can be of great educational value and help set up and infrastructure to promote openness.
+
+## Barriers
+
+### Barriers for open science
+
+-   Pre-registration might neglect innovation due to their rigid structure, but creates very solid results.
