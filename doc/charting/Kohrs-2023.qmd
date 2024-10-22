@@ -12,29 +12,50 @@ title: 'Khors-2023'
 
 ### Specific tools mentioned - their function - where in the researh process used
 
--   Virtual unconference - not a tool per se, but a nice way of networking and sharing ideas - can be used either early to brainstorm and network or later to disseminate ideas
--   COARA - fairer way of assessing research output than impact factors - Not used, just mentioned.
--   Open Science Labs - not a tool per se, but dedicated staff and organizations who works solely to contribute and assist on designing open science - study design, but they can     assist in other stages. other decentralized hubs exist such as FORRT or STEM education hub.
--   SCOSS - application for funding to be able to publish with open science standards - publication.
+-   Virtual conference - networking and sharing ideas - all
+-   COARA - fairer way of assessing research output than impact
+    factors - dissemination
+-   SCOSS - application for funding to be able to publish with open
+    science standards - dissemination
 
 ## Organizational structure for open collaboration
 
 ### Systematic changes to promote Open Science
 
--   Make open science necessary for the curriculum in universities (Munich university as example) and add courses that touches on openness, preregistration, etc.
--   Thesis are required to have open science elements to them. including collaborative thesis
--   Open Science requirements in the curriculum needed to hire individuals.
- 
+-   Make open science necessary for the curriculum in universities
+    (Munich university as example) and add courses that touches on
+    openness, preregistration, etc.
+-   Thesis are required to have open science elements to them. Including
+    collaborative thesis
+-   Open Science requirements in the CV needed to hire individuals
+-   Carefully define the scope of the project, Ensure that you have
+    adequate support
+-   Foster accessible discussions (Consider running "beginner" and
+    "advanced" community meetings)
+-   Build communities:Organize regular meetings
+
 ## Educational perspectives
 
--   Here education is the central aspect of the structure to build open science the norm in an institution
--   They suggest offering open science courses, but also integreate open science in other courses
--   They also suggest that hand-on training is the best way to learn, some ways of doing this is by making courses more interactive or have research groups go on open science        courses. Some of the courses or examples can be replications or collaborative thesis.
--   An essential part of education is allowing for spaces where researchers can work, such as journal clubs, resource hubs or hackathons.
+-   Here education is the central aspect of the structure to build open
+    science the norm in an institution
+-   Offering open science courses, but also integreate open science in
+    other courses
+-   Hands-on training is the best way to learn, some ways of doing this
+    is by making courses more interactive or have research groups go on
+    open science courses. Some of the courses or examples can be
+    replications or collaborative thesis.
+-   Perform replication or meta-research studies as course projects
+-   An essential part of education is allowing for spaces where
+    researchers can work, such as journal clubs, resource hubs or
+    hackathons.
 
 ## Barriers
 
 ### Barriers for open science
 
 -   Allocation for resources.
--   In general all the things required to change expressed in the topics above: open science not being part of the standard curriculum of universities or a required skill for        when hiring. The lack of spaces and infrastructure to network and collaborate. Innovative papers being preferred by mainstream media than replications.
+-   In general all the things required to change expressed in the topics
+    above: open science not being part of the standard curriculum of
+    universities or a required skill for when hiring. The lack of spaces
+    and infrastructure to network and collaborate. Innovative papers
+    being preferred by mainstream media than replications.
