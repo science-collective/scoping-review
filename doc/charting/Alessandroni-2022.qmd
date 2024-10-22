@@ -8,6 +8,12 @@ title: 'Alessandroni-2022'
 -   DOI: https://doi.org/10.31234/osf.io/c38a2
 -   OpenAlex ID: https://openalex.org/W4281886503
 
+## Characteristics of the paper
+
+-   Type of paper (e.g., tips, example): guide
+-   Themes (e.g., tools, organization): organization, tools
+-   Other keywords (e.g., newcomers):
+
 ## Tools
 
 ### Specific tools mentioned - their function - where in the researh process used

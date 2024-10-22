@@ -8,6 +8,12 @@ title: 'Bush-2022'
 -   DOI: https://doi.org/10.31219/osf.io/fe74t
 -   OpenAlex ID: https://openalex.org/W4283836446
 
+## Characteristics of the paper
+
+-   Type of paper (e.g., tips, example): example
+-   Themes (e.g., tools, organization): tools
+-   Other keywords (e.g., newcomers): workflow
+
 ## Tools
 
 ### Specific tools mentioned - their function - where in the researh process used
@@ -22,8 +28,6 @@ title: 'Bush-2022'
 -   clinicaltrials.gov - preregistration - planning
 
 ## Organizational structure for open collaboration
-
-### Governance
 
 ### Workflow
 

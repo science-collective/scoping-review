@@ -8,30 +8,15 @@ title: 'Dora-2024'
 -   DOI: https://doi.org/10.31234/osf.io/pbkrx
 -   OpenAlex ID: https://openalex.org/W4383376256
 
-## Tools
+## Characteristics of the paper
 
-### Specific tools mentioned - their function - where in the researh process used
-
-::: content-hidden
-For instance: "OSF - pre-registration - planning". You can mention
-multiple tools. Just make another bullet.
-
-The research process is: planning, conducting, analysing, disseminating.
-If a combination write several, if all write "all"
-:::
-
--   
+-   Type of paper (e.g., tips, example): guide
+-   Themes (e.g., tools, organization): organization
+-   Other keywords (e.g., newcomers): team science, individual-centered
 
 ## Organizational structure for open collaboration
 
 ### Governance
-
-::: content-hidden
-For instance: "Develop forms of legitimate peripheral participation."
-
-These are bit of information and recommendations for governance of the
-project.
-:::
 
 -   Used anonymous polls to make critical decisions in a large
     collaborative project
@@ -40,40 +25,15 @@ project.
 -   setup a structure to regularly ask for formal and informal feedback
     from members
 
-### Workflow
-
-::: content-hidden
-For instance: "designing the project - preregistration - creating the
-experiment - recruitment and data collection - data analysis -
-dissemination".
-
-These are overall process highlights
-:::
-
--   
-
 ## Educational perspectives
 
 ### Educational needs
-
-::: content-hidden
-For instance: "few resources for open collaboration, none were open and
-they were valued poorly compared to other practices"
-
-What does the paper write is the need for education in the field?
-:::
 
 -   Education in open science needed to increase uptake
 
 ## Barriers
 
 ### Barriers for open science
-
-::: content-hidden
-For instance: "lack of education"
-
-Which barriers do the paper indicate for implementation of open science?
-:::
 
 -   no open science standards in journals
 -   few opportunities for registered reports

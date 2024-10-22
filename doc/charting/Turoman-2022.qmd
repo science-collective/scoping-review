@@ -2,78 +2,52 @@
 title: 'Turoman-2022'
 ---
 
-::: content-hidden
-fill in one form per paper. Name the form according to first author and
-year like this: "Turoman-2022". Copy-paste the information from the
-full-text review below.
-:::
-
 # Open and reproducible practices in developmental psychology research: The workflow of the WomCogDev lab as an example
 
 -   File: data/review/fulltext/oa-id-W4229452124.pdf
 -   DOI: https://doi.org/10.31234/osf.io/73bwu
 -   OpenAlex ID: https://openalex.org/W4229452124
 
+## Characteristics of the paper
+
+-   Type of paper (e.g., tips, example): example
+-   Themes (e.g., tools, organization): tools, workflow
+-   Other keywords (e.g., newcomers): lab-centered
+
 ## Tools
 
 ### Specific tools mentioned - their function - where in the researh process used
 
-::: content-hidden
-For instance: "OSF - pre-registration - planning". You can mention
-multiple tools. Just make another bullet.
-
-The research process is: planning, conducting, analysing, disseminating.
-If a combination write several, if all write "all"
-:::
-
--   
+-   Slack - communication - all
+-   Trello - project management - planning
+-   Open Science Framework - repository - planning, analysing,
+    dissemination
+-   R - data analysis - analysing
+-   Jasp - data analysis - analysing
+-   Zenodo - data sharing - dissemination
+-   OpenNeuro - data sharing - dissemination
 
 ## Organizational structure for open collaboration
 
 ### Governance
 
-::: content-hidden
-For instance: "Develop forms of legitimate peripheral participation."
-
-These are bit of information and recommendations for governance of the
-project.
-:::
-
--   
+-   Setup a clear structure for how to conduct the research considering
+    open science in each step
+-   Build in steps for error correction
 
 ### Workflow
 
-::: content-hidden
-For instance: "designing the project - preregistration - creating the
-experiment - recruitment and data collection - data analysis -
-dissemination".
-
-These are overall process highlights
-:::
-
--   
-
-## Educational perspectives
-
-### Educational needs
-
-::: content-hidden
-For instance: "few resources for open collaboration, none were open and
-they were valued poorly compared to other practices"
-
-What does the paper write is the need for education in the field?
-:::
-
--   
+-   designing the project - preregistration - creating the experiment -
+    recruiting and data collection - data analysis - dissemination
 
 ## Barriers
 
 ### Barriers for open science
 
-::: content-hidden
-For instance: "lack of education"
-
-Which barriers do the paper indicate for implementation of open science?
-:::
-
--   
+-   Not everyone have the same prerequisites. There are conscious
+    tradeoffs between trying to be as open as possible, and the
+    feasibility of applying an open practice
+-   Some practices can take additional time
+-   For the workflow to work, lab members must follow it quite closely
+-   The learning curve can be steep, especially for people who arrive
+    from more goal-oriented labs
