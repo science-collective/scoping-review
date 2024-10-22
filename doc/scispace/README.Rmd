@@ -1,0 +1,44 @@
+# Description of process and instructions for SciSpace
+
+We used SciSpace to additionally perform data charting using the themes
+we identified.
+
+All papers were uploaded to SciSpace.
+
+## Instructions
+
+The summary columns were as follows with the following instructions:
+
+### TL_DR
+
+TL;DR column used the default setting for TL;DR summary from SciSpace.
+
+### Tools
+
+A custom column.
+
+Named: tools suggested for open collaboration
+
+Specification: what are the specific tools mentioned in the paper to
+help researchers to open and collaborative science? For instance open
+science framework (OSF) or github.
+
+### Organization
+
+A custom column.
+
+Named: organization of open collaboration
+
+Specification: what are the suggested practices for open collaboration?
+this also includes own examples in the papers. This could be the use of
+slack for communication and github for coding.
+
+### Barriers
+
+A custom column.
+
+Named: barrier
+
+Specification: what are the barriers for doing more open science
+mentioned in the paper?
+
