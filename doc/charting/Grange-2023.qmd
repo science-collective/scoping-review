@@ -1,0 +1,37 @@
+---
+title: 'Grange-2023'
+---
+
+# UKRN Open Research Training Resources and Priorities Working Paper
+
+-   File: data/review/fulltext/
+-   DOI: https://doi.org/10.31219/osf.io/s2f6k
+-   OpenAlex ID: W4372403418
+
+## Tools
+
+### Specific tools mentioned - their function - where in the researh process used
+
+-   Systematic review -used to assess the open access resources available - used as the initial point to improve open science in universities.
+-   Large-scale survey - used to assess the needs of the trainers and students regarding open science - another initial point to build a infrastructure that             accommodates open science behaviour in university.
+-   There is a huge set of mentioned tools used for each stage of the research cycle. Might be interesting to add them here too.
+
+## Organizational structure for open collaboration
+
+### Systematic review of open source tools to understand the current situation of open science in 18 centers
+
+-   This paper focuses on understanding where the 18 centers are in terms of open science. By assessing this, they can make a strategy to be more open.
+-   After informal chats with leaders of the centers, they organized the items related to open science into 6 categories according to the research cycle: planning,      conducting, analyzing. disseminating, evaluating and incentivizing research. 
+
+## Educational perspectives
+
+-   There is no educational infrastructure on open access across this study. 62% of the resources don't have a certain trainer, indicating that researchers learn by     themselves. This is, of course, not a bad thing, but if learning groups were established, it would be more efficient, for example.
+-   Most of the resources are decentralized (online), a common online infrastructure that guides researchers would be very beneficial.
+
+## Barriers
+
+### Barriers for open science
+
+-   Most of open sources for training researchers in open science are involved in planning or analysis, which hinders the educational loop of open science.              Incentivizing and disseminating are just as important.
+-   Very few resources are destinied to reproducibility, which also hinders open science.
+-   The sources of highest quality are not even open access! 
