@@ -31,11 +31,52 @@ format: html
 
 ## Introduction
 
-## Aims
+-   Open science and its role in research
 
-Our original overall aim, as defined in the protocol, of this scoping
-review is to identify current practices of open collaboration in
-biomedical and health research.
+-   Collaboration and its role in modern research
+
+    -   collaboration spanning from lab, to research center to multiple
+        centers
+    -   collaboration needed to tackle limitations: small populations,
+        lack of replication, etc
+    -   re-inventing discovery: a new way of working in science
+
+Scientific research now almost always requires working with other
+people.
+
+With the growing complexity and specialization in scientific practices
+and methods, together with globalisation of health and environmental
+issues, there is a great need for a paradigm shift in research
+collaboration to be able to tackle these challenges.
+
+-   Open collaboration - a combination of two themes
+
+    -   definition
+    -   big potential in science
+    -   but there very few resources and examples of how to integrate
+        open science into collaborations
+
+We define open collaboration using the definition as found in Forte and
+Lampe (2013):
+
+> "*an online environment that (a) supports the collective production of
+> an artifact (b) through a technologically mediated collaboration
+> platform (c) that presents a low barrier to entry and exit and (d)
+> supports the emergence of persistent but malleable social
+> structures.*"
+
+With the increasing emphasis on and demand for science to be more open,
+how we collaborate together is a key component to making science more
+open from the start of any project. But how do we collaborate in an open
+and transparent way? What are the best practices and tools we can use?
+What is an ideal collaborative workflow and how close or far are we from
+this ideal in reality?
+
+-   Aim
+
+This scoping review will focus on current practices of open
+collaboration and open science in relation to collaboration in the field
+of biomedical and health research.
 
 The specific aims of this scoping review are to:
 
@@ -60,7 +101,62 @@ Science Framework (DOI:
 
 <!-- TODO: convert this to reference -->
 
+This is a scoping review, so we are following the framework described by
+Arksey and O'Malley
+([DOI:10.1080/1364557032000119616](https://doi.org/10.1080/1364557032000119616))
+and by Levac, Colquhoun, and O'Brien
+([DOI:10.1186/1748-5908-5-69](https://doi.org/10.1186/1748-5908-5-69))
+as well as the guidelines outlined in the PRISMA-ScR
+([DOI:10.7326/M18-0850](https://doi.org/10.7326/M18-0850) statement.
+
 ### Formal sources
+
+We developed the initial search strategy in consultation with a research
+librarian. We will collect the data via systematic searches of
+databases, as well as some hand searches.
+
+We used OpenAlex is an open database with scholarly works from MAG,
+Crossref, ORCID, ROR, DOAJ, Unpaywall, Pubmed, Pubmed Central, The ISSN
+International Centre, Internet Archive, Web crawls, Subject-area and
+institutional repositories from arXiv and Zenodo.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(stringr)
+library(here)
+source(here("R/search-terms.R"))
+search_terms_inline <- str_replace_all(search_terms$general, "\\*", "\\\\\\*")
+```
+
+We used the following search terms:
+
+```         
+> `r search_terms_inline`
+```
+
+Inclusion criteria included any document where open collaboration
+practices are not the primary focus. We will be guided by the definition
+of open collaboration from Forte and Lampe (2013) mentioned above in
+determining whether the records are relevant. Any published document
+with reporting on current open collaboration practices. Any published
+document with advice, guidance, tools, and/or recommendations for
+improving open collaboration. Article language in English.
+
+Exclusion criteria were documents that do not report on specific open
+collaboration practices. Documents published \>5 years in the past
+(defined as before xxxx) to capture current/most recent practices.
+
+All data obtained from all searches in online databases will be exported
+into text files or CVS files for further processing including removal of
+duplicates.
+
+At least two of us will extract data using a standardized and tested
+template. Data regarding the data source (e.g., author, title,
+publication year), open collaboration practices, and any other relevant
+information, will be extracted. Extracted data will be summarized with
+the descriptive analytical method described by Arksey and O'Malley
+(2005). The descriptive analytical method is aimed at identifying and
+summarizing different open collaboration practices.
 
 ### Informal sources
 
@@ -85,6 +181,8 @@ Science Framework (DOI:
     that in the interest of reproducibility, that we exclude this
     source.
 -   **Move all searching to using Open Alex**
+
+## Discussion
 
 ## Contributions
 
