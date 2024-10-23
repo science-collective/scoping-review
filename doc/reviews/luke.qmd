@@ -15,11 +15,19 @@ Look for what the paper is generally about and some basic overall themes
 and topics in the paper.
 :::
 
+-   Strategies
+-   Overview
+-   Resources
+-   Tools
+
 ## Type of paper
 
 ::: content-hidden
 Is it a guide, community-building, an example of a workflow, etc.
 :::
+
+-   Guide
+-   Review
 
 ## Other notes
 
@@ -27,6 +35,33 @@ Is it a guide, community-building, an example of a workflow, etc.
 What we found was interesting or what we'd like to share, discuss, or
 present in the main scoping review paper.
 :::
+
+-   They have a website version of their paper, hosted on GitHub, which
+    is fantastic to see!
+
+-   The paper doesn't really get into collaboration itself that much,
+    just tools that are open and that by default might make it easier to
+    collaborate with others.
+
+-   Other terms included: "robustness" when same data but different
+    methods give similar results, "generalizable" when new data and new
+    methods give similar results when new data and new methods give
+    similar results.
+
+-   Reviewed survey says that training and education were major barriers
+    to adopting open science practices because of lack of knowledge and
+    skill on the tools and processes. And because there are so many new
+    tools, it is hard even for experienced researchers to navigate
+    everything.
+
+-   The authors have a good strategy for how and why they list the tools
+    and resources that they do in the review.
+
+-   BIDS for open neuroimaging data formatting.
+
+-   Hierarchical Events Descriptor (HED) for metadata standard.
+
+-   DataLad for managing data versioning.
 
 # Ten simple rules for helping newcomers become contributors to open projects
 
@@ -226,11 +261,18 @@ Look for what the paper is generally about and some basic overall themes
 and topics in the paper.
 :::
 
+-   Training
+-   Resources
+-   Tools
+-   Survey
+
 ## Type of paper
 
 ::: content-hidden
 Is it a guide, community-building, an example of a workflow, etc.
 :::
+
+-   Survey
 
 ## Other notes
 
@@ -238,6 +280,15 @@ Is it a guide, community-building, an example of a workflow, etc.
 What we found was interesting or what we'd like to share, discuss, or
 present in the main scoping review paper.
 :::
+
+-   Not a super relevant paper for our review.
+
+-   Related to training, most training material are not created with
+    open licenses, which makes it difficult to share and spread and be
+    re-used.
+
+-   Training is an area that needs improvement, not enough of it or not
+    relevant enough for current situation.
 
 # Eleven Strategies for Making Reproducible Research and Open Science Training the Norm at Research Institutions
 
@@ -252,11 +303,21 @@ Look for what the paper is generally about and some basic overall themes
 and topics in the paper.
 :::
 
+-   Strategies
+-   Best practices
+-   Review
+-   Community-building
+-   Training
+-   Assessment
+
 ## Type of paper
 
 ::: content-hidden
 Is it a guide, community-building, an example of a workflow, etc.
 :::
+
+-   Guide
+-   Review
 
 ## Other notes
 
@@ -264,6 +325,22 @@ Is it a guide, community-building, an example of a workflow, etc.
 What we found was interesting or what we'd like to share, discuss, or
 present in the main scoping review paper.
 :::
+
+-   Useful guidelines for basic strategies to build up open science and
+    reproducibility, but not too much on collaboration specifically.
+
+-   Strategies for training:
+
+    -   have more courses on reproducibility and open science
+    -   integrate skills in reproducibility and open science into
+        existing courses
+    -   have more hands-on courses
+    -   embed a course training within a research group (e.g. like an
+        intervention)
+    -   reproduce a study as part of a course group project, to also
+        train collaborative team science
+    -   require curriculum to include reproducibility and open science
+        training
 
 # Collaboration and Open Science Initiatives in Primate Research
 
@@ -477,11 +554,17 @@ Look for what the paper is generally about and some basic overall themes
 and topics in the paper.
 :::
 
+-   Review
+-   Tools
+-   Best practices
+
 ## Type of paper
 
 ::: content-hidden
 Is it a guide, community-building, an example of a workflow, etc.
 :::
+
+-   Review
 
 ## Other notes
 
@@ -489,6 +572,21 @@ Is it a guide, community-building, an example of a workflow, etc.
 What we found was interesting or what we'd like to share, discuss, or
 present in the main scoping review paper.
 :::
+
+-   Is mostly a review of best practices.
+
+-   The content that does get into collaboration is higher level and
+    more general, for instance, "collaboration by sending us the data"
+    and "we sent out polls to the group to make decisions".
+
+-   Does get into some limitations of doing larger-scale collaborations:
+
+    -   Needs leadership to have progress, so people need to agree on
+        who and on how to limit abuse of power and to make decisions
+        based on their own preferences or goals without getting input
+        from the others
+    -   More people means more differences in opinions means more
+        potential for conflict.
 
 # Ten strategies to foster open science in psychology and beyond
 
@@ -599,11 +697,16 @@ Look for what the paper is generally about and some basic overall themes
 and topics in the paper.
 :::
 
+-   Review
+-   Tools
+
 ## Type of paper
 
 ::: content-hidden
 Is it a guide, community-building, an example of a workflow, etc.
 :::
+
+-   Review
 
 ## Other notes
 
@@ -611,6 +714,9 @@ Is it a guide, community-building, an example of a workflow, etc.
 What we found was interesting or what we'd like to share, discuss, or
 present in the main scoping review paper.
 :::
+
+-   This was a very short paper, without anything of relevance to our
+    review.
 
 # UKRN ORCC Primer on Working in Open Research
 
@@ -625,11 +731,16 @@ Look for what the paper is generally about and some basic overall themes
 and topics in the paper.
 :::
 
+-   Primer
+-   Review
+
 ## Type of paper
 
 ::: content-hidden
 Is it a guide, community-building, an example of a workflow, etc.
 :::
+
+-   Review
 
 ## Other notes
 
@@ -637,6 +748,9 @@ Is it a guide, community-building, an example of a workflow, etc.
 What we found was interesting or what we'd like to share, discuss, or
 present in the main scoping review paper.
 :::
+
+-   This paper is very short and has almost nothing about doing open
+    research and specifically nothing about open collaboration.
 
 # Lessons Learned: A Neuroimaging Research Center’s Transition to Open and Reproducible Science
 
@@ -671,8 +785,8 @@ What we found was interesting or what we'd like to share, discuss, or
 present in the main scoping review paper.
 :::
 
--   Very general outline of what they've done, without very clear
-    details on how they did it
+-   Though a bit general, its a good overview of the steps they took to
+    get more collaboration going and moving into more openness
 
 -   Best practices: Pre-registration, FAIR data, reproducible imaging,
     open science of workflows, methods, analysis code
