@@ -19,7 +19,7 @@ title: 'Alessandroni-2022'
 ### Specific tools mentioned - their function - where in the researh process used
 
 -   Markdown/quarto - collaborative writing - all
--   Github - version control - all
+-   Github/Gitlab - version control - all
 
 ## Organizational structure for open collaboration
 
@@ -42,6 +42,8 @@ title: 'Alessandroni-2022'
 ### Barriers for open science
 
 -   Incorporating open tools may have a steep learning curve
+-   Concerns about data safety
+-   High prices for making papers open
 -   Open science in the curricula vitae of academics must become a
     requirement and not just a nice addition
 -   The problem with current incentive structures such as impact factor
