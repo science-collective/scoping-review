@@ -1,0 +1,134 @@
+---
+title: 'TorresEspin-2021'
+---
+
+# Promoting FAIR Data Through Community-driven Agile Design: the Open Data Commons for Spinal Cord Injury (odc-sci.org)
+
+-   File: data/review/fulltext/oa-id-W3188722327.pdf
+-   DOI: https://doi.org/10.1007/s12021-021-09533-8
+-   OpenAlex ID: https://openalex.org/W3188722327
+
+## Characteristics of the paper
+
+-   Type of paper (e.g., tips, example):
+    -   Case study
+    -   Example workflow
+-   Themes (e.g., tools, organization):
+    -   tools
+    -   organization
+-   Other keywords (e.g., newcomers):
+    -   Data infrastructure
+    -   FAIR data
+    -   Case study
+    -   Agile design
+    -   Templates
+    -   Examples
+    -   Strategies
+    -   Software development
+
+## Tools
+
+### Specific tools mentioned; their function; where in the research process used
+
+::: content-hidden
+For instance: "OSF; pre-registration; planning". You can mention
+multiple tools. Just make another bullet.
+
+The research process is: planning, conducting, analysing, disseminating.
+If a combination write several, if all write "all"
+:::
+
+-   GitHub?; Seems to use GitHub to at least build the website;
+    dissemination?
+-   Agile development; iteratively develop project and help with project
+    management; workflow, planning, development
+-   Staged development; distinct stages mixed with iterations; planning,
+    development
+
+## Organizational structure for open collaboration
+
+### Governance
+
+::: content-hidden
+For instance: "Develop forms of legitimate peripheral participation."
+
+These are bit of information and recommendations for governance of the
+project.
+:::
+
+-   Building and encouraging community approval, support, and ownership
+    via workshop events done in collaboration with major
+    organizations/conferences.
+    -   Engaging multiple levels of stakeholders
+    -   Collaborate with funding agencies early on
+-   Split into different teams, which have positions that aim to be
+    about 3 year to rotate around people:
+    -   Leadership board to coordinate the development and operation
+    -   Executive board for oversight and be involved in executive
+        decisions
+    -   Community board to engage in community, get feedback from
+        workshops
+    -   Data science team for data curation, quality control, and
+        revision
+
+### Workflow
+
+::: content-hidden
+For instance: "designing the project - preregistration - creating the
+experiment - recruitment and data collection - data analysis -
+dissemination".
+
+These are overall process highlights
+:::
+
+-   Took a multi-staged approach to establishing the group/community.
+
+    -   At each stage, it was slowly about introducing the concepts to a
+        broader and broader audience and getting feedback all along the
+        way.
+
+-   Development follows principles of agile software development by
+    getting requirements from users, designing and developing those
+    requirements, seeking feedback from users on what was developed, and
+    testing the developed features.
+
+-   Use of the iterative development helped them identify and respond to
+    issues that came up. This is something that could be something that
+    non-software projects could use to help with collaboration and
+    maintaining momentum and motivation.
+
+## Educational perspectives
+
+### Educational needs
+
+::: content-hidden
+For instance: "few resources for open collaboration, none were open and
+they were valued poorly compared to other practices"
+
+What does the paper write is the need for education in the field?
+:::
+
+-   No education or training was mentioned in this paper.
+
+## Barriers
+
+### Barriers for open science
+
+::: content-hidden
+For instance: "lack of education"
+
+Which barriers do the paper indicate for implementation of open science?
+:::
+
+-   Building up an open collaboration project takes years of continued
+    work and effort.
+
+-   While the project's output is a data sharing platform, the process
+    to get there required a high level of collaboration.
+
+-   Required a lot of expertise not typically found in researchers (e.g.
+    software development, UI/UX design, data engineering, writing
+    user-friendly documentation/tutorials).
+
+-   Required getting regular direct feedback from potential users of
+    project, which wasn't always easy.
