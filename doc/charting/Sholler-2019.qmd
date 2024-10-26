@@ -1,0 +1,66 @@
+---
+title: Sholler-2019
+---
+
+This paper seems more targeted to general open projects and not strictly
+about open collaboration within research. However, it is useful
+information contained within on some general steps to take to encourage
+and continue collaboration in open projects and in as open ways as
+possible.
+
+# Ten simple rules for helping newcomers become contributors to open projects
+
+-   File: data/review/fulltext/oa-id-W2972809368.pdf
+-   DOI: https://doi.org/10.1371/journal.pcbi.1007296
+-   OpenAlex ID: https://openalex.org/W2972809368
+
+## Characteristics of the paper
+
+-   Type of paper (e.g., tips, example): guide
+-   Themes (e.g., tools, organization):
+    -   community-building
+-   Other keywords (e.g., newcomers):
+    -   Onboarding
+    -   Documentation
+    -   Contributing
+    -   Centralization
+    -   Knowledge management
+    -   Communication
+    -   Guidelines
+
+## Tools
+
+### Specific tools mentioned; their function; where in the research process used
+
+-   Not relevant.
+
+## Organizational structure for open collaboration
+
+### Governance
+
+-   Make governance explicit (e.g. have clear documents describing who
+    are in leadership positions, who makes decisions, and how decisions
+    are made).
+-   Include forms of legitimate peripheral participation that newcomers
+    are most likely to start doing, such as commenting on issues or
+    discussions or creating issues when they find something that needs
+    attention.
+
+### Workflow
+
+-   There wasn't anything specific about workflows in this paper.
+
+## Educational perspectives
+
+### Educational needs
+
+-   Ensure there are clear contributing guidelines and code of conduct
+    to help contributors out.
+-   Make it easy for people to get started, for instance, clear
+    instructions for newcomers on how to collaborate.
+
+## Barriers
+
+### Barriers for open science
+
+-   There wasn't anything specific about barriers in this paper.
