@@ -22,10 +22,10 @@ full-text review below.
 
 ## Tools
 
-### Specific tools mentioned - their function - where in the researh process used
+### Specific tools mentioned; their function; where in the research process used
 
 ::: content-hidden
-For instance: "OSF - pre-registration - planning". You can mention
+For instance: "OSF; pre-registration; planning". You can mention
 multiple tools. Just make another bullet.
 
 The research process is: planning, conducting, analysing, disseminating.
