@@ -24,7 +24,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -73,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -113,7 +132,32 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#aim" id="toc-aim" class="nav-link" data-scroll-target="#aim">Aim</a></li>
+  </ul></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
+  <ul class="collapse">
+  <li><a href="#deviations-and-challenges" id="toc-deviations-and-challenges" class="nav-link" data-scroll-target="#deviations-and-challenges">Deviations and challenges</a></li>
+  <li><a href="#document-selection" id="toc-document-selection" class="nav-link" data-scroll-target="#document-selection">Document selection</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#scoping-review-identifies-only-11-papers-discussing-open-collaboration" id="toc-scoping-review-identifies-only-11-papers-discussing-open-collaboration" class="nav-link" data-scroll-target="#scoping-review-identifies-only-11-papers-discussing-open-collaboration">Scoping review identifies only 11 papers discussing open collaboration</a></li>
+  <li><a href="#practices-of-open-collaboration" id="toc-practices-of-open-collaboration" class="nav-link" data-scroll-target="#practices-of-open-collaboration">Practices of open collaboration</a></li>
+  <li><a href="#useful-tools-for-open-collaboration" id="toc-useful-tools-for-open-collaboration" class="nav-link" data-scroll-target="#useful-tools-for-open-collaboration">Useful tools for open collaboration</a></li>
+  </ul></li>
+  <li><a href="#discussions" id="toc-discussions" class="nav-link" data-scroll-target="#discussions">Discussions</a></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a></li>
+  <li><a href="#contributions" id="toc-contributions" class="nav-link" data-scroll-target="#contributions">Contributions</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="paper.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -179,10 +223,33 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-</section>
-<section id="aims" class="level2">
-<h2 class="anchored" data-anchor-id="aims">Aims</h2>
-<p>Our original overall aim, as defined in the protocol, of this scoping review is to identify current practices of open collaboration in biomedical and health research.</p>
+<ul>
+<li><p>Open science and its role in research</p></li>
+<li><p>Collaboration and its role in modern research</p>
+<ul>
+<li>collaboration spanning from lab, to research center to multiple centers</li>
+<li>collaboration needed to tackle limitations: small populations, lack of replication, etc</li>
+<li>re-inventing discovery: a new way of working in science</li>
+</ul></li>
+</ul>
+<p>Scientific research now almost always requires working with other people.</p>
+<p>With the growing complexity and specialization in scientific practices and methods, together with globalisation of health and environmental issues, there is a great need for a paradigm shift in research collaboration to be able to tackle these challenges.</p>
+<ul>
+<li><p>Open collaboration - a combination of two themes</p>
+<ul>
+<li>definition</li>
+<li>big potential in science</li>
+<li>but there very few resources and examples of how to integrate open science into collaborations</li>
+</ul></li>
+</ul>
+<p>We define open collaboration using the definition as found in <span class="citation" data-cites="Forte2013">(<a href="#ref-Forte2013" role="doc-biblioref">1</a>)</span>:</p>
+<blockquote class="blockquote">
+<p>“<em>an online environment that (a) supports the collective production of an artifact (b) through a technologically mediated collaboration platform (c) that presents a low barrier to entry and exit and (d) supports the emergence of persistent but malleable social structures.</em>”</p>
+</blockquote>
+<p>With the increasing emphasis on and demand for science to be more open, how we collaborate together is a key component to making science more open from the start of any project. But how do we collaborate in an open and transparent way? What are the best practices and tools we can use? What is an ideal collaborative workflow and how close or far are we from this ideal in reality?</p>
+<section id="aim" class="level3">
+<h3 class="anchored" data-anchor-id="aim">Aim</h3>
+<p>This scoping review will focus on current practices of open collaboration and open science in relation to collaboration in the field of biomedical and health research.</p>
 <p>The specific aims of this scoping review are to:</p>
 <ul>
 <li><p>Provide an overview of current practices of or opinions about research collaboration that follow basic open principles (e.g., transparency, accessibility)</p></li>
@@ -190,44 +257,113 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>We’ve expanded on our original aims to include a <strong>secondary aim</strong> of building an open source R-based pipeline for conducting scoping reviews. The entire source code, as well as text and collaboration workflows, are found on our GitHub repository <a href="https://github.com/science-collective/scoping-review"><code>science-collective/scoping-review</code></a>.</p>
 </section>
+</section>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
-<p>The full protocol for this scoping review was uploaded to the Open Science Framework (DOI: <a href="https://doi.org/10.17605/OSF.IO/K9DR5"><code>10.17605/OSF.IO/K9DR5</code></a>).</p>
-<!-- TODO: convert this to reference -->
-<section id="formal-sources" class="level3">
-<h3 class="anchored" data-anchor-id="formal-sources">Formal sources</h3>
+<p>The full protocol for this scoping review was uploaded to the Open Science Framework <span class="citation" data-cites="Johnston2022">(<a href="#ref-Johnston2022" role="doc-biblioref">2</a>)</span>. As with any research project, things evolve compared to what was originally intended or planned. In this section we briefly re-state what we described in the protocol and especially we describe what was changed from the protocol.</p>
+<p>This is a scoping review, so we followed the framework described in <span class="citation" data-cites="Arksey2005">(<a href="#ref-Levac2010" role="doc-biblioref">4</a>)</span> as well as the guidelines outlined in the PRISMA-ScR statement <span class="citation" data-cites="Tricco2018">(<a href="#ref-Tricco2018" role="doc-biblioref">5</a>)</span>.</p>
+<section id="deviations-and-challenges" class="level3">
+<h3 class="anchored" data-anchor-id="deviations-and-challenges">Deviations and challenges</h3>
+<p>We originally aimed to review individual archives that included PubMed, bioRxiv, Scopus, and several others (the full list is in the protocol), and to use R packages with web API connections to each of these sources to programmatically extract the sources we wanted. However we encountered substantial issues that completely changed how we actually found and extracted the sources.</p>
+<p>The first challenge we encountered was that, while most of the source databases had (hypothetically) exposed APIs along with R packages available to access them, they didn’t always work well or had complicated instructions for actually using them. For instance, the preprint repositories bioRxiv and medRxiv didn’t have an up to date R package to access the preprints nor was the web API well described, nor well designed. In order to effectively use it, you need to download the entire database of preprints locally before being able to search for the preprints you want. This made it effectively impossible to use.</p>
+<p>The second challenge we encountered was a difference in results between using the web API compared to using the web search interface for some source databases. There were some small differences in search results between the API query compared to the web-based query. We couldn’t identify or understand how these differences happened or way, though they were quite small differences (less than 10 out of thousands of scholarly works from the search results).</p>
+<p>The third challenge we had was that some source databases, like the Web of Science or Scopus, didn’t work consistently between the authors. In order to use the web API with the R packages, you need to generate a token for authentication. However, for some authors, the token worked fine, and for others, it didn’t work at all, with no explanation or error message. Given our interest in and aim for reproducibility, since the same code ran differently between authors, we decided to exclude these source databases.</p>
+<p>We also originally intended on searching websites, blogs, and other online resources, but it was very difficult to programmatically and systemtically achieve this. So we ended up only searching for scholarly work that were indexed in databases.</p>
+<p>Given these challenges however, we unintentionally found <a href="https://openalex.org/">OpenAlex</a>, which is a public database of scholarly output that aggregates dozens of other source databases into one, easy interface. This resource also has an R package called <code>{openalexR}</code> <span class="citation" data-cites="Aria2024">(<a href="#ref-Aria2024" role="doc-biblioref">6</a>)</span> with a very well designed interface, which simplified or made redundant much of our code we wrote. It also made it unnecessary to use the individual R packages for each source database that we originally listed in the protocol. By using this archive, it resolved all our challenges and barriers we had before. For a full list of where they get their source data from, see their <a href="https://help.openalex.org/hc/en-us/articles/24397285563671-About-the-data">“About the data”</a> page.</p>
 </section>
-<section id="informal-sources" class="level3">
-<h3 class="anchored" data-anchor-id="informal-sources">Informal sources</h3>
-<!-- TODO: need to add how we searched online sources, like lab websites -->
+<section id="document-selection" class="level3">
+<h3 class="anchored" data-anchor-id="document-selection">Document selection</h3>
+<p>We developed the initial search strategy in consultation with a research librarian. We collected the data via systematic searches of databases. All authors were involved in reviewing the collected sources, from reviewing the titles, to abstracts, and finally to full-text documents.</p>
+<section id="information-sources" class="level4">
+<h4 class="anchored" data-anchor-id="information-sources">Information sources</h4>
+<p>We used OpenAlex, after encountering the challenges described above, which is an open database with scholarly works from Microsoft Academic Graph, Crossref, ORCID, ROR, DOAJ, Unpaywall, Pubmed, Pubmed Central, the ISSN International Centre, Internet Archive, Web crawls, subject-area and institutional repositories from arXiv and Zenodo.</p>
+</section>
+<section id="search-terms" class="level4">
+<h4 class="anchored" data-anchor-id="search-terms">Search terms</h4>
+<p>We used the following search terms when searching for scholarly work:</p>
+<blockquote class="blockquote">
+<p>(open[title]) AND (science OR research) AND (collaborating OR collaboration OR collaborate OR team OR cooperate OR cooperation OR cooperating) AND (technology OR technologies OR tool OR framework OR guideline OR principles OR practices OR systems OR resources)</p>
+</blockquote>
+</section>
+<section id="inclusion-and-exclusion-criteria" class="level4">
+<h4 class="anchored" data-anchor-id="inclusion-and-exclusion-criteria">Inclusion and exclusion criteria</h4>
+<p>Inclusion criteria included any document where open collaboration practices are not the primary focus. We relied on the definition of open collaboration from <span class="citation" data-cites="Forte2013">(<a href="#ref-Forte2013" role="doc-biblioref">1</a>)</span> in determining whether the records were relevant. Any published document with reporting on current open collaboration practices. Any published document with advice, guidance, tools, and/or recommendations for improving open collaboration. Article language in English. Exclusion criteria were documents that do not report on specific open collaboration practices.</p>
+<p>While we didn’t change our search terms for the initial search and extraction, we found that our search terms were not precise enough and got many irrelevant scholarly works. The full R code to filter down the search results is kept in the <a href="https://github.com/science-collective/scoping-review/blob/main/R/exclusions.R"><code>R/exlusions.R</code></a> file on the GitHub repository. For example, we extracted a large number of scholarly works describing surgery such as “open wound”, electronics such as “open circuit”, or environmental such as “open water” that we had to post-process and exclude.</p>
+</section>
+<section id="charting-procedure" class="level4">
+<h4 class="anchored" data-anchor-id="charting-procedure">Charting procedure</h4>
+<p>At least two of us extracted data using a standardized and tested template. Data regarding the data source (e.g., author, title, publication year), open collaboration practices, and any other relevant information, will be extracted. Extracted data will be summarized with the descriptive analytical method described in <span class="citation" data-cites="Arksey2005">(<a href="#ref-Arksey2005" role="doc-biblioref">3</a>)</span>, which is aimed at identifying and summarizing different open collaboration practices.</p>
+</section>
+<section id="search-period" class="level4">
+<h4 class="anchored" data-anchor-id="search-period">Search period</h4>
+<p>We were not able to dedicate as much time to this project as we had initially planned, so our “stopping rule” for end date didn’t match with our actual search period. The actual end date for when we did the last search results extraction was <a href="https://github.com/science-collective/scoping-review/commit/f288d3f23d028e77ad1081e0cfe3583ce4dcb8b6">2024-02-29</a>.</p>
+<p>The start date remained 5 years from our end date, which would have been approximately 2019-02-28.</p>
+</section>
 </section>
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
-<section id="deviations-from-the-protocol" class="level3">
-<h3 class="anchored" data-anchor-id="deviations-from-the-protocol">Deviations from the protocol</h3>
-<ul>
-<li><strong>Original timeline</strong>: We were quite ambitious with the timeline for completing this scoping review. We did not adhere to the timeline.</li>
-<li><strong>API vs web search results</strong>: Almost all source databases had exposed APIs, with R packages available to access them. We chose to use these rather than using the web to extract the source data is due to our secondary aim. However, we noticed that there were some small differences in search results between the API query compared to the web-based query. We can’t explain these differences, though they were quite minor.</li>
-<li><strong>Exclude Web of Science source</strong>: We were unable to connect the Web of Science source to R through the <code>{wosr}</code> package. Using the API key did not as documented in the package did not work. We decided that in the interest of reproducibility, that we exclude this source.</li>
-<li><strong>Move all searching to using Open Alex</strong></li>
-</ul>
+<section id="scoping-review-identifies-only-11-papers-discussing-open-collaboration" class="level3">
+<h3 class="anchored" data-anchor-id="scoping-review-identifies-only-11-papers-discussing-open-collaboration">Scoping review identifies only 11 papers discussing open collaboration</h3>
 </section>
+<section id="practices-of-open-collaboration" class="level3">
+<h3 class="anchored" data-anchor-id="practices-of-open-collaboration">Practices of open collaboration</h3>
+<p>Across the papers found in our literature search, X out of 11 discuss actual experiences on implementing open collaboration, albeit in different organizational levels. These range from lab level (Turoman et al) center level (Bush et al and Grange et al), multi-center level (ManyPrimates et al and Grange et al) and field level: psychology (Alessandorni et al), Spinal Cord injury (Torres-Espin et al) and neuroimaging (Niso et al). All of these share in common the need for an infrastructure that promotes open science and open collaboration via starting building a community of collaborators or making tools (usually online resources) that researchers can use to reach FAIR (Finndable, Accessible, Interoperable and Reusable) goals while doing research. Before delving in those, here we provide the specific needs for implementing open collaboration in each organizational level, as well as describing the differences in approaches among experiences between and across levels (Figure 2).</p>
+<section id="implementation-of-open-collaboration-practices-at-laboratory-level" class="level4">
+<h4 class="anchored" data-anchor-id="implementation-of-open-collaboration-practices-at-laboratory-level">Implementation of open collaboration practices at laboratory level</h4>
+</section>
+<section id="implementation-of-open-collaboration-practices-at-center-level" class="level4">
+<h4 class="anchored" data-anchor-id="implementation-of-open-collaboration-practices-at-center-level">Implementation of open collaboration practices at center level</h4>
+<p>For center-level only one paper was identified (Bush et al), providing the example of a center of neuroimaging describing first how they identified the needs for open collaboration, then the individual-level practices that researchers should adapt and then the center-level changes to promote reaching FAIR goals.</p>
+</section>
+<section id="implementation-of-open-collaboration-practices-at-multi-center-level" class="level4">
+<h4 class="anchored" data-anchor-id="implementation-of-open-collaboration-practices-at-multi-center-level">Implementation of open collaboration practices at multi-center level</h4>
+<p>Interestingly, the level of organization with most papers is the multi-center level with two papers from ManyPrimates et al (ManyPrimates 2019 and ManyPrimates 2021) and Grange et al.&nbsp;In this organization level the most urgent needs are: 1) identifying the needs for open collaboration and 2) creating an infrastructure that allows those needs to be satisfied. Indeed, Grange et al describes a systematic review as an exploration of the needs for 11 UKRN centers to implement open collaborative practives. In this paper they specially focus on tools and resources among the 11 institutions and make clear the need for starting to utilize open resources as a first step to adapt open collaborative practices. The first paper from ManyPrimates et al [REF] describes the start of another multi-center collaboration, albeit from different institutions. It is interesting to observe that in this situation, the complex issue is to start the collaboration itself, which was ignited thanks to a symposium and an email chain among future collaborators. In contrast, ManyPrimates could quickly develop an open collaborative structure with relative ease in comparison to changing an already solid infrastructure, like in the case of Grange et al.</p>
+</section>
+<section id="implementation-of-open-collaboration-practices-at-field-level" class="level4">
+<h4 class="anchored" data-anchor-id="implementation-of-open-collaboration-practices-at-field-level">Implementation of open collaboration practices at field level</h4>
+</section>
+</section>
+<section id="useful-tools-for-open-collaboration" class="level3">
+<h3 class="anchored" data-anchor-id="useful-tools-for-open-collaboration">Useful tools for open collaboration</h3>
+</section>
+</section>
+<section id="discussions" class="level2">
+<h2 class="anchored" data-anchor-id="discussions">Discussions</h2>
+</section>
+<section id="conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions">Conclusions</h2>
 </section>
 <section id="contributions" class="level2">
 <h2 class="anchored" data-anchor-id="contributions">Contributions</h2>
 <!-- TODO: add contributions according to: https://credit.niso.org/ -->
-<ul>
-<li>HC:</li>
-<li>MG:</li>
-<li>DBI: Conceptualization, Data curation, formal analysis, investigation, methodology, writing</li>
-<li>LWJ:</li>
-</ul>
+<p>We originally had another author involved, HC, who is on the protocol author list. Since the time we uploaded the protocol, she has moved out of academia and could no longer participate in any work.</p>
+<p>Otherwise, the remaining authors (MG, DBI, and LWJ) had the following contribution roles, following the <a href="https://credit.niso.org/">CRediT</a> taxonomy of conceptualization, data curation, formal analysis, investigation, methodology, writing - original draft, writing - reviewing and editing, project administration, software, validation, and visualization.</p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-Forte2013" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Forte A, Lampe C. <a href="https://doi.org/10.1177/0002764212469362">Defining, understanding, and supporting open collaboration: Lessons from the literature</a>. American Behavioral Scientist. 2013 Jan;57(5):535–47. </div>
+</div>
+<div id="ref-Johnston2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Johnston LW, Urena MG, Chatwin H, Ibsen DB. <a href="https://doi.org/10.17605/OSF.IO/K9DR5">Towards open collaboration in biomedical and health research: A scoping review</a>. OSF Registries; 2022. </div>
+</div>
+<div id="ref-Arksey2005" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Arksey H, O’Malley L. <a href="https://doi.org/10.1080/1364557032000119616">Scoping studies: Towards a methodological framework</a>. International Journal of Social Research Methodology. 2005 Feb;8(1):19–32. </div>
+</div>
+<div id="ref-Levac2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Levac D, Colquhoun H, O’Brien KK. <a href="https://doi.org/10.1186/1748-5908-5-69">Scoping studies: Advancing the methodology</a>. Implementation Science. 2010 Sep;5(1). </div>
+</div>
+<div id="ref-Tricco2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Tricco AC, Lillie E, Zarin W, O’Brien KK, Colquhoun H, Levac D, et al. <a href="https://doi.org/10.7326/m18-0850">PRISMA extension for scoping reviews (PRISMA-ScR): Checklist and explanation</a>. Annals of Internal Medicine. 2018 Oct;169(7):467–73. </div>
+</div>
+<div id="ref-Aria2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Aria M, Le T, Cuccurullo C, Belfiore A, Choe J. <a href="https://doi.org/10.32614/rj-2023-089">openalexR: An r-tool for collecting bibliometric data from OpenAlex</a>. The R Journal. 2024 Apr;15(4):167–80. </div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -646,6 +782,45 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../CONTRIBUTING.html">
+<p>Contributing</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../CODE_OF_CONDUCT.html">
+<p>Code of Conduct</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../GOVERNANCE.html">
+<p>Governance</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../ROADMAP.html">
+<p>Roadmap</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../LICENSE.html">
+<p>CC-BY License</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

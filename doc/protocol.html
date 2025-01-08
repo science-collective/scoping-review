@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Hannah Chatwin">
 <meta name="author" content="Mario Garcia">
 <meta name="author" content="Daniel B. Ibsen">
 <meta name="author" content="Luke W. Johnston">
@@ -24,7 +25,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -73,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -113,7 +133,49 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#study-information" id="toc-study-information" class="nav-link active" data-scroll-target="#study-information">Study information</a>
+  <ul class="collapse">
+  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
+  <li><a href="#hypotheses" id="toc-hypotheses" class="nav-link" data-scroll-target="#hypotheses">Hypotheses</a></li>
+  </ul></li>
+  <li><a href="#design-plan" id="toc-design-plan" class="nav-link" data-scroll-target="#design-plan">Design plan</a>
+  <ul class="collapse">
+  <li><a href="#study-type" id="toc-study-type" class="nav-link" data-scroll-target="#study-type">Study type</a></li>
+  <li><a href="#blinding" id="toc-blinding" class="nav-link" data-scroll-target="#blinding">Blinding</a></li>
+  <li><a href="#study-design" id="toc-study-design" class="nav-link" data-scroll-target="#study-design">Study design</a></li>
+  </ul></li>
+  <li><a href="#sampling-plan" id="toc-sampling-plan" class="nav-link" data-scroll-target="#sampling-plan">Sampling Plan</a>
+  <ul class="collapse">
+  <li><a href="#existing-data" id="toc-existing-data" class="nav-link" data-scroll-target="#existing-data">Existing data</a></li>
+  <li><a href="#data-collection-procedures" id="toc-data-collection-procedures" class="nav-link" data-scroll-target="#data-collection-procedures">Data collection procedures</a>
+  <ul class="collapse">
+  <li><a href="#document-selection" id="toc-document-selection" class="nav-link" data-scroll-target="#document-selection">Document selection</a></li>
+  <li><a href="#software-and-tools-used" id="toc-software-and-tools-used" class="nav-link" data-scroll-target="#software-and-tools-used">Software and tools used</a></li>
+  </ul></li>
+  <li><a href="#sample-size" id="toc-sample-size" class="nav-link" data-scroll-target="#sample-size">Sample size</a></li>
+  <li><a href="#sample-size-rationale" id="toc-sample-size-rationale" class="nav-link" data-scroll-target="#sample-size-rationale">Sample size rationale</a></li>
+  <li><a href="#stopping-rule" id="toc-stopping-rule" class="nav-link" data-scroll-target="#stopping-rule">Stopping rule</a></li>
+  </ul></li>
+  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables">Variables</a>
+  <ul class="collapse">
+  <li><a href="#measured-variables" id="toc-measured-variables" class="nav-link" data-scroll-target="#measured-variables">Measured variables</a></li>
+  </ul></li>
+  <li><a href="#analysis-plan" id="toc-analysis-plan" class="nav-link" data-scroll-target="#analysis-plan">Analysis Plan</a>
+  <ul class="collapse">
+  <li><a href="#statistical-models" id="toc-statistical-models" class="nav-link" data-scroll-target="#statistical-models">Statistical models</a></li>
+  </ul></li>
+  <li><a href="#other" id="toc-other" class="nav-link" data-scroll-target="#other">Other</a>
+  <ul class="collapse">
+  <li><a href="#anticipated-duration" id="toc-anticipated-duration" class="nav-link" data-scroll-target="#anticipated-duration">Anticipated duration</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="protocol.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -127,6 +189,14 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-meta-heading">Authors</div>
   <div class="quarto-title-meta-heading">Affiliations</div>
   
+    <div class="quarto-title-meta-contents">
+    <p class="author">Hannah Chatwin </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Aarhus University
+          </p>
+      </div>
     <div class="quarto-title-meta-contents">
     <p class="author">Mario Garcia </p>
   </div>
@@ -192,7 +262,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="description">Description</h2>
 <p>Scientific research now almost always requires working with other people. With the increasing emphasis on and demand for science to be more open, how we collaborate together is a key component to making science more open from the start of any project. But how do we collaborate in an open and transparent way? What are the best practices and tools we can use? What is an ideal collaborative workflow and how close or far are we from this ideal in reality? This project aims to address some of these questions.</p>
 <p>From our work in the health research field, we have experienced many different ways of collaborating, but rarely in the form of open collaboration. With the growing complexity and specialization in scientific practices and methods, together with globalisation of health and environmental issues, there is a great need for a paradigm shift in research collaboration to be able to tackle these challenges.</p>
-<p>We define open collaboration using the definition as found in Forte and Lampe (2013):</p>
+<p>We define open collaboration using the definition as found in <span class="citation" data-cites="Forte2013">(<a href="#ref-Forte2013" role="doc-biblioref">1</a>)</span>:</p>
 <blockquote class="blockquote">
 <p>“<em>an online environment that (a) supports the collective production of an artifact (b) through a technologically mediated collaboration platform (c) that presents a low barrier to entry and exit and (d) supports the emergence of persistent but malleable social structures.</em>” This scoping review will focus on current practices of open collaboration and open science in relation to collaboration in the field of biomedical and health research.</p>
 </blockquote>
@@ -220,7 +290,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="study-design" class="level2">
 <h2 class="anchored" data-anchor-id="study-design">Study design</h2>
 <!-- TODO: Convert these to use the bib file -->
-<p>This is a scoping review, so we are following the framework described by Arksey and O’Malley (<a href="https://doi.org/10.1080/1364557032000119616">DOI:10.1080/1364557032000119616</a>) and by Levac, Colquhoun, and O’Brien (<a href="https://doi.org/10.1186/1748-5908-5-69">DOI:10.1186/1748-5908-5-69</a>) as well as the guidelines outlined in the PRISMA-ScR (<a href="https://doi.org/10.7326/M18-0850">DOI:10.7326/M18-0850</a> statement.</p>
+<p>This is a scoping review, so we are following the framework described in <span class="citation" data-cites="Arksey2005">(<a href="#ref-Levac2010" role="doc-biblioref">3</a>)</span> as well as the guidelines outlined in the PRISMA-ScR statement <span class="citation" data-cites="Tricco2018">(<a href="#ref-Tricco2018" role="doc-biblioref">4</a>)</span>.</p>
 </section>
 </section>
 <section id="sampling-plan" class="level1">
@@ -345,10 +415,24 @@ ul.task-list li input[type="checkbox"] {
 </table>
 
 
+
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-Forte2013" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Forte A, Lampe C. <a href="https://doi.org/10.1177/0002764212469362">Defining, understanding, and supporting open collaboration: Lessons from the literature</a>. American Behavioral Scientist. 2013 Jan;57(5):535–47. </div>
+</div>
+<div id="ref-Arksey2005" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Arksey H, O’Malley L. <a href="https://doi.org/10.1080/1364557032000119616">Scoping studies: Towards a methodological framework</a>. International Journal of Social Research Methodology. 2005 Feb;8(1):19–32. </div>
+</div>
+<div id="ref-Levac2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Levac D, Colquhoun H, O’Brien KK. <a href="https://doi.org/10.1186/1748-5908-5-69">Scoping studies: Advancing the methodology</a>. Implementation Science. 2010 Sep;5(1). </div>
+</div>
+<div id="ref-Tricco2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Tricco AC, Lillie E, Zarin W, O’Brien KK, Colquhoun H, Levac D, et al. <a href="https://doi.org/10.7326/m18-0850">PRISMA extension for scoping reviews (PRISMA-ScR): Checklist and explanation</a>. Annals of Internal Medicine. 2018 Oct;169(7):467–73. </div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -767,6 +851,45 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../CONTRIBUTING.html">
+<p>Contributing</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../CODE_OF_CONDUCT.html">
+<p>Code of Conduct</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../GOVERNANCE.html">
+<p>Governance</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../ROADMAP.html">
+<p>Roadmap</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../LICENSE.html">
+<p>CC-BY License</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 
