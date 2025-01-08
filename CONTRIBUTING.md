@@ -1,4 +1,4 @@
-# Guide to contributing to the scoping-review project
+# Contributing guidelines
 
 This document serves as a starting point to know what and how you might
 contribute to this project. It starts with covering the most common

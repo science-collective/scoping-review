@@ -1,5 +1,8 @@
 ---
 title: Instructions
+format:
+  html:
+    tbl-colwidths: [10, 20, 5, 65]
 ---
 
 ## Steps to take for a scoping review
@@ -29,6 +32,7 @@ Additional Resources:
 This is the PRISMA Scoping Review checklist we should follow and fill
 in.
 
+::: column-body-outset
 | section | subsection | item | description |
 |:---|:---|:---|:---|
 | Title | Title | 1 | Identify the report as a scoping review. |
@@ -53,3 +57,4 @@ in.
 | Discussion | Limitations | 20 | Discuss the limitations of the scoping review process. |
 | Discussion | Conclusions | 21 | Provide a general interpretation of the results with respect to the review questions and objectives, as well as potential implications and/or next steps. |
 | Funding | Funding | 22 | Describe sources of funding for the included sources of evidence, as well as sources of funding for the scoping review. Describe the role of the funders of the scoping review. |
+:::
