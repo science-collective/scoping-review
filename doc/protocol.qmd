@@ -62,8 +62,8 @@ scientific practices and methods, together with globalisation of health
 and environmental issues, there is a great need for a paradigm shift in
 research collaboration to be able to tackle these challenges.
 
-We define open collaboration using the definition as found in Forte and
-Lampe (2013):
+We define open collaboration using the definition as found in
+[@Forte2013]:
 
 > "*an online environment that (a) supports the collective production of
 > an artifact (b) through a technologically mediated collaboration
@@ -103,13 +103,9 @@ existing literature.
 
 <!-- TODO: Convert these to use the bib file -->
 
-This is a scoping review, so we are following the framework described by
-Arksey and O'Malley
-([DOI:10.1080/1364557032000119616](https://doi.org/10.1080/1364557032000119616))
-and by Levac, Colquhoun, and O'Brien
-([DOI:10.1186/1748-5908-5-69](https://doi.org/10.1186/1748-5908-5-69))
-as well as the guidelines outlined in the PRISMA-ScR
-([DOI:10.7326/M18-0850](https://doi.org/10.7326/M18-0850) statement.
+This is a scoping review, so we are following the framework described in
+[@Arksey2005, @Levac2010] as well as the guidelines outlined in the
+PRISMA-ScR statement [@Tricco2018].
 
 # Sampling Plan
 
