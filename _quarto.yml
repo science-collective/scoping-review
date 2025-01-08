@@ -1,0 +1,57 @@
+project:
+  type: website
+
+execute:
+  freeze: auto
+
+website:
+  title: "Open Collaboration Scoping Review"
+  site-url: "https://science-collective.github.io/scoping-review"
+  repo-url: "https://github.com/science-collective/scoping-review"
+  navbar:
+    pinned: true
+    left:
+    - text: Protocol
+      href: doc/protocol.qmd
+    - text: Article
+      href: doc/paper.qmd
+    - doc/appendices.qmd
+  sidebar:
+    - id: appendices
+      pinned: true
+      style: floating
+      contents:
+        - doc/appendices.qmd
+        - CONTRIBUTING.md
+        - CODE_OF_CONDUCT.md
+        - GOVERNANCE.md
+        - ROADMAP.md
+        - auto: doc/instructions/
+        - auto: doc/reviews/
+        - auto: doc/charting/
+        - auto: doc/reflections/
+
+format: html
+
+author:
+  - name: Mario Garcia
+    affiliations:
+      - ref: ku
+  - name: Daniel B. Ibsen
+    affiliations:
+      - ref: sdca
+      - ref: au
+  - name: Luke W. Johnston
+    affiliations:
+      - ref: sdca
+      - ref: au
+affiliations:
+  - id: sdca
+    name: Steno Diabetes Center Aarhus
+    country: Denmark
+  - id: au
+    name: Aarhus University
+    country: Denmark
+  - id: ku
+    name: Copenhagen University
+    country: Denmark
