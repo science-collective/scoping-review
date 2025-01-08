@@ -78,7 +78,8 @@ education per se.
 ### Barriers for open science
 
 Utilizing private devices for data acquisition, which leads to black
-boxes and difficults comparision.\
+boxes and difficults comparision.
+
 Struggle with derivative data sharing. Which format should be the best
 for data that we generate from the available raw standardized data? Here
 they propose BrainLife as an example, but in other fields this is a very
