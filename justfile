@@ -6,7 +6,7 @@ build: install-package-dependencies style run-targets build-website-locally
 
 # Build the website locally using Quarto
 build-website-locally:
-  quarto render gh-pages
+  quarto render
 
 # Build the website using Quarto and then upload to GitHub Pages
 publish-website-github:
