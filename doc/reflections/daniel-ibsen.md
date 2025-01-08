@@ -50,4 +50,18 @@
 -   We have curated lists of all the papers and now much easier to go
     through. Now the project feels like it is moving.
 
-## 2024-10-21
+## 2024-10-27
+
+-   Was great to have set aside dedicated time to work on the project.
+    Read all the papers, make a charting form and chart the papers I had
+    been assigned. Next step will be making a nice overview table of all
+    the papers and start writing.
+-   The "sprint" of working at the same time was a really great idea but
+    we should have coordinated much more beforehand and make the goal
+    clear. I also have some things, still, that got into my way so I was
+    more present in the first days than the last days.
+-   We should schedule such a sprint again to continue with the project.
+    We have come very far.
+-   The biggest limitation at the moment is finding the time to work on
+    this as this is no ones primary project. Prioritizing taking out
+    much time for this is just not easy. But we are moving forward.
