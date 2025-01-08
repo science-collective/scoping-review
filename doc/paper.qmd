@@ -36,33 +36,62 @@ search_terms_inline <- glue::glue("({search_terms()$title_search}[title]) AND {s
 
 ## Introduction
 
--   Open science and its role in research
+The time when a single scientist could work alone in a lab and make
+meaningful progress in their field is long gone. Scientific research in
+the modern era, especially in certain fields, almost requires working
+with other people, oftentimes a large number of people. Research
+questions are increasingly more challenging to answer as they require
+more time, resources, expertise, and personnel in order to meaningfully
+answer.
 
--   Collaboration and its role in modern research
+With the current needs and limitations such as resources when doing
+scientific research, collaborations range from those within a single
+group or lab, to a few researchers across different departments in the
+same institution, to many researchers and personnel spread across
+multiple research centers. Collaborations are needed to address basic
+limitations of working with small or constrained populations, to sharing
+valuable but expensive equipment, or to assisting with technical
+expertise or domain knowledge.
 
-    -   collaboration spanning from lab, to research center to multiple
-        centers
-    -   collaboration needed to tackle limitations: small populations,
-        lack of replication, etc
-    -   re-inventing discovery: a new way of working in science
+At the same time, there is also a higher need for science to be more
+open, higher quality, and more rigorous[@Cole2024, @Umbach2024], which
+necessitates that researchers collaborate with more researchers and with
+a more diverse group of researchers to fulfill these needs. Open
+scientific practices, such as open data, open source, and open
+materials, aim to improve the reliability and accessibility of
+scientific output to increase the societal impact of the results.
 
-Scientific research now almost always requires working with other
-people.
+There are many hypothetical benefits to openness in science, including
+in collaboration. For instance:
 
-With the growing complexity and specialization in scientific practices
-and methods, together with globalisation of health and environmental
-issues, there is a great need for a paradigm shift in research
-collaboration to be able to tackle these challenges.
+-   Greater transparency and accountability, because the built-in
+    openness makes it easy to see what was done, how, and why.
+-   Better reproducibility and inspectability, because everything can be
+    easily viewed and can be verified, which is a key tenet of science.
 
--   Open collaboration - a combination of two themes
+The intersection between greater collaboration and more openness
+highlights key challenges researchers face. How can we effectively
+collaborate together in a way that fulfills the demand for more
+openness, transparency, and accountability, while at the same time also
+not substantially impacting our productivity (or ideally improving it).
+How can we collaborate in an open and transparent way? What are the best
+practices and tools we can use? What is an ideal collaborative workflow
+and how close or how far are we from this ideal in reality?
 
-    -   definition
-    -   big potential in science
-    -   but there very few resources and examples of how to integrate
-        open science into collaborations
+From our own personal experience working in the field of health
+research, we have varied and diverse ways of collaborating. Often the
+most commonly used approach to collaboration is emailing Word documents
+around to get feedback and using meetings to discuss and agree on
+things. Rarely do we systematically examine whether we are following
+best practices for collaboration nor do we collaborate in an open way
+following the principles of open science. This lack of a clear standard
+or approach to collaborating effectively and openly can greatly impact
+productivity and quality of scientific research. It emphasizes a greater
+need for a paradigm shift in how we researchers collaborate to be able
+to effectively and efficiently tackle the challenges of the modern era.
 
-We define open collaboration using the definition as found in
-[@Forte2013]:
+For this scoping review, we define open collaboration using the
+definition as found in [@Forte2013]:
 
 > "*an online environment that (a) supports the collective production of
 > an artifact (b) through a technologically mediated collaboration
@@ -70,12 +99,21 @@ We define open collaboration using the definition as found in
 > supports the emergence of persistent but malleable social
 > structures.*"
 
-With the increasing emphasis on and demand for science to be more open,
-how we collaborate together is a key component to making science more
-open from the start of any project. But how do we collaborate in an open
-and transparent way? What are the best practices and tools we can use?
-What is an ideal collaborative workflow and how close or far are we from
-this ideal in reality?
+Open collaboration has a lot of potential benefits, many of which are
+the same benefits as seen with open science. For instance, open
+collaboration can lead to:
+
+-   Easier onboarding of new collaborators, since everything is open and
+    easily findable.
+-   Higher collaboration opportunities, because more openness means more
+    visibility as more parts of the scientific workflow are
+    disseminated.
+-   Faster time to dissemination, because the built-in openness makes it
+    easier to disseminate results.
+
+Unfortunately, there are, to our knowledge, very few resources and
+examples of how to integrate open science into collaborations and how to
+make collaboration be open.
 
 ### Aim
 
@@ -85,11 +123,11 @@ of biomedical and health research.
 
 The specific aims of this scoping review are to:
 
--   Provide an overview of current practices of or opinions about
+1.  Provide an overview of current practices of or opinions about
     research collaboration that follow basic open principles (e.g.,
     transparency, accessibility)
 
--   Summarize existing online tools and resources available to improve
+2.  Summarize existing online tools and resources available to improve
     open collaboration in research
 
 We've expanded on our original aims to include a **secondary aim** of
