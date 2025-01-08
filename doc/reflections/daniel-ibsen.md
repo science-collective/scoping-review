@@ -1,4 +1,6 @@
-# Reflections on co-working
+---
+title: Daniel's reflections
+---
 
 ## 2022-01-17
 

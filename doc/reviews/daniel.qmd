@@ -1,5 +1,5 @@
 ---
-title: 'Full Article Review'
+title: 'Reviews by Daniel'
 ---
 
 # Open and reproducible neuroimaging: From study inception to publication

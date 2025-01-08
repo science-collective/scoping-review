@@ -64,4 +64,3 @@ possible.
 ### Barriers for open science
 
 -   There wasn't anything specific about barriers in this paper.
-

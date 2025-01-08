@@ -1,4 +1,6 @@
-# Reflections on co-working
+---
+title: Luke's reflections
+---
 
 ## 2022-01-17
 
@@ -32,3 +34,15 @@
     really helped, especially after coming back to work on this after a
     while. There are some areas that I wish could be more automated, but
     I think that it might not really be possible for now.
+
+## 2025-01-08
+
+-   Back at it for the new year and we're moving along a lot more!
+    Finished reading the documents, charted them, and now we're in the
+    paper writing phase! :tada:
+-   I took some time making a website to more easily showcase our work
+    as well as to auto-generate the PDF when we upload it to Zenodo and
+    potentially to a journal. Plus it looks nicer and makes it clearer
+    how we'll structure things, at least for me.
+-   It felt much smoother getting back into things this time. I think
+    the structure we've set up has really helped with that.
