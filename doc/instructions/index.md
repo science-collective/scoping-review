@@ -19,4 +19,3 @@ Additional Resources:
 
 -   Joanna Briggs Institute, incl. scoping review protocol
     [template](https://jbi.global/scoping-review-network/resources)
-
