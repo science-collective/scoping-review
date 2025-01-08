@@ -22,16 +22,38 @@ website:
       style: floating
       contents:
         - doc/appendices.qmd
-        - CONTRIBUTING.md
-        - CODE_OF_CONDUCT.md
-        - GOVERNANCE.md
-        - ROADMAP.md
         - auto: doc/instructions/
         - auto: doc/reviews/
         - auto: doc/charting/
         - auto: doc/reflections/
+  page-footer:
+    center:
+      - text: Contributing
+        href: CONTRIBUTING.md
+      - text: Code of Conduct
+        href: CODE_OF_CONDUCT.md
+      - text: Governance
+        href: GOVERNANCE.md
+      - text: Roadmap
+        href: ROADMAP.md
+      - text: CC-BY License
+        href: LICENSE.md
 
-format: html
+toc: true
+format:
+  html: default
+  typst:
+    columns: 2
+    papersize: a4
+    margin:
+      x: 2cm
+      y: 2cm
+format-links:
+  - html
+  - format: typst
+    text: PDF
+    icon: file-pdf
 
 bibliography: doc/references.bib
 csl: doc/vancouver.csl
+bibliographystyle: doc/vancouver.csl
