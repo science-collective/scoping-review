@@ -1,5 +1,5 @@
 ---
-title: ManyPrimates-2019
+title: 'ManyPrimates-2019'
 ---
 
 ::: callout-note
@@ -20,6 +20,7 @@ collaboration.
     -   organization
     -   tools
     -   review
+    -   workflow
 -   Other keywords (e.g., newcomers):
     -   Systematic review
     -   Large-scale collaboration
@@ -49,26 +50,11 @@ If a combination write several, if all write "all"
 
 ### Governance
 
-::: content-hidden
-For instance: "Develop forms of legitimate peripheral participation."
-
-These are bit of information and recommendations for governance of the
-project.
-:::
-
 -   Started from symposium as part of regular major conference.
 -   Established a mailing list to connect everyone.
 -   No clear description of how they organized their governance.
 
 ### Workflow
-
-::: content-hidden
-For instance: "designing the project - preregistration - creating the
-experiment - recruitment and data collection - data analysis -
-dissemination".
-
-These are overall process highlights
-:::
 
 -   They weren't completely clear on how exactly they used the workflows
     they (very briefly) describe.

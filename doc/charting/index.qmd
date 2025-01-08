@@ -14,30 +14,38 @@ This is a short description of the charting plan.
 
 ### Daniel
 
--   Lessons Learned: A Neuroimaging Research Center's Transition to Open
-    and Reproducible Science
--   Ten strategies to foster open science in psychology and beyond
--   Accelerating addiction research via Open Science and Team Science
--   Open and reproducible practices in developmental psychology
-    research: The workflow of the WomCogDev lab as an example
+-   [Bush-2022](Bush-2022.qmd): Lessons Learned: A Neuroimaging Research
+    Center's Transition to Open and Reproducible Science
+-   [Alessandroni-2022](Allessandroni-2022.qmd): Ten strategies to
+    foster open science in psychology and beyond
+-   [Dora-2024](Dora-2024.qmd): Accelerating addiction research via Open
+    Science and Team Science
+-   [Turoman-2022](Turoman-2022.qmd): Open and reproducible practices in
+    developmental psychology research: The workflow of the WomCogDev lab
+    as an example
 
 ### Mario
 
--   Collaboration and Open Science Initiatives in Primate Research
--   Eleven Strategies for Making Reproducible Research and Open Science
-    Training the Norm at Research Institutions
--   UKRN Open Research Training Resources and Priorities Working Paper
--   Open and reproducible neuroimaging: From study inception to
-    publication
+-   [ManyPrimates-2021](ManyPrimates-2021.qmd): Collaboration and Open
+    Science Initiatives in Primate Research
+-   [Kohrs-2023](Kohrs-2023.qmd): Eleven Strategies for Making
+    Reproducible Research and Open Science Training the Norm at Research
+    Institutions
+-   [Grange-2023](Grange-2023.qmd): UKRN Open Research Training
+    Resources and Priorities Working Paper
+-   [Niso-2022](Niso-2022.qmd): Open and reproducible neuroimaging: From
+    study inception to publication
 
 ### Luke
 
--   Promoting FAIR Data Through Community-driven Agile Design: the Open
-    Data Commons for Spinal Cord Injury (odc-sci.org)
--   Collaborative open science as a way to reproducibility and new
-    insights in primate cognition research
--   Ten simple rules for helping newcomers become contributors to open
-    projects
+-   [TorresEspin-2021](TorresEspin-2021.qmd): Promoting FAIR Data
+    Through Community-driven Agile Design: the Open Data Commons for
+    Spinal Cord Injury (odc-sci.org)
+-   [ManyPrimates-2019](ManyPrimates-2019.qmd): Collaborative open
+    science as a way to reproducibility and new insights in primate
+    cognition research
+-   [Scholler-2019](Scholler-2019.qmd): Ten simple rules for helping
+    newcomers become contributors to open projects
 
 ## Template to follow
 

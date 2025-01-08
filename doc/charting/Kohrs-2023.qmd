@@ -5,8 +5,16 @@ title: 'Khors-2023'
 # Eleven Strategies for Making Reproducible Research and Open Science Training the Norm at Research Institutions
 
 -   File: data/review/fulltext/
+
 -   DOI: https://doi.org/10.31219/osf.io/kcvra
+
 -   OpenAlex ID: W4378611187
+
+## Characteristics of the paper
+
+-   Type of paper (e.g., tips, example): survey
+-   Themes (e.g., tools, organization): organization, education
+-   Other keywords (e.g., newcomers):
 
 ## Tools
 

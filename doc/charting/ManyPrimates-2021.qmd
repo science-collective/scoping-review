@@ -2,11 +2,17 @@
 title: 'ManyPrimates-2021'
 ---
 
-# Collaborative open science as a way to reproducibility and new insights in primate cognition research
+# Collaboration and Open Science Initiatives in Primate Research
 
 -   File: data/review/fulltext/
 -   DOI: https://doi.org/10.31234/osf.io/8w7zd
 -   OpenAlex ID: W4251805646
+
+## Characteristics of the paper
+
+-   Type of paper (e.g., tips, example): example
+-   Themes (e.g., tools, organization): organization, tools
+-   Other keywords (e.g., newcomers):
 
 ## Tools
 

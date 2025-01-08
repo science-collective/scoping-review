@@ -15,7 +15,7 @@ publish-website-github:
 # Clean up all auto-generated files to start from scratch
 clean:
   rm -rf _freeze/ _targets/ _site/
-  rm _targets.yaml doc/_targets.yaml
+  find . -name _targets.yaml -type f -delete
 
 # Install package dependencies via renv
 install-package-dependencies:
