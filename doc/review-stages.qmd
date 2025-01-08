@@ -1,6 +1,5 @@
 ---
 title: "Review stages"
-format: html
 ---
 
 ```{r setup}
@@ -100,7 +99,7 @@ after this second screening.
 ```{r tbl-abstracts-kept}
 #| message: false
 #| tbl-cap: "Number of articles each reviewer kept after the second screening of the articles."
-targets::tar_read(abstracts_kept) |> 
+targets::tar_read(abstracts_kept) |>
   map(\(df) count(df, name = "Articles kept")) |>
   list_rbind(names_to = "Reviewers") |>
   # TODO: Include percent of total articles.
