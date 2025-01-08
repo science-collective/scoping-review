@@ -1,0 +1,7 @@
+---
+title: "Towards open collaboration in biomedical and health research: An open collaborative scoping review"
+about:
+  template: jolla
+  image: doc/images/home.jpg
+  image-shape: rounded
+---
