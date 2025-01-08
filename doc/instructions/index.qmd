@@ -1,4 +1,8 @@
-# Steps of a scoping review
+---
+title: Instructions
+---
+
+## Steps to take for a scoping review
 
 These are the steps to take in a scoping review, which was taken from
 [Cochrane
