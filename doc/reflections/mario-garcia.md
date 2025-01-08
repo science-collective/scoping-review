@@ -1,4 +1,6 @@
-# Reflections on co-working
+---
+title: Mario's reflections
+---
 
 ## 2022-01-17
 
@@ -20,4 +22,3 @@
     be overwhelming without a good reporting structure. Nobody used the
     minutes strategy, so I cannot know what they've been working on or
     what can I help with.
-

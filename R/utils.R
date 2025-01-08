@@ -10,14 +10,17 @@ save_as_csv <- function(data, path) {
   return(path)
 }
 
-#' A date range from today until 5 years ago.
+#' A date range from today (or last date of search) until 5 years ago.
 #'
 #' @return A character vector of a date range.
 #'
 five_years_ago <- function() {
   # To make this accessible to the function below.
   `%m-%` <- lubridate::`%m-%`
-  as.character(glue::glue("{lubridate::today() %m-% lubridate::years(5)}"))
+  # end_range <- lubridate::today()
+  # Date when we last ran this.
+  end_range <- lubridate::ymd("2024-02-29")
+  as.character(glue::glue("{end_range %m-% lubridate::years(5)}"))
 }
 
 #' Save a tibble to a YAML file.

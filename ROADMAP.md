@@ -15,7 +15,6 @@ starting point to know what needs to be done and what has been done.
 3.  [Issue 14: PRISMA-ScR Checklist (for both protocol and review
     itself)](https://github.com/science-collective/scoping-review/issues/14).
     This issue tracks what needs to be included in the final scoping
-    review [paper](doc/paper.md) when we start writing it.
+    review [paper](doc/paper.qmd) when we start writing it.
 
 This document is continually evolving, so check back to it often! :D
-

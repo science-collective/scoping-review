@@ -1,0 +1,20 @@
+---
+title: Appendices
+---
+
+This section lists additional files that we used or created in the
+process of doing this scoping review project.
+
+-   [Instructions](instructions/index.qmd): This docume has instructions
+    for doing a scoping review as well as the PRISMA-ScR checklist.
+-   [Full-text reviews](reviews/index.qmd): These documents contain each
+    author's review of the full-text documents we selected after the
+    title and abstract screening, as well as some grouping of them into
+    themes and a listing of the titles of the documents we selected at
+    each phase of the project.
+-   [Charting](charting/index.qmd): This contains the structured
+    charting documents we used for each full-text document we selected.
+-   [Reflections](reflections/index.qmd): These are our informal
+    reflections we wrote in to help us identify challenges and ways we
+    improved on that.
+

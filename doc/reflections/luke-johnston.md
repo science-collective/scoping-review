@@ -1,4 +1,6 @@
-# Reflections on co-working
+---
+title: Luke's reflections
+---
 
 ## 2022-01-17
 

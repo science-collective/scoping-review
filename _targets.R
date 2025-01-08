@@ -172,14 +172,15 @@ list(
     command = reviewed_article_records |>
       openalex_retrieve_pdf(),
     format = "file"
-  ),
-  tar_target(
-    name = fulltext_review_qmd,
-    command = reviewed_article_records |>
-      dplyr::rename(path = pdf_proj_path) |>
-      create_fulltext_review_template(reviewers),
-    format = "file"
   )
+  # Don't need to regenerate this every time
+  # tar_target(
+  #   name = fulltext_review_qmd,
+  #   command = reviewed_article_records |>
+  #     dplyr::rename(path = pdf_proj_path) |>
+  #     create_fulltext_review_template(reviewers),
+  #   format = "file"
+  # )
   # Render report -----------------------------------------------------------
   # TODO: there is an error and I don't know why.
   # tar_quarto(
@@ -187,4 +188,3 @@ list(
   #   path = here::here("doc/review-stages.qmd")
   # )
 )
-

@@ -1,41 +1,46 @@
 ---
-title: "Towards open collaboration in biomedical and health research: A scoping review"
-shorttitle: "Scoping review of open collaboration"
-date: "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%d\\\\. %B %Y')`"
+title: "Towards open collaboration in biomedical and health research: A protocol for a scoping review of open collaboration"
+date: "2022-11-04"
 author: 
   - name: Hannah Chatwin
-    affiliation: 2
+    affiliations: 
+      - ref: au
   - name: Mario Garcia
-    affiliation: 3
-  - name: Daniel Ibsen
-    affiliation: 1
+    affiliations: 
+      - ref: ku
+  - name: Daniel B. Ibsen
+    affiliations: 
+      - ref: sdca
+      - ref: au
   - name: Luke W. Johnston
-    affiliation: "1,2"
-affiliation:
-  - id: 1
-    institution: Steno Diabetes Center Aarhus, Denmark
-  - id: 2
-    institution: Aarhus University, Denmark
-  - id: 3
-    institution: Copenhagen University, Denmark
-output: 
-    prereg::prereg_pdf: default
-    md_document: default
+    affiliations: 
+      - ref: sdca
+      - ref: au
+affiliations:
+  - id: sdca
+    name: Steno Diabetes Center Aarhus
+    country: Denmark
+  - id: au
+    name: Aarhus University
+    country: Denmark
+  - id: ku
+    name: Copenhagen University
+    country: Denmark
+doi: 10.17605/OSF.IO/K9DR5
+execute:
+  echo: false
 ---
 
-```{r setup, include=FALSE}
+```{r setup}
+#| include: false
 knitr::opts_chunk$set(echo = FALSE)
 library(stringr)
 library(here)
-source(here("R/search-terms.R"))
-search_terms_inline <- str_replace_all(search_terms$general, "\\*", "\\\\\\*")
+source(here("R/openalex-search.R"))
+search_terms_inline <- glue::glue("({search_terms()$title_search}[title]) AND {search_terms()$general_search}")
 ```
 
 # Study information
-
-## Title
-
-`r rmarkdown::metadata$title`
 
 **Registration link:** <https://doi.org/10.17605/OSF.IO/K9DR5>
 
@@ -57,8 +62,8 @@ scientific practices and methods, together with globalisation of health
 and environmental issues, there is a great need for a paradigm shift in
 research collaboration to be able to tackle these challenges.
 
-We define open collaboration using the definition as found in Forte and
-Lampe (2013):
+We define open collaboration using the definition as found in
+[@Forte2013]:
 
 > "*an online environment that (a) supports the collective production of
 > an artifact (b) through a technologically mediated collaboration
@@ -96,13 +101,11 @@ existing literature.
 
 ## Study design
 
-This is a scoping review, so we are following the framework described by
-Arksey and O'Malley
-([DOI:10.1080/1364557032000119616](https://doi.org/10.1080/1364557032000119616))
-and by Levac, Colquhoun, and O'Brien
-([DOI:10.1186/1748-5908-5-69](https://doi.org/10.1186/1748-5908-5-69))
-as well as the guidelines outlined in the PRISMA-ScR
-([DOI:10.7326/M18-0850](https://doi.org/10.7326/M18-0850) statement.
+<!-- TODO: Convert these to use the bib file -->
+
+This is a scoping review, so we are following the framework described in
+[@Arksey2005, @Levac2010] as well as the guidelines outlined in the
+PRISMA-ScR statement [@Tricco2018].
 
 # Sampling Plan
 
@@ -247,15 +250,3 @@ research.
 | Analyses and manuscript writing     | 2023-06-01 | 2023-12-31 |
 
 : Estimated timeline for project.
-
-# References
-
-## 
-
-```{=tex}
-\vspace{-2pc}
-\setlength{\parindent}{-0.5in}
-\setlength{\leftskip}{-1in}
-\setlength{\parskip}{8pt}
-```
-\noindent

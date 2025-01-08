@@ -1,0 +1,59 @@
+project:
+  type: website
+
+execute:
+  freeze: auto
+
+website:
+  title: "Open Collaboration Scoping Review"
+  site-url: "https://science-collective.github.io/scoping-review"
+  repo-url: "https://github.com/science-collective/scoping-review"
+  navbar:
+    pinned: true
+    left:
+    - text: Protocol
+      href: doc/protocol.qmd
+    - text: Article
+      href: doc/paper.qmd
+    - doc/appendices.qmd
+  sidebar:
+    - id: appendices
+      pinned: true
+      style: floating
+      contents:
+        - doc/appendices.qmd
+        - auto: doc/instructions/
+        - auto: doc/reviews/
+        - auto: doc/charting/
+        - auto: doc/reflections/
+  page-footer:
+    center:
+      - text: Contributing
+        href: CONTRIBUTING.md
+      - text: Code of Conduct
+        href: CODE_OF_CONDUCT.md
+      - text: Governance
+        href: GOVERNANCE.md
+      - text: Roadmap
+        href: ROADMAP.md
+      - text: CC-BY License
+        href: LICENSE.md
+
+toc: true
+format:
+  html: default
+  typst:
+    columns: 2
+    papersize: a4
+    margin:
+      x: 2cm
+      y: 2cm
+format-links:
+  - html
+  - format: typst
+    text: PDF
+    icon: file-pdf
+
+bibliography: doc/references.bib
+csl: doc/vancouver.csl
+bibliographystyle: doc/vancouver.csl
