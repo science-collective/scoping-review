@@ -32,4 +32,3 @@ get_disagreed_on_titles <- function(title_list, agreed_on_titles) {
     purrr::list_rbind() |>
     dplyr::distinct()
 }
-

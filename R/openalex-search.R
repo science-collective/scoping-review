@@ -56,13 +56,15 @@ openalex_retrieve_records <- function(ids) {
     identifier = ids,
     mailto = "lwjohnst@gmail.com"
   ) |>
-    dplyr::mutate(pdf_proj_path = stringr::str_replace(id, "https://openalex.org/", "oa-id-") |>
-                    fs::path_ext_set("pdf"),
-                  pdf_proj_path = fs::path("data/review/fulltext/", pdf_proj_path))
+    dplyr::mutate(
+      pdf_proj_path = stringr::str_replace(id, "https://openalex.org/", "oa-id-") |>
+        fs::path_ext_set("pdf"),
+      pdf_proj_path = fs::path("data/review/fulltext/", pdf_proj_path)
+    )
 }
 
 openalex_retrieve_pdf <- function(data) {
- urls <- data |>
+  urls <- data |>
     dplyr::select(pdf_proj_path, pdf_url) |>
     tidyr::drop_na()
 

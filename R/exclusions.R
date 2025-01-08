@@ -7,7 +7,7 @@
 #' @examples
 #' readr::read_csv(here::here("data/records.csv")) |> exclude_from_title() |> dplyr::select(title) |> View()
 exclude_from_title <- function(data) {
-# TODO: Use ggcohort to track what is removed?
+  # TODO: Use ggcohort to track what is removed?
   data |>
     # Order so newest date is first, so distinct drops old duplicate titles.
     dplyr::arrange(dplyr::desc(publication_date)) |>
@@ -77,7 +77,7 @@ exclude_from_title <- function(data) {
 exclude <- function(data, variable, criteria) {
   data |>
     dplyr::filter(stringr::str_detect(
-      string = {{variable}},
+      string = {{ variable }},
       pattern = stringr::regex(criteria, ignore_case = TRUE),
       negate = TRUE
     ))
