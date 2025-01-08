@@ -55,8 +55,16 @@ The following folders contain:
 
 ## Installing and updating sources
 
-You'll need to install all the packages for this project with (while
-inside the R Project):
+If you install [justfile](https://just.systems/man/en/packages.html),
+you can build everything by opening up a Terminal (while having the
+working directory be the project) and running:
+
+``` bash
+just build
+```
+
+Alternatively, you can also do it in R. You'll need to install all the
+packages for this project with (while inside the R Project):
 
 ``` r
 # install.packages("renv")
