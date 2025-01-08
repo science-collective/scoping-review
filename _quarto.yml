@@ -40,19 +40,7 @@ website:
         href: LICENSE.md
 
 toc: true
-format:
-  html: default
-  typst:
-    columns: 2
-    papersize: a4
-    margin:
-      x: 2cm
-      y: 2cm
-format-links:
-  - html
-  - format: typst
-    text: PDF
-    icon: file-pdf
+format: html
 
 bibliography: doc/references.bib
 csl: doc/vancouver.csl

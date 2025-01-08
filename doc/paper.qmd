@@ -23,6 +23,19 @@ affiliations:
   - id: ku
     name: Copenhagen University
     country: Denmark
+format:
+  html: default
+  typst:
+    columns: 2
+    papersize: a4
+    margin:
+      x: 2cm
+      y: 2cm
+format-links:
+  - html
+  - format: typst
+    text: PDF
+    icon: file-pdf
 ---
 
 ```{r setup}
