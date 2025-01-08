@@ -7,3 +7,10 @@
 *_files
 *.html
 _targets.yaml
+/.quarto/
+_freeze/
+_site/
+_manuscript/
+_book/
+*.ipynb
+site_libs/

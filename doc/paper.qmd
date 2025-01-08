@@ -27,7 +27,19 @@ affiliations:
     name: Copenhagen University
     country: Denmark
 format: html
+bibliography: references.bib
+csl: vancouver.csl
 ---
+
+```{r setup}
+#| include: false
+knitr::opts_chunk$set(echo = FALSE)
+library(stringr)
+library(here)
+source(here("R/openalex-search.R"))
+# TODO: This doesn't work, Luke is fixing it in connection with making Quarto website
+# search_terms_inline <- str_replace_all(search_terms$general, "\\*", "\\\\\\*")
+```
 
 ## Introduction
 
@@ -56,8 +68,8 @@ collaboration to be able to tackle these challenges.
     -   but there very few resources and examples of how to integrate
         open science into collaborations
 
-We define open collaboration using the definition as found in Forte and
-Lampe (2013):
+We define open collaboration using the definition as found in
+[@Forte2013]:
 
 > "*an online environment that (a) supports the collective production of
 > an artifact (b) through a technologically mediated collaboration
@@ -72,7 +84,7 @@ and transparent way? What are the best practices and tools we can use?
 What is an ideal collaborative workflow and how close or far are we from
 this ideal in reality?
 
--   Aim
+### Aim
 
 This scoping review will focus on current practices of open
 collaboration and open science in relation to collaboration in the field
@@ -96,91 +108,137 @@ found on our GitHub repository
 ## Methods
 
 The full protocol for this scoping review was uploaded to the Open
-Science Framework (DOI:
-[`10.17605/OSF.IO/K9DR5`](https://doi.org/10.17605/OSF.IO/K9DR5)).
+Science Framework [@Johnston2022]. As with any research project, things
+evolve compared to what was originally intended or planned. In this
+section we briefly re-state what we described in the protocol and
+especially we describe what was changed from the protocol.
 
-<!-- TODO: convert this to reference -->
+This is a scoping review, so we followed the framework described in
+[@Arksey2005, @Levac2010] as well as the guidelines outlined in the
+PRISMA-ScR statement [@Tricco2018].
 
-This is a scoping review, so we are following the framework described by
-Arksey and O'Malley
-([DOI:10.1080/1364557032000119616](https://doi.org/10.1080/1364557032000119616))
-and by Levac, Colquhoun, and O'Brien
-([DOI:10.1186/1748-5908-5-69](https://doi.org/10.1186/1748-5908-5-69))
-as well as the guidelines outlined in the PRISMA-ScR
-([DOI:10.7326/M18-0850](https://doi.org/10.7326/M18-0850) statement.
+### Deviations and challenges
 
-### Formal sources
+We originally aimed to review individual archives that included PubMed,
+bioRxiv, Scopus, and several others (the full list is in the protocol),
+and to use R packages with web API connections to each of these sources
+to programmatically extract the sources we wanted. However we
+encountered substantial issues that completely changed how we actually
+found and extracted the sources.
+
+The first challenge we encountered was that, while most of the source
+databases had (hypothetically) exposed APIs along with R packages
+available to access them, they didn't always work well or had
+complicated instructions for actually using them. For instance, the
+preprint repositories bioRxiv and medRxiv didn't have an up to date R
+package to access the preprints nor was the web API well described, nor
+well designed. In order to effectively use it, you need to download the
+entire database of preprints locally before being able to search for the
+preprints you want. This made it effectively impossible to use.
+
+The second challenge we encountered was a difference in results between
+using the web API compared to using the web search interface for some
+source databases. There were some small differences in search results
+between the API query compared to the web-based query. We couldn't
+identify or understand how these differences happened or way, though
+they were quite small differences (less than 10 out of thousands of
+scholarly works from the search results).
+
+The third challenge we had was that some source databases, like the Web
+of Science or Scopus, didn't work consistently between the authors. In
+order to use the web API with the R packages, you need to generate a
+token for authentication. However, for some authors, the token worked
+fine, and for others, it didn't work at all, with no explanation or
+error message. Given our interest in and aim for reproducibility, since
+the same code ran differently between authors, we decided to exclude
+these source databases.
+
+We also originally intended on searching websites, blogs, and other
+online resources, but it was very difficult to programmatically and
+systemtically achieve this. So we ended up only searching for scholarly
+work that were indexed in databases.
+
+Given these challenges however, we unintentionally found
+[OpenAlex](https://openalex.org/), which is a public database of
+scholarly output that aggregates dozens of other source databases into
+one, easy interface. This resource also has an R package called
+`{openalexR}` [@Aria2024] with a very well designed interface, which
+simplified or made redundant much of our code we wrote. It also made it
+unnecessary to use the individual R packages for each source database
+that we originally listed in the protocol. By using this archive, it
+resolved all our challenges and barriers we had before. For a full list
+of where they get their source data from, see their ["About the
+data"](https://help.openalex.org/hc/en-us/articles/24397285563671-About-the-data)
+page.
+
+### Document selection
 
 We developed the initial search strategy in consultation with a research
-librarian. We will collect the data via systematic searches of
-databases, as well as some hand searches.
+librarian. We collected the data via systematic searches of databases.
+All authors were involved in reviewing the collected sources, from
+reviewing the titles, to abstracts, and finally to full-text documents.
 
-We used OpenAlex is an open database with scholarly works from MAG,
-Crossref, ORCID, ROR, DOAJ, Unpaywall, Pubmed, Pubmed Central, The ISSN
-International Centre, Internet Archive, Web crawls, Subject-area and
-institutional repositories from arXiv and Zenodo.
+#### Information sources
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-library(stringr)
-library(here)
-source(here("R/search-terms.R"))
-search_terms_inline <- str_replace_all(search_terms$general, "\\*", "\\\\\\*")
-```
+We used OpenAlex, after encountering the challenges described above,
+which is an open database with scholarly works from Microsoft Academic
+Graph, Crossref, ORCID, ROR, DOAJ, Unpaywall, Pubmed, Pubmed Central,
+the ISSN International Centre, Internet Archive, Web crawls,
+subject-area and institutional repositories from arXiv and Zenodo.
 
-We used the following search terms:
+#### Search terms
 
-```         
+We used the following search terms when searching for scholarly work:
+
 > `r search_terms_inline`
-```
+
+#### Inclusion and exclusion criteria
 
 Inclusion criteria included any document where open collaboration
-practices are not the primary focus. We will be guided by the definition
-of open collaboration from Forte and Lampe (2013) mentioned above in
-determining whether the records are relevant. Any published document
-with reporting on current open collaboration practices. Any published
-document with advice, guidance, tools, and/or recommendations for
-improving open collaboration. Article language in English.
+practices are not the primary focus. We relied on the definition of open
+collaboration from [@Forte2013] in determining whether the records were
+relevant. Any published document with reporting on current open
+collaboration practices. Any published document with advice, guidance,
+tools, and/or recommendations for improving open collaboration. Article
+language in English. Exclusion criteria were documents that do not
+report on specific open collaboration practices.
 
-Exclusion criteria were documents that do not report on specific open
-collaboration practices. Documents published \>5 years in the past
-(defined as before xxxx) to capture current/most recent practices.
+While we didn't change our search terms for the initial search and
+extraction, we found that our search terms were not precise enough and
+got many irrelevant scholarly works. The full R code to filter down the
+search results is kept in the
+[`R/exlusions.R`](https://github.com/science-collective/scoping-review/blob/main/R/exclusions.R)
+file on the GitHub repository. For example, we extracted a large number
+of scholarly works describing surgery such as "open wound", electronics
+such as "open circuit", or environmental such as "open water" that we
+had to post-process and exclude.
 
-All data obtained from all searches in online databases will be exported
-into text files or CVS files for further processing including removal of
-duplicates.
+#### Charting procedure
 
-At least two of us will extract data using a standardized and tested
+At least two of us extracted data using a standardized and tested
 template. Data regarding the data source (e.g., author, title,
 publication year), open collaboration practices, and any other relevant
 information, will be extracted. Extracted data will be summarized with
-the descriptive analytical method described by Arksey and O'Malley
-(2005). The descriptive analytical method is aimed at identifying and
-summarizing different open collaboration practices.
+the descriptive analytical method described in [@Arksey2005], which is
+aimed at identifying and summarizing different open collaboration
+practices.
 
-### Informal sources
+#### Search period
 
-<!-- TODO: need to add how we searched online sources, like lab websites -->
+We were not able to dedicate as much time to this project as we had
+initially planned, so our "stopping rule" for end date didn't match with
+our actual search period. The actual end date for when we did the last
+search results extraction was
+[2024-02-29](https://github.com/science-collective/scoping-review/commit/f288d3f23d028e77ad1081e0cfe3583ce4dcb8b6).
+
+The start date remained 5 years from our end date, which would have been
+approximately 2019-02-28.
 
 ## Results
 
-### Deviations from the protocol
+## Discussions
 
--   **Original timeline**: We were quite ambitious with the timeline for
-    completing this scoping review. We did not adhere to the timeline.
--   **API vs web search results**: Almost all source databases had
-    exposed APIs, with R packages available to access them. We chose to
-    use these rather than using the web to extract the source data is
-    due to our secondary aim. However, we noticed that there were some
-    small differences in search results between the API query compared
-    to the web-based query. We can't explain these differences, though
-    they were quite minor.
--   **Exclude Web of Science source**: We were unable to connect the Web
-    of Science source to R through the `{wosr}` package. Using the API
-    key did not as documented in the package did not work. We decided
-    that in the interest of reproducibility, that we exclude this
-    source.
--   **Move all searching to using Open Alex**
+## Conclusions
 
 ## Discussion
 
@@ -188,8 +246,13 @@ summarizing different open collaboration practices.
 
 <!-- TODO: add contributions according to: https://credit.niso.org/ -->
 
--   HC:
--   MG:
--   DBI: Conceptualization, Data curation, formal analysis,
-    investigation, methodology, writing
--   LWJ:
+We originally had another author involved, HC, who is on the protocol
+author list. Since the time we uploaded the protocol, she has moved out
+of academia and could no longer participate in any work.
+
+Otherwise, the remaining authors (MG, DBI, and LWJ) had the following
+contribution roles, following the [CRediT](https://credit.niso.org/)
+taxonomy of conceptualization, data curation, formal analysis,
+investigation, methodology, writing - original draft, writing -
+reviewing and editing, project administration, software, validation, and
+visualization.

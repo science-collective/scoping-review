@@ -26,13 +26,26 @@ title: 'Bush-2022'
 -   OpenNeuro - data sharing - disseminating
 -   Open Science Framework - preregistration - planning
 -   clinicaltrials.gov - preregistration - planning
+-   FAIR (findability”, “accessibility”, “interoperability”, and “reusability”) -principles to organize data, not a tool per se, but I think they 
+    need to be emphasized - data collection, organization and sharing - 
+-   Brain imaging data structure (BIDS) - a common and standardized framework all scientists can work on - data collection and sharing
+-   Containarized pipelines - code that allows easy reproduction - data analysis
+-   ReproBIDS - dictionary with standardized terms for BIDS neuro data - planning, data collection, data deposition
 
 ## Organizational structure for open collaboration
 
 ### Workflow
 
+-   The steps below were identified after: 1) assessing the crisis of reproducibility, 2) literature search (systematic review) #worth noting 
+    since it pops up in so many papers as a previous step to implementation.
+
 -   hypothesis - experiment - data collection - data analysis -
     reporting
+
+### Centre workflow of practices to become more open (the ones above are more on the individual level)
+
+-   publish code, publishing pre-prints, standardizing data to BIDS, transition to containarized pipelines, publish data in repositories, 
+    establish data dictionaries, pre-registration, 
 
 ## Educational perspectives
 
