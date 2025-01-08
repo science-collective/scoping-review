@@ -1,0 +1,112 @@
+---
+title: ManyPrimates-2019
+---
+
+::: callout-note
+This paper wasn't the most relevant, as it didn't go into much detail on
+collaboration.
+:::
+
+# Collaborative open science as a way to reproducibility and new insights in primate cognition research
+
+-   File: data/review/fulltext/oa-id-W4251805646.pdf
+-   DOI: https://doi.org/10.31234/osf.io/8w7zd
+-   OpenAlex ID: https://openalex.org/W4251805646
+
+## Characteristics of the paper
+
+-   Type of paper (e.g., tips, example): review?, example
+-   Themes (e.g., tools, organization):
+    -   organization
+    -   tools
+    -   review
+-   Other keywords (e.g., newcomers):
+    -   Systematic review
+    -   Large-scale collaboration
+    -   Large-scale infrastructure
+
+## Tools
+
+### Specific tools mentioned; their function; where in the research process used
+
+::: content-hidden
+For instance: "OSF; pre-registration; planning". You can mention
+multiple tools. Just make another bullet.
+
+The research process is: planning, conducting, analysing, disseminating.
+If a combination write several, if all write "all"
+:::
+
+-   GitHub; sharing materials and final papers; archiving, dissemination
+-   Mailing lists; communication; all
+-   Google Docs; collaborative writing; writing, planning
+-   Google Drive; sharing of procedures and documentation; all
+-   Slack
+-   OSF; archiving protocols and analysis plans; archiving
+-   Organization website; share news and communicate updates; all
+
+## Organizational structure for open collaboration
+
+### Governance
+
+::: content-hidden
+For instance: "Develop forms of legitimate peripheral participation."
+
+These are bit of information and recommendations for governance of the
+project.
+:::
+
+-   Started from symposium as part of regular major conference.
+-   Established a mailing list to connect everyone.
+-   No clear description of how they organized their governance.
+
+### Workflow
+
+::: content-hidden
+For instance: "designing the project - preregistration - creating the
+experiment - recruitment and data collection - data analysis -
+dissemination".
+
+These are overall process highlights
+:::
+
+-   They weren't completely clear on how exactly they used the workflows
+    they (very briefly) describe.
+-   Use GitHub or Google Drive to share things.
+-   Use Google Docs to write papers.
+-   Use their website to disseminate news and findings.
+-   Projects should preregister the plans, and all data, code, and
+    materials are uploaded to GitHub.
+
+## Educational perspectives
+
+### Educational needs
+
+::: content-hidden
+For instance: "few resources for open collaboration, none were open and
+they were valued poorly compared to other practices"
+
+What does the paper write is the need for education in the field?
+:::
+
+-   No major educational comments were made.
+-   Outreach of results and activities is done through social media and
+    conferences.
+
+## Barriers
+
+### Barriers for open science
+
+::: content-hidden
+For instance: "lack of education"
+
+Which barriers do the paper indicate for implementation of open science?
+:::
+
+-   Logistical. Impossible to use the exact same methods across all
+    studies, so re-using of methods and materials wasn't very directly
+    useful.
+-   Also technical and knowledge, not enough funding to hire relevant
+    expertise and technical resources.
+-   Lacked a clear governance structure, which is something they want to
+    do in the future.
