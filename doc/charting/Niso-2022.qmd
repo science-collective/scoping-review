@@ -1,65 +1,67 @@
 ---
-title: 'Charting for Niso et al 2022'
+title: 'Niso-2022'
 ---
 
-Review for  Niso-2022: Open and reproducible neuroimaging: From study inception to publication
+# Open and reproducible neuroimaging: From study inception to publication
 
-# Title of publication
-
--   File: 
+-   File:
 -   DOI: 10.1016/j.neuroimage.2022.119623
 -   OpenAlex ID: w4295290221
 
 ## Characteristics of the paper
 
--   Type of paper (e.g., tips, example): guide (to conduct open science), review (of existing tools).
--   Themes (e.g., tools, organization): organization.
+-   Type of paper (e.g., tips, example): guide (to conduct open
+    science), review (of existing tools).
+-   Themes (e.g., tools, organization): tools, workflow
 -   Other keywords (e.g., newcomers): all science cycle
 
 ## Tools
 
 ### Specific tools mentioned; their function; where in the research process used
 
-The provide tools for each step in workflow. Here I highlight those that I find the most relevant.
+The provide tools for each step in workflow. Here I highlight those that
+I find the most relevant.
 
-protocolexchange - public example of Standard Operating Procedures (SOPs)
-OSF preregistration (aspredicted.org)
-MRIQC (monitoring quality)
+protocolexchange - public example of Standard Operating Procedures
+(SOPs) OSF preregistration (aspredicted.org) MRIQC (monitoring quality)
 Hierarchical Event Descriptor (HED) - helps with naming conventions
-DataLad (similar to Github for handling data)
-Fuzzy: for multiverse analysis
-BrainLife: for derivatives that are a tad more complex in the field. Otherwise, other tools such as OSF.
-COBIDAS: pipelines for best practices of writing. 
+DataLad (similar to Github for handling data) Fuzzy: for multiverse
+analysis BrainLife: for derivatives that are a tad more complex in the
+field. Otherwise, other tools such as OSF. COBIDAS: pipelines for best
+practices of writing.
 
 ## Organizational structure for open collaboration
 
-None stated. This paper is purely focused on what researchers should do, but never states how it should be done with other people.
-
+None stated. This paper is purely focused on what researchers should do,
+but never states how it should be done with other people.
 
 ### Workflow
 
 #### Study inception and planning
 
-Study preparation (highlighting piloting, that is, reviewing all data and methods necessary for the studies are ready for the analysis).
-Pre-registration
-Ethics and sharing plan
-Monitoring quality   
+Study preparation (highlighting piloting, that is, reviewing all data
+and methods necessary for the studies are ready for the analysis).
+Pre-registration Ethics and sharing plan Monitoring quality
 
 #### Data acquisition
 
-Human Connectome Project establishes frameworks and protocols to make reproducible and comparable data ascquisition, to some extent. This is the most important part of them all.
+Human Connectome Project establishes frameworks and protocols to make
+reproducible and comparable data ascquisition, to some extent. This is
+the most important part of them all.
 
 ### Data management
 
-Set up organization standards: have the same framework (BIDS)
-Set up metadata and format conventions
-Set up format of saving the data and trace it back.
+Set up organization standards: have the same framework (BIDS) Set up
+metadata and format conventions Set up format of saving the data and
+trace it back.
 
 ### Data processing
 
-With software and version control or desiging pipeline and workflows it all boils down to share clear code that ensures all of this is ensured. 
+With software and version control or desiging pipeline and workflows it
+all boils down to share clear code that ensures all of this is ensured.
 
-They focus a lot on multiverse, that is, focus on the results that converge with different software or pipelines.
+They focus a lot on multiverse, that is, focus on the results that
+converge with different software or pipelines.
 
 ### Research dissemination
 
@@ -68,11 +70,16 @@ Preprints.
 
 ## Educational perspectives
 
-The paper tries to educate on best practices, but never focuses on the education per se. 
+The paper tries to educate on best practices, but never focuses on the
+education per se.
 
 ## Barriers
 
 ### Barriers for open science
 
-Utilizing private devices for data acquisition, which leads to black boxes and difficults comparision.    
-Struggle with derivative data sharing. Which format should be the best for data that we generate from the available raw standardized data? Here they propose BrainLife as an example, but in other fields this is a very interesting topic!
+Utilizing private devices for data acquisition, which leads to black
+boxes and difficults comparision.\
+Struggle with derivative data sharing. Which format should be the best
+for data that we generate from the available raw standardized data? Here
+they propose BrainLife as an example, but in other fields this is a very
+interesting topic!

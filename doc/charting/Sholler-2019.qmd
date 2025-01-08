@@ -1,5 +1,5 @@
 ---
-title: Sholler-2019
+title: 'Sholler-2019'
 ---
 
 This paper seems more targeted to general open projects and not strictly
@@ -64,3 +64,4 @@ possible.
 ### Barriers for open science
 
 -   There wasn't anything specific about barriers in this paper.
+

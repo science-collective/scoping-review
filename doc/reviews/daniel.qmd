@@ -11,11 +11,10 @@ title: 'Full Article Review'
 ## General themes
 
 -   tools
--   organization
+-   workflow
 
 ## Type of paper
 
--   example
 -   guide
 
 ## Other notes

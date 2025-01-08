@@ -11,8 +11,8 @@ title: 'TorresEspin-2021'
 ## Characteristics of the paper
 
 -   Type of paper (e.g., tips, example):
-    -   Case study
-    -   Example workflow
+    -   example
+    -   workflow
 -   Themes (e.g., tools, organization):
     -   tools
     -   organization
@@ -30,14 +30,6 @@ title: 'TorresEspin-2021'
 
 ### Specific tools mentioned; their function; where in the research process used
 
-::: content-hidden
-For instance: "OSF; pre-registration; planning". You can mention
-multiple tools. Just make another bullet.
-
-The research process is: planning, conducting, analysing, disseminating.
-If a combination write several, if all write "all"
-:::
-
 -   GitHub?; Seems to use GitHub to at least build the website;
     dissemination?
 -   Agile development; iteratively develop project and help with project
@@ -48,13 +40,6 @@ If a combination write several, if all write "all"
 ## Organizational structure for open collaboration
 
 ### Governance
-
-::: content-hidden
-For instance: "Develop forms of legitimate peripheral participation."
-
-These are bit of information and recommendations for governance of the
-project.
-:::
 
 -   Building and encouraging community approval, support, and ownership
     via workshop events done in collaboration with major
@@ -73,19 +58,10 @@ project.
 
 ### Workflow
 
-::: content-hidden
-For instance: "designing the project - preregistration - creating the
-experiment - recruitment and data collection - data analysis -
-dissemination".
-
-These are overall process highlights
-:::
-
 -   Took a multi-staged approach to establishing the group/community.
 
-    -   At each stage, it was slowly about introducing the concepts to a
-        broader and broader audience and getting feedback all along the
-        way.
+-   At each stage, it was slowly about introducing the concepts to a
+    broader and broader audience and getting feedback all along the way.
 
 -   Development follows principles of agile software development by
     getting requirements from users, designing and developing those
@@ -101,24 +77,11 @@ These are overall process highlights
 
 ### Educational needs
 
-::: content-hidden
-For instance: "few resources for open collaboration, none were open and
-they were valued poorly compared to other practices"
-
-What does the paper write is the need for education in the field?
-:::
-
 -   No education or training was mentioned in this paper.
 
 ## Barriers
 
 ### Barriers for open science
-
-::: content-hidden
-For instance: "lack of education"
-
-Which barriers do the paper indicate for implementation of open science?
-:::
 
 -   Building up an open collaboration project takes years of continued
     work and effort.
