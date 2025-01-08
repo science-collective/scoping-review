@@ -33,25 +33,5 @@ website:
 
 format: html
 
-author:
-  - name: Mario Garcia
-    affiliations:
-      - ref: ku
-  - name: Daniel B. Ibsen
-    affiliations:
-      - ref: sdca
-      - ref: au
-  - name: Luke W. Johnston
-    affiliations:
-      - ref: sdca
-      - ref: au
-affiliations:
-  - id: sdca
-    name: Steno Diabetes Center Aarhus
-    country: Denmark
-  - id: au
-    name: Aarhus University
-    country: Denmark
-  - id: ku
-    name: Copenhagen University
-    country: Denmark
+bibliography: doc/references.bib
+csl: doc/vancouver.csl
