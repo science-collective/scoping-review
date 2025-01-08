@@ -11,7 +11,7 @@ title: 'Grange-2023'
 ## Characteristics of the paper
 
 -   Type of paper (e.g., tips, example): survey
--   Themes (e.g., tools, organization): organization, education
+-   Themes (e.g., tools, organization): education
 -   Other keywords (e.g., newcomers):
 
 ## Tools

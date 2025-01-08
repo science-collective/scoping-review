@@ -12,13 +12,11 @@ This is a short description of the charting plan.
 
 ### Daniel
 
--   Bush: Lessons Learned: A Neuroimaging Research Center's Transition
-    to Open and Reproducible Science
--   Alessandroni: Ten strategies to foster open science in psychology
-    and beyond
--   Dora: Accelerating addiction research via Open Science and Team
-    Science
--   Turoman: Open and reproducible practices in developmental psychology
+-   Lessons Learned: A Neuroimaging Research Center's Transition to Open
+    and Reproducible Science
+-   Ten strategies to foster open science in psychology and beyond
+-   Accelerating addiction research via Open Science and Team Science
+-   Open and reproducible practices in developmental psychology
     research: The workflow of the WomCogDev lab as an example
 
 ### Mario

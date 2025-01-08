@@ -2,11 +2,11 @@ author_year,title,paper_type,themes,relevant_for
 Alessandroni_2022,Ten strategies to foster open science in psychology and beyond,guide,"organization, tools",researcher
 Bush_2022,Lessons Learned: A Neuroimaging Research Center's Transition to Open and Reproducible Science,example,"tools, workflow",research center
 Dora_2024,Accelerating addiction research via Open Science and Team Science,guide,organization,research field
-Turoman_2022,Open and reproducible practices in developmental psychology research: The workflow of the WomCogDev lab as an example,example,"tools, workflow",research group
-Grange_2023,UKRN Open Research Training Resources and Priorities Working Paper,survey,"organization, education",research field
+Turoman_2022,Open and reproducible practices in developmental psychology research: The workflow of the WomCogDev lab as an example,example,"organization, tools, workflow",research group
+Grange_2023,UKRN Open Research Training Resources and Priorities Working Paper,survey,education,research field
 Khors_2023,Eleven Strategies for Making Reproducible Research and Open Science Training the Norm at Research Institutions,survey,"organization, education",research center
 ManyPrimates_2021,Collaboration and Open Science Initiatives in Primate Research,example,"organization, tools",multiple centers
-ManyPrimates_2019,Collaborative open science as a way to reproducibility and new insights in primate cognition research,example,"organization, tools, workflow",multiple centers
+ManyPrimates_2019,Collaborative open science as a way to reproducibility and new insights in primate cognition research,example,"tools, workflow",multiple centers
 Niso_2022,Open and reproducible neuroimaging: From study inception to publication,guide,"tools, workflow",researcher
 Sholler_2019,Ten simple rules for helping newcomers become contributors to open projects,guide,"organization, education",research group
 TorresEspin_2021,Promoting FAIR Data Through Community-driven Agile Design: the Open Data Commons for Spinal Cord Injury (odc-sci.org),example,"organization, tools",research field
