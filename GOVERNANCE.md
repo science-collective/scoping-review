@@ -9,9 +9,9 @@ least have a "primary" person assigned to them.
 -   *Code reviewer(s)*: **Everyone**. Responsible for checking
     reproducibility, that code runs, is readable, and generally well
     structured.
--   *Writer*: Assigned to **Hannah**. Mainly responsible for writing the
-    report, including coordinating who needs to contribute specific text
-    to each section.
+-   *Writer*: **Everyone**. Mainly responsible for writing the report,
+    including coordinating who needs to contribute specific text to each
+    section.
 -   *Editor*: Assigned to **Daniel**. Responsible for reviewing,
     proofreading, and editing the report.
 -   *Table generator*: Assigned to **Mario**. Responsible for
@@ -20,4 +20,3 @@ least have a "primary" person assigned to them.
 -   *Visualization generator*: Assigned to **Daniel**. Like the table
     generator, responsible for brainstorming possible figures and
     creating them for the report.
-

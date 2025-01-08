@@ -6,3 +6,5 @@ These are each of our individual full-text reviews of all the documents
 we selected after the title and abstract screening, as well as some
 general themes we found.
 
+We also have a document showing the titles we selected at each stage of
+the review in the [Review Stages](review-stages.qmd) document.

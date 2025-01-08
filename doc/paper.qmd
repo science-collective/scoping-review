@@ -1,32 +1,6 @@
 ---
 title: "Towards open collaboration in biomedical and health research: An open collaborative scoping review"
 date: last-modified
-author: 
-  - name: Hannah Chatwin
-    affiliations: 
-      - ref: au
-  - name: Mario Garcia
-    affiliations: 
-      - ref: ku
-  - name: Daniel B. Ibsen
-    affiliations: 
-      - ref: sdca
-      - ref: au
-  - name: Luke W. Johnston
-    affiliations: 
-      - ref: sdca
-      - ref: au
-affiliations:
-  - id: sdca
-    name: Steno Diabetes Center Aarhus
-    country: Denmark
-  - id: au
-    name: Aarhus University
-    country: Denmark
-  - id: ku
-    name: Copenhagen University
-    country: Denmark
-format: html
 ---
 
 ## Introduction
