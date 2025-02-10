@@ -42,6 +42,9 @@ website:
 toc: true
 format: html
 
-bibliography: doc/references.bib
+bibliography:
+  - doc/references.bib
+  - doc/reviewed-records.bib
+
 csl: doc/vancouver.csl
 bibliographystyle: doc/vancouver.csl
