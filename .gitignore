@@ -15,3 +15,4 @@ _book/
 *.ipynb
 site_libs/
 scoping-review.Rproj
+temp-combined.bib
