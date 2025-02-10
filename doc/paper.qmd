@@ -25,7 +25,8 @@ affiliations:
     country: Denmark
 format:
   html: default
-  typst:
+  academic-typst:
+    section-numbering: "1.1.1"
     columns: 2
     papersize: a4
     margin:
@@ -33,9 +34,15 @@ format:
       y: 2cm
 format-links:
   - html
-  - format: typst
+  - format: academic-typst
     text: PDF
     icon: file-pdf
+abstract: |
+  {{< lipsum 1 >}}
+execute: 
+  echo: false
+  message: false
+  warning: false
 ---
 
 ```{r setup}
