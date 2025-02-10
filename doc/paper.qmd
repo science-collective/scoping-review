@@ -45,6 +45,15 @@ library(stringr)
 library(here)
 source(here("R/openalex-search.R"))
 search_terms_inline <- glue::glue("({search_terms()$title_search}[title]) AND {search_terms()$general_search}")
+reviewed_records <- targets::tar_read(reviewed_article_records)
+
+list_refs <- bib2df::bib2df(here("doc/reviewed-records.bib")) |>
+  dplyr::filter(CATEGORY != "COMMENT") |>
+  glue::glue_data("@{BIBTEXKEY}") |>
+  str_c(collapse = ";") |>
+  append("[", 0) |>
+  append("]") |>
+  str_c(collapse = "")
 ```
 
 ## Introduction
