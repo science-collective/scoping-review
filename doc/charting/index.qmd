@@ -16,8 +16,8 @@ This is a short description of the charting plan.
 
 -   [Bush-2022](Bush-2022.qmd): Lessons Learned: A Neuroimaging Research
     Center's Transition to Open and Reproducible Science
--   [Alessandroni-2022](Allessandroni-2022.qmd): Ten strategies to
-    foster open science in psychology and beyond
+-   [Alessandroni-2022](Alessandroni-2022.qmd): Ten strategies to foster
+    open science in psychology and beyond
 -   [Dora-2024](Dora-2024.qmd): Accelerating addiction research via Open
     Science and Team Science
 -   [Turoman-2022](Turoman-2022.qmd): Open and reproducible practices in
@@ -44,7 +44,7 @@ This is a short description of the charting plan.
 -   [ManyPrimates-2019](ManyPrimates-2019.qmd): Collaborative open
     science as a way to reproducibility and new insights in primate
     cognition research
--   [Scholler-2019](Scholler-2019.qmd): Ten simple rules for helping
+-   [Sholler-2019](Sholler-2019.qmd): Ten simple rules for helping
     newcomers become contributors to open projects
 
 ## Template to follow

@@ -31,6 +31,7 @@ source("R/exclusions.R")
 source("R/title-review.R")
 source("R/abstract-review.R")
 source("R/fulltext-review.R")
+source("R/generate-bibtex-file.R")
 
 list(
   # Open Alex Title Search --------------------------------------------------
@@ -172,7 +173,7 @@ list(
     command = reviewed_article_records |>
       openalex_retrieve_pdf(),
     format = "file"
-  )
+  ),
   # Don't need to regenerate this every time
   # tar_target(
   #   name = fulltext_review_qmd,
@@ -181,6 +182,12 @@ list(
   #     create_fulltext_review_template(reviewers),
   #   format = "file"
   # )
+  tar_target(
+    name = records_as_bib_file,
+    command = reviewed_article_records$doi |>
+      download_doi_to_bib(),
+    format = "file"
+  )
   # Render report -----------------------------------------------------------
   # TODO: there is an error and I don't know why.
   # tar_quarto(

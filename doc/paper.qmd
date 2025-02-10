@@ -41,10 +41,23 @@ format-links:
 ```{r setup}
 #| include: false
 knitr::opts_chunk$set(echo = FALSE)
+library(targets)
+library(readr)
+library(dplyr)
+library(glue)
 library(stringr)
 library(here)
 source(here("R/openalex-search.R"))
-search_terms_inline <- glue::glue("({search_terms()$title_search}[title]) AND {search_terms()$general_search}")
+search_terms_inline <- glue("({search_terms()$title_search}[title]) AND {search_terms()$general_search}")
+reviewed_records <- tar_read(reviewed_article_records)
+
+list_refs <- bib2df::bib2df(here("doc/reviewed-records.bib")) |>
+  filter(CATEGORY != "COMMENT") |>
+  glue_data("@{BIBTEXKEY}") |>
+  str_c(collapse = ";") |>
+  append("[", 0) |>
+  append("]") |>
+  str_c(collapse = "")
 ```
 
 ## Introduction
@@ -120,7 +133,7 @@ section we briefly re-state what we described in the protocol and
 especially we describe what was changed from the protocol.
 
 This is a scoping review, so we followed the framework described in
-[@Arksey2005, @Levac2010] as well as the guidelines outlined in the
+[@Arksey2005; @Levac2010] as well as the guidelines outlined in the
 PRISMA-ScR statement [@Tricco2018].
 
 ### Deviations and challenges
@@ -213,7 +226,7 @@ While we didn't change our search terms for the initial search and
 extraction, we found that our search terms were not precise enough and
 got many irrelevant scholarly works. The full R code to filter down the
 search results is kept in the
-[`R/exlusions.R`](https://github.com/science-collective/scoping-review/blob/main/R/exclusions.R)
+[`R/exclusions.R`](https://github.com/science-collective/scoping-review/blob/main/R/exclusions.R)
 file on the GitHub repository. For example, we extracted a large number
 of scholarly works describing surgery such as "open wound", electronics
 such as "open circuit", or environmental such as "open water" that we
@@ -243,53 +256,82 @@ approximately 2019-02-28.
 ## Results
 
 ```{r}
-library(targets)
+#| echo: false
+n_papers <- tar_read(records_title_only) |>
+  nrow()
 
-n_papers <- tar_read(records_title_only) %>% nrow() %>% as.numeric()
-
-n_papers_title_review <- tar_read(records_after_title_exclusion) %>% nrow() %>% as.numeric()
+n_papers_title_review <- tar_read(records_after_title_exclusion) |>
+  nrow()
 
 n_papers_excluded_title_review <- n_papers - n_papers_title_review
 
-n_titles_selected <- tar_read(titles_selected) %>% nrow() %>% as.numeric()
+n_titles_selected <- tar_read(titles_selected) |>
+  nrow()
 
-n_paper_full_text <- tar_read(abstracts_selected) %>% nrow() %>% as.numeric()
+n_paper_full_text <- tar_read(abstracts_selected) |>
+  nrow()
 
-n_papers_selected_for_review <- read.csv(here("data", "article_characteristics.csv"), header = TRUE) %>% nrow() %>% as.numeric() 
+n_papers_selected_for_review <- read_csv(here("data", "article_characteristics.csv")) |>
+  nrow()
 
-#get table of study characteristics 
-article_characteristics <- read.csv(here("data", "article_characteristics.csv"))
+# get table of study characteristics
+article_characteristics <- read_csv(here("data", "article_characteristics.csv"))
 
-n_guides <- article_characteristics %>% filter(paper_type == "guide") %>% nrow() %>% as.numeric()
+n_guides <- article_characteristics |>
+  filter(paper_type == "guide") |>
+  nrow()
 
-n_examples <- article_characteristics %>% filter(paper_type == "example") %>% nrow() %>% as.numeric()
+n_examples <- article_characteristics |>
+  filter(paper_type == "example") |>
+  nrow()
 
-n_surveys <- article_characteristics %>% filter(paper_type == "survey") %>% nrow() %>% as.numeric()
+n_surveys <- article_characteristics |>
+  filter(paper_type == "survey") |>
+  nrow()
 
-n_org <- article_characteristics %>% filter(str_detect(themes, "organization")) %>% nrow() %>% as.numeric()
+n_org <- article_characteristics |>
+  filter(str_detect(themes, "organization")) |>
+  nrow()
 
-n_tools <- article_characteristics %>% filter(str_detect(themes, "tools")) %>% nrow() %>% as.numeric()
+n_tools <- article_characteristics |>
+  filter(str_detect(themes, "tools")) |>
+  nrow()
 
-n_education <- article_characteristics %>% filter(str_detect(themes, "education")) %>% nrow() %>% as.numeric()
+n_education <- article_characteristics |>
+  filter(str_detect(themes, "education")) |>
+  nrow()
 
-n_researcher <- article_characteristics %>% filter(relevant_for == "researcher") %>% nrow() %>% as.numeric()
+n_researcher <- article_characteristics |>
+  filter(relevant_for == "researcher") |>
+  nrow()
 
-n_research_group <- article_characteristics %>% filter(relevant_for == "research group") %>% nrow() %>% as.numeric()
+n_research_group <- article_characteristics |>
+  filter(relevant_for == "research group") |>
+  nrow()
 
-n_research_center <- article_characteristics %>% filter(relevant_for == "research center") %>% nrow() %>% as.numeric()
+n_research_center <- article_characteristics |>
+  filter(relevant_for == "research center") |>
+  nrow()
 
-n_research_centers <- article_characteristics %>% filter(relevant_for == "multiple centers") %>% nrow() %>% as.numeric()
+n_research_centers <- article_characteristics |>
+  filter(relevant_for == "multiple centers") |>
+  nrow()
 
-n_research_field <- article_characteristics %>% filter(relevant_for == "research field") %>% nrow() %>% as.numeric()
-
+n_research_field <- article_characteristics |>
+  filter(relevant_for == "research field") |>
+  nrow()
 ```
 
-The search yielded a total of `r n_papers` papers from which we filtered
-`r n_papers_excluded_title_review` based on key words. The remaining
-`r n_papers_title_review` titles were independently screened by three
-reviewers from which `r n_titles_selected` abstracts were screened. Of
-these, `r n_paper_full_text` papers were assessed in full-text and
-`r n_papers_selected_for_review` were included in the scoping review.
+Our search yielded a total of `r n_papers` papers from which we filtered
+`r n_papers_excluded_title_review` based on key words. Three reviewers
+independently screened for the remaining `r n_papers_title_review`
+titles from which we screened `r n_titles_selected` abstracts. Of these,
+we assessed `r n_paper_full_text` full-text papers and we included
+`r n_papers_selected_for_review` in the scoping review. These were
+`r list_refs`. Two of the documents, while they passed our abstract
+review, did not contain anything relevant when we reviewed the full text
+[@Network2023a; @Yordanov2022], so we did not continue with charting
+them.
 
 The identified papers included `r n_guides` guides, `r n_examples`
 examples and `r n_surveys` surveys.
@@ -310,7 +352,7 @@ fields.
 A common theme across organizational levels was the need for
 infrastructure that promotes open collaboration, building a community of
 collaborators and using online tools in accordance with the FAIR
-(Finndable, Accessible, Interoperable and Reusable) principles.
+(Findable, Accessible, Interoperable and Reusable) principles.
 
 individual level - add text
 
@@ -319,32 +361,32 @@ laboratory/research group level - add text
 For center-level one paper described how they transitioned their
 neuroimaging research center toward more open and collaborative
 practices. Their central focus was on creating more open code and data
-to improve open collaboration @bush_lessons_2022. First, they used
-open-source code, then standardized data formats, developed analysis
-pipelines, shared data openly and developed protocols for data
-documentation. While the organizational transition to improve open
-collaboration was described, little was mentioned about how this has
-improved collaborative work at the research center.
+to improve open collaboration [@Bush2022]. First, they used open-source
+code, then standardized data formats, developed analysis pipelines,
+shared data openly and developed protocols for data documentation. While
+the organizational transition to improve open collaboration was
+described, little was mentioned about how this has improved
+collaborative work at the research center.
 
 Interestingly, the level of organization with most papers was the
-multi-center level with two papers from ManyPrimates et al
-(@manyprimates_collaborative_2019, @manyprimates_collaboration_2021) and
-Grange et al. (@grange_ukrn_2023). In this organization level the most
-urgent needs are: 1) identifying the needs for open collaboration and 2)
-creating an infrastructure that allows those needs to be satisfied.
-Indeed, Grange et al describes a systematic review as an exploration of
-the needs for 11 UKRN centers to implement open collaborative practives.
-In this paper they specially focus on tools and resources among the 11
-institutions and make clear the need for starting to utilize open
-resources as a first step to adapt open collaborative practices. The
-first paper from ManyPrimates et al @manyprimates_collaborative_2019
-describes the start of another multi-center collaboration, albeit from
-different institutions. It is interesting to observe that in this
-situation, the complex issue is to start the collaboration itself, which
-was ignited thanks to a symposium and an email chain among future
-collaborators. In contrast, ManyPrimates could quickly develop an open
-collaborative structure with relative ease in comparison to changing an
-already solid infrastructure, like in the case of Grange et al.
+multi-center level with two papers from ManyPrimates [@Primates2019;
+@ManyPrimates2021] and the Reproducibility Network [@Network2023]. In
+this organization level the most urgent needs are: 1) identifying the
+needs for open collaboration and 2) creating an infrastructure that
+allows those needs to be satisfied. Indeed, Grange et al describes a
+systematic review as an exploration of the needs for 11 UKRN centers to
+implement open collaborative practives. In this paper they specially
+focus on tools and resources among the 11 institutions and make clear
+the need for starting to utilize open resources as a first step to adapt
+open collaborative practices. The first paper from ManyPrimates
+[@Primates2019] describes the start of another multi-center
+collaboration, albeit from different institutions. It is interesting to
+observe that in this situation, the complex issue is to start the
+collaboration itself, which was ignited thanks to a symposium and an
+email chain among future collaborators. In contrast, ManyPrimates could
+quickly develop an open collaborative structure with relative ease in
+comparison to changing an already solid infrastructure, like in the case
+of @Network2023.
 
 research field level
 
