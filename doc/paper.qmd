@@ -129,7 +129,7 @@ section we briefly re-state what we described in the protocol and
 especially we describe what was changed from the protocol.
 
 This is a scoping review, so we followed the framework described in
-[@Arksey2005, @Levac2010] as well as the guidelines outlined in the
+[@Arksey2005; @Levac2010] as well as the guidelines outlined in the
 PRISMA-ScR statement [@Tricco2018].
 
 ### Deviations and challenges
@@ -222,7 +222,7 @@ While we didn't change our search terms for the initial search and
 extraction, we found that our search terms were not precise enough and
 got many irrelevant scholarly works. The full R code to filter down the
 search results is kept in the
-[`R/exlusions.R`](https://github.com/science-collective/scoping-review/blob/main/R/exclusions.R)
+[`R/exclusions.R`](https://github.com/science-collective/scoping-review/blob/main/R/exclusions.R)
 file on the GitHub repository. For example, we extracted a large number
 of scholarly works describing surgery such as "open wound", electronics
 such as "open circuit", or environmental such as "open water" that we
@@ -261,11 +261,11 @@ so we did not continue with charting them.
 
 Across the papers found in our literature search, X out of 11 discuss
 actual experiences on implementing open collaboration, albeit in
-different organizational levels. These range from lab level (Turoman et
-al) center level (Bush et al and Grange et al), multi-center level
-(ManyPrimates et al and Grange et al) and field level: psychology
-(Alessandorni et al), Spinal Cord injury (Torres-Espin et al) and
-neuroimaging (Niso et al). All of these share in common the need for an
+different organizational levels. These range from lab level
+[@Turoman2022], center level [@Bush2022; @Network2023], multi-center
+level [@ManyPrimates2021; @Network2023] and field level: psychology
+[@Alessandroni2022], spinal cord injury [@TorresEspin2021] and
+neuroimaging [@Niso2022]. All of these share in common the need for an
 infrastructure that promotes open science and open collaboration via
 starting building a community of collaborators or making tools (usually
 online resources) that researchers can use to reach FAIR (Finndable,
@@ -279,7 +279,7 @@ across levels (Figure 2).
 
 #### Implementation of open collaboration practices at center level
 
-For center-level only one paper was identified (Bush et al), providing
+For center-level only one paper was identified [@Bush2022], providing
 the example of a center of neuroimaging describing first how they
 identified the needs for open collaboration, then the individual-level
 practices that researchers should adapt and then the center-level
@@ -288,23 +288,24 @@ changes to promote reaching FAIR goals.
 #### Implementation of open collaboration practices at multi-center level
 
 Interestingly, the level of organization with most papers is the
-multi-center level with two papers from ManyPrimates et al (ManyPrimates
-2019 and ManyPrimates 2021) and Grange et al. In this organization level
-the most urgent needs are: 1) identifying the needs for open
-collaboration and 2) creating an infrastructure that allows those needs
-to be satisfied. Indeed, Grange et al describes a systematic review as
-an exploration of the needs for 11 UKRN centers to implement open
-collaborative practives. In this paper they specially focus on tools and
-resources among the 11 institutions and make clear the need for starting
-to utilize open resources as a first step to adapt open collaborative
-practices. The first paper from ManyPrimates et al \[REF\] describes the
-start of another multi-center collaboration, albeit from different
-institutions. It is interesting to observe that in this situation, the
-complex issue is to start the collaboration itself, which was ignited
-thanks to a symposium and an email chain among future collaborators. In
-contrast, ManyPrimates could quickly develop an open collaborative
-structure with relative ease in comparison to changing an already solid
-infrastructure, like in the case of Grange et al.
+multi-center level with two papers from ManyPrimates [@ManyPrimates2021;
+@Primates2019] and one from the Reproducibility Network [@Network2023].
+In this organization level the most urgent needs are: 1) identifying the
+needs for open collaboration and 2) creating an infrastructure that
+allows those needs to be satisfied. Indeed, the Reproducibility Network
+[@Network2023] describes a systematic review as an exploration of the
+needs for 11 UKRN centers to implement open collaborative practives. In
+this paper they specially focus on tools and resources among the 11
+institutions and make clear the need for starting to utilize open
+resources as a first step to adapt open collaborative practices. The
+first paper from ManyPrimates [@Primates2019] describes the start of
+another multi-center collaboration, albeit from different institutions.
+It is interesting to observe that in this situation, the complex issue
+is to start the collaboration itself, which was ignited thanks to a
+symposium and an email chain among future collaborators. In contrast,
+ManyPrimates could quickly develop an open collaborative structure with
+relative ease in comparison to changing an already solid infrastructure,
+like in the case of @Network2023.
 
 #### Implementation of open collaboration practices at field level
 
