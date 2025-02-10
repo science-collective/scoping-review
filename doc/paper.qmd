@@ -251,7 +251,11 @@ approximately 2019-02-28.
 
 ## Results
 
-### Scoping review identifies only 11 papers discussing open collaboration
+We found `r nrow(reviewed_records)` source documents discussing open
+collaboration in some way. These were `r list_refs`. Two of the
+documents, while passed our abstract review, did not contain anything
+relevant when we reviewed the full text [@Network2023a; @Yordanov2022],
+so we did not continue with charting them.
 
 ### Practices of open collaboration
 
