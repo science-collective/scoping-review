@@ -242,64 +242,123 @@ approximately 2019-02-28.
 
 ## Results
 
-### Scoping review identifies only 11 papers discussing open collaboration
+```{r}
+library(targets)
 
-### Practices of open collaboration
+n_papers <- tar_read(records_title_only) %>% nrow() %>% as.numeric()
 
-Across the papers found in our literature search, X out of 11 discuss
-actual experiences on implementing open collaboration, albeit in
-different organizational levels. These range from lab level (Turoman et
-al) center level (Bush et al and Grange et al), multi-center level
-(ManyPrimates et al and Grange et al) and field level: psychology
-(Alessandorni et al), Spinal Cord injury (Torres-Espin et al) and
-neuroimaging (Niso et al). All of these share in common the need for an
-infrastructure that promotes open science and open collaboration via
-starting building a community of collaborators or making tools (usually
-online resources) that researchers can use to reach FAIR (Finndable,
-Accessible, Interoperable and Reusable) goals while doing research.
-Before delving in those, here we provide the specific needs for
-implementing open collaboration in each organizational level, as well as
-describing the differences in approaches among experiences between and
-across levels (Figure 2).
+n_papers_title_review <- tar_read(records_after_title_exclusion) %>% nrow() %>% as.numeric()
 
-#### Implementation of open collaboration practices at laboratory level
+n_papers_excluded_title_review <- n_papers - n_papers_title_review
 
-#### Implementation of open collaboration practices at center level
+n_titles_selected <- tar_read(titles_selected) %>% nrow() %>% as.numeric()
 
-For center-level only one paper was identified (Bush et al), providing
-the example of a center of neuroimaging describing first how they
-identified the needs for open collaboration, then the individual-level
-practices that researchers should adapt and then the center-level
-changes to promote reaching FAIR goals.
+n_paper_full_text <- tar_read(abstracts_selected) %>% nrow() %>% as.numeric()
 
-#### Implementation of open collaboration practices at multi-center level
+n_papers_selected_for_review <- read.csv(here("data", "article_characteristics.csv"), header = TRUE) %>% nrow() %>% as.numeric() 
 
-Interestingly, the level of organization with most papers is the
-multi-center level with two papers from ManyPrimates et al (ManyPrimates
-2019 and ManyPrimates 2021) and Grange et al. In this organization level
-the most urgent needs are: 1) identifying the needs for open
-collaboration and 2) creating an infrastructure that allows those needs
-to be satisfied. Indeed, Grange et al describes a systematic review as
-an exploration of the needs for 11 UKRN centers to implement open
-collaborative practives. In this paper they specially focus on tools and
-resources among the 11 institutions and make clear the need for starting
-to utilize open resources as a first step to adapt open collaborative
-practices. The first paper from ManyPrimates et al \[REF\] describes the
-start of another multi-center collaboration, albeit from different
-institutions. It is interesting to observe that in this situation, the
-complex issue is to start the collaboration itself, which was ignited
-thanks to a symposium and an email chain among future collaborators. In
-contrast, ManyPrimates could quickly develop an open collaborative
-structure with relative ease in comparison to changing an already solid
-infrastructure, like in the case of Grange et al.
+#get table of study characteristics 
+article_characteristics <- read.csv(here("data", "article_characteristics.csv"))
 
-#### Implementation of open collaboration practices at field level
+n_guides <- article_characteristics %>% filter(paper_type == "guide") %>% nrow() %>% as.numeric()
+
+n_examples <- article_characteristics %>% filter(paper_type == "example") %>% nrow() %>% as.numeric()
+
+n_surveys <- article_characteristics %>% filter(paper_type == "survey") %>% nrow() %>% as.numeric()
+
+n_org <- article_characteristics %>% filter(str_detect(themes, "organization")) %>% nrow() %>% as.numeric()
+
+n_tools <- article_characteristics %>% filter(str_detect(themes, "tools")) %>% nrow() %>% as.numeric()
+
+n_education <- article_characteristics %>% filter(str_detect(themes, "education")) %>% nrow() %>% as.numeric()
+
+n_researcher <- article_characteristics %>% filter(relevant_for == "researcher") %>% nrow() %>% as.numeric()
+
+n_research_group <- article_characteristics %>% filter(relevant_for == "research group") %>% nrow() %>% as.numeric()
+
+n_research_center <- article_characteristics %>% filter(relevant_for == "research center") %>% nrow() %>% as.numeric()
+
+n_research_centers <- article_characteristics %>% filter(relevant_for == "multiple centers") %>% nrow() %>% as.numeric()
+
+n_research_field <- article_characteristics %>% filter(relevant_for == "research field") %>% nrow() %>% as.numeric()
+
+```
+
+The search yielded a total of `r n_papers` papers from which we filtered
+`r n_papers_excluded_title_review` based on key words. The remaining
+`r n_papers_title_review` titles were independently screened by three
+reviewers from which `r n_titles_selected` abstracts were screened. Of
+these, `r n_paper_full_text` papers were assessed in full-text and
+`r n_papers_selected_for_review` were included in the scoping review.
+
+The identified papers included `r n_guides` guides, `r n_examples`
+examples and `r n_surveys` surveys.
+
+`r n_org` of the `r n_papers_selected_for_review` papers included
+recommendations for organizational practices to improve open
+collaboration, `r n_tools` mentioned specific tools used for open
+collaboration and `r n_education` highlighted educational needs. The
+identified papers discussed open collaboration on different
+organizational levels. `r n_researcher` were mostly directed at the
+individual researcher, `r n_research_group` at a research group,
+`r n_research_center` at a research center, `r n_research_centers` at
+several research centers and `r n_research_field` at entire research
+fields.
+
+### Organizational practices of open collaboration
+
+A common theme across organizational levels was the need for
+infrastructure that promotes open collaboration, building a community of
+collaborators and using online tools in accordance with the FAIR
+(Finndable, Accessible, Interoperable and Reusable) principles.
+
+individual level - add text
+
+laboratory/research group level - add text
+
+For center-level one paper described how they transitioned their
+neuroimaging research center toward more open and collaborative
+practices. Their central focus was on creating more open code and data
+to improve open collaboration @bush_lessons_2022. First, they used
+open-source code, then standardized data formats, developed analysis
+pipelines, shared data openly and developed protocols for data
+documentation. While the organizational transition to improve open
+collaboration was described, little was mentioned about how this has
+improved collaborative work at the research center.
+
+Interestingly, the level of organization with most papers was the
+multi-center level with two papers from ManyPrimates et al
+(@manyprimates_collaborative_2019, @manyprimates_collaboration_2021) and
+Grange et al. (@grange_ukrn_2023). In this organization level the most
+urgent needs are: 1) identifying the needs for open collaboration and 2)
+creating an infrastructure that allows those needs to be satisfied.
+Indeed, Grange et al describes a systematic review as an exploration of
+the needs for 11 UKRN centers to implement open collaborative practives.
+In this paper they specially focus on tools and resources among the 11
+institutions and make clear the need for starting to utilize open
+resources as a first step to adapt open collaborative practices. The
+first paper from ManyPrimates et al @manyprimates_collaborative_2019
+describes the start of another multi-center collaboration, albeit from
+different institutions. It is interesting to observe that in this
+situation, the complex issue is to start the collaboration itself, which
+was ignited thanks to a symposium and an email chain among future
+collaborators. In contrast, ManyPrimates could quickly develop an open
+collaborative structure with relative ease in comparison to changing an
+already solid infrastructure, like in the case of Grange et al.
+
+research field level
+
+Here, we provide the specific needs for implementing open collaboration
+in each organizational level, as well as describing the differences in
+approaches among experiences between and across levels (Figure 2).
 
 ### Useful tools for open collaboration
 
-## Discussions
+### Educational needs
 
-## Conclusions
+## Discussion
+
+### Conclusions
 
 ## Contributions
 
