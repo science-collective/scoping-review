@@ -38,7 +38,30 @@ format-links:
     text: PDF
     icon: file-pdf
 abstract: |
-  {{< lipsum 1 >}}
+  **Background**: Greater, more extensive collaboration is increasingly needed
+  in the modern research environment, often to the level of team-based science.
+  Combined with this need is the emphasize on doing more open science. However,
+  there seems to be less attention on the overlap between open science and
+  collaboration.
+
+  **Objectives**: To conduct a scoping review on open collaborative practices used 
+  across academia, including methods, tools, and resources.
+
+  **Eligibility criteria**: We included any document that discussed, in any way,
+  open collaboration practices, only those in English, and only those that were
+  open access. We searched 5 years from whenever we ran a search.
+
+  **Sources of evidence**: We used the OpenAlex database to search for scholarly
+  works, which includes a large number of sources. Our search period was
+  between 2019-02-28 to 2024-02-29.
+
+  **Charting methods**: All three authors participated in the search, extraction,
+  and charting process. As no standard charting form exists for our purposes,
+  we developed our own template.
+
+  **Results**: TBD
+
+  **Conclusions**: TBD
 execute: 
   echo: false
   message: false
