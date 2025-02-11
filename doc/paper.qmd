@@ -63,7 +63,7 @@ list_refs <- bib2df::bib2df(here("doc/reviewed-records.bib")) |>
   str_c(collapse = "")
 ```
 
-## Introduction
+## Background
 
 The time when a single scientist could work alone in a lab and make
 meaningful progress in their field is long gone. Scientific research in
@@ -152,7 +152,7 @@ Unfortunately, there are, to our knowledge, very few resources and
 examples of how to integrate open science into collaborations and how to
 make collaboration be open [@Korbmacher2023].
 
-### Aim
+### Objectives
 
 Our aim is to conduct a scoping review to provide an overview of current
 practices of open collaboration in the academic world. For this scoping
