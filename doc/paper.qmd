@@ -67,31 +67,35 @@ list_refs <- bib2df::bib2df(here("doc/reviewed-records.bib")) |>
 
 The time when a single scientist could work alone in a lab and make
 meaningful progress in their field is long gone. Scientific research in
-the modern era, especially in certain fields, almost requires working
-with other people, oftentimes a large number of people. Research
-questions are increasingly more challenging to answer as they require
-more time, resources, expertise, and personnel in order to meaningfully
-answer.
+the modern era, especially in certain fields, requires working with
+other people, oftentimes a large number of people [@Forscher2022].
+Research questions are increasingly more challenging to answer as they
+require more time, resources, expertise, and personnel in order to
+meaningfully answer them.
 
-With the current needs and limitations such as resources when doing
-scientific research, collaborations range from those within a single
-group or lab, to a few researchers across different departments in the
-same institution, to many researchers and personnel spread across
-multiple research centers. Collaborations are needed to address basic
-limitations of working with small or constrained populations, to sharing
-valuable but expensive equipment, or to assisting with technical
-expertise or domain knowledge.
+With the current needs and limitations when doing scientific research,
+collaborations range from those within a single group or lab, to a few
+researchers across different departments in the same institution, to
+many researchers and personnel spread across multiple research centers.
+Collaborations are needed to address basic limitations of working with
+small or constrained populations, to sharing valuable but expensive
+equipment, or to assisting with technical expertise or domain knowledge.
 
 At the same time, there is also a higher need for science to be more
-open, higher quality, and more rigorous[@Cole2024, @Umbach2024], which
-necessitates that researchers collaborate with more researchers and with
-a more diverse group of researchers to fulfill these needs. Open
-scientific practices, such as open data, open source, and open
-materials, aim to improve the reliability and accessibility of
+open, higher quality, and more rigorous [@Cole2024; @Umbach2024;
+@Korbmacher2023], which necessitates that researchers collaborate with
+more researchers and with a more diverse group of researchers to fulfill
+these needs. Open scientific practices, such as open data, open source,
+and open materials, aim to improve the reliability and accessibility of
 scientific output to increase the societal impact of the results.
+There's greater attention and scrutiny towards verification of results,
+a core tenet of science, through replication and reproducibility. In
+many ways, the "replication crisis" in science has been a driving force
+behind the push for more open science and "team science" practices that
+necessitate more collaboration [@Korbmacher2023].
 
-There are many hypothetical benefits to openness in science, including
-in collaboration. For instance:
+There are many claimed benefits to openness in science, including in
+collaboration [@Forscher2022; @Kavanagh2021]. For instance:
 
 -   Greater transparency and accountability, because the built-in
     openness makes it easy to see what was done, how, and why.
@@ -108,29 +112,33 @@ practices and tools we can use? What is an ideal collaborative workflow
 and how close or how far are we from this ideal in reality?
 
 From our own personal experience working in the field of health
-research, we have varied and diverse ways of collaborating. Often the
-most commonly used approach to collaboration is emailing Word documents
-around to get feedback and using meetings to discuss and agree on
-things. Rarely do we systematically examine whether we are following
-best practices for collaboration nor do we collaborate in an open way
-following the principles of open science. This lack of a clear standard
-or approach to collaborating effectively and openly can greatly impact
-productivity and quality of scientific research. It emphasizes a greater
-need for a paradigm shift in how we researchers collaborate to be able
-to effectively and efficiently tackle the challenges of the modern era.
+research, we have varied and diverse ways of collaborating and of being
+open. Often the most commonly used approach to collaboration is emailing
+Word documents around to get feedback and using meetings to discuss and
+agree on things. Rarely do we systematically examine whether we are
+following best practices for collaboration nor do we collaborate in an
+open way following the principles of open science. As for open science,
+while it was first introduced in 1985 [@Chubin1985] and discussed in
+academic outputs regularly since then, the actual practices of being
+open in science have been minimal or largely confined to specific
+sub-branches of openness like open access.
 
-For this scoping review, we define open collaboration using the
-definition as found in [@Forte2013]:
+This lack of visible role-models or standards of practice for
+effectively collaborating and actively working openly presents a clear
+barrier to uptake of these practices. This has real consequences to
+continued productivity and quality of scientific research, which is
+increasingly apparent in the modern era. These consequences are even
+more apparent when comparing to more technically-inclined communities
+such as those in open source software. These communities have massively
+benefitted from integrating more openness into their workflows, to the
+extent that the vast majority of the world's digital infrastructure is
+built on and runs open source software. This highlights a greater need
+for a paradigm shift in how we researchers collaborate to be able to
+effectively and efficiently tackle the challenges of the modern era.
 
-> "*an online environment that (a) supports the collective production of
-> an artifact (b) through a technologically mediated collaboration
-> platform (c) that presents a low barrier to entry and exit and (d)
-> supports the emergence of persistent but malleable social
-> structures.*"
-
-Open collaboration has a lot of potential benefits, many of which are
-the same benefits as seen with open science. For instance, open
-collaboration can lead to:
+Open collaboration has many potential benefits, of which most overlap
+with the benefits of open science. For instance, open collaboration can
+lead to:
 
 -   Easier onboarding of new collaborators, since everything is open and
     easily findable.
@@ -142,13 +150,20 @@ collaboration can lead to:
 
 Unfortunately, there are, to our knowledge, very few resources and
 examples of how to integrate open science into collaborations and how to
-make collaboration be open.
+make collaboration be open [@Korbmacher2023].
 
 ### Aim
 
-This scoping review will focus on current practices of open
-collaboration and open science in relation to collaboration in the field
-of biomedical and health research.
+Our aim is to conduct a scoping review to provide an overview of current
+practices of open collaboration in the academic world. For this scoping
+review, we define open collaboration using the definition as found in
+[@Forte2013]:
+
+> "*an online environment that (a) supports the collective production of
+> an artifact (b) through a technologically mediated collaboration
+> platform (c) that presents a low barrier to entry and exit and (d)
+> supports the emergence of persistent but malleable social
+> structures.*"
 
 The specific aims of this scoping review are to:
 
