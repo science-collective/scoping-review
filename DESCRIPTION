@@ -8,8 +8,10 @@ Depends:
     tidyverse
 Imports:
     askpass,
+    bib2df,
     conflicted,
     cpp11,
+    curl,
     docxtractr,
     dplyr,
     fs,

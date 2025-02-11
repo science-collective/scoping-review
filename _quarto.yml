@@ -1,5 +1,8 @@
 project:
   type: website
+  pre-render:
+    # To fix the bibliography issue, PDF can only have one bib file.
+    - Rscript _build.R
 
 execute:
   freeze: auto
@@ -40,20 +43,11 @@ website:
         href: LICENSE.md
 
 toc: true
-format:
-  html: default
-  typst:
-    columns: 2
-    papersize: a4
-    margin:
-      x: 2cm
-      y: 2cm
-format-links:
-  - html
-  - format: typst
-    text: PDF
-    icon: file-pdf
+format: 
+  html: 
+    from: markdown+emoji
 
-bibliography: doc/references.bib
+# See note above in the `project` section
+bibliography: doc/temp-combined.bib
 csl: doc/vancouver.csl
 bibliographystyle: doc/vancouver.csl

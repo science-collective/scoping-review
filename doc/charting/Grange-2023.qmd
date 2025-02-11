@@ -8,6 +8,12 @@ title: 'Grange-2023'
 -   DOI: https://doi.org/10.31219/osf.io/s2f6k
 -   OpenAlex ID: W4372403418
 
+## Characteristics of the paper
+
+-   Type of paper (e.g., tips, example): survey
+-   Themes (e.g., tools, organization): organization, education
+-   Other keywords (e.g., newcomers):
+
 ## Tools
 
 ### Specific tools mentioned - their function - where in the researh process used
@@ -55,4 +61,3 @@ title: 'Grange-2023'
 -   Very few resources are destinied to reproducibility, which also
     hinders open science.
 -   The sources of highest quality are not even open access!
-

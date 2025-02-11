@@ -4,11 +4,11 @@ The end goal is a published scoping review. How we get there is based on
 completing tasks and steps along the way. This document is meant as a
 starting point to know what needs to be done and what has been done.
 
-1.  [Issue 12: Tasks to do for completing
+1.  (**DONE**) [Issue 12: Tasks to do for completing
     project](https://github.com/science-collective/scoping-review/issues/12).
     This is the main issue to get an big overview of what has been done
     and what needs to be done.
-2.  [Issue 32: Tasks tracking for extracting references from
+2.  (**DONE**) [Issue 32: Tasks tracking for extracting references from
     sources](https://github.com/science-collective/scoping-review/issues/32).
     This issue shows more detailed view of what sources we've extracted
     and what still need to be done.
