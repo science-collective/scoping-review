@@ -43,7 +43,9 @@ website:
         href: LICENSE.md
 
 toc: true
-format: html
+format: 
+  html: 
+    from: markdown+emoji
 
 # See note above in the `project` section
 bibliography: doc/temp-combined.bib
