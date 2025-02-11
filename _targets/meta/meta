@@ -14,7 +14,6 @@ titles_resolved_path|stem|e863864fe2fedffb|3679ff62bcec0421|520464c4082ef414|-19
 titles_disagreed_on_path|stem|ca9cb1c07e34464c|754a6cba2d9eed27|780a784f0cee9510|933367354|/home/luke/Documents/science-collective/scoping-review/data/review/titles/disagreements.csv|t20129.3702220227s|s29849b|29849|file|local|vector|||0.008||
 titles_selected|stem|fb8db2d2cdaade62|5fe06e7b81d3f911|7e162da8605bc80f|-304136843||t20129.3702222889s|s2296b|2296|rds|local|vector|||0.02||
 records_abstracts|stem|8591eee267e66561|de3d5c44c50bf012|4dce6ed175631e40|1184782426||t20129.3702594998s|s15457b|15457|rds|local|vector|||3.212||
-records_abstracts_path|stem|747577025095b4c2|df28146fb9eb9321|87043e024eea655d|-989815862|/home/luke/Documents/science-collective/scoping-review/data/review/abstracts.yaml|t20129.3702595461s|s46902b|46902|file|local|vector|||0.002||
 reviewers_abstract_files|stem|b20f41b7de63e05e|e2341edc222351ad|f544803fa0cd5d16|1593097270|/home/luke/Documents/science-collective/scoping-review/data/review/abstracts/daniel.yaml*/home/luke/Documents/science-collective/scoping-review/data/review/abstracts/mario.yaml*/home/luke/Documents/science-collective/scoping-review/data/review/abstracts/luke.yaml|t20096.4561036815s|s77034b|77034|file|local|vector|||0.001||
 abstracts_kept|stem|e5239df99f20742b|cb70ddbd14142a8c|73700deadb2745fc|874904150||t20129.3702598007s|s13355b|13355|rds|local|vector|||0.015||
 abstracts_agreed_on|stem|dade3f4ca5ee28e8|80935e8c8f990df6|b1ed5d97247c1275|-1940063316||t20129.3702598701s|s6050b|6050|rds|local|vector|||0.003||
@@ -33,7 +32,7 @@ create_fulltext_review_template|function|8d1d10ec611f6ec5
 read_title_reviews|function|e0b3786b436ebd3b
 path_reviewer_abstracts|function|ba97058f9e4016ec
 search_terms|function|30bd46b0e91540c9
-.Random.seed|object|dc23e9dccea1cbc7
+.Random.seed|object|fc6602d5df8b68f0
 openalex_retrieve_pdf|function|5b5fbfc91cce61d1
 doi_to_bib|function|e8332d84bff519ad
 exclude|function|820f28b5da1d1dca
@@ -46,6 +45,7 @@ get_disagreed_on_abstracts|function|73ee565673e38de0
 save_as_csv|function|e095434181a3205d
 get_agreed_on_titles|function|b082c0712594924e
 read_abstract_reviews|function|8d2da2c96ac82509
-download_doi_to_bib|function|ad057365fcb2b61c
+download_doi_to_bib|function|4c4d742b91e20706
 exclude_from_title|function|29f6ce883d5c049a
-records_as_bib_file|stem|441c8f04003e6e67|8d2378dfaa0ffede|a636b2a8eb14ecfa|768089752|/home/luke/Documents/science-collective/scoping-review/doc/reviewed-records.bib|t20129.4137385154s|s8030b|8030|file|local|vector|||13.823|Warning The createdhomelukeDocumentssciencecollectivescopingreviewdocreviewedrecords.bibfile requires manual cleaning, ideally through JabRef.|
+records_abstracts_path|stem|747577025095b4c2|df28146fb9eb9321|87043e024eea655d|-989815862|/home/luke/Documents/science-collective/scoping-review/data/review/abstracts.yaml|t20129.5508627474s|s46902b|46902|file|local|vector|||0.006||
+records_as_bib_file|stem|441c8f04003e6e67|8d2378dfaa0ffede|cd613a871fe349d3|768089752|/home/luke/Documents/science-collective/scoping-review/doc/reviewed-records.bib|t20129.5510074712s|s8030b|8030|file|local|vector|||12.522||
