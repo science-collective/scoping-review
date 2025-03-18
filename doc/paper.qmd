@@ -360,47 +360,49 @@ across levels (Figure 2).
 
 #### Implementation of open collaboration practices at laboratory level
 
-In @Turoman2022 the authors describe in detail how the have set up a
-laboratory whose members collaborate in an open way from study design to
-dissemination. Here we highlight the role of group meetings as
-opportunities to propose ideas and have an initial study design
-proposed. These group meetings are usually started with a section of
-interesting mistakes, which allows to share the issues, troubleshoot and
-make the laboratory members comfortable with the fact that errors are
-unavoidable in science. The feedback from these meetings might lead to
-updates to a lab manual, which is a great tool for new members to start
-engaging with the open practices of the lab. This coupled with a support
-system by senior members of the laboratory allows, in theory, to ease
-the learning curve of new members to adapt to open practices and
-collaboration.
+In @Turoman2022, the authors describe in detail how they set up a
+laboratory where members collaborate in an open way, from study design
+to dissemination. Here we highlight the role of group meetings as
+opportunities to propose ideas and discuss an initial study design.
+These group meetings usually start with some time to reflect on and
+discuss interesting mistakes, which allows members to share the issues
+and potential troubleshoot the problems. This helps make the laboratory
+members feel more comfortable with experiencing and managing errors, as
+they are unavoidable in science. The feedback from these meetings might
+lead to updating a lab manual, which is a great tool for new members to
+start engaging with the open practices of the lab. This, coupled with a
+support system by senior laboratory members allows, at least in theory,
+a smoother on-boarding experience for new members to adapt to open
+practices and collaboration.
 
-In the paper, authors describe their implementation of open practices in
-each step of the scientific production. Here we focus on the aspects in
-pre-registration, data analysis and dissemination that improve
+In they paper they describe how they implement open practices in each
+step of the scientific production. We will focus on the aspects on
+pre-registration, data analysis, and dissemination that improve
 collaboration between members of the laboratory and of the same field.
-For pre-registration they combine slack channels and Trello to
-communicate between members and OSF for data deposition and uploading
+For pre-registration they combine Slack channels and Trello to
+communicate within the group and use OSF to deposit data and upload
 pre-registered studies. They put special emphasis on folder structure,
-which is consistent for all projects, and assigning the authorship in
-this stage. For data analysis, the authors highlight the figure of the
-data partner, a member of the laboratory not originally included in the
-analyses that runs the analyses described in the pre-registered study
-independently. If the results mismatch with the original ones meetings
-with the lead analyst or all collaborators are organized to assess what
-the issue might be. Additionally, this allows for insights that might
-result in deviations of the original pre-registered study, which should
-be included and noted in the final manuscript. Importantly, the role of
-the data partner is described in the final manuscript. Finally, in the
-dissemination step, they highlight that they might incorporate feedback
-from presenting their analyses in conferences, which are often included
-as additional non-preregistered analyses.
+which is consistent for all projects, and assigning the authorship at
+this stage. For data analysis, they incorporate a "data partner" role,
+who is a member of the laboratory not originally included in the study.
+This data partner independently runs the analyses described in the
+pre-registered study. If there is a mismatch in results with the
+original results, meetings with the lead analyst or all collaborators
+are organized to assess what the issue might be. This allows for
+insights that may result in deviations in the original pre-registered
+study, which should be included and noted in the final manuscript. The
+role of the data partner is, importantly, included and described in the
+final manuscript. In the final dissemination step, they highlight that
+they may incorporate feedback given after presenting their analyses in
+conferences, which are often included as additional non-preregistered
+analyses.
 
-Finally, in the paper they also highlight relevant open practices that
-might not enhance collaboration, but that we consider interesting
-reviewing too. First, during pre-registration, they allow for papers to
+The group also highlights that relevant open practices may not always
+enhance collaboration, but have other benefits that we want to also
+highlight. First, during pre-registration, they allow for papers to
 contain defined confirmatory and exploratory sections to avoid the usual
 rigidness of pre-registered studies. Second, in exploratory analyses
-they included soundness checks whenever possible. Third, the perform
+they included soundness checks whenever possible. Third, they perform
 sequential hypothesis testing to assess within the limits of a maximum
 sample size which hypothesis fits the data better without indulging in
 p-hacking. Finally, they collaborate with schools and with universities
