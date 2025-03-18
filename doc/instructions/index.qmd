@@ -36,7 +36,7 @@ in.
 | Status | Section | Subsection | Item | Description |
 |:--------------|:--------------|:--------------|:--------------|:--------------|
 | :white_check_mark: | Title | Title | 1 | Identify the report as a scoping review. |
-| :construction: | Abstract | Structured summary | 2 | Provide a structured summary that includes (as applicable): background, objectives, eligibility criteria, sources of evidence, charting methods, results, and conclusions that relate to the review questions and objectives. |
+| :white_check_mark: | Abstract | Structured summary | 2 | Provide a structured summary that includes (as applicable): background, objectives, eligibility criteria, sources of evidence, charting methods, results, and conclusions that relate to the review questions and objectives. |
 | :construction: | Introduction | Rationale | 3 | Describe the rationale for the review in the context of what is already known. Explain why the review questions/objectives lend themselves to a scoping review approach. |
 | :construction: | Introduction | Objectives | 4 | Provide an explicit statement of the questions and objectives being addressed with reference to their key elements (e.g., population or participants, concepts, and context) or other relevant key elements used to conceptualize the review questions and/or objectives. |
 | :construction: | Methods | Protocol and registration | 5 | Indicate whether a review protocol exists; state if and where it can be accessed (e.g., a Web address); and if available, provide registration information, including the registration number. |
