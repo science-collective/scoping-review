@@ -3,7 +3,7 @@ title: "Towards open collaboration in biomedical and health research: An open co
 date: last-modified
 author:
   - name: Mario Garcia
-    orcid: 
+    orcid: "0000-0002-3376-9460"
     affiliations:
       - ref: ku
   - name: Daniel B. Ibsen
