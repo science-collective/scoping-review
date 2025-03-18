@@ -1,5 +1,5 @@
 Version: 1.0
-ProjectId: 6e8bb55a-2acc-4251-baa9-fc3594e69d9a
+ProjectId: 8487db73-6eb0-4051-9318-204169b61a49
 
 RestoreWorkspace: No
 SaveWorkspace: No
@@ -15,6 +15,8 @@ LaTeX: pdfLaTeX
 
 AutoAppendNewline: Yes
 StripTrailingWhitespace: Yes
+
+UseNativePipeOperator: Yes
 
 MarkdownWrap: Column
 MarkdownWrapAtColumn: 72
