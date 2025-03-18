@@ -253,7 +253,7 @@ these source databases.
 
 We also originally intended on searching websites, blogs, and other
 online resources, but it was very difficult to programmatically and
-systemtically achieve this. So we ended up only searching for scholarly
+systematically achieve this. So we ended up only searching for scholarly
 work that were indexed in databases.
 
 Given these challenges however, we unintentionally found
@@ -351,7 +351,7 @@ level [@ManyPrimates2021; @Network2023] and field level: psychology
 neuroimaging [@Niso2022]. All of these share in common the need for an
 infrastructure that promotes open science and open collaboration via
 starting building a community of collaborators or making tools (usually
-online resources) that researchers can use to reach FAIR (Finndable,
+online resources) that researchers can use to reach FAIR (Findable,
 Accessible, Interoperable and Reusable) goals while doing research.
 Before delving in those, here we provide the specific needs for
 implementing open collaboration in each organizational level, as well as
@@ -360,12 +360,51 @@ across levels (Figure 2).
 
 #### Implementation of open collaboration practices at laboratory level
 
-In Turoman et al the authors describe in detail how the have set up a laboratory whose members collaborate in an open way from study design to dissemination. Here we highlight the role of group meetings as opportunities to propose ideas and have an initial study design proposed. These group meetings are usually started with a section of interesting mistakes, which allows to share the issues, troubleshoot and make the laboratory members comfortable with the fact that errors are unavoidable in science. The feedback from these meetings might lead to updates to a lab manual, which is a great tool for new members to start engaging with the open practices of the lab. This coupled with a support system by senior members of the laboratory allows, in theory, to ease the learning curve of new members to adapt to open practices and collaboration. 
+In @Turoman2022 the authors describe in detail how the have set up a
+laboratory whose members collaborate in an open way from study design to
+dissemination. Here we highlight the role of group meetings as
+opportunities to propose ideas and have an initial study design
+proposed. These group meetings are usually started with a section of
+interesting mistakes, which allows to share the issues, troubleshoot and
+make the laboratory members comfortable with the fact that errors are
+unavoidable in science. The feedback from these meetings might lead to
+updates to a lab manual, which is a great tool for new members to start
+engaging with the open practices of the lab. This coupled with a support
+system by senior members of the laboratory allows, in theory, to ease
+the learning curve of new members to adapt to open practices and
+collaboration.
 
-In the paper, authors describe their implementation of open practices in each step of the scientific production. Here we focus on the aspects in pre-registration, data analysis and dissemination that improve collaboration between memebers of the labortory and of the same field. For pre-registration they combine slack channels and Trello to communicate between members and OSF for data reposition and uploading pre-registered studies. They put special emphasis on folder structure, which is consistent for all projects, and assigning the authorship in this stage. For data analysis, the authors highlight the figure of the data partner, a member of the laboratory not originally included in the analyses that runs the analyses described in the pre-registered study independently. If the results mismatch with the original ones meetings with the lead analyst or all collaborators are organized to assess what the issue might be. Additionally, this allows for insights that might result in deviations of the original pre-registered study, which should be included and noted in the final manuscript. Importantly, the role of the data partner is described in the final manuscript. Finally, in the dissemination step, they highlight that they might incorporate feedback from presenting their analyses in conferences, which are often included as additional non-preregistered analyses.
+In the paper, authors describe their implementation of open practices in
+each step of the scientific production. Here we focus on the aspects in
+pre-registration, data analysis and dissemination that improve
+collaboration between members of the laboratory and of the same field.
+For pre-registration they combine slack channels and Trello to
+communicate between members and OSF for data deposition and uploading
+pre-registered studies. They put special emphasis on folder structure,
+which is consistent for all projects, and assigning the authorship in
+this stage. For data analysis, the authors highlight the figure of the
+data partner, a member of the laboratory not originally included in the
+analyses that runs the analyses described in the pre-registered study
+independently. If the results mismatch with the original ones meetings
+with the lead analyst or all collaborators are organized to assess what
+the issue might be. Additionally, this allows for insights that might
+result in deviations of the original pre-registered study, which should
+be included and noted in the final manuscript. Importantly, the role of
+the data partner is described in the final manuscript. Finally, in the
+dissemination step, they highlight that they might incorporate feedback
+from presenting their analyses in conferences, which are often included
+as additional non-preregistered analyses.
 
-Finally, in the paper they also highlight relevant open practices that might not enhance collaboration, but that we consider interesting reviewing too. First, during pre-registration, they allow for papers to contain defined confirmatory and exploratory sections to avoid the usual rigidness of pre-registered studies. Second, in exploratory analyses they included soundness checks whenever possible. Third, the perform sequential hypothesis testing to assess within the limits of a maximum sample size which hypothesis fits the data better without induling in p-hacking. Finally, they collaborate with schools and with universities to disemminate their results.
-
+Finally, in the paper they also highlight relevant open practices that
+might not enhance collaboration, but that we consider interesting
+reviewing too. First, during pre-registration, they allow for papers to
+contain defined confirmatory and exploratory sections to avoid the usual
+rigidness of pre-registered studies. Second, in exploratory analyses
+they included soundness checks whenever possible. Third, the perform
+sequential hypothesis testing to assess within the limits of a maximum
+sample size which hypothesis fits the data better without indulging in
+p-hacking. Finally, they collaborate with schools and with universities
+to disseminate their results.
 
 #### Implementation of open collaboration practices at center level
 
@@ -384,7 +423,7 @@ In this organization level the most urgent needs are: 1) identifying the
 needs for open collaboration and 2) creating an infrastructure that
 allows those needs to be satisfied. Indeed, the Reproducibility Network
 [@Network2023] describes a systematic review as an exploration of the
-needs for 11 UKRN centers to implement open collaborative practives. In
+needs for 11 UKRN centers to implement open collaborative practices. In
 this paper they specially focus on tools and resources among the 11
 institutions and make clear the need for starting to utilize open
 resources as a first step to adapt open collaborative practices. The
